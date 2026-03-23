@@ -256,6 +256,15 @@ h4 {
   transition: opacity var(--transition), transform var(--transition);
 }
 
+.nav-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  right: -10px;
+  height: 20px;
+}
+
 .nav-dropdown--wide {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   min-width: 560px;
