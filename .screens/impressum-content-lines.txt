@@ -1,0 +1,191 @@
+				<div class="et_pb_module et_pb_text et_pb_text_0 et_animated  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1><span>Impressum<br /></span></h1></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div class="wpb_wrapper" style="text-align:center; max-width:800px; margin:0 auto;">
+
+  <h2 style="text-align:center;">Angaben gemäß § 5 TMG</h2>
+  <p style="text-align:center;">
+    IGIENAIR GmbH<br />
+    Am Hardtwald 6-8<br />
+    76275 Ettlingen
+  </p> 
+
+  <p style="text-align:center;">
+    Handelsregister: HRB 717425<br />
+    Registergericht: Mannheim
+  </p> 
+
+  <p style="text-align:center;">
+    <strong>Vertreten durch:</strong><br />
+    Evrard de PONNAT, Christophe LUCEREAU
+  </p> 
+
+  <h3 style="text-align:center;">Kontakt</h3>
+  <p style="text-align:center;">
+    Telefon: +49 (0) 7243 / 3699 101<br />
+    E-Mail: <a href="mailto:kontakt@igienair.com">kontakt@igienair.com</a>
+  </p> 
+
+  <h3 style="text-align:center;">Umsatzsteuer-ID</h3>
+  <p style="text-align:center;">
+    Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE291571885
+  </p> 
+
+  <h3 style="text-align:center;">EU-Streitschlichtung</h3>
+  <p style="text-align:center;">
+    Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+    <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">
+      https://ec.europa.eu/consumers/odr/
+    </a>.<br />
+    Unsere E-Mail-Adresse finden Sie oben im Impressum.
+  </p> 
+
+  <h3 style="text-align:center;">Verbraucher­streit­beilegung / Universal­schlichtungs­stelle</h3>
+  <p style="text-align:center;">
+    Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+  </p> 
+
+  <p style="text-align:center;">Die Optimierung für Suchmaschinen übernimmt:</p> 
+
+  <p style="text-align:center;">
+    <strong>SEO Agentur Hamburg</strong><br />
+    Gustav-Leo-Straße 3<br />
+    20249 Hamburg<br />
+    <a href="mailto:info@seoagentur-hamburg.com">info@seoagentur-hamburg.com</a><br />
+    <a href="https://seoagentur-hamburg.com">www.seoagentur-hamburg.com</a>
+  </p> 
+
+</div>
+</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_footer et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="315" height="100" src="https://beliu.myrdbx.io/wp-content/uploads/2018/04/Logo_Navi_1.png" alt="" title="Logo_Navi_1" srcset="https://beliu.myrdbx.io/wp-content/uploads/2018/04/Logo_Navi_1.png 315w, https://beliu.myrdbx.io/wp-content/uploads/2018/04/Logo_Navi_1-300x95.png 300w, https://beliu.myrdbx.io/wp-content/uploads/2018/04/Logo_Navi_1-200x63.png 200w" sizes="auto, (max-width: 315px) 100vw, 315px" class="wp-image-15" /></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>MENÜ</h4></div>
+			</div><div class="et_pb_module dsm_menu dsm_menu_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<nav class="dsm-menu-container"><ul id="menu-menue-1" class="dsm-menu dsm-menu-style-type-disc dsm-menu-layout-vertical dsm-menu-submenu-collapse"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71667"><a href="https://beliu.myrdbx.io/unternehmen-2/" itemprop="url"><span itemprop="name">Unternehmen</span><span class="et-pb-icon">3</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71706"><a href="https://beliu.myrdbx.io/unternehmen-2/zertifizierungen/" itemprop="url"><span itemprop="name">Zertifizierungen</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71707"><a href="https://beliu.myrdbx.io/unternehmen-2/nachhaltigkeit/" itemprop="url"><span itemprop="name">Nachhaltigkeit</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71708"><a href="https://beliu.myrdbx.io/unternehmen-2/sicherheit/" itemprop="url"><span itemprop="name">Sicherheit</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71709"><a href="https://beliu.myrdbx.io/unternehmen-2/qualitaet/" itemprop="url"><span itemprop="name">Qualität</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71710"><a href="https://beliu.myrdbx.io/standorte/" itemprop="url"><span itemprop="name">Standorte</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71668"><a href="https://beliu.myrdbx.io/leistungen-2/" itemprop="url"><span itemprop="name">Leistungen</span><span class="et-pb-icon">3</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="https://beliu.myrdbx.io/inspektionundgutachten/" itemprop="url"><span itemprop="name">Inspektion &#038; Gutachten</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="https://beliu.myrdbx.io/reinigung-desinfektion/" itemprop="url"><span itemprop="name">Reinigung &#038; Desinfektion</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1030"><a href="https://beliu.myrdbx.io/instandsetzung-sanierung/" itemprop="url"><span itemprop="name">Instandsetzung &#038; Sanierung</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4208"><a href="https://beliu.myrdbx.io/energetische-inspektion-geg-2020/" itemprop="url"><span itemprop="name">Energetische Inspektion</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71669"><a href="https://beliu.myrdbx.io/normen-2/" itemprop="url"><span itemprop="name">Normen</span><span class="et-pb-icon">3</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1885"><a href="https://beliu.myrdbx.io/normen/vdi-6022/" itemprop="url"><span itemprop="name">VDI 6022</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1910"><a href="https://beliu.myrdbx.io/normen/vdi-2047/" itemprop="url"><span itemprop="name">VDI 2047-2</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://beliu.myrdbx.io/normen/vdi-2052-bgr-111/" itemprop="url"><span itemprop="name">VDI 2052 &#038; BGR 111</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1906"><a href="https://beliu.myrdbx.io/normen/din-en-15780/" itemprop="url"><span itemprop="name">DIN EN 15780</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1909"><a href="https://beliu.myrdbx.io/normen/din-en-14175/" itemprop="url"><span itemprop="name">DIN EN 14175</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71670"><a href="https://beliu.myrdbx.io/anlagen-2/" itemprop="url"><span itemprop="name">Anlagen</span><span class="et-pb-icon">3</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3633"><a href="https://beliu.myrdbx.io/anlagen/lueftungsreinigung/" itemprop="url"><span itemprop="name">Lüftungsanlagen</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107"><a href="https://beliu.myrdbx.io/anlagen/lueftungsanlagenreinigung/" itemprop="url"><span itemprop="name">RLT-Anlagen</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2106"><a href="https://beliu.myrdbx.io/anlagen/luftkanalreinigung/" itemprop="url"><span itemprop="name">Zu- &#038; Abluftkanäle</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3088"><a href="https://beliu.myrdbx.io/anlagen/raumluftdesinfektion/" itemprop="url"><span itemprop="name">Raumluftdesinfektion</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2105"><a href="https://beliu.myrdbx.io/anlagen/kuehlturmreinigung/" itemprop="url"><span itemprop="name">Verdunstungskühlanlage</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2104"><a href="https://beliu.myrdbx.io/anlagen/splitklimageraete-und-umluftkuehlgeraete/" itemprop="url"><span itemprop="name">Splitklimageräte &#038; Umluftkühlgeräte</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2103"><a href="https://beliu.myrdbx.io/anlagen/prozessabluft-und-entrauchungsanlagen/" itemprop="url"><span itemprop="name">Prozessabluft &#038; Entrauchungsanlagen</span></a></li>

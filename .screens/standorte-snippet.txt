@@ -1,0 +1,450 @@
+    const mapEl = document.getElementById('admin1_map');
+
+    function getLocationKey(stateId) {
+      if (!stateId) return null;
+      return STATE_TO_LOCATION[stateId] || stateId;
+    }
+
+    // Tek bir lokasyon kartý HTML'i
+    function renderLocationCard(data) {
+      let html = '<div class="state-card">';
+      html += '<h3>' + data.title + '</h3>';
+
+      // Adres + ikon
+      html += '<div class="state-detail-row">';
+      html +=   '<div class="state-detail-icon icon-location"></div>';
+      html +=   '<div class="state-detail-text">';
+      data.address.forEach(function (line) {
+        html += '<p>' + line + '</p> ';
+      });
+      html +=   '</div>';
+      html += '</div>';
+
+      // Telefon + ikon
+      html += '<div class="state-detail-row">';
+      html +=   '<div class="state-detail-icon icon-phone"></div>';
+      html +=   '<div class="state-detail-text"><p>' + data.phone + '</p> </div>';
+      html += '</div>';
+
+      // Mail + ikon
+      html += '<div class="state-detail-row">';
+      html +=   '<div class="state-detail-icon icon-mail"></div>';
+      html +=   '<div class="state-detail-text">';
+      html +=     '<p><a href="mailto:' + data.email + '">' + data.email + '</a></p> ';
+      html +=   '</div>';
+      html += '</div>';
+
+      html += '</div>'; // .state-card
+
+      return html;
+    }
+
+    // Detaylarý çiz
+    function renderDetails(stateId) {
+      // Alle Standorte (boþ value) › 8 lokasyonun hepsini listele
+      if (!stateId) {
+        let html = '';
+        STATES_WITH_INFO.forEach(function (sid) {
+          const locKey = getLocationKey(sid);
+          const data = locKey && LOCATIONS[locKey] ? LOCATIONS[locKey] : null;
+          if (data) {
+            html += renderLocationCard(data);
+          }
+        });
+
+        // Her ihtimale karþý hiçbir lokasyon yoksa fallback metni
+        if (!html) {
+          html = '<h3>' + defaultText.title + '</h3>';
+          defaultText.lines.forEach(function (line) {
+            html += '<p>' + line + '</p> ';
+          });
+        }
+
+        stateDetailsEl.innerHTML = html;
+        return;
+      }
+
+      // Tek eyalet seçimi
+      const locKey = getLocationKey(stateId);
+      const data = locKey && LOCATIONS[locKey] ? LOCATIONS[locKey] : null;
+
+      if (!data) {
+        let html = '<h3>' + defaultText.title + '</h3>';
+        defaultText.lines.forEach(function (line) {
+          html += '<p>' + line + '</p> ';
+        });
+        stateDetailsEl.innerHTML = html;
+        return;
+      }
+
+      stateDetailsEl.innerHTML = renderLocationCard(data);
+    }
+
+    // Harita path'i: sm_state_DEBW gibi class'tan bul
+    function setActiveState(stateId) {
+      if (!mapEl) {
+        renderDetails(stateId);
+        return;
+      }
+
+      // Eski aktifleri temizle
+      mapEl.querySelectorAll('.sm_state.is-active').forEach(function (el) {
+        el.classList.remove('is-active');
+      });
+
+      // Alle Standorte – haritada hiçbir eyalet seçili olmasýn
+      if (!stateId) {
+        renderDetails('');
+        return;
+      }
+
+      const selector = '.sm_state.sm_state_' + CSS.escape(stateId);
+      const target = mapEl.querySelector(selector);
+      if (target) {
+        target.classList.add('is-active');
+      }
+
+      renderDetails(stateId);
+    }
+
+    // class listesinden DE** kodunu çýkar
+    function extractStateIdFromElement(el) {
+      if (!el) return null;
+      const classAttr = el.getAttribute('class') || '';
+      const classes = classAttr.split(/\s+/);
+      for (let i = 0; i < classes.length; i++) {
+        const cls = classes[i];
+        if (cls.indexOf('sm_state_') === 0 || cls.indexOf('sm_label_') === 0) {
+          const parts = cls.split('_'); // sm_state_DEBW
+          return parts[2] || null;
+        }
+      }
+      return null;
+    }
+
+    // Bilgisi olan eyaletlere has-info class'ý ekle
+    function markStatesWithInfo() {
+      if (!mapEl) return;
+      STATES_WITH_INFO.forEach(function (stateId) {
+        const selector = '.sm_state.sm_state_' + CSS.escape(stateId);
+        mapEl.querySelectorAll(selector).forEach(function (el) {
+          el.classList.add('has-info');
+        });
+      });
+    }
+
+    markStatesWithInfo();
+
+    // Harita týklandýðýnda
+    if (mapEl) {
+      mapEl.addEventListener('click', function (e) {
+        let stateId = extractStateIdFromElement(e.target);
+        if (!stateId && e.target.parentNode) {
+          stateId = extractStateIdFromElement(e.target.parentNode);
+        }
+        if (!stateId) return;
+
+        // Bilgi olmayan eyaletler: hiçbir þey yapma
+        if (STATES_WITH_INFO.indexOf(stateId) === -1) {
+          return;
+        }
+
+        e.preventDefault();
+
+        if (selectEl) {
+          selectEl.value = stateId;
+        }
+
+        setActiveState(stateId);
+      });
+    }
+
+    // Select deðiþince
+    if (selectEl) {
+      selectEl.addEventListener('change', function () {
+        const val = this.value || '';
+        setActiveState(val);
+      });
+    }
+
+    // Ýlk yükleme – varsayýlan Alle Standorte
+    const initialState = ""; // Alle Standorte
+    if (selectEl) {
+      selectEl.value = initialState;
+    }
+    setActiveState(initialState);
+  });
+</script>
+
+</body>
+</html>
+</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_4 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_2_5 et_pb_column_5 vertikal-zentrieren  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">?</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>Firmensitz/ Niederlassung Baden-Württemberg</span></h4>
+						<div class="et_pb_blurb_description"><p><span>Am Hardtwald 6-8</span><br /><span>76275 Ettlingen</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module dsm_icon_list dsm_icon_list_0">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<ul class="dsm_icon_list_items dsm_icon_list_ltr_direction dsm_icon_list_layout_vertical"><li class="dsm_icon_list_child dsm_icon_list_child_0">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">07243 3699101</span>
+			</li><li class="dsm_icon_list_child dsm_icon_list_child_1">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">anfrage@igienair.com</span>
+			</li></ul>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_1">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="650" height="650" src="https://beliu.myrdbx.io/wp-content/uploads/2025/07/Deutschland.png" alt="" title="Deutschland" srcset="https://beliu.myrdbx.io/wp-content/uploads/2025/07/Deutschland.png 650w, https://beliu.myrdbx.io/wp-content/uploads/2025/07/Deutschland-300x300.png 300w, https://beliu.myrdbx.io/wp-content/uploads/2025/07/Deutschland-150x150.png 150w, https://beliu.myrdbx.io/wp-content/uploads/2025/07/Deutschland-480x480.png 480w" sizes="(max-width: 650px) 100vw, 650px" class="wp-image-4857" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_5 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_7 counter-row  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_7 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>Lorem Ipsum</h4></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_8 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 class="vc_custom_heading vc_do_custom_heading us_custom_8535c5f4">An acht Standorten sind wir für Sie<br />deutschlandweit tätig:</h2></div>
+			</div><div class="et_pb_module et_pb_code et_pb_code_3 et_animated  et_pb_text_align_center">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div class="gradient-line-center"></div>
+</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_6">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">?</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>Firmensitz/ Niederlassung Baden-Württemberg</span></h4>
+						<div class="et_pb_blurb_description"><p><span>Am Hardtwald 6-8</span><br /><span>76275 Ettlingen</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module dsm_icon_list dsm_icon_list_1">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<ul class="dsm_icon_list_items dsm_icon_list_ltr_direction dsm_icon_list_layout_vertical"><li class="dsm_icon_list_child dsm_icon_list_child_2">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">07243 3699101</span>
+			</li><li class="dsm_icon_list_child dsm_icon_list_child_3">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">anfrage@igienair.com</span>
+			</li></ul>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">?</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>Niederlassung Nordbayern</span></h4>
+						<div class="et_pb_blurb_description"><p><span>Schloßgasse 5c</span><br /><span>90522 Oberasbach</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module dsm_icon_list dsm_icon_list_2">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<ul class="dsm_icon_list_items dsm_icon_list_ltr_direction dsm_icon_list_layout_vertical"><li class="dsm_icon_list_child dsm_icon_list_child_4">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">0911 96649121</span>
+			</li><li class="dsm_icon_list_child dsm_icon_list_child_5">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">anfrage@igienair.com</span>
+			</li></ul>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">?</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>Niederlassung Südbayern</span></h4>
+						<div class="et_pb_blurb_description"><p><span>Erfurter Str. 4</span><br /><span>85386 Eching</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module dsm_icon_list dsm_icon_list_3">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<ul class="dsm_icon_list_items dsm_icon_list_ltr_direction dsm_icon_list_layout_vertical"><li class="dsm_icon_list_child dsm_icon_list_child_6">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">089 95459149</span>
+			</li><li class="dsm_icon_list_child dsm_icon_list_child_7">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">anfrage@igienair.com</span>
+			</li></ul>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_4  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">?</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>Niederlassung Rhein-Main</span></h4>
+						<div class="et_pb_blurb_description"><p><span>Feldbergstr.14</span><br /><span>65527 Niedernhausen</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module dsm_icon_list dsm_icon_list_4">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<ul class="dsm_icon_list_items dsm_icon_list_ltr_direction dsm_icon_list_layout_vertical"><li class="dsm_icon_list_child dsm_icon_list_child_8">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">06127 7084101</span>
+			</li><li class="dsm_icon_list_child dsm_icon_list_child_9">
+				
+				
+				
+				
+				<span class="dsm_icon_list_wrapper"><span class="dsm_icon_list_icon">?</span></span><span class="dsm_icon_list_text">anfrage@igienair.com</span>
+			</li></ul>
+				</div>
+			</div>
+			</div>
+				
+				

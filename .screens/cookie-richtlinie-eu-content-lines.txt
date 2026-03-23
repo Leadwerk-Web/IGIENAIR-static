@@ -1,0 +1,261 @@
+				<div class="et_pb_module et_pb_text et_pb_text_0 et_animated  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1><span>Cookie-Richtlinie (EU)</span></h1></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div id="cmplz-document" class="cmplz-document cookie-statement cmplz-document-eu"><p><i>Diese Cookie-Richtlinie wurde zuletzt am 23. Juni 2025 aktualisiert und gilt für Bürger und Personen mit ständigem Wohnsitz im Europäischen Wirtschaftsraum und der Schweiz.</i><br /></p> <h2>1. Einführung</h2><p>Unsere Website <a href="https://igienair.de">https://igienair.de</a> (nachfolgend als „Website“ bezeichnet) verwendet Cookies und ähnliche Technologien (der Einfachheit halber werden alle diese unter dem Begriff „Cookies“ zusammengefasst). Cookies werden außerdem von uns beauftragten Drittparteien platziert. In dem unten stehendem Dokument informieren wir Sie über die Verwendung von Cookies auf unserer Website.</p> <h2>2. Was sind Cookies?</h2><p>Ein Cookie ist eine kleine einfache Datei, die zusammen mit Seiten dieser Website gesendet und von Ihrem Browser auf der Festplatte Ihres Computers oder eines anderen Geräts gespeichert wird. Die darin gespeicherten Informationen können bei einem späteren Besuch an unsere Server oder an die Server der betreffenden Dritten zurückgegeben werden.</p> <h2>3. Was sind Skripte?</h2><p>Ein Skript ist ein Programmcode, mit dem unsere Website ordnungsgemäß und interaktiv funktioniert. Dieser Code wird auf unserem Server oder auf Ihrem Gerät ausgeführt.</p> <h2>4. Was ist ein Web-Beacon?</h2><p>Ein Web-Beacon (oder ein Pixel-Tag) ist ein kleines, unsichtbares Text- oder Bildstück auf einer Website, das zum Überwachen des Datenverkehrs auf einer Website verwendet wird. Um dies zu tun, werden verschiedene Daten über Sie mit Web-Beacons gespeichert.</p> <h2>5. Cookies</h2><p class="cmplz-subtitle">5.1 Technische oder funktionale Cookies</p> <p>Einige Cookies stellen sicher, dass bestimmte Teile der Website ordnungsgemäß funktionieren und Ihre Benutzereinstellungen weiterhin in Erinnerung bleiben. Durch das Setzen funktionaler Cookies erleichtern wir Ihnen den Besuch unserer Website. Auf diese Weise müssen Sie beim Besuch unserer Website nicht wiederholt dieselben Informationen eingeben, so bleiben Artikel beispielsweise in Ihrem Warenkorb, bis Sie bezahlt haben. Wir können diese Cookies ohne Ihre Einwilligung platzieren.</p> <p class="cmplz-subtitle">5.2 Statistik-Cookies</p> <p>Wir verwenden Statistik-Cookies, um die Website-Erfahrung für unsere Benutzer zu optimieren. Mit diesen Statistik-Cookies erhalten wir Einblicke in die Nutzung unserer Website.&nbsp;Wir bitten Sie um Ihre Erlaubnis, Cookies für statistische Zwecke zu setzen.</p> <p class="cmplz-subtitle">5.3 Marketing- / Tracking-Cookies</p> <p>Marketing- / Tracking-Cookies sind Cookies oder eine andere Form der lokalen Speicherung, die zur Erstellung von Benutzerprofilen verwendet werden, um Werbung anzuzeigen oder den Benutzer auf dieser Website oder über mehrere Websites hinweg für ähnliche Marketingzwecke zu verfolgen.</p> <h2>6. Platzierte Cookies</h2><div id="cmplz-cookies-overview"><details class="cmplz-dropdown cmplz-service-desc cmplz-dropdown-cookiepolicy ">
+	<summary class="cmplz-service-header"><div>
+		<h3>WordPress</h3>
+		<p>Funktional</p> 
+		<label for="cmplz_service_wordpress" class="cmplz_consent_per_service_label"><span class="screen-reader-text">Consent to service wordpress</span></label>
+		<input type="checkbox" id="cmplz_service_wordpress" class="cmplz-accept-service cmplz-hidden" data-service="wordpress" data-category="functional"></div>
+	</summary>
+	<div class="cmplz-service-description">
+		<h4>Verwendung</h4>
+		<p>Wir verwenden den WordPress-Service für die Website-Entwicklung. <a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/service/wordpress/">Weiterlesen</a></p> 
+	</div>
+	<div class="cmplz-sharing-data">
+		<h4>Gemeinsame Nutzung von Daten</h4>
+		<p>Diese Daten werden nicht an Dritte weitergegeben.</p> 
+	</div>
+	<div class="cookies-per-purpose">
+    <div class="purpose"><h4>Funktional</h4></div>
+    <div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/wordpress/wpemojisettingssupports/">wpEmojiSettingsSupports</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">Sitzung</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speichere Browser-Angaben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/wordpress/wordpress_test_cookie/">wordpress_test_cookie</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">Sitzung</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">überprüft, ob Cookies gesetzt werden können</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/wordpress/wp-settings/">wp-settings-*</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">beständig</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speicher die Benutzervorlieben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/wordpress/wp-settings-time/">wp-settings-time-*</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">1 Jahr</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speicher die Benutzervorlieben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/wordpress/wordpress_logged_in_/">wordpress_logged_in_*</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">beständig</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Benutzer eingeloggt lassen</div>
+
+</div>
+</details>
+<details class="cmplz-dropdown cmplz-service-desc cmplz-dropdown-cookiepolicy " open="">
+	<summary class="cmplz-service-header"><div>
+		<h3>Complianz</h3>
+		<p>Funktional</p> 
+		<label for="cmplz_service_complianz" class="cmplz_consent_per_service_label"><span class="screen-reader-text">Consent to service complianz</span></label>
+		<input type="checkbox" id="cmplz_service_complianz" class="cmplz-accept-service cmplz-hidden" data-service="complianz" data-category="functional"></div>
+	</summary>
+	<div class="cmplz-service-description">
+		<h4>Verwendung</h4>
+		<p>Wir verwenden den Complianz-Service für die Verwaltung der Cookie-Einwilligung. <a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/service/complianz/">Weiterlesen</a></p> 
+	</div>
+	<div class="cmplz-sharing-data">
+		<h4>Gemeinsame Nutzung von Daten</h4>
+		<p>Diese Daten werden nicht an Dritte weitergegeben.&nbsp;Weitere Informationen finden Sie in den <a target="_blank" rel="noopener noreferrer" href="https://complianz.io/legal/privacy-statement/">Complianz Datenschutzrichtlinien</a>.</p> 
+	</div>
+	<div class="cookies-per-purpose">
+    <div class="purpose"><h4>Funktional</h4></div>
+    <div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_consented_services/">cmplz_consented_services</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speichere Cookie-Einwilligungsvorgaben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_policy_id/">cmplz_policy_id</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Erfasse die ID für die angenommene Cookie-Richtlinie</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_marketing/">cmplz_marketing</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speichere Cookie-Einwilligungsvorgaben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_statistics/">cmplz_statistics</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speichere Cookie-Einwilligungsvorgaben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_preferences/">cmplz_preferences</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speichere Cookie-Einwilligungsvorgaben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_functional/">cmplz_functional</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Speichere Cookie-Einwilligungsvorgaben</div>
+<div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/complianz/cmplz_banner-status/">cmplz_banner-status</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">365 Tage</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Store if the cookie banner has been dismissed</div>
+
+</div>
+</details>
+<details class="cmplz-dropdown cmplz-service-desc cmplz-dropdown-cookiepolicy " open="">
+	<summary class="cmplz-service-header"><div>
+		<h3>Google Adsense</h3>
+		<p>Marketing</p> 
+		<label for="cmplz_service_google-adsense" class="cmplz_consent_per_service_label"><span class="screen-reader-text">Consent to service google-adsense</span></label>
+		<input type="checkbox" id="cmplz_service_google-adsense" class="cmplz-accept-service cmplz-hidden" data-service="google-adsense" data-category="functional"></div>
+	</summary>
+	<div class="cmplz-service-description">
+		<h4>Verwendung</h4>
+		<p>Wir verwenden den Google Adsense-Service für die Werbung anzeigen. <a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/service/google-adsense/">Weiterlesen</a></p> 
+	</div>
+	<div class="cmplz-sharing-data">
+		<h4>Gemeinsame Nutzung von Daten</h4>
+		<p>Weitere Informationen finden Sie in den <a target="_blank" rel="noopener noreferrer nofollow" href="https://business.safety.google/privacy/">Google Adsense Datenschutzrichtlinien</a>.</p> 
+	</div>
+	<div class="cookies-per-purpose">
+    <div class="purpose"><h4>Marketing</h4></div>
+    <div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name"><a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/cookie/google-adsense/_gcl_au/">_gcl_au</a></div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention">beständig</div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function">Konversionen speichern und verfolgen</div>
+
+</div><div class="cookies-per-purpose">
+    <div class="purpose"><h4>Cookies die noch untersucht werden</h4></div>
+    <div class="name-header">
+	<h5>Name</h5>
+</div>
+<div class="name">google_adsense_settings</div>
+<div class="retention-header">
+	<h5>Gültig bis</h5>
+</div>
+<div class="retention"></div>
+<div class="function-header">
+	<h5>Funktion</h5>
+</div>
+<div class="function"></div>

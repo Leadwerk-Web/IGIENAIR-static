@@ -1,0 +1,7 @@
+127.0.0.1 - - [21/Mar/2026 11:29:10] "GET /lebensmittel.html HTTP/1.1" 200 -
+127.0.0.1 - - [21/Mar/2026 11:29:15] "GET /lebensmittel.html HTTP/1.1" 200 -
+127.0.0.1 - - [21/Mar/2026 11:29:15] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [21/Mar/2026 11:29:15] "GET /script.js HTTP/1.1" 304 -
+127.0.0.1 - - [21/Mar/2026 11:29:19] "GET /branchen.html HTTP/1.1" 200 -
+127.0.0.1 - - [21/Mar/2026 11:29:21] "GET /lebensmittel.html HTTP/1.1" 304 -
+127.0.0.1 - - [21/Mar/2026 11:30:12] "GET /lebensmittel.html HTTP/1.1" 304 -
