@@ -1,9 +1,0 @@
-127.0.0.1 - - [21/Mar/2026 11:10:13] "GET /kanaluntersuchung.html HTTP/1.1" 304 -
-127.0.0.1 - - [21/Mar/2026 11:10:13] "GET /styles.css HTTP/1.1" 200 -
-127.0.0.1 - - [21/Mar/2026 11:10:13] "GET /script.js HTTP/1.1" 304 -
-127.0.0.1 - - [21/Mar/2026 11:10:14] "GET /kanaluntersuchung.html HTTP/1.1" 200 -
-127.0.0.1 - - [21/Mar/2026 11:10:24] "GET /inspektionundgutachten.html HTTP/1.1" 200 -
-127.0.0.1 - - [21/Mar/2026 11:10:24] "GET /styles.css HTTP/1.1" 304 -
-127.0.0.1 - - [21/Mar/2026 11:10:24] "GET /assets/images/services-card-1.png HTTP/1.1" 200 -
-127.0.0.1 - - [21/Mar/2026 11:10:25] "GET /inspektionundgutachten.html HTTP/1.1" 200 -
-127.0.0.1 - - [21/Mar/2026 11:10:30] "GET /kanaluntersuchung.html HTTP/1.1" 304 -
