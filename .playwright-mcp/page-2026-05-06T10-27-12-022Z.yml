@@ -1,0 +1,523 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Igienair Startseite" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Igienair" [ref=e5]
+      - text: ▾ ▾ ▾ ▾ ▾ ▾ ▾
+      - button [ref=e6]
+      - link "Angebot anfordern" [ref=e10] [cursor=pointer]:
+        - /url: index.html#angebot
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: unternehmen-2.html
+            - text: Unternehmen
+          - link:
+            - /url: zertifizierungen.html
+            - text: Zertifizierungen
+          - link:
+            - /url: nachhaltigkeit.html
+            - text: Nachhaltigkeit
+          - link:
+            - /url: sicherheit.html
+            - text: Sicherheit
+          - link:
+            - /url: qualitaet.html
+            - text: Qualität
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+        - generic:
+          - link:
+            - /url: leistungen-2.html
+            - text: Leistungen
+          - link:
+            - /url: inspektionundgutachten.html
+            - text: Inspektion & Gutachten
+          - link:
+            - /url: reinigung-desinfektion.html
+            - text: Reinigung & Desinfektion
+          - link:
+            - /url: instandsetzung-sanierung.html
+            - text: Instandsetzung & Sanierung
+          - link:
+            - /url: energetische-inspektion-geg-2020.html
+            - text: Energetische Inspektion
+        - generic:
+          - link:
+            - /url: normen-2.html
+            - text: Normen
+          - link:
+            - /url: vdi-6022.html
+            - text: VDI 6022
+          - link:
+            - /url: vdi-2047.html
+            - text: VDI 2047-2
+          - link:
+            - /url: vdi-2052-bgr-111.html
+            - text: VDI 2052 & BGR 111
+          - link:
+            - /url: din-en-15780.html
+            - text: DIN EN 15780
+          - button: DIN EN 14175
+        - generic:
+          - link:
+            - /url: anlagen-2.html
+            - text: Anlagen
+          - link:
+            - /url: lueftungsreinigung.html
+            - text: Lüftungsanlagen
+          - link:
+            - /url: rlt-hygiene.html
+            - text: RLT-Anlagen
+          - link:
+            - /url: luftkanalreinigung.html
+            - text: Zu- & Abluftkanäle
+          - link:
+            - /url: raumluftdesinfektion.html
+            - text: Raumluftdesinfektion
+          - link:
+            - /url: kuehlturmreinigung.html
+            - text: Verdunstungskühlanlage
+          - link:
+            - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - text: Splitklimageräte & Umluftkühlgeräte
+          - link:
+            - /url: prozessabluft-und-entrauchungsanlagen.html
+            - text: Prozessabluft & Entrauchungsanlagen
+          - link:
+            - /url: kuechenabluftsysteme.html
+            - text: Küchenabluftsysteme
+          - link:
+            - /url: laborabzuege.html
+            - text: Laborabzüge & Digestorien
+          - link:
+            - /url: verdampfer-und-kondensatoren.html
+            - text: Verdampfer & Kondensatoren
+          - link:
+            - /url: reinraumqualifizierung.html
+            - text: Reinräume
+          - link:
+            - /url: op-raum-pruefung.html
+            - text: OP-Räume
+          - link:
+            - /url: kuehlregale.html
+            - text: Kühlregale
+          - link:
+            - /url: textilschlaeuche.html
+            - text: Textilschläuche
+          - link:
+            - /url: rechenzentrum.html
+            - text: Rechenzentrum
+          - link:
+            - /url: filterintegritaetstest.html
+            - text: Filterintegritätstest
+          - link:
+            - /url: lecktest-schwebstofffilter.html
+            - text: Lecktest Schwebstofffilter
+        - generic:
+          - link:
+            - /url: kunden-2.html
+            - text: Kunden
+          - link:
+            - /url: branchen.html
+            - text: Branchen
+          - link:
+            - /url: referenzen.html
+            - text: Referenzen
+          - button: Extranet
+        - generic:
+          - link:
+            - /url: jobs-2.html
+            - text: Jobs
+          - button: Mitarbeiter technische Reinigung
+          - button: Teamleiter technische Hygienereinigung
+        - generic:
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+          - button: Baden-Württemberg
+          - button: Nordbayern
+          - button: Südbayern
+          - button: Rhein-Main
+          - button: Nordrhein-Westfalen
+          - button: Nord
+          - button: Bodensee
+          - button: Berlin
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Blindtext
+      - heading "Standorte" [level=1] [ref=e15]
+    - generic [ref=e17]:
+      - article [ref=e18]:
+        - paragraph [ref=e19]: Lorem Ipsum
+        - heading "Unsere Standorte" [level=2] [ref=e20]
+        - paragraph [ref=e21]: Wir sind Ihr Dienstleister rund um alle Aspekte der technischen Hygiene. In einem persönlichen Gespräch erörtern wir Ihre Herausforderungen und Ihren Bedarf. Wir sorgen für Rechtssicherheit und die Einhaltung von gesetzlichen Regelungen. Eine saubere und gesunde Raumluft ist das Ergebnis unsere Arbeit. Sprechen Sie uns direkt an, wir freuen uns auf Ihren Anruf.
+        - button "Button" [ref=e22] [cursor=pointer]
+      - figure [ref=e23]:
+        - img "Mitarbeiterin im Schutzanzug" [ref=e24]
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Lorem Ipsum
+        - heading "An acht Standorten sind wir für Sie deutschlandweit tätig:" [level=2] [ref=e29]:
+          - text: An acht Standorten sind wir für Sie
+          - text: "deutschlandweit tätig:"
+      - generic [ref=e30]:
+        - complementary [ref=e31]:
+          - generic [ref=e32]: Alle
+          - combobox "Alle" [ref=e33]:
+            - option "Alle Standorte" [selected]
+            - option "Baden-Württemberg"
+            - option "Bayern – Nordbayern (Oberasbach)"
+            - option "Niedersachsen – Nordbayern (Winsen)"
+            - option "Sachsen – Südbayern (Eching)"
+            - option "Sachsen-Anhalt – Südbayern (Tuttlingen)"
+            - option "Nordrhein-Westfalen"
+            - option "Hessen – Rhein-Main (Niedernhausen)"
+            - option "Berlin – Rhein-Main (Berlin)"
+          - generic [ref=e34]:
+            - article [ref=e35]:
+              - heading "Firmensitz / Niederlassung Baden-Württemberg" [level=3] [ref=e36]
+              - generic [ref=e37]:
+                - generic [ref=e38]:
+                  - generic [ref=e39]: ⌖
+                  - paragraph [ref=e40]:
+                    - text: Am Hardtwald 6-8
+                    - text: 76275 Ettlingen
+                - generic [ref=e41]:
+                  - generic [ref=e42]: ✆
+                  - paragraph [ref=e43]: 07243 3699101
+                - generic [ref=e44]:
+                  - generic [ref=e45]: ✉
+                  - paragraph [ref=e46]:
+                    - link "anfrage@igienair.com" [ref=e47] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e48]:
+              - heading "Niederlassung Nordbayern" [level=3] [ref=e49]
+              - generic [ref=e50]:
+                - generic [ref=e51]:
+                  - generic [ref=e52]: ⌖
+                  - paragraph [ref=e53]:
+                    - text: Schloßgasse 5c
+                    - text: 90522 Oberasbach
+                - generic [ref=e54]:
+                  - generic [ref=e55]: ✆
+                  - paragraph [ref=e56]: 0911 96649121
+                - generic [ref=e57]:
+                  - generic [ref=e58]: ✉
+                  - paragraph [ref=e59]:
+                    - link "anfrage@igienair.com" [ref=e60] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e61]:
+              - heading "Niederlassung Nordbayern" [level=3] [ref=e62]
+              - generic [ref=e63]:
+                - generic [ref=e64]:
+                  - generic [ref=e65]: ⌖
+                  - paragraph [ref=e66]:
+                    - text: Opelstr. 10
+                    - text: 21423 Winsen (Luhe)
+                - generic [ref=e67]:
+                  - generic [ref=e68]: ✆
+                  - paragraph [ref=e69]: 04171 5468650
+                - generic [ref=e70]:
+                  - generic [ref=e71]: ✉
+                  - paragraph [ref=e72]:
+                    - link "anfrage@igienair.com" [ref=e73] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e74]:
+              - heading "Niederlassung Nordrhein-Westfalen" [level=3] [ref=e75]
+              - generic [ref=e76]:
+                - generic [ref=e77]:
+                  - generic [ref=e78]: ⌖
+                  - paragraph [ref=e79]:
+                    - text: Am Beckers Busch 1
+                    - text: 42799 Leichlingen
+                - generic [ref=e80]:
+                  - generic [ref=e81]: ✆
+                  - paragraph [ref=e82]: 02173 2653810
+                - generic [ref=e83]:
+                  - generic [ref=e84]: ✉
+                  - paragraph [ref=e85]:
+                    - link "anfrage@igienair.com" [ref=e86] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e87]:
+              - heading "Niederlassung Rhein-Main" [level=3] [ref=e88]
+              - generic [ref=e89]:
+                - generic [ref=e90]:
+                  - generic [ref=e91]: ⌖
+                  - paragraph [ref=e92]:
+                    - text: Feldbergstr. 14
+                    - text: 65527 Niedernhausen
+                - generic [ref=e93]:
+                  - generic [ref=e94]: ✆
+                  - paragraph [ref=e95]: 06127 7084101
+                - generic [ref=e96]:
+                  - generic [ref=e97]: ✉
+                  - paragraph [ref=e98]:
+                    - link "anfrage@igienair.com" [ref=e99] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e100]:
+              - heading "Niederlassung Rhein-Main" [level=3] [ref=e101]
+              - generic [ref=e102]:
+                - generic [ref=e103]:
+                  - generic [ref=e104]: ⌖
+                  - paragraph [ref=e105]:
+                    - text: Paradiesstraße 210–218
+                    - text: 12526 Berlin
+                - generic [ref=e106]:
+                  - generic [ref=e107]: ✆
+                  - paragraph [ref=e108]: 030 340 410120
+                - generic [ref=e109]:
+                  - generic [ref=e110]: ✉
+                  - paragraph [ref=e111]:
+                    - link "anfrage@igienair.com" [ref=e112] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e113]:
+              - heading "Niederlassung Südbayern" [level=3] [ref=e114]
+              - generic [ref=e115]:
+                - generic [ref=e116]:
+                  - generic [ref=e117]: ⌖
+                  - paragraph [ref=e118]:
+                    - text: Erfurter Str. 4
+                    - text: 85386 Eching
+                - generic [ref=e119]:
+                  - generic [ref=e120]: ✆
+                  - paragraph [ref=e121]: 089 95459149
+                - generic [ref=e122]:
+                  - generic [ref=e123]: ✉
+                  - paragraph [ref=e124]:
+                    - link "anfrage@igienair.com" [ref=e125] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+            - article [ref=e126]:
+              - heading "Niederlassung Südbayern" [level=3] [ref=e127]
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - generic [ref=e130]: ⌖
+                  - paragraph [ref=e131]:
+                    - text: Honbergstr. 23
+                    - text: 78532 Tuttlingen
+                - generic [ref=e132]:
+                  - generic [ref=e133]: ✆
+                  - paragraph [ref=e134]: 07461 9134000
+                - generic [ref=e135]:
+                  - generic [ref=e136]: ✉
+                  - paragraph [ref=e137]:
+                    - link "anfrage@igienair.com" [ref=e138] [cursor=pointer]:
+                      - /url: mailto:anfrage@igienair.com
+        - figure [ref=e139]:
+          - generic "Detaillierte Deutschlandkarte mit acht Standortbereichen" [ref=e141]
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - paragraph [ref=e145]: Lorem Ipsum
+        - heading "An acht Standorten sind wir für Sie deutschlandweit tätig:" [level=2] [ref=e146]:
+          - text: An acht Standorten sind wir für Sie
+          - text: "deutschlandweit tätig:"
+      - generic [ref=e147]:
+        - article [ref=e148]:
+          - heading "Firmensitz/ Niederlassung Baden-Württemberg" [level=3] [ref=e149]
+          - paragraph [ref=e150]:
+            - text: Am Hardtwald 6-8
+            - text: 76275 Ettlingen
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - generic [ref=e153]: ✆
+              - generic [ref=e154]: 07243 3699101
+            - listitem [ref=e155]:
+              - generic [ref=e156]: ✉
+              - generic [ref=e157]: anfrage@igienair.com
+        - article [ref=e158]:
+          - heading "Niederlassung Nordbayern" [level=3] [ref=e159]
+          - paragraph [ref=e160]:
+            - text: Schloßgasse 5c
+            - text: 90522 Oberasbach
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - generic [ref=e163]: ✆
+              - generic [ref=e164]: 0911 96649121
+            - listitem [ref=e165]:
+              - generic [ref=e166]: ✉
+              - generic [ref=e167]: anfrage@igienair.com
+        - article [ref=e168]:
+          - heading "Niederlassung Südbayern" [level=3] [ref=e169]
+          - paragraph [ref=e170]:
+            - text: Erfurter Str. 4
+            - text: 85386 Eching
+          - list [ref=e171]:
+            - listitem [ref=e172]:
+              - generic [ref=e173]: ✆
+              - generic [ref=e174]: 089 95459149
+            - listitem [ref=e175]:
+              - generic [ref=e176]: ✉
+              - generic [ref=e177]: anfrage@igienair.com
+        - article [ref=e178]:
+          - heading "Niederlassung Rhein-Main" [level=3] [ref=e179]
+          - paragraph [ref=e180]:
+            - text: Feldbergstr.14
+            - text: 65527 Niedernhausen
+          - list [ref=e181]:
+            - listitem [ref=e182]:
+              - generic [ref=e183]: ✆
+              - generic [ref=e184]: 06127 7084101
+            - listitem [ref=e185]:
+              - generic [ref=e186]: ✉
+              - generic [ref=e187]: anfrage@igienair.com
+        - article [ref=e188]:
+          - heading "Niederlassung Nordrhein-Westfalen" [level=3] [ref=e189]
+          - paragraph [ref=e190]:
+            - text: Am Beckers Busch 1
+            - text: 42799 Leichlingen
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - generic [ref=e193]: ✆
+              - generic [ref=e194]: 02173 2653810
+            - listitem [ref=e195]:
+              - generic [ref=e196]: ✉
+              - generic [ref=e197]: anfrage@igienair.com
+        - article [ref=e198]:
+          - heading "Niederlassung Nordbayern" [level=3] [ref=e199]
+          - paragraph [ref=e200]:
+            - text: Opelstr. 10
+            - text: 21423 Winsen (Luhe)
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - generic [ref=e203]: ✆
+              - generic [ref=e204]: 04171 5468650
+            - listitem [ref=e205]:
+              - generic [ref=e206]: ✉
+              - generic [ref=e207]: anfrage@igienair.com
+        - article [ref=e208]:
+          - heading "Niederlassung Südbayern" [level=3] [ref=e209]
+          - paragraph [ref=e210]:
+            - text: Honbergstr. 23
+            - text: 78532 Tuttlingen
+          - list [ref=e211]:
+            - listitem [ref=e212]:
+              - generic [ref=e213]: ✆
+              - generic [ref=e214]: 07461 9134000
+            - listitem [ref=e215]:
+              - generic [ref=e216]: ✉
+              - generic [ref=e217]: anfrage@igienair.com
+        - article [ref=e218]:
+          - heading "Niederlassung Rhein-Main" [level=3] [ref=e219]
+          - paragraph [ref=e220]:
+            - text: Paradiesstraße 210 – 218
+            - text: 12526 Berlin
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - generic [ref=e223]: ✆
+              - generic [ref=e224]: 030 340 410120
+            - listitem [ref=e225]:
+              - generic [ref=e226]: ✉
+              - generic [ref=e227]: anfrage@igienair.com
+    - article [ref=e230]:
+      - paragraph [ref=e231]: Lorem Ipsum
+      - heading "Anschrift Hauptsitz" [level=2] [ref=e232]
+      - paragraph [ref=e233]:
+        - text: IGIENAIR GmbH
+        - text: Am Hardtwald 6-8
+        - text: 76275 Ettlingen
+      - paragraph [ref=e234]:
+        - text: "Telefon:"
+        - link "+49 (0) 7243 3699101" [ref=e235] [cursor=pointer]:
+          - /url: tel:+4972433699101
+        - text: "| Fax : +49 (0) 7243 3694 943"
+      - paragraph [ref=e236]:
+        - text: "E-Mail:"
+        - link "kontakt@igienair.com" [ref=e237] [cursor=pointer]:
+          - /url: mailto:kontakt@igienair.com
+        - text: "| Internet:"
+        - link "www.igienair.de" [ref=e238] [cursor=pointer]:
+          - /url: http://www.igienair.de/
+      - button "Angebot anfordern" [ref=e239] [cursor=pointer]
+  - contentinfo [ref=e240]:
+    - generic [ref=e241]:
+      - generic [ref=e242]:
+        - img "Igienair" [ref=e243]
+        - paragraph [ref=e244]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - generic [ref=e245]:
+        - heading "MENÜ" [level=2] [ref=e246]
+        - list [ref=e247]:
+          - listitem [ref=e248]:
+            - link "Unternehmen 3" [ref=e249] [cursor=pointer]:
+              - /url: unternehmen-2.html
+          - listitem [ref=e250]:
+            - link "Leistungen 3" [ref=e251] [cursor=pointer]:
+              - /url: leistungen-2.html
+          - listitem [ref=e252]:
+            - link "Normen 3" [ref=e253] [cursor=pointer]:
+              - /url: normen-2.html
+          - listitem [ref=e254]:
+            - link "Anlagen 3" [ref=e255] [cursor=pointer]:
+              - /url: anlagen-2.html
+          - listitem [ref=e256]:
+            - link "Kunden 3" [ref=e257] [cursor=pointer]:
+              - /url: kunden-2.html
+          - listitem [ref=e258]:
+            - link "Jobs 3" [ref=e259] [cursor=pointer]:
+              - /url: jobs-2.html
+          - listitem [ref=e260]:
+            - link "Standorte 3" [ref=e261] [cursor=pointer]:
+              - /url: standorte.html
+      - generic [ref=e262]:
+        - heading "STANDORTE" [level=2] [ref=e263]
+        - list [ref=e264]:
+          - listitem [ref=e265]:
+            - button "Baden-Württemberg" [ref=e266] [cursor=pointer]
+          - listitem [ref=e267]:
+            - button "Nordbayern" [ref=e268] [cursor=pointer]
+          - listitem [ref=e269]:
+            - button "Südbayern" [ref=e270] [cursor=pointer]
+          - listitem [ref=e271]:
+            - button "Rhein-Main" [ref=e272] [cursor=pointer]
+          - listitem [ref=e273]:
+            - button "Nordrhein-Westfalen" [ref=e274] [cursor=pointer]
+          - listitem [ref=e275]:
+            - button "Nord" [ref=e276] [cursor=pointer]
+          - listitem [ref=e277]:
+            - button "Bodensee" [ref=e278] [cursor=pointer]
+          - listitem [ref=e279]:
+            - button "Berlin" [ref=e280] [cursor=pointer]
+      - generic [ref=e281]:
+        - heading "KONTAKT" [level=2] [ref=e282]
+        - generic [ref=e283]:
+          - generic [ref=e284]: ●
+          - generic [ref=e285]:
+            - strong [ref=e286]: IGIENAIR GmbH
+            - paragraph [ref=e287]:
+              - text: Am Hardtwald 6-8
+              - text: 76275 Ettlingen
+        - generic [ref=e288]:
+          - generic [ref=e289]: ●
+          - link "+49 (0) 7243 3699101" [ref=e291] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e292]:
+          - generic [ref=e293]: ●
+          - link "+49 (0) 7243 3694 943" [ref=e295] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e296]:
+          - generic [ref=e297]: ●
+          - link "kontakt@igienair.com" [ref=e299] [cursor=pointer]:
+            - /url: "#!"
+    - generic [ref=e301]:
+      - generic [ref=e302]: © IGIENAIR 2025
+      - generic [ref=e303]:
+        - link "AGB" [ref=e304] [cursor=pointer]:
+          - /url: agb.html
+        - link "Datenschutz" [ref=e305] [cursor=pointer]:
+          - /url: datenschutz.html
+        - link "Impressum" [ref=e306] [cursor=pointer]:
+          - /url: impressum.html
+        - link "Cookie-Richtlinie (EU)" [ref=e307] [cursor=pointer]:
+          - /url: cookie-richtlinie-eu.html
+  - navigation "Schnellzugriff mobil" [ref=e308]:
+    - link "Kontakt" [ref=e309] [cursor=pointer]:
+      - /url: "#footer-contact"
+      - img [ref=e310]
+    - link "Angebot" [ref=e312] [cursor=pointer]:
+      - /url: index.html#angebot
+      - img [ref=e313]
+    - link "Termin" [ref=e315] [cursor=pointer]:
+      - /url: "#locations-contact"
+      - img [ref=e316]

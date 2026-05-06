@@ -1,0 +1,449 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Igienair Startseite" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Igienair" [ref=e5]
+      - navigation "Hauptnavigation" [ref=e6]:
+        - generic [ref=e7]:
+          - link "Unternehmen▾" [ref=e8] [cursor=pointer]:
+            - /url: unternehmen-2.html
+          - generic:
+            - link "Zertifizierungen":
+              - /url: zertifizierungen.html
+            - link "Nachhaltigkeit":
+              - /url: nachhaltigkeit.html
+            - link "Sicherheit":
+              - /url: sicherheit.html
+            - link "Qualität":
+              - /url: qualitaet.html
+            - link "Umweltschutz":
+              - /url: umweltschutz.html
+            - link "Standorte":
+              - /url: standorte.html
+        - generic [ref=e9]:
+          - link "Leistungen▾" [ref=e10] [cursor=pointer]:
+            - /url: leistungen-2.html
+          - generic:
+            - link "Inspektion & Gutachten":
+              - /url: inspektionundgutachten.html
+            - link "Reinigung & Desinfektion":
+              - /url: reinigung-desinfektion.html
+            - link "Instandsetzung & Sanierung":
+              - /url: instandsetzung-sanierung.html
+            - link "Energetische Inspektion":
+              - /url: energetische-inspektion-geg-2020.html
+        - generic [ref=e11]:
+          - link "Normen▾" [ref=e12] [cursor=pointer]:
+            - /url: normen-2.html
+          - generic:
+            - link "VDI 6022":
+              - /url: vdi-6022.html
+            - link "VDI 2047-2":
+              - /url: vdi-2047.html
+            - link "VDI 2052 & BGR 111":
+              - /url: vdi-2052-bgr-111.html
+            - link "DIN EN 15780":
+              - /url: din-en-15780.html
+            - button "DIN EN 14175"
+        - generic [ref=e13]:
+          - link "Anlagen▾" [ref=e14] [cursor=pointer]:
+            - /url: anlagen-2.html
+          - generic:
+            - link "Lüftungsanlagen":
+              - /url: lueftungsreinigung.html
+            - link "RLT-Anlagen":
+              - /url: rlt-hygiene.html
+            - link "Zu- & Abluftkanäle":
+              - /url: luftkanalreinigung.html
+            - link "Raumluftdesinfektion":
+              - /url: raumluftdesinfektion.html
+            - link "Verdunstungskühlanlage":
+              - /url: kuehlturmreinigung.html
+            - link "Splitklimageräte & Umluftkühlgeräte":
+              - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - link "Prozessabluft & Entrauchungsanlagen":
+              - /url: prozessabluft-und-entrauchungsanlagen.html
+            - link "Küchenabluftsysteme":
+              - /url: kuechenabluftsysteme.html
+            - link "Laborabzüge & Digestorien":
+              - /url: laborabzuege.html
+            - link "Verdampfer & Kondensatoren":
+              - /url: verdampfer-und-kondensatoren.html
+            - link "Reinräume":
+              - /url: reinraumqualifizierung.html
+            - link "OP-Räume":
+              - /url: op-raum-pruefung.html
+            - link "Kühlregale":
+              - /url: kuehlregale.html
+            - link "Textilschläuche":
+              - /url: textilschlaeuche.html
+            - link "Rechenzentrum":
+              - /url: rechenzentrum.html
+            - link "Filterintegritätstest":
+              - /url: filterintegritaetstest.html
+            - link "Lecktest Schwebstofffilter":
+              - /url: lecktest-schwebstofffilter.html
+        - generic [ref=e15]:
+          - link "Kunden▾" [ref=e16] [cursor=pointer]:
+            - /url: kunden-2.html
+          - generic:
+            - link "Branchen":
+              - /url: branchen.html
+            - link "Referenzen":
+              - /url: referenzen.html
+            - button "Extranet"
+        - generic [ref=e17]:
+          - link "Jobs▾" [ref=e18] [cursor=pointer]:
+            - /url: jobs-2.html
+          - generic:
+            - button "Mitarbeiter technische Reinigung"
+            - button "Teamleiter technische Hygienereinigung"
+        - generic [ref=e19]:
+          - link "Standorte▾" [ref=e20] [cursor=pointer]:
+            - /url: standorte.html
+          - generic:
+            - button "Baden-Württemberg"
+            - button "Nordbayern"
+            - button "Südbayern"
+            - button "Rhein-Main"
+            - button "Nordrhein-Westfalen"
+            - button "Nord"
+            - button "Bodensee"
+            - button "Berlin"
+      - link "Angebot anfordern" [ref=e21] [cursor=pointer]:
+        - /url: index.html#angebot
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: unternehmen-2.html
+            - text: Unternehmen
+          - link:
+            - /url: zertifizierungen.html
+            - text: Zertifizierungen
+          - link:
+            - /url: nachhaltigkeit.html
+            - text: Nachhaltigkeit
+          - link:
+            - /url: sicherheit.html
+            - text: Sicherheit
+          - link:
+            - /url: qualitaet.html
+            - text: Qualität
+          - link:
+            - /url: umweltschutz.html
+            - text: Umweltschutz
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+        - generic:
+          - link:
+            - /url: leistungen-2.html
+            - text: Leistungen
+          - link:
+            - /url: inspektionundgutachten.html
+            - text: Inspektion & Gutachten
+          - link:
+            - /url: reinigung-desinfektion.html
+            - text: Reinigung & Desinfektion
+          - link:
+            - /url: instandsetzung-sanierung.html
+            - text: Instandsetzung & Sanierung
+          - link:
+            - /url: energetische-inspektion-geg-2020.html
+            - text: Energetische Inspektion
+        - generic:
+          - link:
+            - /url: normen-2.html
+            - text: Normen
+          - link:
+            - /url: vdi-6022.html
+            - text: VDI 6022
+          - link:
+            - /url: vdi-2047.html
+            - text: VDI 2047-2
+          - link:
+            - /url: vdi-2052-bgr-111.html
+            - text: VDI 2052 & BGR 111
+          - link:
+            - /url: din-en-15780.html
+            - text: DIN EN 15780
+          - button: DIN EN 14175
+        - generic:
+          - link:
+            - /url: anlagen-2.html
+            - text: Anlagen
+          - link:
+            - /url: lueftungsreinigung.html
+            - text: Lüftungsanlagen
+          - link:
+            - /url: rlt-hygiene.html
+            - text: RLT-Anlagen
+          - link:
+            - /url: luftkanalreinigung.html
+            - text: Zu- & Abluftkanäle
+          - link:
+            - /url: raumluftdesinfektion.html
+            - text: Raumluftdesinfektion
+          - link:
+            - /url: kuehlturmreinigung.html
+            - text: Verdunstungskühlanlage
+          - link:
+            - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - text: Splitklimageräte & Umluftkühlgeräte
+          - link:
+            - /url: prozessabluft-und-entrauchungsanlagen.html
+            - text: Prozessabluft & Entrauchungsanlagen
+          - link:
+            - /url: kuechenabluftsysteme.html
+            - text: Küchenabluftsysteme
+          - link:
+            - /url: laborabzuege.html
+            - text: Laborabzüge & Digestorien
+          - link:
+            - /url: verdampfer-und-kondensatoren.html
+            - text: Verdampfer & Kondensatoren
+          - link:
+            - /url: reinraumqualifizierung.html
+            - text: Reinräume
+          - link:
+            - /url: op-raum-pruefung.html
+            - text: OP-Räume
+          - link:
+            - /url: kuehlregale.html
+            - text: Kühlregale
+          - link:
+            - /url: textilschlaeuche.html
+            - text: Textilschläuche
+          - link:
+            - /url: rechenzentrum.html
+            - text: Rechenzentrum
+          - link:
+            - /url: filterintegritaetstest.html
+            - text: Filterintegritätstest
+          - link:
+            - /url: lecktest-schwebstofffilter.html
+            - text: Lecktest Schwebstofffilter
+        - generic:
+          - link:
+            - /url: kunden-2.html
+            - text: Kunden
+          - link:
+            - /url: branchen.html
+            - text: Branchen
+          - link:
+            - /url: referenzen.html
+            - text: Referenzen
+          - button: Extranet
+        - generic:
+          - link:
+            - /url: jobs-2.html
+            - text: Jobs
+          - button: Mitarbeiter technische Reinigung
+          - button: Teamleiter technische Hygienereinigung
+        - generic:
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+          - button: Baden-Württemberg
+          - button: Nordbayern
+          - button: Südbayern
+          - button: Rhein-Main
+          - button: Nordrhein-Westfalen
+          - button: Nord
+          - button: Bodensee
+          - button: Berlin
+  - navigation "Schnellzugriff" [ref=e22]:
+    - link "Kontakt" [ref=e23] [cursor=pointer]:
+      - /url: "#footer-contact"
+      - img [ref=e24]
+    - link "Angebot" [ref=e26] [cursor=pointer]:
+      - /url: index.html#angebot
+      - img [ref=e27]
+    - link "Köln" [ref=e29] [cursor=pointer]:
+      - /url: "#koeln-overview"
+      - img [ref=e30]
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - paragraph [ref=e35]: Blindtext
+      - heading "Luftkanalreinigung Köln" [level=1] [ref=e36]
+    - generic [ref=e38]:
+      - article [ref=e39]:
+        - paragraph [ref=e40]: Lorem Ipsum
+        - heading "Lüftungsreinigung Köln mit Igienair – Von der Hygieneinspektion bis zur RLT Anlagen Reinigung bestens versorgt" [level=2] [ref=e41]
+        - paragraph [ref=e43]: "Moderne Gebäude und Einrichtungen kommen heute nicht mehr ohne ein zuverlässiges Lüftungssystem aus. Dabei hängt die Güte der Luft – und damit auch die Aufenthalts- und Arbeits-Qualität – maßgeblich vom Zustand dieser raumlufttechnischen Anlagen ab. Hier kommt Igienair ins Spiel: Mit einer professionellen RLT Anlagen Reinigung in Köln gewährleisten wir gesunde und hochwertige Luft in all Ihren Räumlichkeiten. Beauftragen Sie uns mit einer Luftkanalreinigung in der Region und verlassen Sie sich auf einen sicheren, effizienten und keimfreien Betrieb Ihrer RLT Anlagen in Köln."
+        - paragraph [ref=e44]: "Luftkanalreinigung, Hygieneinspektion und mehr: Bei Igienair erhalten Sie das Komplettpaket an Leistungen rund um Luftkanäle, Kühltürme und sonstige Anlagen."
+        - paragraph [ref=e45]: Ob in der Gastronomie, der Pharmazie, in der produzierenden Industrie oder der öffentlichen Verwaltung – raumlufttechnische Anlagen kommen in allen Branchen und Arbeitsbereichen zum Einsatz. Dementsprechend stammen auch unsere mehr als 20.000 Kunden aus den unterschiedlichsten Bereichen. Dabei ist es unser Anspruch, jede Begutachtung, Inspektion und Luftkanalreinigung in Köln individuell auf die Anforderungen unserer Kunden abzustimmen.
+        - paragraph [ref=e46]: Halten Sie Ihre RLT Anlagen immer auf dem neuesten Stand – gerne stehen wir Ihnen beratend zur Seite oder ertüchtigen Ihre raumlufttechnischen Anlagen mit unseren Leistungen. Von der Hygieneinspektion in Köln bis zur Dokumentation, Wartung und weiteren Services erstellen wir stets ein individuelles Angebot. Sprechen Sie uns einfach an!
+        - button "Button" [ref=e47] [cursor=pointer]
+      - figure [ref=e48]:
+        - img "Luftkanalreinigung Köln" [ref=e49]
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: Lorem Ipsum
+        - heading "Luftkanalreinigung Köln & mehr – Alle Leistungen von Igienair rund um die RLT Anlagen Reinigung auf einen Blick" [level=2] [ref=e55]
+      - paragraph [ref=e57]: Indem wir unsere Kunden mit unterschiedlichsten Leistungen unterstützen, ermöglichen wir die Umsetzung verschiedenster raumlufttechnischer Hygienekonzepte ganz nach Bedarf. So kümmern wir uns um die Inspektion Ihrer Anlagen ebenso wie um die Erstellung eines Gutachtens oder bieten kurzfristige Hilfe, wenn die Reinigung Ihrer RLT Anlagen in Köln ansteht – natürlich immer streng nach Norm.
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - figure [ref=e60]:
+            - img "Hygieneinspektion in Köln" [ref=e61]
+          - article [ref=e62]:
+            - 'heading "RLT Anlagen und Kühltürme: Hygieneinspektion + Gutachten aus einer Hand" [level=3] [ref=e63]'
+            - paragraph [ref=e64]: Der Gesetzgeber sieht bei raumlufttechnischen Anlagen sowie bei Kühltürmen eine regelmäßige Hygieneprüfung vor. Wir übernehmen für Sie die entsprechende Hygieneinspektion in Köln und erstellen detaillierte Gutachten nach VDI 6022. Weiterhin führen wir auch die notwendige Gefährdungsbeurteilung nach 42. BlmSchV und VDI 2047-2 durch.
+        - generic [ref=e65]:
+          - article [ref=e66]:
+            - heading "Luftkanalreinigung Köln zur Vermeidung von Gesundheitsschäden" [level=3] [ref=e67]
+            - paragraph [ref=e68]: Ist bei Ihren RLT Anlagen eine Reinigung erforderlich, dann ist Igienair der richtige Partner für Sie. Alle relevanten Richtlinien (VDI 6022 / DIN EN 15780 / VDI 2047-2) werden bei der Luftkanalreinigung von unseren Fachleuten berücksichtigt. Im Zuge unserer Arbeiten befreien wir Ihre RLT Anlagen in Köln von Schmutz, Schimmel, Staub und weiteren Ablagerungen. Durch eine abschließende Desinfektion haben Viren und Bakterien keine Chance.
+          - figure [ref=e69]:
+            - img "Luftkanalreinigung in Köln" [ref=e70]
+        - generic [ref=e71]:
+          - figure [ref=e72]:
+            - img "Reparatur und Sanierung in Köln" [ref=e73]
+          - article [ref=e74]:
+            - heading "Reparatur- und Sanierungsarbeiten für Kühltürme und RLT Anlagen in Köln" [level=3] [ref=e75]
+            - paragraph [ref=e76]: Sind raumlufttechnische Anlagen bereits lange im Betrieb, steigt die Wahrscheinlichkeit, dass Teile verschleißen oder sich Korrosionsschäden in den Kanälen finden. Wir kümmern uns um die RLT Anlagen Reinigung und Instandhaltung von Kühltürmen, tauschen kaputte Segmente gegen geeignete Ersatzteile aus und sorgen so für die volle Effizienz und Betriebsbereitschaft Ihrer Anlage.
+        - generic [ref=e77]:
+          - article [ref=e78]:
+            - heading "Beseitigung von Brandrisiken in Abluftsystemen" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Im Rahmen einer Luftkanalreinigung in Köln achten wir besonders darauf, Absaug- und Küchenabluftanlagen einer eingehenden Prüfung zu unterziehen, um die Brandgefahr durch Staub oder Fett in den Kanälen zu reduzieren. Eine entsprechende brandschutztechnische Reinigung nach VDI 2052 und BGR 111 können wir sowohl durchführen als auch protokollieren.
+          - figure [ref=e81]:
+            - img "Brandschutz in Köln" [ref=e82]
+        - generic [ref=e83]:
+          - figure [ref=e84]:
+            - img "Einrichtung und Prüfung von OP- und Reinräumen" [ref=e85]
+          - article [ref=e86]:
+            - heading "Einrichtung und Prüfung von OP- und Reinräumen" [level=3] [ref=e87]
+            - paragraph [ref=e88]:
+              - text: Für Reinräume sowie OP-Säle gelten strenge Vorgaben hinsichtlich der Raumlufthygiene. Zusätzlich zu einer Hygieneinspektion in Köln nehmen wir auch weiterführende
+              - link "Reinraumqualifizierungen" [ref=e89] [cursor=pointer]:
+                - /url: reinraumqualifizierung.html
+              - text: nach DIN EN ISO 14644 vor. Wir kümmern uns dabei um die korrekte Installation sowie Entsorgung von HEPA-Filtern und prüfen Laborabzüge sowie Digestorien gemäß DIN EN ISO 14175 auf Keimfreiheit.
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - paragraph [ref=e93]: Blindtext
+        - heading "Quisque rutrum. Aenean imperdiet." [level=2] [ref=e94]
+        - paragraph [ref=e96]: Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+        - button "Erfahren Sie mehr" [ref=e97] [cursor=pointer]
+      - generic "Branchen" [ref=e98]:
+        - article [ref=e99]:
+          - img "Gesundheitswesen" [ref=e100]
+          - heading "Gesundheitswesen" [level=3] [ref=e101]
+        - article [ref=e102]:
+          - img "Industrie" [ref=e103]
+          - heading "Industrie" [level=3] [ref=e104]
+        - article [ref=e105]:
+          - img "Pharmaindustrie" [ref=e106]
+          - heading "Pharmaindustrie" [level=3] [ref=e107]
+        - article [ref=e108]:
+          - img "Gastronomie" [ref=e109]
+          - heading "Gastronomie" [level=3] [ref=e110]
+        - article [ref=e111]:
+          - img "Lebensmittel" [ref=e112]
+          - heading "Lebensmittel" [level=3] [ref=e113]
+        - article [ref=e114]:
+          - img "Gemeinden" [ref=e115]
+          - heading "Gemeinden" [level=3] [ref=e116]
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: Lorem Ipsum
+        - heading "Wartung und Reinigung von RLT Anlagen in Köln & Lüftungsreinigung Köln – Igienair sorgt für einen sicheren und sauberen Betrieb Ihrer raumlufttechnischen Anlagen" [level=2] [ref=e121]
+        - button "Button" [ref=e123] [cursor=pointer]
+      - generic [ref=e124]:
+        - paragraph [ref=e125]: Für unsere Kunden aus dem Großraum Köln sind wir schnell, zuverlässig und mit individuellen Leistungen zur Stelle. Unser Fachbetrieb findet für jeden Kundenbedarf eine Lösung, die von der Begutachtung über die Hygieneinspektion bis zur Luftkanalreinigung und Instandhaltung alle Bereiche abdeckt.
+        - generic [ref=e126]:
+          - article [ref=e127]:
+            - generic [ref=e129]:
+              - heading "Leistungen nach Maß:" [level=3] [ref=e130]
+              - paragraph [ref=e131]: Bei Igienair bieten wir sämtliche Arbeitsschritte aus einer Hand. Damit sind eine lückenlose Dokumentation und eine fachgerechte Umsetzung sichergestellt.
+          - article [ref=e132]:
+            - generic [ref=e134]:
+              - heading "Echtes Know-how:" [level=3] [ref=e135]
+              - paragraph [ref=e136]: Durch Weiterbildungen und Schulungen sind unsere Mitarbeiter immer auf dem neuesten Stand, was Hygienevorgaben und Richtlinien angeht. So kann bei der Luftkanalreinigung in Köln jeder Aspekt zuverlässig berücksichtigt werden.
+          - article [ref=e137]:
+            - generic [ref=e139]:
+              - heading "Rechtliche Sicherheit:" [level=3] [ref=e140]
+              - paragraph [ref=e141]: Jede Hygieneinspektion, jeder Wartungsschritt und jede RLT Anlagen Reinigung in Köln wird entsprechend protokolliert und im Detail dokumentiert. So können Sie bei eventuellen Rechtsfragen stets belegen, dass Sie als Betreiber Ihrer Sorgfaltspflicht nachgekommen sind.
+        - paragraph [ref=e142]:
+          - strong [ref=e143]: Luftkanalreinigung Köln von Igienair, dem starken Partner für RLT Anlagen
+        - paragraph [ref=e144]: Vertrauen Sie in Sachen Luftkanalreinigung in Köln und Umgebung auf einen professionellen Dienstleister – bei Igienair erwartet Sie ein starker Mix aus Leistung, Erfahrung und Beratung. Wenden Sie sich für Fragen oder Angebote gerne an unseren Kundenservice oder melden Sie sich über unser Kontaktformular!
+  - contentinfo [ref=e145]:
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - img "Igienair" [ref=e148]
+        - paragraph [ref=e149]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - generic [ref=e150]:
+        - heading "MENÜ" [level=2] [ref=e151]
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - link "Unternehmen 3" [ref=e154] [cursor=pointer]:
+              - /url: unternehmen-2.html
+          - listitem [ref=e155]:
+            - link "Leistungen 3" [ref=e156] [cursor=pointer]:
+              - /url: leistungen-2.html
+          - listitem [ref=e157]:
+            - link "Normen 3" [ref=e158] [cursor=pointer]:
+              - /url: normen-2.html
+          - listitem [ref=e159]:
+            - link "Anlagen 3" [ref=e160] [cursor=pointer]:
+              - /url: anlagen-2.html
+          - listitem [ref=e161]:
+            - link "Kunden 3" [ref=e162] [cursor=pointer]:
+              - /url: kunden-2.html
+          - listitem [ref=e163]:
+            - link "Jobs 3" [ref=e164] [cursor=pointer]:
+              - /url: jobs-2.html
+          - listitem [ref=e165]:
+            - link "Standorte 3" [ref=e166] [cursor=pointer]:
+              - /url: standorte.html
+      - generic [ref=e167]:
+        - heading "STANDORTE" [level=2] [ref=e168]
+        - list [ref=e169]:
+          - listitem [ref=e170]:
+            - button "Baden-Württemberg" [ref=e171] [cursor=pointer]
+          - listitem [ref=e172]:
+            - button "Nordbayern" [ref=e173] [cursor=pointer]
+          - listitem [ref=e174]:
+            - button "Südbayern" [ref=e175] [cursor=pointer]
+          - listitem [ref=e176]:
+            - button "Rhein-Main" [ref=e177] [cursor=pointer]
+          - listitem [ref=e178]:
+            - button "Nordrhein-Westfalen" [ref=e179] [cursor=pointer]
+          - listitem [ref=e180]:
+            - button "Nord" [ref=e181] [cursor=pointer]
+          - listitem [ref=e182]:
+            - button "Bodensee" [ref=e183] [cursor=pointer]
+          - listitem [ref=e184]:
+            - button "Berlin" [ref=e185] [cursor=pointer]
+      - generic [ref=e186]:
+        - heading "KONTAKT" [level=2] [ref=e187]
+        - generic [ref=e188]:
+          - generic [ref=e189]: ●
+          - generic [ref=e190]:
+            - strong [ref=e191]: IGIENAIR GmbH
+            - paragraph [ref=e192]:
+              - text: Am Hardtwald 6-8
+              - text: 76275 Ettlingen
+        - generic [ref=e193]:
+          - generic [ref=e194]: ●
+          - link "+49 (0) 7243 3699101" [ref=e195] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e196]:
+          - generic [ref=e197]: ●
+          - link "+49 (0) 7243 3694 943" [ref=e198] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e199]:
+          - generic [ref=e200]: ●
+          - link "kontakt@igienair.com" [ref=e201] [cursor=pointer]:
+            - /url: "#!"
+    - generic [ref=e203]:
+      - text: © IGIENAIR 2025
+      - generic [ref=e204]:
+        - link "AGB" [ref=e205] [cursor=pointer]:
+          - /url: agb.html
+        - link "Datenschutz" [ref=e206] [cursor=pointer]:
+          - /url: datenschutz.html
+        - link "Impressum" [ref=e207] [cursor=pointer]:
+          - /url: impressum.html
+        - link "Cookie-Richtlinie (EU)" [ref=e208] [cursor=pointer]:
+          - /url: cookie-richtlinie-eu.html

@@ -159,6 +159,12 @@ h4 {
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
+.button--outline-light {
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.94);
+  background: transparent;
+}
+
 .button--soft {
   color: #515151;
   background: #ededed;
@@ -716,64 +722,37 @@ body.is-scrolled .button--header {
 
 .map-card__image {
   position: relative;
+  display: block;
   min-height: 540px;
   padding: 16px;
   background: var(--color-soft);
 }
 
+.map-card__image--admin {
+  display: grid;
+  place-items: center;
+  min-height: auto;
+  padding: clamp(10px, 2vw, 22px);
+}
+
 .map-card__image img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-.map-pin {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
+.map-card__admin-map {
+  display: block;
+  width: min(100%, 640px);
+  aspect-ratio: 1 / 1;
   border: 0;
-  background: var(--color-secondary);
-  box-shadow: 0 0 0 8px rgba(0, 159, 227, 0.16);
-  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
 }
 
-.map-pin span {
-  position: absolute;
-  left: 24px;
-  top: 50%;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(9, 40, 89, 0.92);
-  color: var(--color-white);
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateY(-50%) translateX(-8px);
-  transition: opacity var(--transition), transform var(--transition);
+.map-card__admin-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-
-.map-pin:hover,
-.map-pin:focus-visible,
-.map-pin.is-active {
-  transform: scale(1.15);
-  box-shadow: 0 0 0 12px rgba(0, 159, 227, 0.22);
-}
-
-.map-pin:hover span,
-.map-pin:focus-visible span,
-.map-pin.is-active span {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
-.map-pin--baden { left: 30%; top: 78%; }
-.map-pin--nordbayern { left: 57%; top: 63%; }
-.map-pin--suedbayern { left: 55%; top: 80%; }
-.map-pin--rhein { left: 31%; top: 60%; }
-.map-pin--nrw { left: 20%; top: 48%; }
-.map-pin--nord { left: 36%; top: 18%; }
-.map-pin--bodensee { left: 27%; top: 86%; }
-.map-pin--berlin { left: 70%; top: 41%; }
 
 .videos {
   padding: 74px 0 82px;
@@ -1193,6 +1172,7 @@ body.menu-open .mobile-menu {
 }
 
 .company-media-card {
+  margin: 0;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.15);
@@ -1806,6 +1786,424 @@ body.menu-open .mobile-menu {
   gap: 10px;
 }
 
+.industries-band {
+  color: var(--color-white);
+  background: linear-gradient(180deg, var(--color-primary) 1%, var(--color-secondary) 100%);
+}
+
+.industries-band__layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  min-height: 581px;
+  padding: 70px 0 76px;
+}
+
+.industries-band__copy {
+  max-width: 700px;
+}
+
+.industries-band__copy h2,
+.industries-band__copy p {
+  color: var(--color-white);
+}
+
+.industries-band__copy .gradient-line {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.74));
+}
+
+.industries-band__copy .button {
+  margin-top: 28px;
+}
+
+.industries-band__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 78px 70px;
+  align-items: start;
+}
+
+.industries-band__item {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.industries-band__item img {
+  width: auto;
+  height: 100px;
+}
+
+.industries-band__item h3 {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.cleanroom-benefits {
+  padding: 82px 0 102px;
+  background: #ffffff;
+}
+
+.cleanroom-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: start;
+}
+
+.cleanroom-benefits__copy {
+  max-width: 610px;
+}
+
+.cleanroom-benefits__copy :is(h2, h3) {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(30px, 2.8vw, 36px);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.cleanroom-benefits__lead {
+  margin-top: 32px;
+}
+
+.cleanroom-benefits__copy .button {
+  margin-top: 35px;
+}
+
+.cleanroom-benefits__content {
+  max-width: 610px;
+}
+
+.cleanroom-benefits__items {
+  display: grid;
+  gap: 28px;
+}
+
+.cleanroom-benefits__item {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.cleanroom-benefits__dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 8px rgba(0, 159, 227, 0.16);
+}
+
+.cleanroom-benefits__item h3 {
+  margin: 0 0 10px;
+  color: var(--color-primary);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.cleanroom-benefits__content > p:last-child,
+.cleanroom-benefits__footnote {
+  margin-top: 36px;
+}
+
+.cleanroom-benefits__footnote strong {
+  font-weight: 600;
+}
+
+.page-berlin .company-hero {
+  min-height: clamp(280px, 40vh, 320px);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 61%, rgba(255, 255, 255, 1) 100%),
+    url("assets/images/company-hero-bg.png") center 42% / cover no-repeat;
+}
+
+.page-berlin .container {
+  width: min(1290px, calc(100vw - 64px));
+}
+
+.page-berlin .company-hero::after {
+  height: 38%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.98) 82%);
+}
+
+.page-berlin .company-hero__content {
+  min-height: clamp(280px, 40vh, 320px);
+  padding-top: 112px;
+  padding-bottom: 42px;
+}
+
+.page-berlin .company-hero h1 {
+  max-width: none;
+  font-size: clamp(58px, 6vw, 100px);
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.page-berlin .reference-region-overview {
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+.page-berlin .reference-region-overview__stack {
+  display: grid;
+  gap: 32px;
+}
+
+.page-berlin .reference-region-overview__heading {
+  max-width: 1290px;
+}
+
+.page-berlin .reference-region-overview__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 610px) minmax(320px, 600px);
+  justify-content: space-between;
+  gap: 72px;
+  align-items: start;
+}
+
+.page-berlin .reference-region-overview__copy {
+  max-width: 610px;
+}
+
+.page-berlin .reference-region-overview__heading h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-berlin .karlsruhe-services__heading h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-berlin .reference-region-overview__copy p,
+.page-berlin .karlsruhe-services__intro,
+.page-berlin .filtertest-standard__copy p,
+.page-berlin .berlin-services__text-block p {
+  line-height: 2;
+}
+
+.page-berlin .reference-region-overview__locations-block {
+  max-width: 1290px;
+  margin-top: 62px;
+}
+
+.page-berlin .reference-region-overview__locations-block h3,
+.page-berlin .karlsruhe-services__subheading,
+.page-berlin .berlin-services__text-block h3 {
+  margin: 0 0 14px;
+  color: var(--color-primary);
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.page-berlin .reference-region-overview__locations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 20px;
+  margin-top: 24px;
+}
+
+.page-berlin .reference-region-overview__locations li {
+  min-height: 55px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #111111;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.page-berlin .berlin-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.page-berlin .location-pin {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  border-radius: 50% 50% 50% 0;
+  background: linear-gradient(180deg, var(--color-secondary), var(--color-primary));
+  transform: rotate(-45deg);
+}
+
+.page-berlin .location-pin::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.page-berlin .reference-region-overview__media {
+  width: 600px;
+  max-width: 100%;
+}
+
+.page-berlin .reference-region-overview__media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.page-berlin .reference-region-overview__side {
+  justify-self: end;
+  width: 600px;
+  max-width: 100%;
+}
+
+.page-berlin .karlsruhe-services {
+  padding: 70px 0 82px;
+}
+
+.page-berlin .karlsruhe-services__heading {
+  max-width: 1290px;
+  margin-bottom: 0;
+}
+
+.page-berlin .karlsruhe-services__intro {
+  max-width: 1290px;
+  margin: 0 0 35px;
+}
+
+.page-berlin .filtertest-standard__stack {
+  gap: 48px;
+}
+
+.page-berlin .filtertest-standard__row {
+  grid-template-columns: minmax(0, 383px) minmax(0, 836px);
+  justify-content: space-between;
+  gap: 71px;
+  align-items: start;
+}
+
+.page-berlin .filtertest-standard__row--reverse {
+  grid-template-columns: minmax(0, 836px) minmax(0, 383px);
+}
+
+.page-berlin .filtertest-standard__media {
+  max-width: 383px;
+  justify-self: start;
+}
+
+.page-berlin .filtertest-standard__row--reverse .filtertest-standard__media {
+  justify-self: end;
+}
+
+.page-berlin .filtertest-standard__copy {
+  max-width: 836px;
+}
+
+.page-berlin .filtertest-standard__copy h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.page-berlin .berlin-services__text-block {
+  max-width: 1290px;
+}
+
+@media (max-width: 1200px) {
+  .industries-band__layout,
+  .cleanroom-benefits__grid,
+  .page-berlin .reference-region-overview__grid,
+  .page-berlin .filtertest-standard__row,
+  .page-berlin .filtertest-standard__row--reverse {
+    gap: 32px;
+  }
+
+  .page-berlin .reference-region-overview__locations {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .industries-band__layout,
+  .cleanroom-benefits__grid,
+  .page-berlin .reference-region-overview__grid,
+  .page-berlin .filtertest-standard__row,
+  .page-berlin .filtertest-standard__row--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-band__layout {
+    min-height: 0;
+    padding: 68px 0 72px;
+  }
+
+  .industries-band__grid {
+    gap: 44px 28px;
+  }
+
+  .page-berlin .reference-region-overview__locations {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-berlin .reference-region-overview__copy,
+  .page-berlin .reference-region-overview__side,
+  .page-berlin .reference-region-overview__media,
+  .page-berlin .reference-region-overview__heading,
+  .page-berlin .reference-region-overview__locations-block {
+    width: 100%;
+    max-width: none;
+  }
+
+  .page-berlin .filtertest-standard__media,
+  .page-berlin .filtertest-standard__row--reverse .filtertest-standard__media {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .industries-band__grid,
+  .page-berlin .reference-region-overview__locations {
+    grid-template-columns: 1fr;
+  }
+
+  .page-berlin .company-hero {
+    min-height: 260px;
+  }
+
+  .page-berlin .company-hero__content {
+    min-height: 260px;
+    padding-top: 104px;
+    padding-bottom: 30px;
+  }
+
+  .page-berlin .company-hero h1 {
+    font-size: clamp(44px, 13vw, 72px);
+    line-height: 0.98;
+  }
+
+  .page-berlin .reference-region-overview__locations li {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .cleanroom-benefits__item {
+    grid-template-columns: 24px minmax(0, 1fr);
+  }
+}
+
 .page-karlsruhe-reference .cleanroom-overview__copy h2,
 .page-reference-city .cleanroom-overview__copy h2 {
   max-width: 15ch;
@@ -1842,6 +2240,14 @@ body.menu-open .mobile-menu {
 
 .karlsruhe-services__heading h2 {
   max-width: 14ch;
+}
+
+.karlsruhe-services__subheading {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.3;
+  font-weight: 600;
 }
 
 .karlsruhe-services__intro {
@@ -1884,6 +2290,50 @@ body.menu-open .mobile-menu {
 
 .karlsruhe-benefits__content p + p {
   margin-top: 1rem;
+}
+
+.page-memmingen .memmingen-overview__head {
+  max-width: 1120px;
+  margin-bottom: clamp(2rem, 3.6vw, 2.8rem);
+}
+
+.page-memmingen .memmingen-overview__head h2 {
+  max-width: 24ch;
+}
+
+.page-memmingen .memmingen-overview__grid {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+  gap: clamp(2.5rem, 4.2vw, 4.5rem);
+  align-items: start;
+}
+
+.page-memmingen .cleanroom-overview__copy {
+  max-width: none;
+}
+
+.page-memmingen .karlsruhe-overview__media {
+  max-width: 520px;
+  justify-self: end;
+}
+
+.page-memmingen .karlsruhe-services__heading {
+  max-width: 1120px;
+}
+
+.page-memmingen .karlsruhe-services__heading h2 {
+  max-width: 24ch;
+}
+
+.page-memmingen .karlsruhe-services__intro {
+  max-width: 62ch;
+}
+
+.page-memmingen .karlsruhe-services__copy p + h3 {
+  margin-top: 1.4rem;
+}
+
+.page-memmingen .karlsruhe-benefits__intro h2 {
+  max-width: 17.5ch;
 }
 
 .karlsruhe-benefits__cards {
@@ -1930,6 +2380,10 @@ body.menu-open .mobile-menu {
 }
 
 @media (max-width: 767px) {
+  .karlsruhe-services__subheading {
+    font-size: clamp(1.22rem, 6vw, 1.55rem);
+  }
+
   .karlsruhe-services__head {
     display: grid;
     justify-content: start;
@@ -3032,9 +3486,8 @@ body.menu-open .mobile-menu {
     min-height: 360px;
   }
 
-  .map-pin span {
-    left: auto;
-    right: 20px;
+  .map-card__image--admin {
+    min-height: auto;
   }
 
   .feature,
@@ -3350,14 +3803,9 @@ body.menu-open .mobile-menu {
 }
 
 .locations-browser,
-.locations-featured,
 .locations-grid {
   padding: 84px 0;
   background: #fff;
-}
-
-.locations-featured {
-  padding-top: 28px;
 }
 
 .locations-browser__header {
@@ -3374,7 +3822,6 @@ body.menu-open .mobile-menu {
 }
 
 .locations-browser__layout,
-.locations-featured__grid,
 .locations-contact__grid {
   display: grid;
   gap: 52px;
@@ -3446,8 +3893,7 @@ body.menu-open .mobile-menu {
 }
 
 .location-browser-card h3,
-.locations-grid-card h3,
-.locations-featured__card h3 {
+.locations-grid-card h3 {
   color: var(--color-primary);
   font-size: 22px;
   line-height: 1.3;
@@ -3476,8 +3922,7 @@ body.menu-open .mobile-menu {
 
 .location-row p,
 .locations-grid-card p,
-.locations-contact__copy p,
-.locations-featured__card p {
+.locations-contact__copy p {
   margin: 0;
   color: var(--color-muted);
   font-size: 16px;
@@ -3531,73 +3976,14 @@ body.menu-open .mobile-menu {
   margin: 0 auto;
 }
 
-.locations-browser__map-shell img,
-.locations-featured__map img {
+.locations-browser__map-object,
+.locations-browser__map-shell .standorte-map,
+.locations-browser__map-shell img {
   display: block;
   width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
-}
-
-.location-marker {
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.92);
-  background: rgba(1, 97, 191, 0.14);
-  box-shadow: 0 6px 14px rgba(1, 97, 191, 0.1);
-  transform: translate(-50%, -50%);
-  transition: transform var(--transition), background-color var(--transition), box-shadow var(--transition);
-}
-
-.location-marker::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: var(--size-x);
-  height: var(--size-y);
-  border-radius: 50%;
-  background: rgba(185, 212, 240, 0.88);
-  filter: blur(12px);
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(var(--rotation));
-  transition: opacity var(--transition);
-}
-
-.location-marker:hover,
-.location-marker:focus-visible,
-.location-marker.is-active {
-  background: rgba(0, 159, 227, 0.9);
-  box-shadow: 0 10px 24px rgba(0, 159, 227, 0.28);
-  transform: translate(-50%, -50%) scale(1.12);
-}
-
-.location-marker:hover::before,
-.location-marker:focus-visible::before,
-.location-marker.is-active::before {
-  opacity: 1;
-}
-
-.location-marker:focus-visible {
-  outline: 2px solid rgba(0, 159, 227, 0.3);
-  outline-offset: 3px;
-}
-
-.locations-featured__grid {
-  grid-template-columns: minmax(300px, 404px) minmax(0, 1fr);
-  align-items: center;
-}
-
-.locations-featured__card {
-  max-width: 420px;
-}
-
-.locations-featured__map {
-  max-width: 520px;
-  margin: 0 auto;
+  border: 0;
 }
 
 .locations-grid__header {
@@ -3654,7 +4040,6 @@ body.menu-open .mobile-menu {
   }
 
   .locations-browser__layout,
-  .locations-featured__grid,
   .locations-contact__grid {
     grid-template-columns: 1fr;
     gap: 34px;
@@ -3708,8 +4093,7 @@ body.menu-open .mobile-menu {
   }
 
   .location-browser-card h3,
-  .locations-grid-card h3,
-  .locations-featured__card h3 {
+  .locations-grid-card h3 {
     font-size: 20px;
   }
 
@@ -6313,6 +6697,46 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   line-height: 1.35;
 }
 
+.page-memmingen .tower-industries__grid {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2.5rem, 4.5vw, 5rem);
+}
+
+.page-memmingen .tower-industries__copy h2 {
+  max-width: 12ch;
+}
+
+.page-memmingen .tower-industries__sectors {
+  gap: 2rem 2.35rem;
+  align-items: start;
+}
+
+.page-memmingen .tower-sector-card img {
+  width: auto;
+  max-width: 132px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.page-memmingen .tower-sector-card {
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page-memmingen .tower-sector-card:hover,
+.page-memmingen .tower-sector-card:focus-within {
+  transform: none;
+  background: transparent;
+}
+
+.page-memmingen .tower-sector-card h3 {
+  font-size: 0.98rem;
+}
+
 .tower-list {
   margin: 0;
   padding: 0;
@@ -7669,6 +8093,22 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   letter-spacing: -0.045em;
 }
 
+.page-memmingen .company-hero {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.52) 61%, #ffffff 100%),
+    url("assets/images/memmingen-hero.png");
+  background-position: center 42%;
+  background-size: cover;
+}
+
+.page-memmingen .company-hero h1 {
+  max-width: 19ch;
+  font-size: clamp(58px, 6.2vw, 98px);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
 .filtertest-overview {
   background-image: linear-gradient(1deg, #e8f3ff 0%, #ffffff 100%);
 }
@@ -7895,9 +8335,23 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 @media (max-width: 980px) {
+  .page-memmingen .memmingen-overview__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-memmingen .karlsruhe-overview__media {
+    max-width: 480px;
+    justify-self: center;
+  }
+
   .page-filtertest .company-hero h1 {
     max-width: 10.5ch;
     font-size: clamp(50px, 9vw, 80px);
+  }
+
+  .page-memmingen .company-hero h1 {
+    max-width: 16ch;
+    font-size: clamp(52px, 8vw, 84px);
   }
 
   .page-leaktest .company-hero h1 {
@@ -7933,6 +8387,10 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 @media (max-width: 767px) {
+  .page-memmingen .memmingen-overview__head h2 {
+    max-width: 12ch;
+  }
+
   .page-filtertest .company-hero {
     min-height: 36vh;
   }
@@ -7946,6 +8404,11 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   .page-filtertest .company-hero h1 {
     max-width: 9ch;
     font-size: clamp(40px, 11vw, 60px);
+  }
+
+  .page-memmingen .company-hero h1 {
+    max-width: 8.8ch;
+    font-size: clamp(37px, 10.2vw, 54px);
   }
 
   .page-leaktest .company-hero h1 {
@@ -8814,5 +9277,759 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   .channel-robot .filtertest-procedure__copy h2 {
     max-width: 12ch;
     font-size: clamp(1.85rem, 8vw, 2.1rem);
+  }
+}
+
+.page-bernau .company-hero {
+  min-height: clamp(280px, 40vh, 320px);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 61%, rgba(255, 255, 255, 1) 100%),
+    url("assets/images/company-hero-bg.png") center 42% / cover no-repeat;
+}
+
+.page-bernau .container {
+  width: min(1290px, calc(100vw - 64px));
+}
+
+.page-bernau .company-hero::after {
+  height: 38%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.98) 82%);
+}
+
+.page-bernau .company-hero__content {
+  min-height: clamp(280px, 40vh, 320px);
+  padding-top: 112px;
+  padding-bottom: 42px;
+}
+
+.page-bernau .company-hero h1 {
+  max-width: none;
+  font-size: clamp(58px, 5.2vw, 72px);
+  line-height: 1.06;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.page-bernau .bernau-overview {
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+.page-bernau .bernau-overview__head {
+  max-width: 1290px;
+  margin-bottom: 38px;
+}
+
+.page-bernau .bernau-overview__head h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-bernau .bernau-overview__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 610px) minmax(320px, 600px);
+  justify-content: space-between;
+  gap: 72px;
+  align-items: start;
+}
+
+.page-bernau .bernau-overview__copy,
+.page-bernau .cleanroom-benefits__content {
+  max-width: 610px;
+}
+
+.page-bernau .bernau-overview__copy p,
+.page-bernau .karlsruhe-services__intro,
+.page-bernau .bernau-services__copy p {
+  line-height: 2;
+}
+
+.page-bernau .bernau-overview__media {
+  max-width: 600px;
+  justify-self: end;
+}
+
+.page-bernau .bernau-services {
+  padding: 70px 0 82px;
+}
+
+.page-bernau .bernau-services__heading {
+  max-width: 1290px;
+  margin-bottom: 0;
+}
+
+.page-bernau .bernau-services__heading h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-bernau .karlsruhe-services__subheading {
+  margin: 0 0 14px;
+  color: var(--color-primary);
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.page-bernau .karlsruhe-services__intro {
+  max-width: 1290px;
+  margin: 0 0 35px;
+}
+
+.page-bernau .filtertest-standard__stack {
+  gap: 48px;
+}
+
+.page-bernau .filtertest-standard__row {
+  grid-template-columns: minmax(0, 383px) minmax(0, 836px);
+  justify-content: space-between;
+  gap: 71px;
+  align-items: start;
+}
+
+.page-bernau .filtertest-standard__row--reverse {
+  grid-template-columns: minmax(0, 836px) minmax(0, 383px);
+}
+
+.page-bernau .filtertest-standard__media {
+  max-width: 383px;
+  justify-self: start;
+}
+
+.page-bernau .filtertest-standard__row--reverse .filtertest-standard__media {
+  justify-self: end;
+}
+
+.page-bernau .filtertest-standard__copy {
+  max-width: 836px;
+}
+
+.page-bernau .filtertest-standard__copy h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.page-bernau .bernau-services__copy p + h3 {
+  margin-top: 28px;
+}
+
+.page-bernau .cleanroom-benefits__copy h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .page-bernau .bernau-overview__grid,
+  .page-bernau .filtertest-standard__row,
+  .page-bernau .filtertest-standard__row--reverse,
+  .page-bernau .cleanroom-benefits__grid {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 980px) {
+  .page-bernau .bernau-overview__grid,
+  .page-bernau .filtertest-standard__row,
+  .page-bernau .filtertest-standard__row--reverse,
+  .page-bernau .cleanroom-benefits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-bernau .bernau-overview__copy,
+  .page-bernau .bernau-overview__media,
+  .page-bernau .bernau-overview__head,
+  .page-bernau .filtertest-standard__copy,
+  .page-bernau .filtertest-standard__media,
+  .page-bernau .cleanroom-benefits__copy,
+  .page-bernau .cleanroom-benefits__content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .page-bernau .filtertest-standard__media,
+  .page-bernau .filtertest-standard__row--reverse .filtertest-standard__media {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-bernau .company-hero {
+    min-height: 260px;
+  }
+
+  .page-bernau .company-hero__content {
+    min-height: 260px;
+    padding-top: 104px;
+    padding-bottom: 30px;
+  }
+
+  .page-bernau .company-hero h1 {
+    font-size: clamp(44px, 13vw, 72px);
+    line-height: 0.98;
+  }
+}
+
+.page-brandenburg .company-hero {
+  min-height: clamp(280px, 40vh, 320px);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 61%, rgba(255, 255, 255, 1) 100%),
+    url("assets/images/company-hero-bg.png") center 42% / cover no-repeat;
+}
+
+.page-brandenburg .container {
+  width: min(1290px, calc(100vw - 64px));
+}
+
+.page-brandenburg .company-hero::after {
+  height: 38%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.98) 82%);
+}
+
+.page-brandenburg .company-hero__content {
+  min-height: clamp(280px, 40vh, 320px);
+  padding-top: 112px;
+  padding-bottom: 42px;
+}
+
+.page-brandenburg .company-hero h1 {
+  max-width: none;
+  font-size: clamp(58px, 5.2vw, 72px);
+  line-height: 1.06;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.page-brandenburg .brandenburg-overview {
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+.page-brandenburg .brandenburg-overview__head {
+  max-width: 1290px;
+  margin-bottom: 38px;
+}
+
+.page-brandenburg .brandenburg-overview__head h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-brandenburg .brandenburg-overview__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 610px) minmax(320px, 600px);
+  justify-content: space-between;
+  gap: 72px;
+  align-items: start;
+}
+
+.page-brandenburg .brandenburg-overview__copy,
+.page-brandenburg .cleanroom-benefits__content {
+  max-width: 610px;
+}
+
+.page-brandenburg .brandenburg-overview__copy p,
+.page-brandenburg .karlsruhe-services__intro,
+.page-brandenburg .brandenburg-services__copy p {
+  line-height: 2;
+}
+
+.page-brandenburg .brandenburg-overview__media {
+  max-width: 600px;
+  justify-self: end;
+}
+
+.page-brandenburg .brandenburg-services {
+  padding: 70px 0 82px;
+}
+
+.page-brandenburg .brandenburg-services__heading {
+  max-width: 1290px;
+  margin-bottom: 0;
+}
+
+.page-brandenburg .brandenburg-services__heading h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-brandenburg .karlsruhe-services__subheading {
+  margin: 0 0 14px;
+  color: var(--color-primary);
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.page-brandenburg .karlsruhe-services__intro {
+  max-width: 1290px;
+  margin: 0 0 35px;
+}
+
+.page-brandenburg .filtertest-standard__stack {
+  gap: 48px;
+}
+
+.page-brandenburg .filtertest-standard__row {
+  grid-template-columns: minmax(0, 383px) minmax(0, 836px);
+  justify-content: space-between;
+  gap: 71px;
+  align-items: start;
+}
+
+.page-brandenburg .filtertest-standard__row--reverse {
+  grid-template-columns: minmax(0, 836px) minmax(0, 383px);
+}
+
+.page-brandenburg .filtertest-standard__media {
+  max-width: 383px;
+  justify-self: start;
+}
+
+.page-brandenburg .filtertest-standard__row--reverse .filtertest-standard__media {
+  justify-self: end;
+}
+
+.page-brandenburg .filtertest-standard__copy {
+  max-width: 836px;
+}
+
+.page-brandenburg .filtertest-standard__copy h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.page-brandenburg .brandenburg-services__copy p + h3 {
+  margin-top: 28px;
+}
+
+.page-brandenburg .cleanroom-benefits__copy h2 {
+  max-width: none;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .page-brandenburg .brandenburg-overview__grid,
+  .page-brandenburg .filtertest-standard__row,
+  .page-brandenburg .filtertest-standard__row--reverse,
+  .page-brandenburg .cleanroom-benefits__grid {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 980px) {
+  .page-brandenburg .brandenburg-overview__grid,
+  .page-brandenburg .filtertest-standard__row,
+  .page-brandenburg .filtertest-standard__row--reverse,
+  .page-brandenburg .cleanroom-benefits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-brandenburg .brandenburg-overview__copy,
+  .page-brandenburg .brandenburg-overview__media,
+  .page-brandenburg .brandenburg-overview__head,
+  .page-brandenburg .filtertest-standard__copy,
+  .page-brandenburg .filtertest-standard__media,
+  .page-brandenburg .cleanroom-benefits__copy,
+  .page-brandenburg .cleanroom-benefits__content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .page-brandenburg .filtertest-standard__media,
+  .page-brandenburg .filtertest-standard__row--reverse .filtertest-standard__media {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-brandenburg .company-hero {
+    min-height: 260px;
+  }
+
+  .page-brandenburg .company-hero__content {
+    min-height: 260px;
+    padding-top: 104px;
+    padding-bottom: 30px;
+  }
+
+  .page-brandenburg .company-hero h1 {
+    font-size: clamp(44px, 13vw, 72px);
+    line-height: 0.98;
+  }
+}
+
+.page-job-detail .site-header {
+  background: rgba(255, 255, 255, 0);
+}
+
+.page-job-detail .job-detail-hero {
+  min-height: clamp(330px, 40vh, 440px);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.56) 58%, rgba(255, 255, 255, 1) 100%),
+    url("assets/images/job-cleaning-hero.png") center 48% / cover no-repeat;
+}
+
+.page-job-detail .job-detail-hero::after {
+  height: 36%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.98) 80%);
+}
+
+.page-job-detail .job-detail-hero__content {
+  min-height: clamp(330px, 40vh, 440px);
+  align-content: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.page-job-detail .job-detail-hero h1 {
+  max-width: 1180px;
+  font-size: clamp(56px, 5vw, 92px);
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.job-detail-section {
+  padding: clamp(58px, 4vw, 78px) 0;
+}
+
+.job-detail-section--soft {
+  background: linear-gradient(180deg, #fff 0%, #e8f3ff 100%);
+}
+
+.job-detail-section--white {
+  background: #fff;
+}
+
+.job-detail-section--blue {
+  background: linear-gradient(180deg, #fff 0%, #e8f3ff 100%);
+}
+
+.job-detail-section--blue-light {
+  background: linear-gradient(180deg, #fff 8%, #e8f3ff 98%);
+}
+
+.job-detail-section--apply {
+  background: #e8f3ff;
+}
+
+.job-detail-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  gap: clamp(48px, 8vw, 150px);
+  align-items: center;
+}
+
+.page-job-detail .section-copy h2,
+.job-detail-heading h2 {
+  max-width: none;
+  color: var(--color-primary);
+  font-size: clamp(34px, 3.6vw, 48px);
+  line-height: 1.22;
+  font-weight: 600;
+}
+
+.page-job-detail .section-copy .button {
+  margin-top: 34px;
+}
+
+.job-detail-copy p {
+  line-height: 2;
+}
+
+.job-offer {
+  min-height: 330px;
+}
+
+.job-pill-list {
+  display: grid;
+  gap: 30px;
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.job-pill-list p {
+  margin: 0;
+}
+
+.job-pill-list span {
+  display: inline-block;
+  width: 24px;
+}
+
+.job-detail-heading {
+  margin: 0 0 58px;
+}
+
+.job-detail-heading--center {
+  text-align: center;
+}
+
+.job-detail-heading--center .eyebrow {
+  justify-content: center;
+}
+
+.job-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px clamp(72px, 10vw, 170px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.job-info-item h3,
+.job-quote-card h3,
+.job-process-card h3 {
+  margin: 0 0 12px;
+  color: var(--color-primary);
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.job-info-item p,
+.job-quote-card p,
+.job-process-card p,
+.job-check-list p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 2;
+}
+
+.job-info-item span {
+  display: inline-block;
+  width: 24px;
+}
+
+.job-detail-cta {
+  margin-top: 48px;
+}
+
+.job-detail-cta--center {
+  text-align: center;
+}
+
+.job-about__media {
+  max-width: 600px;
+  justify-self: end;
+}
+
+.job-check-list {
+  display: grid;
+  gap: 30px;
+}
+
+.job-check-list p {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: start;
+  font-size: 20px;
+}
+
+.job-check-list span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 50%;
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.job-check-list--tasks p {
+  font-size: 18px;
+}
+
+.job-check-list--tasks span {
+  border: 0;
+  color: var(--color-secondary);
+  font-size: 20px;
+}
+
+.job-tasks {
+  align-items: center;
+  gap: clamp(38px, 6vw, 90px);
+}
+
+.job-gallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(320px, 1fr);
+  gap: 12px;
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.3);
+  scroll-snap-type: x mandatory;
+}
+
+.job-gallery img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.job-quote-grid,
+.job-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(34px, 5vw, 72px);
+}
+
+.job-quote-card {
+  text-align: center;
+}
+
+.job-quote-card__mark {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--color-secondary);
+  font-size: 80px;
+  line-height: 0.8;
+  font-weight: 300;
+}
+
+.job-process-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.job-process-card {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+}
+
+.job-process-card > span {
+  margin-top: 7px;
+  color: var(--color-secondary);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.job-process-card h3,
+.job-process-card p {
+  grid-column: 2;
+}
+
+.job-apply-note {
+  margin: 48px 0 0;
+  color: var(--color-muted);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+@media (max-width: 980px) {
+  .page-job-detail .job-detail-hero,
+  .page-job-detail .job-detail-hero__content {
+    min-height: 360px;
+  }
+
+  .page-job-detail .job-detail-hero h1 {
+    font-size: clamp(46px, 9vw, 70px);
+  }
+
+  .job-detail-split,
+  .job-benefits-grid,
+  .job-quote-grid,
+  .job-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-detail-split {
+    gap: 34px;
+  }
+
+  .job-detail-heading {
+    margin-bottom: 36px;
+  }
+
+  .job-about__media {
+    justify-self: start;
+  }
+
+  .job-process-card {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-job-detail .job-detail-hero,
+  .page-job-detail .job-detail-hero__content {
+    min-height: 340px;
+  }
+
+  .page-job-detail .job-detail-hero__content {
+    padding-top: 104px;
+    padding-bottom: 34px;
+  }
+
+  .page-job-detail .job-detail-hero h1 {
+    font-size: clamp(40px, 12vw, 54px);
+    line-height: 1.08;
+  }
+
+  .job-detail-section {
+    padding: 52px 0;
+  }
+
+  .job-pill-list {
+    gap: 22px;
+  }
+
+  .job-check-list p,
+  .job-check-list--tasks p {
+    font-size: 16px;
+  }
+
+  .job-gallery {
+    grid-auto-columns: 86%;
+  }
+
+  .job-gallery img {
+    height: 230px;
+  }
+
+  .job-quote-card {
+    text-align: left;
+  }
+
+  .job-quote-card__mark {
+    font-size: 56px;
+  }
+}
+
+.page-job-teamlead .job-detail-hero__content {
+  padding-top: clamp(28px, 3vw, 44px);
+}
+
+@media (max-width: 640px) {
+  .page-job-teamlead .job-detail-hero__content {
+    padding-top: 38px;
+    padding-bottom: 24px;
+  }
+
+  .page-job-teamlead .job-detail-hero h1 {
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: clamp(42px, 11.5vw, 50px);
+    line-height: 1.04;
   }
 }

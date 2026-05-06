@@ -1,0 +1,17 @@
+[    1559ms] [LOG] opt-in @ https://igienair.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js:0
+[    1617ms] [WARNING] jQuery.Deferred exception: $(...).carousel is not a function TypeError: $(...).carousel is not a function
+    at HTMLDocument.<anonymous> (https://igienair.de/wp-content/plugins/universal-shortcodes/vc_extend/vc_custom.js:34:28)
+    at e (https://igienair.de/wp-includes/js/jquery/jquery.min.js:2:27028)
+    at t (https://igienair.de/wp-includes/js/jquery/jquery.min.js:2:27330) undefined @ https://igienair.de/wp-includes/js/jquery/jquery.min.js:1
+[    1629ms] [ERROR] Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID @ https://leadwerk.containers.piwik.pro/f5de7854-c3a1-4186-9c4b-4085cb270753.js:0
+[    1646ms] [ERROR] The method 'setTrackingSourceProvider' was not found in "_paq" variable.  Please have a look at the Matomo tracker documentation: https://developer.matomo.org/api-reference/tracking-javascript @ https://igienair.de/wp-content/uploads/matomo/matomo.js:11
+[    1645ms] TypeError: The method 'setTrackingSourceProvider' was not found in "_paq" variable.  Please have a look at the Matomo tracker documentation: https://developer.matomo.org/api-reference/tracking-javascript
+    at ak (https://igienair.de/wp-content/uploads/matomo/matomo.js:13:22)
+    at ai (https://igienair.de/wp-content/uploads/matomo/matomo.js:70:843)
+    at Object.addTracker (https://igienair.de/wp-content/uploads/matomo/matomo.js:72:977)
+    at https://igienair.de/wp-content/uploads/matomo/matomo.js:76:129
+    at https://igienair.de/wp-content/uploads/matomo/matomo.js:76:691
+[    1679ms] TypeError: $(...).carousel is not a function
+    at HTMLDocument.<anonymous> (https://igienair.de/wp-content/plugins/universal-shortcodes/vc_extend/vc_custom.js:34:28)
+    at e (https://igienair.de/wp-includes/js/jquery/jquery.min.js:2:27028)
+    at t (https://igienair.de/wp-includes/js/jquery/jquery.min.js:2:27330)

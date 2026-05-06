@@ -1,0 +1,238 @@
+- generic [active] [ref=e1]:
+  - text:     
+  - generic [ref=e53]:
+    - banner [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - navigation [ref=e58]:
+            - button "Menü" [ref=e59] [cursor=pointer]
+            - text:        
+          - link "logo-igienair" [ref=e63] [cursor=pointer]:
+            - /url: /
+        - link "Angebot anfordern" [ref=e65] [cursor=pointer]:
+          - /url: https://igienair.de/kontakt/angebot-anfordern/
+          - generic [ref=e66]: Angebot anfordern
+    - main [ref=e67]:
+      - generic [ref=e68]:
+        - img "Bild" [ref=e69]
+        - generic [ref=e72]:
+          - heading "Kunden in Bernau" [level=1] [ref=e76]
+          - generic [ref=e81]:
+            - generic [ref=e83]: Individuelles Angebot anfordern
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86] [cursor=pointer]: Firmenname *
+                - textbox "Firmenname *" [ref=e87]
+              - generic [ref=e88]:
+                - generic [ref=e89] [cursor=pointer]: Ihr Vor- und Nachname *
+                - textbox "Ihr Vor- und Nachname *" [ref=e90]
+              - generic [ref=e91]:
+                - generic [ref=e92] [cursor=pointer]: "E-Mail-Adresse: *"
+                - 'textbox "E-Mail-Adresse: *" [ref=e93]'
+              - generic [ref=e94]:
+                - generic [ref=e95] [cursor=pointer]: Telefonnummer
+                - textbox "Telefonnummer" [ref=e96]:
+                  - /placeholder: Ihre Telefonnummer
+              - generic [ref=e97]:
+                - generic [ref=e98] [cursor=pointer]: Straße *
+                - textbox "Straße *" [ref=e99]
+              - generic [ref=e100]:
+                - generic [ref=e101] [cursor=pointer]: Postleitzahl *
+                - textbox "Postleitzahl *" [ref=e102]
+              - generic [ref=e103]:
+                - generic [ref=e104] [cursor=pointer]: Sind Durchführungsort und Anschrift identisch? *
+                - combobox "Sind Durchführungsort und Anschrift identisch? *" [ref=e105]:
+                  - option "Sind Durchführungsort und Anschrift identisch? *" [disabled] [selected]
+                  - option "JA"
+                  - option "NEIN"
+              - generic [ref=e106]:
+                - generic [ref=e107] [cursor=pointer]: "Sie wünschen ein Angebot für:"
+                - combobox "Sie wünschen ein Angebot für:" [ref=e108]:
+                  - 'option "Sie wünschen ein Angebot für: *" [disabled] [selected]'
+                  - option "Hygieneinspektion nach VDI 6022"
+                  - option "Gefährdungsbeurteilung nach VDI 2047 und 42. BImSchV"
+                  - option "Hygienereinigung von RLT-Anlagen"
+                  - option "Luftkanalreinigung nach VDI 6022"
+                  - option "Hygienereinigung von Kühltürmen nach VDI 2047"
+                  - option "Reinraumqualifizierung nach VDI 2083 oder ISO 14644"
+                  - option "Prüfung oder Abnahme von OP-Räumen nach DIN EN 1946-4"
+                  - option "Prüfung von Laborabzügen nach DIN EN 14175"
+                  - option "Raumluftdesinfektion"
+                  - option "Eine andere Leistung"
+              - generic [ref=e109]:
+                - generic [ref=e110] [cursor=pointer]: "Anzahl, Maße und Leistung der Anlagen oder Räumen:"
+                - textbox "Anzahl, Maße und Leistung der Anlagen oder Räumen:" [ref=e111]
+              - generic [ref=e112]:
+                - generic [ref=e113] [cursor=pointer]: "Beschreibung der gewünschten Leistungen:"
+                - textbox "Beschreibung der gewünschten Leistungen:" [ref=e114]
+              - generic [ref=e115]:
+                - generic [ref=e116] [cursor=pointer]: Datenschutzbestimmungen *
+                - list [ref=e117]:
+                  - listitem [ref=e118]:
+                    - checkbox "Ich habe die Datenschutzbestimmungen gelesen und akzeptiert." [ref=e119] [cursor=pointer]
+                    - generic [ref=e120] [cursor=pointer]:
+                      - text: Ich habe die
+                      - link "Datenschutzbestimmungen" [ref=e121]:
+                        - /url: https://igienair.de/datenschutz/
+                      - text: gelesen und akzeptiert.
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - img [ref=e125]
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Anti-Roboter-Verifizierung
+                    - button "Hier klicken" [ref=e130] [cursor=pointer]
+                - link "FriendlyCaptcha ⇗" [ref=e132] [cursor=pointer]:
+                  - /url: https://friendlycaptcha.com/
+              - button "Jetzt Angebot anfordern" [ref=e133] [cursor=pointer]
+      - generic [ref=e139]:
+        - generic [ref=e143]:
+          - heading "Für RLT-Anlagen und Kühlturm Reinigung in Bernau ist Igienair Ihr Ansprechpartner Nr. 1" [level=2] [ref=e144]
+          - generic [ref=e146]:
+            - paragraph [ref=e147]: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Bernau und Umgebung kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+            - paragraph [ref=e148]:
+              - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+              - link "Hygieneinspektion VDI 6022" [ref=e149] [cursor=pointer]:
+                - /url: https://igienair.de/hygieneinspektion-vdi-6022/
+              - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+            - paragraph [ref=e150]:
+              - generic [ref=e151]: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Bernau kümmert.
+            - paragraph [ref=e152]: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft."
+            - paragraph [ref=e153]:
+              - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+              - link "technische Hygiene" [ref=e154] [cursor=pointer]:
+                - /url: https://igienair.de/
+              - text: bei Rückkühlwerken und RLT-Anlagen.
+        - generic [ref=e157]:
+          - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Bernau und Umgebung" [level=2] [ref=e158]'
+          - heading "Kühlturm Reinigung & Kühlturm Wartung" [level=4] [ref=e159]
+          - paragraph [ref=e160]: "Wir sorgen für beste Luftqualität in Bernau und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+          - paragraph [ref=e161]: Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen
+          - paragraph [ref=e162]: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+          - paragraph [ref=e163]: Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen
+          - paragraph [ref=e164]: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen in Bernau zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+          - paragraph [ref=e165]: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+          - paragraph [ref=e166]:
+            - generic [ref=e167]: Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Bernau und Umgebung
+          - paragraph [ref=e168]: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+          - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=4] [ref=e169]
+          - paragraph [ref=e170]:
+            - text: Mit einer professionellen hygienetechnischen
+            - link "Reinigung & Desinfektion" [ref=e171] [cursor=pointer]:
+              - /url: https://igienair.de/reinigung-desinfektion/
+            - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+          - paragraph [ref=e172]: Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052
+          - paragraph [ref=e173]:
+            - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+            - link "Küchenabluftsysteme" [ref=e174] [cursor=pointer]:
+              - /url: https://igienair.de/anlagen/kuechenabluftsysteme/
+            - text: .
+          - paragraph [ref=e175]: Reinraumprüfung gemäß Norm EN ISO 14644
+          - paragraph [ref=e176]:
+            - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+            - link "Reinraumqualifizierung" [ref=e177] [cursor=pointer]:
+              - /url: https://igienair.de/anlagen/reinraumqualifizierung/
+            - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+            - link "Digestorien" [ref=e178] [cursor=pointer]:
+              - /url: https://igienair.de/anlagen/laborabzuege/
+            - text: gemäß
+            - link "DIN EN ISO 14175" [ref=e179] [cursor=pointer]:
+              - /url: https://igienair.de/normen/din-en-14175/
+            - text: zu unserem Leistungsportfolio.
+        - generic [ref=e181]:
+          - paragraph [ref=e182]:
+            - strong [ref=e183]: Individuelle Branchenlösungen
+          - generic [ref=e185]:
+            - generic [ref=e188]:
+              - link "Gesundheitswesen":
+                - /url: https://igienair.de/kunden/gesundheit
+                - generic [ref=e189] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - heading "Gesundheitswesen" [level=3] [ref=e193]
+            - generic [ref=e196]:
+              - link "Pharma":
+                - /url: https://igienair.de/kunden/pharma
+                - generic [ref=e197] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - heading "Pharma" [level=3] [ref=e201]
+            - generic [ref=e204]:
+              - link "Lebensmittel":
+                - /url: https://igienair.de/kunden/lebensmittel
+                - generic [ref=e205] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - heading "Lebensmittel" [level=3] [ref=e209]
+            - generic [ref=e212]:
+              - link "Industrie":
+                - /url: https://igienair.de/industrie
+                - generic [ref=e213] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - heading "Industrie" [level=3] [ref=e217]
+            - generic [ref=e220]:
+              - link "Gastronomie":
+                - /url: https://igienair.de/kunden/gastronomie
+                - generic [ref=e221] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - heading "Gastronomie" [level=3] [ref=e225]
+            - generic [ref=e228]:
+              - link "Gemeinden":
+                - /url: https://igienair.de/kunden/gemeinden
+                - generic [ref=e229] [cursor=pointer]:
+                  - generic:
+                    - img
+                  - heading "Gemeinden" [level=3] [ref=e233]
+        - generic [ref=e235]:
+          - heading "RLT-Anlagen und Kühlturm Reinigung in Bernau – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=3] [ref=e236]
+          - paragraph [ref=e237]: "Als Experte für raumlufttechnische Hygiene bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+          - list [ref=e238]:
+            - listitem [ref=e239]: "Qualitätsversprechen: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden."
+          - list [ref=e240]:
+            - listitem [ref=e241]: "Leistungsspektrum: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach."
+          - list [ref=e242]:
+            - listitem [ref=e243]: "Kundennähe & Individualität: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt."
+          - paragraph [ref=e244]:
+            - generic [ref=e245]: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Bernau und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+  - contentinfo [ref=e246]:
+    - generic [ref=e257]:
+      - text: "Sie sind hier:"
+      - generic [ref=e258]:
+        - link "Startseite" [ref=e260] [cursor=pointer]:
+          - /url: https://igienair.de/
+        - text: »
+        - link "Kunden" [ref=e262] [cursor=pointer]:
+          - /url: https://igienair.de/kunden/
+        - text: »
+        - link "Referenzen" [ref=e264] [cursor=pointer]:
+          - /url: https://igienair.de/kunden/referenzen/
+        - text: »
+        - link "Berlin" [ref=e266] [cursor=pointer]:
+          - /url: https://igienair.de/kunden/referenzen/berlin/
+        - text: » Bernau
+    - generic [ref=e275]:
+      - paragraph [ref=e281]: © IGIENAIR 2018 - 2021
+      - navigation [ref=e285]:
+        - list [ref=e286]:
+          - listitem [ref=e287]:
+            - link "Glossar" [ref=e288] [cursor=pointer]:
+              - /url: https://igienair.de/glossar/
+          - listitem [ref=e289]:
+            - link "AGB" [ref=e290] [cursor=pointer]:
+              - /url: https://igienair.de/unternehmen/agb/
+          - listitem [ref=e291]:
+            - link "Datenschutz" [ref=e292] [cursor=pointer]:
+              - /url: https://igienair.de/datenschutz/
+          - listitem [ref=e293]:
+            - link "Impressum" [ref=e294] [cursor=pointer]:
+              - /url: https://igienair.de/impressum/
+          - listitem [ref=e295]:
+            - link "Cookie-Richtlinie (EU)" [ref=e296] [cursor=pointer]:
+              - /url: https://igienair.de/cookie-richtlinie-eu/
+      - link "Datenschutzeinstellungen" [ref=e301] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e302]: Datenschutzeinstellungen
+  - button "Back to top" [ref=e303] [cursor=pointer]:
+    - generic [ref=e304]: 

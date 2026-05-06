@@ -1,0 +1,384 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e3]:
+    - banner:
+      - generic [ref=e5]:
+        - img "logo-igienair-white" [ref=e9]
+        - generic [ref=e13]:
+          - navigation [ref=e15]:
+            - list [ref=e16]:
+              - listitem [ref=e17]:
+                - link "Unternehmen 3" [ref=e18] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/unternehmen-2/
+              - listitem [ref=e19]:
+                - link "Leistungen 3" [ref=e20] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/leistungen-2/
+              - listitem [ref=e21]:
+                - link "Normen 3" [ref=e22] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/normen-2/
+              - listitem [ref=e23]:
+                - link "Anlagen 3" [ref=e24] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/anlagen-2/
+              - listitem [ref=e25]:
+                - link "Kunden 3" [ref=e26] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/kunden-2/
+              - listitem [ref=e27]:
+                - link "Jobs 3" [ref=e28] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/jobs-2/
+              - listitem [ref=e29]:
+                - link "Standorte 3" [ref=e30] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/standorte/
+          - text: a
+        - link "Angebot anfordern" [ref=e33] [cursor=pointer]:
+          - /url: ""
+        - img "deutschland blau" [ref=e37]
+    - generic [ref=e38]:
+      - article [ref=e40]:
+        - generic [ref=e43]:
+          - generic [ref=e46]:
+            - heading "Blindtext" [level=4] [ref=e49]
+            - generic [ref=e51]:
+              - heading "Wir suchen" [level=1] [ref=e52]
+              - heading "Mitarbeiter/in technische Reinigung (m/w/d)" [level=1] [ref=e53]
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - heading "Lorem Ipsum" [level=4] [ref=e59]
+              - heading "Wir bieten:" [level=2] [ref=e62]
+              - link "Jetzt Expressbewerbung starten" [ref=e67] [cursor=pointer]:
+                - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+            - generic [ref=e68]:
+              - heading "🚀 Gute Entwicklungschancen" [level=4] [ref=e72]
+              - heading "💵 Leistungsgerechte Bezahlung" [level=4] [ref=e76]
+              - heading "📍 In deiner Nähe" [level=4] [ref=e80]
+              - heading "🕑 Vollzeit" [level=4] [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e87]:
+              - heading "Lorem Ipsum" [level=4] [ref=e90]
+              - heading "Deine Vorteile bei uns" [level=2] [ref=e93]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e101]:
+                  - heading "🏅 Sehr gute Aufstiegschancen" [level=4] [ref=e102]
+                  - paragraph [ref=e104]: Als Marktführer in unserer Branche wachsen wir schnell und bieten so damit aussichtsreiche Karrieremöglichkeiten bspw. zum Obermonteur oder Teamleiter.
+                - generic [ref=e107]:
+                  - heading "💪 Vielfältige Tätigkeiten" [level=4] [ref=e108]
+                  - paragraph [ref=e110]: Spannende Abwechslung zwischen Montage-, Wartungs- und Reinigungsarbeiten.
+                - generic [ref=e113]:
+                  - heading "💯 Abwechslungsreicher Arbeitsalltag" [level=4] [ref=e114]
+                  - paragraph [ref=e116]: Sehr flexible Arbeitszeiten aufgrund von Dienstreisen und Nachts- bzw. Wochenendarbeiten. Dadurch Überstunden die ausbezahlt werden oder als Freizeitausgleich genutzt werden können.
+              - generic [ref=e117]:
+                - generic [ref=e120]:
+                  - heading "💵 Leistungsgerechte Bezahlung" [level=4] [ref=e121]
+                  - paragraph [ref=e123]: leistungsbezogenes Gehalt mit VWL und gesetzlichen Zulagen (Nachtzulagen, Wochenendzulagen, Verpflegungspauschale) und einer möglichen Erfolgsprämie.
+                - generic [ref=e126]:
+                  - heading "👥 Tolles Betriebsklima" [level=4] [ref=e127]
+                  - paragraph [ref=e129]: Sehr kollegiale Atmosphäre, auch mit den Vorgesetzten, tägliche Feedbackgespräche und regelmäßige Feste, wie Weihnachtsfeier, Grillfest, Betriebsausflug.
+                - generic [ref=e132]:
+                  - heading "✅ Dein perfekter Start" [level=4] [ref=e133]
+                  - paragraph [ref=e135]: Dein zukünftiges Team wird dich herzlich in Empfang nehmen, ausführlich einarbeiten und freut sich bereits jetzt auf dich.
+            - link "Jetzt Expressbewerbung starten" [ref=e139] [cursor=pointer]:
+              - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - heading "Igienair GmbH" [level=4] [ref=e145]
+              - heading "Das sind wir:" [level=2] [ref=e148]
+              - generic [ref=e153]:
+                - paragraph [ref=e154]:
+                  - strong [ref=e156]:
+                    - emphasis [ref=e157]: Technische Hygiene ist unsere Welt.
+                - paragraph [ref=e158]:
+                  - generic [ref=e159]:
+                    - strong [ref=e160]: Seit
+                    - text: dem Jahr
+                    - strong [ref=e161]: "2003"
+                    - text: bieten wir als
+                    - strong [ref=e162]: Familienunternehmen
+                    - text: unsere Expertise im Bereich technischer Hygiene vielen Unternehmen erfolgreich an.
+                - paragraph [ref=e163]:
+                  - generic [ref=e164]:
+                    - text: Die
+                    - strong [ref=e165]: Reinigung und Inspektion
+                    - text: von Lüftungsanlagen sowie von Zuluft- und Abluftkanälen bilden den Kern unseres umfassenden Leistungsangebotes.
+                - paragraph [ref=e166]:
+                  - generic [ref=e167]:
+                    - text: In nur wenigen Jahren konnten wir durch die Qualität unserer Durchführungen zum
+                    - strong [ref=e168]: Marktführer für Luftkanalreinigung
+                    - text: aufsteigen.
+              - link "Jetzt Expressbewerbung starten" [ref=e170] [cursor=pointer]:
+                - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+            - img "2" [ref=e174]
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - heading "Lorem Ipsum" [level=4] [ref=e180]
+              - heading "Das bist Du:" [level=2] [ref=e183]
+              - link "Jetzt Expressbewerbung starten" [ref=e188] [cursor=pointer]:
+                - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+            - generic [ref=e189]:
+              - generic [ref=e191]:
+                - generic [ref=e194]: 
+                - paragraph [ref=e197]:
+                  - text: Du bist
+                  - strong [ref=e198]: teamfähig
+                  - text: und
+                  - strong [ref=e199]: lernbereit
+                  - text: .
+              - generic [ref=e201]:
+                - generic [ref=e204]: 
+                - paragraph [ref=e207]:
+                  - text: Du bist
+                  - strong [ref=e208]: zuverlässig
+                  - text: und hast ein
+                  - strong [ref=e209]: Grundverständnis
+                  - text: für
+                  - strong [ref=e210]: Hygiene
+                  - text: .
+              - generic [ref=e212]:
+                - generic [ref=e215]: 
+                - paragraph [ref=e218]:
+                  - text: Du bist
+                  - strong [ref=e219]: gerne
+                  - text: mit deinem kleinen Team auf
+                  - strong [ref=e220]: Dienstreisen
+                  - text: ", auch wenn das mal mehrere Tage sind."
+              - generic [ref=e222]:
+                - generic [ref=e225]: 
+                - paragraph [ref=e228]:
+                  - text: Im
+                  - strong [ref=e229]: Optimalfall
+                  - text: besitzt du einen
+                  - strong [ref=e230]: Führerschein
+                  - text: .
+          - generic [ref=e231]:
+            - generic [ref=e233]:
+              - heading "Lorem Ipsum" [level=4] [ref=e236]
+              - heading "Das sind Deine Aufgaben:" [level=2] [ref=e239]
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e246]:
+                  - generic [ref=e249]: A
+                  - paragraph [ref=e252]: Wartung, Reinigung von Lüftungs- und Klimaanlagen.
+                - generic [ref=e254]:
+                  - generic [ref=e257]: A
+                  - paragraph [ref=e260]: Abwechslungsreiche Arbeitseinsätze bei unseren Industriekunden (Krankenhäuser, Produktionsstätten, Bürogebäude, etc.) mit teilweise Übernachtungen im Hotel.
+                - generic [ref=e262]:
+                  - generic [ref=e265]: A
+                  - paragraph [ref=e268]: Wartung, Reinigung und Sanierung von Rückkühlwerken.
+                - generic [ref=e270]:
+                  - generic [ref=e273]: A
+                  - paragraph [ref=e276]: Wenn du bereits Branchenkenntnisse hast, kannst du auch Verantwortung für dein Team übernehmen und Einsätze selbstständig koordinieren.
+              - generic [ref=e278]:
+                - link "4" [ref=e282] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/wp-content/uploads/2025/03/4.png
+                  - img [ref=e283]
+                - generic:
+                  - link "4" [ref=e284] [cursor=pointer]:
+                    - /url: "#"
+                  - link "5" [ref=e285] [cursor=pointer]:
+                    - /url: "#"
+                - generic [ref=e286]:
+                  - link "1" [ref=e287] [cursor=pointer]:
+                    - /url: "#"
+                  - link "2" [ref=e288] [cursor=pointer]:
+                    - /url: "#"
+                  - link "3" [ref=e289] [cursor=pointer]:
+                    - /url: "#"
+                  - link "4" [ref=e290] [cursor=pointer]:
+                    - /url: "#"
+                  - link "5" [ref=e291] [cursor=pointer]:
+                    - /url: "#"
+            - link "Jetzt Expressbewerbung starten" [ref=e295] [cursor=pointer]:
+              - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+          - generic [ref=e296]:
+            - generic [ref=e298]:
+              - heading "Lorem Ipsum" [level=4] [ref=e301]
+              - heading "Das sagen unsere Mitarbeiter:" [level=2] [ref=e304]
+            - generic [ref=e308]:
+              - generic [ref=e311]:
+                - generic [ref=e314]: "|"
+                - generic [ref=e315]:
+                  - heading "Luka P., Hygienemitarbeiter/Messtechniker" [level=4] [ref=e316]
+                  - generic [ref=e317]:
+                    - paragraph [ref=e318]:
+                      - text: “Ich habe als Obermonteur bei Igienair angefangen und wurde auf Grund meiner guten Auffassungsgabe und dank meiner Vorkenntnisse
+                      - strong [ref=e319]: relativ schnell Teamleiter.
+                    - paragraph [ref=e320]:
+                      - text: Inzwischen bin ich zu den Messtechnikern in der Firma gewechselt, ein anspruchsvoller Job,
+                      - strong [ref=e321]: der mir sehr viel Spaß macht.
+                    - paragraph [ref=e322]:
+                      - text: Menschn mit
+                      - strong [ref=e323]: ausreichender Motivation
+                      - text: haben hier
+                      - strong [ref=e324]: gute Chancen
+                      - text: auf
+                      - strong [ref=e325]: ein gutes und geregeltes Einkommen.
+                      - text: “
+              - generic [ref=e328]:
+                - generic [ref=e331]: "|"
+                - generic [ref=e332]:
+                  - heading "Marius O., Teamleiter" [level=4] [ref=e333]
+                  - generic [ref=e334]:
+                    - paragraph [ref=e335]:
+                      - text: “Man
+                      - strong [ref=e336]: lernt bei Igienair jeden Tag
+                      - text: etwas Neues dazu!
+                      - strong [ref=e337]: Angefangen
+                      - text: habe ich als
+                      - strong [ref=e338]: Monteur
+                      - text: ", inzwischen bin ich schon über ein Jahr"
+                      - strong [ref=e339]: Obermonteur
+                      - text: und werde nun
+                      - strong [ref=e340]: Teamleiter
+                      - text: in dieser Firma.
+                    - paragraph [ref=e341]:
+                      - text: Die
+                      - strong [ref=e342]: Aufstiegschancen sing gut
+                      - text: ", daher habe ich mich hier beworben.”"
+            - link "Jetzt gleich bewerben" [ref=e346] [cursor=pointer]:
+              - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+          - generic [ref=e347]:
+            - generic [ref=e349]:
+              - heading "Lorem Ipsum" [level=4] [ref=e352]
+              - heading "So geht es jetzt weiter:" [level=2] [ref=e355]
+            - generic [ref=e359]:
+              - generic [ref=e362]:
+                - generic [ref=e365]: 
+                - generic [ref=e366]:
+                  - heading "1. Schicke uns deine Bewerbung" [level=4] [ref=e367]
+                  - paragraph [ref=e369]: Ganz einfach, in dem du ein paar Fragen beantwortest. Ohne Lebenslauf & Anschreiben.
+              - generic [ref=e372]:
+                - generic [ref=e375]: R
+                - generic [ref=e376]:
+                  - heading "2. Schnelle Rückmeldung" [level=4] [ref=e377]
+                  - paragraph [ref=e379]: Wir sichten deine Bewerbung und melden uns innerhalb weniger Werktage bei dir.
+              - generic [ref=e382]:
+                - generic [ref=e385]: 
+                - generic [ref=e386]:
+                  - heading "3. Wir lernen uns persönlich kennen" [level=4] [ref=e387]
+                  - paragraph [ref=e389]: Sollten wir gut zueinander passen, laden wir dich zu einem Kennenlerngespräch ein.
+            - generic [ref=e391]:
+              - paragraph [ref=e394]:
+                - generic [ref=e395]: Keine Sorge! Deine Bewerbung bleibt selbstverständlich vollkommen diskret.
+              - link "Jetzt in nur 60 Sekunden bei uns bewerben" [ref=e397] [cursor=pointer]:
+                - /url: https://www.igienair-jobs.de/mitarbeiterreinigung/page_f4v2br/
+      - contentinfo [ref=e398]:
+        - generic [ref=e399]:
+          - generic [ref=e401]:
+            - generic [ref=e402]:
+              - img "Logo_Navi_1" [ref=e405]
+              - paragraph [ref=e408]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            - generic [ref=e409]:
+              - heading "MENÜ" [level=4] [ref=e412]
+              - navigation [ref=e415]:
+                - list [ref=e416]:
+                  - listitem [ref=e417]:
+                    - link "Unternehmen 3" [ref=e418] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/unternehmen-2/
+                      - generic [ref=e419]: Unternehmen
+                      - generic [ref=e420]: "3"
+                  - listitem [ref=e421]:
+                    - link "Leistungen 3" [ref=e422] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/leistungen-2/
+                      - generic [ref=e423]: Leistungen
+                      - generic [ref=e424]: "3"
+                  - listitem [ref=e425]:
+                    - link "Normen 3" [ref=e426] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/normen-2/
+                      - generic [ref=e427]: Normen
+                      - generic [ref=e428]: "3"
+                  - listitem [ref=e429]:
+                    - link "Anlagen 3" [ref=e430] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/anlagen-2/
+                      - generic [ref=e431]: Anlagen
+                      - generic [ref=e432]: "3"
+                  - listitem [ref=e433]:
+                    - link "Kunden 3" [ref=e434] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/kunden-2/
+                      - generic [ref=e435]: Kunden
+                      - generic [ref=e436]: "3"
+                  - listitem [ref=e437]:
+                    - link "Jobs 3" [ref=e438] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/jobs-2/
+                      - generic [ref=e439]: Jobs
+                      - generic [ref=e440]: "3"
+                  - listitem [ref=e441]:
+                    - link "Standorte 3" [ref=e442] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/standorte/
+                      - generic [ref=e443]: Standorte
+                      - generic [ref=e444]: "3"
+            - generic [ref=e445]:
+              - heading "STANDORTE" [level=4] [ref=e448]
+              - navigation [ref=e451]:
+                - list [ref=e452]:
+                  - listitem [ref=e453]:
+                    - link "Baden-Württemberg" [ref=e454] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e455]:
+                    - link "Nordbayern" [ref=e456] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e457]:
+                    - link "Südbayern" [ref=e458] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e459]:
+                    - link "Rhein-Main" [ref=e460] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e461]:
+                    - link "Nordrhein-Westfalen" [ref=e462] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e463]:
+                    - link "Nord" [ref=e464] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e465]:
+                    - link "Bodensee" [ref=e466] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e467]:
+                    - link "Berlin" [ref=e468] [cursor=pointer]:
+                      - /url: "#"
+            - generic [ref=e469]:
+              - heading "KONTAKT" [level=4] [ref=e472]
+              - generic [ref=e474]:
+                - generic [ref=e477]: 
+                - generic [ref=e478]:
+                  - heading "IGIENAIR GmbH" [level=4] [ref=e479]
+                  - paragraph [ref=e481]:
+                    - text: Am Hardtwald 6-8
+                    - text: 76275 Ettlingen
+              - generic [ref=e483]:
+                - generic [ref=e486]: 
+                - paragraph [ref=e489]: +49 (0) 7243 3699101
+              - generic [ref=e491]:
+                - generic [ref=e494]: 
+                - paragraph [ref=e497]: +49 (0) 7243 3694 943
+              - generic [ref=e499]:
+                - generic [ref=e502]: 
+                - paragraph [ref=e505]: kontakt@igienair.com
+          - generic [ref=e507]:
+            - paragraph [ref=e511]: © IGIENAIR 2025
+            - generic [ref=e515]:
+              - navigation [ref=e517]:
+                - list [ref=e518]:
+                  - listitem [ref=e519]:
+                    - link "AGB" [ref=e520] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/unternehmen/agb/
+                  - listitem [ref=e521]:
+                    - link "Datenschutz" [ref=e522] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/datenschutz/
+                  - listitem [ref=e523]:
+                    - link "Impressum" [ref=e524] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/impressum/
+                  - listitem [ref=e525]:
+                    - link "Cookie-Richtlinie (EU)" [ref=e526] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/cookie-richtlinie-eu/
+              - text: a
+            - link "Datenschutzeinstellungen 5" [ref=e529] [cursor=pointer]:
+              - /url: ""
+  - generic [ref=e530]:
+    - generic [ref=e531] [cursor=pointer]:
+      - text: 
+      - generic [ref=e535]: 
+    - generic [ref=e536] [cursor=pointer]:
+      - text: 
+      - generic [ref=e540]: 
+    - generic [ref=e541] [cursor=pointer]:
+      - text: 
+      - generic [ref=e545]: 
+  - text:   

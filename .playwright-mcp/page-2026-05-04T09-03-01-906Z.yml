@@ -1,0 +1,375 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - dialog "Datenschutzeinstellungen":
+      - generic [ref=e2]:
+        - img "Igienair GmbH" [ref=e4]
+        - generic [ref=e5]: Datenschutzeinstellungen
+        - text: 
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - strong [ref=e9]: Wir benötigen Ihre Zustimmung, bevor Sie unsere Website weiter besuchen können.
+          - text: Wir verwenden Cookies und andere Technologien auf unserer Webseite. Einige von ihnen sind essenziell, während andere uns helfen, diese Webseite und Ihre Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und Inhalte oder Anzeigen- und Inhaltsmessung. Weitere Informationen über die Verwendung Ihrer Daten finden Sie in unserer
+          - link "Datenschutzerklärung" [ref=e10] [cursor=pointer]:
+            - /url: https://igienair.de/datenschutz/
+          - text: . Es besteht keine Verpflichtung, der Verarbeitung Ihrer Daten zuzustimmen, um dieses Angebot nutzen zu können. Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen oder anpassen.
+          - generic [ref=e11]: Einige Services verarbeiten personenbezogene Daten in den USA. Mit deiner Einwilligung zur Nutzung dieser Services stimmst du auch der Verarbeitung deiner Daten in den USA gemäß Art. 49 (1) lit. a DSGVO zu. Das EuGH stuft die USA als Land mit unzureichendem Datenschutz nach EU-Standards ein. So besteht etwa das Risiko, dass US-Behörden personenbezogene Daten in Überwachungsprogrammen verarbeiten, ohne bestehende Klagemöglichkeit für Europäer.
+        - generic [ref=e12]:
+          - group [ref=e13]:
+            - generic "Essentiell Immer aktiv" [ref=e14]:
+              - generic [ref=e15]:
+                - generic [ref=e16]: Essentiell
+                - generic [ref=e17]:
+                  - generic: 
+                  - text: Immer aktiv
+                - img [ref=e19] [cursor=pointer]
+          - group [ref=e21]:
+            - generic "Statistiken Statistiken" [ref=e22]:
+              - generic [ref=e23]:
+                - generic [ref=e24]: Statistiken
+                - generic [ref=e25]:
+                  - checkbox "Statistiken" [ref=e26] [cursor=pointer]
+                  - generic [ref=e27] [cursor=pointer]: Statistiken
+                - img [ref=e29] [cursor=pointer]
+          - group [ref=e31]:
+            - generic "Marketing Marketing" [ref=e32]:
+              - generic [ref=e33]:
+                - generic [ref=e34]: Marketing
+                - generic [ref=e35]:
+                  - checkbox "Marketing" [ref=e36] [cursor=pointer]
+                  - generic [ref=e37] [cursor=pointer]: Marketing
+                - img [ref=e39] [cursor=pointer]
+      - generic [ref=e42]:
+        - button "Akzeptieren" [ref=e43] [cursor=pointer]
+        - button "Einstellungen speichern" [ref=e44] [cursor=pointer]
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - link "Cookie-Richtlinie" [ref=e48] [cursor=pointer]:
+            - /url: https://igienair.de/cookie-richtlinie-eu/
+        - listitem [ref=e49]:
+          - link "Datenschutz" [ref=e50] [cursor=pointer]:
+            - /url: https://igienair.de/datenschutz/
+        - listitem [ref=e51]:
+          - link "Impressum" [ref=e52] [cursor=pointer]:
+            - /url: https://igienair.de/impressum/
+  - generic:
+    - banner:
+      - generic:
+        - generic:
+          - generic:
+            - navigation:
+              - button "Menü"
+              - text:        
+            - generic:
+              - link "logo-igienair":
+                - /url: /
+          - generic:
+            - link "Angebot anfordern":
+              - /url: https://igienair.de/kontakt/angebot-anfordern/
+              - generic: Angebot anfordern
+    - main:
+      - generic:
+        - img "Bild"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Kunden in Bernau" [level=1]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Individuelles Angebot anfordern
+                      - generic:
+                        - generic:
+                          - generic: Firmenname *
+                          - textbox "Firmenname *"
+                        - generic:
+                          - generic: Ihr Vor- und Nachname *
+                          - textbox "Ihr Vor- und Nachname *"
+                        - generic:
+                          - generic: "E-Mail-Adresse: *"
+                          - 'textbox "E-Mail-Adresse: *"'
+                        - generic:
+                          - generic: Telefonnummer
+                          - textbox "Telefonnummer":
+                            - /placeholder: Ihre Telefonnummer
+                        - generic:
+                          - generic: Straße *
+                          - textbox "Straße *"
+                        - generic:
+                          - generic: Postleitzahl *
+                          - textbox "Postleitzahl *"
+                        - generic:
+                          - generic: Sind Durchführungsort und Anschrift identisch? *
+                          - combobox "Sind Durchführungsort und Anschrift identisch? *":
+                            - option "Sind Durchführungsort und Anschrift identisch? *" [disabled] [selected]
+                            - option "JA"
+                            - option "NEIN"
+                        - generic:
+                          - generic: "Sie wünschen ein Angebot für:"
+                          - combobox "Sie wünschen ein Angebot für:":
+                            - 'option "Sie wünschen ein Angebot für: *" [disabled] [selected]'
+                            - option "Hygieneinspektion nach VDI 6022"
+                            - option "Gefährdungsbeurteilung nach VDI 2047 und 42. BImSchV"
+                            - option "Hygienereinigung von RLT-Anlagen"
+                            - option "Luftkanalreinigung nach VDI 6022"
+                            - option "Hygienereinigung von Kühltürmen nach VDI 2047"
+                            - option "Reinraumqualifizierung nach VDI 2083 oder ISO 14644"
+                            - option "Prüfung oder Abnahme von OP-Räumen nach DIN EN 1946-4"
+                            - option "Prüfung von Laborabzügen nach DIN EN 14175"
+                            - option "Raumluftdesinfektion"
+                            - option "Eine andere Leistung"
+                        - generic:
+                          - generic: "Anzahl, Maße und Leistung der Anlagen oder Räumen:"
+                          - textbox "Anzahl, Maße und Leistung der Anlagen oder Räumen:"
+                        - generic:
+                          - generic: "Beschreibung der gewünschten Leistungen:"
+                          - textbox "Beschreibung der gewünschten Leistungen:"
+                        - generic:
+                          - generic: Datenschutzbestimmungen *
+                          - list:
+                            - listitem:
+                              - checkbox "Ich habe die Datenschutzbestimmungen gelesen und akzeptiert."
+                              - generic:
+                                - text: Ich habe die
+                                - link "Datenschutzbestimmungen":
+                                  - /url: https://igienair.de/datenschutz/
+                                - text: gelesen und akzeptiert.
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - generic:
+                              - generic: Anti-Roboter-Verifizierung
+                              - button "Hier klicken"
+                          - generic:
+                            - link "FriendlyCaptcha ⇗":
+                              - /url: https://friendlycaptcha.com/
+                        - button "Jetzt Angebot anfordern"
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading "Für RLT-Anlagen und Kühlturm Reinigung in Bernau ist Igienair Ihr Ansprechpartner Nr. 1" [level=2]
+                          - generic:
+                            - generic:
+                              - paragraph: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Bernau und Umgebung kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+                              - paragraph:
+                                - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+                                - link "Hygieneinspektion VDI 6022":
+                                  - /url: https://igienair.de/hygieneinspektion-vdi-6022/
+                                - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+                              - paragraph:
+                                - generic: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Bernau kümmert.
+                              - paragraph: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft."
+                              - paragraph:
+                                - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+                                - link "technische Hygiene":
+                                  - /url: https://igienair.de/
+                                - text: bei Rückkühlwerken und RLT-Anlagen.
+                  - generic:
+                    - generic:
+                      - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Bernau und Umgebung" [level=2]'
+                      - heading "Kühlturm Reinigung & Kühlturm Wartung" [level=4]
+                      - paragraph: "Wir sorgen für beste Luftqualität in Bernau und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+                      - paragraph: Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen
+                      - paragraph: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+                      - paragraph: Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen
+                      - paragraph: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen in Bernau zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+                      - paragraph: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+                      - paragraph:
+                        - generic: Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Bernau und Umgebung
+                      - paragraph: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+                      - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=4]
+                      - paragraph:
+                        - text: Mit einer professionellen hygienetechnischen
+                        - link "Reinigung & Desinfektion":
+                          - /url: https://igienair.de/reinigung-desinfektion/
+                        - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+                      - paragraph: Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052
+                      - paragraph:
+                        - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+                        - link "Küchenabluftsysteme":
+                          - /url: https://igienair.de/anlagen/kuechenabluftsysteme/
+                        - text: .
+                      - paragraph: Reinraumprüfung gemäß Norm EN ISO 14644
+                      - paragraph:
+                        - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+                        - link "Reinraumqualifizierung":
+                          - /url: https://igienair.de/anlagen/reinraumqualifizierung/
+                        - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+                        - link "Digestorien":
+                          - /url: https://igienair.de/anlagen/laborabzuege/
+                        - text: gemäß
+                        - link "DIN EN ISO 14175":
+                          - /url: https://igienair.de/normen/din-en-14175/
+                        - text: zu unserem Leistungsportfolio.
+                  - generic:
+                    - generic:
+                      - paragraph:
+                        - strong: Individuelle Branchenlösungen
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link "Gesundheitswesen":
+                                  - /url: https://igienair.de/kunden/gesundheit
+                                  - generic:
+                                    - generic:
+                                      - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading "Gesundheitswesen" [level=3]
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link "Pharma":
+                                  - /url: https://igienair.de/kunden/pharma
+                                  - generic:
+                                    - generic:
+                                      - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading "Pharma" [level=3]
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link "Lebensmittel":
+                                  - /url: https://igienair.de/kunden/lebensmittel
+                                  - generic:
+                                    - generic:
+                                      - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading "Lebensmittel" [level=3]
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link "Industrie":
+                                  - /url: https://igienair.de/industrie
+                                  - generic:
+                                    - generic:
+                                      - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading "Industrie" [level=3]
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link "Gastronomie":
+                                  - /url: https://igienair.de/kunden/gastronomie
+                                  - generic:
+                                    - generic:
+                                      - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading "Gastronomie" [level=3]
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link "Gemeinden":
+                                  - /url: https://igienair.de/kunden/gemeinden
+                                  - generic:
+                                    - generic:
+                                      - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading "Gemeinden" [level=3]
+                  - generic:
+                    - generic:
+                      - heading "RLT-Anlagen und Kühlturm Reinigung in Bernau – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=3]
+                      - paragraph: "Als Experte für raumlufttechnische Hygiene bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+                      - list:
+                        - listitem: "Qualitätsversprechen: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden."
+                      - list:
+                        - listitem: "Leistungsspektrum: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach."
+                      - list:
+                        - listitem: "Kundennähe & Individualität: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt."
+                      - paragraph:
+                        - generic: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Bernau und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+  - contentinfo:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - text: "Sie sind hier:"
+                      - generic:
+                        - generic:
+                          - link "Startseite":
+                            - /url: https://igienair.de/
+                        - text: »
+                        - generic:
+                          - link "Kunden":
+                            - /url: https://igienair.de/kunden/
+                        - text: »
+                        - generic:
+                          - link "Referenzen":
+                            - /url: https://igienair.de/kunden/referenzen/
+                        - text: »
+                        - generic:
+                          - link "Berlin":
+                            - /url: https://igienair.de/kunden/referenzen/berlin/
+                        - text: » Bernau
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - paragraph: © IGIENAIR 2018 - 2021
+                  - generic:
+                    - generic:
+                      - generic:
+                        - navigation:
+                          - list:
+                            - listitem:
+                              - link "Glossar":
+                                - /url: https://igienair.de/glossar/
+                            - listitem:
+                              - link "AGB":
+                                - /url: https://igienair.de/unternehmen/agb/
+                            - listitem:
+                              - link "Datenschutz":
+                                - /url: https://igienair.de/datenschutz/
+                            - listitem:
+                              - link "Impressum":
+                                - /url: https://igienair.de/impressum/
+                            - listitem:
+                              - link "Cookie-Richtlinie (EU)":
+                                - /url: https://igienair.de/cookie-richtlinie-eu/
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - link "Datenschutzeinstellungen":
+                            - /url: "#"
+                            - generic: Datenschutzeinstellungen
+  - button "Back to top":
+    - generic: 

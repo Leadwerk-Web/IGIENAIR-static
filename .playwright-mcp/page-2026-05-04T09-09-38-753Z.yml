@@ -1,0 +1,258 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e49]:
+    - banner:
+      - generic [ref=e51]:
+        - img "logo-igienair-white" [ref=e55]
+        - generic [ref=e59]:
+          - text: 3 3 3 3 3 3 3
+          - generic [ref=e62]: a
+        - link "Angebot anfordern" [ref=e65] [cursor=pointer]:
+          - /url: ""
+        - img "deutschland blau" [ref=e69]
+    - generic [ref=e70]:
+      - article [ref=e72]:
+        - generic [ref=e75]:
+          - generic [ref=e78]:
+            - heading "Blindtext" [level=4] [ref=e81]
+            - heading "Kunden in Bernau" [level=1] [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e87]:
+              - heading "Lorem Ipsum" [level=4] [ref=e90]
+              - heading "Für RLT-Anlagen und Kühlturm Reinigung in Bernau ist Igienair Ihr Ansprechpartner Nr. 1" [level=2] [ref=e93]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e102]:
+                  - paragraph [ref=e103]: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Bernau und Umgebung kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+                  - paragraph [ref=e104]:
+                    - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+                    - link "Hygieneinspektion VDI 6022" [ref=e105] [cursor=pointer]:
+                      - /url: https://igienair.de/hygieneinspektion-vdi-6022/
+                    - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+                  - paragraph [ref=e106]:
+                    - generic [ref=e107]: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Bernau kümmert.
+                  - paragraph [ref=e108]: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft."
+                  - paragraph [ref=e109]:
+                    - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+                    - link "technische Hygiene" [ref=e110] [cursor=pointer]:
+                      - /url: https://igienair.de/
+                    - text: bei Rückkühlwerken und RLT-Anlagen.
+                - link "Button" [ref=e112] [cursor=pointer]:
+                  - /url: ""
+              - img "2" [ref=e116]
+          - generic [ref=e117]:
+            - generic [ref=e119]:
+              - heading "Lorem Ipsum" [level=4] [ref=e122]
+              - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Bernau und Umgebung" [level=2] [ref=e125]'
+            - generic [ref=e132]:
+              - heading "Kühlturm Reinigung & Kühlturm Wartung" [level=3] [ref=e133]
+              - paragraph [ref=e134]: "Wir sorgen für beste Luftqualität in Bernau und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+            - generic [ref=e135]:
+              - img "kuehlturm_2" [ref=e139]
+              - generic [ref=e142]:
+                - heading "Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen" [level=4] [ref=e143]
+                - paragraph [ref=e144]: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+            - generic [ref=e145]:
+              - generic [ref=e148]:
+                - heading "Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen" [level=4] [ref=e149]
+                - paragraph [ref=e150]: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+                - paragraph [ref=e151]: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+              - img "kuehlturm_2" [ref=e155]
+            - generic [ref=e156]:
+              - img "kuehlturm_2" [ref=e160]
+              - generic [ref=e163]:
+                - heading "Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Bernau und Umgebung" [level=4] [ref=e164]:
+                  - text: Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in
+                  - strong [ref=e165]: Bernau und Umgebung
+                - paragraph [ref=e166]: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+            - generic [ref=e170]:
+              - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=3] [ref=e171]
+              - paragraph [ref=e172]:
+                - text: Mit einer professionellen hygienetechnischen
+                - link "Reinigung & Desinfektion" [ref=e173] [cursor=pointer]:
+                  - /url: https://igienair.de/reinigung-desinfektion/
+                - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+            - generic [ref=e174]:
+              - generic [ref=e177]:
+                - heading "Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052" [level=4] [ref=e178]
+                - paragraph [ref=e179]:
+                  - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+                  - link "Küchenabluftsysteme" [ref=e180] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/kuechenabluftsysteme/
+                  - text: .
+              - img "kuehlturm_2" [ref=e184]
+            - generic [ref=e185]:
+              - img "kuehlturm_2" [ref=e189]
+              - generic [ref=e192]:
+                - heading "Reinraumprüfung gemäß Norm EN ISO 14644" [level=4] [ref=e193]
+                - paragraph [ref=e194]:
+                  - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+                  - link "Reinraumqualifizierung" [ref=e195] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/reinraumqualifizierung/
+                  - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+                  - link "Digestorien" [ref=e196] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/laborabzuege/
+                  - text: gemäß
+                  - link "DIN EN ISO 14175" [ref=e197] [cursor=pointer]:
+                    - /url: https://igienair.de/normen/din-en-14175/
+                  - text: zu unserem Leistungsportfolio.
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - heading "Blindtext" [level=4] [ref=e203]
+              - heading "Quisque rutrum. Aenean imperdiet." [level=2] [ref=e206]
+              - paragraph [ref=e209]: Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+              - link "Erfahren Sie mehr" [ref=e211] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e212]:
+              - img "Gesundheitswesen" [ref=e215]
+              - heading "Gesundheitswesen" [level=4] [ref=e218]
+              - img "ia_industrie_weiß" [ref=e222]
+              - heading "Industrie" [level=4] [ref=e225]
+            - generic [ref=e226]:
+              - img "Pharma" [ref=e229]
+              - heading "Pharmaindustrie" [level=4] [ref=e232]
+              - img "ia_gastro_weiß" [ref=e236]
+              - heading "Gastronomie" [level=4] [ref=e239]
+            - generic [ref=e240]:
+              - img "Salat" [ref=e243]
+              - heading "Lebensmittel" [level=4] [ref=e246]
+              - img "ia_gemeinden2_weiß" [ref=e250]
+              - heading "Gemeinden" [level=4] [ref=e253]
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - heading "Lorem Ipsum" [level=4] [ref=e259]
+              - heading "RLT-Anlagen und Kühlturm Reinigung in Bernau – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=2] [ref=e262]
+              - link "Button" [ref=e267] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e268]:
+              - paragraph [ref=e271]: "Als Experte für raumlufttechnische Hygiene bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+              - generic [ref=e273]:
+                - generic [ref=e276]: 
+                - generic [ref=e277]:
+                  - heading "Qualitätsversprechen:" [level=4] [ref=e278]
+                  - paragraph [ref=e280]: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden.
+              - generic [ref=e282]:
+                - generic [ref=e285]: 
+                - generic [ref=e286]:
+                  - heading "Leistungsspektrum:" [level=4] [ref=e287]
+                  - paragraph [ref=e289]: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach.
+              - generic [ref=e291]:
+                - generic [ref=e294]: 
+                - generic [ref=e295]:
+                  - heading "Kundennähe & Individualität:" [level=4] [ref=e296]
+                  - paragraph [ref=e298]: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt.
+              - paragraph [ref=e301]:
+                - generic [ref=e302]: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Bernau und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+      - contentinfo [ref=e303]:
+        - generic [ref=e304]:
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - img "Logo_Navi_1" [ref=e310]
+              - paragraph [ref=e313]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            - generic [ref=e314]:
+              - heading "MENÜ" [level=4] [ref=e317]
+              - navigation [ref=e320]:
+                - list [ref=e321]:
+                  - listitem [ref=e322]:
+                    - link "Unternehmen 3" [ref=e323] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/unternehmen-2/
+                      - generic [ref=e324]: Unternehmen
+                      - generic [ref=e325]: "3"
+                  - listitem [ref=e326]:
+                    - link "Leistungen 3" [ref=e327] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/leistungen-2/
+                      - generic [ref=e328]: Leistungen
+                      - generic [ref=e329]: "3"
+                  - listitem [ref=e330]:
+                    - link "Normen 3" [ref=e331] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/normen-2/
+                      - generic [ref=e332]: Normen
+                      - generic [ref=e333]: "3"
+                  - listitem [ref=e334]:
+                    - link "Anlagen 3" [ref=e335] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/anlagen-2/
+                      - generic [ref=e336]: Anlagen
+                      - generic [ref=e337]: "3"
+                  - listitem [ref=e338]:
+                    - link "Kunden 3" [ref=e339] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/kunden-2/
+                      - generic [ref=e340]: Kunden
+                      - generic [ref=e341]: "3"
+                  - listitem [ref=e342]:
+                    - link "Jobs 3" [ref=e343] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/jobs-2/
+                      - generic [ref=e344]: Jobs
+                      - generic [ref=e345]: "3"
+                  - listitem [ref=e346]:
+                    - link "Standorte 3" [ref=e347] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/standorte/
+                      - generic [ref=e348]: Standorte
+                      - generic [ref=e349]: "3"
+            - generic [ref=e350]:
+              - heading "STANDORTE" [level=4] [ref=e353]
+              - navigation [ref=e356]:
+                - list [ref=e357]:
+                  - listitem [ref=e358]:
+                    - link "Baden-Württemberg" [ref=e359] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e360]:
+                    - link "Nordbayern" [ref=e361] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e362]:
+                    - link "Südbayern" [ref=e363] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e364]:
+                    - link "Rhein-Main" [ref=e365] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e366]:
+                    - link "Nordrhein-Westfalen" [ref=e367] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e368]:
+                    - link "Nord" [ref=e369] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e370]:
+                    - link "Bodensee" [ref=e371] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e372]:
+                    - link "Berlin" [ref=e373] [cursor=pointer]:
+                      - /url: "#"
+            - generic [ref=e374]:
+              - heading "KONTAKT" [level=4] [ref=e377]
+              - generic [ref=e379]:
+                - generic [ref=e382]: 
+                - generic [ref=e383]:
+                  - heading "IGIENAIR GmbH" [level=4] [ref=e384]
+                  - paragraph [ref=e386]:
+                    - text: Am Hardtwald 6-8
+                    - text: 76275 Ettlingen
+              - generic [ref=e388]:
+                - generic [ref=e391]: 
+                - paragraph [ref=e394]: +49 (0) 7243 3699101
+              - generic [ref=e396]:
+                - generic [ref=e399]: 
+                - paragraph [ref=e402]: +49 (0) 7243 3694 943
+              - generic [ref=e404]:
+                - generic [ref=e407]: 
+                - paragraph [ref=e410]: kontakt@igienair.com
+          - generic [ref=e412]:
+            - paragraph [ref=e416]: © IGIENAIR 2025
+            - generic [ref=e423]: a
+            - link "Datenschutzeinstellungen 5" [ref=e426] [cursor=pointer]:
+              - /url: ""
+  - generic [ref=e427]:
+    - generic [ref=e428] [cursor=pointer]:
+      - link "" [ref=e429]:
+        - /url: ""
+        - generic [ref=e431]: 
+      - text: 
+    - generic [ref=e432] [cursor=pointer]:
+      - link "" [ref=e433]:
+        - /url: ""
+        - generic [ref=e435]: 
+      - text: 
+    - generic [ref=e436] [cursor=pointer]:
+      - link "" [ref=e437]:
+        - /url: ""
+        - generic [ref=e439]: 
+      - text: 
+  - text:   

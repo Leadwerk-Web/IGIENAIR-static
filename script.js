@@ -4,7 +4,6 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const addressSelect = document.getElementById("address-match");
 const altAddress = document.querySelector("[data-alt-address]");
 const meters = document.querySelectorAll(".meter");
-const mapPins = document.querySelectorAll(".map-pin");
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 const inertControls = document.querySelectorAll("[data-inert]");
 const videoLoadButtons = document.querySelectorAll("[data-video]");
@@ -63,17 +62,6 @@ function observeMeters() {
   }, { threshold: 0.45 });
 
   meters.forEach((meter) => observer.observe(meter));
-}
-
-function bindMapPins() {
-  mapPins.forEach((pin) => {
-    const activate = () => pin.classList.add("is-active");
-    const deactivate = () => pin.classList.remove("is-active");
-    pin.addEventListener("mouseenter", activate);
-    pin.addEventListener("mouseleave", deactivate);
-    pin.addEventListener("focus", activate);
-    pin.addEventListener("blur", deactivate);
-  });
 }
 
 function initCertificateGalleries() {
@@ -137,21 +125,46 @@ function initLocationBrowsers() {
     const select = browser.querySelector("[data-location-select]");
     const cardsWrap = browser.querySelector("[data-location-cards]");
     const cards = Array.from(browser.querySelectorAll("[data-location-card]"));
-    const markers = Array.from(browser.querySelectorAll("[data-location-marker]"));
+    const mapObjects = Array.from(browser.querySelectorAll("[data-location-map-object]"));
+    const boundMarkers = new WeakSet();
+    let markers = [];
+    let pendingState = select?.value || "";
+    let syncTimer = 0;
 
     if (!select || cards.length === 0) {
       return;
     }
 
+    const getObjectMarkers = () => mapObjects.flatMap((mapObject) => {
+      try {
+        return mapObject.contentDocument
+          ? Array.from(mapObject.contentDocument.querySelectorAll("[data-location-marker]"))
+          : [];
+      } catch {
+        return [];
+      }
+    });
+
+    const collectMarkers = () => [
+      ...Array.from(browser.querySelectorAll("[data-location-marker]")),
+      ...getObjectMarkers(),
+    ];
+
+    const getMarkerState = (marker) => marker.dataset?.locationMarker
+      || marker.getAttribute("data-location-marker")
+      || "";
+
     const setState = (state) => {
       const activeState = state || "";
+      pendingState = activeState;
 
       cards.forEach((card) => {
         card.hidden = Boolean(activeState) && card.dataset.locationCard !== activeState;
       });
 
+      markers = collectMarkers();
       markers.forEach((marker) => {
-        const isActive = marker.dataset.locationMarker === activeState;
+        const isActive = getMarkerState(marker) === activeState;
         marker.classList.toggle("is-active", isActive);
         marker.setAttribute("aria-pressed", String(isActive));
       });
@@ -162,20 +175,56 @@ function initLocationBrowsers() {
       }
     };
 
-    select.addEventListener("change", () => {
-      setState(select.value);
-    });
-
-    browser.addEventListener("click", (event) => {
-      const marker = event.target.closest("[data-location-marker]");
-      if (!marker) {
+    const bindMarker = (marker) => {
+      if (boundMarkers.has(marker)) {
         return;
       }
 
-      setState(marker.dataset.locationMarker || "");
+      boundMarkers.add(marker);
+      marker.addEventListener("click", () => {
+        setState(getMarkerState(marker));
+      });
+      marker.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") {
+          return;
+        }
+
+        event.preventDefault();
+        setState(getMarkerState(marker));
+      });
+    };
+
+    const syncMarkers = () => {
+      markers = collectMarkers();
+      markers.forEach(bindMarker);
+      setState(pendingState || select.value);
+      return markers.length;
+    };
+
+    const scheduleMarkerSync = (attempt = 0) => {
+      window.clearTimeout(syncTimer);
+      const markerCount = syncMarkers();
+      if (markerCount > 0 || attempt >= 20) {
+        return;
+      }
+
+      syncTimer = window.setTimeout(() => {
+        scheduleMarkerSync(attempt + 1);
+      }, 100);
+    };
+
+    select.addEventListener("change", () => {
+      setState(select.value);
+      scheduleMarkerSync();
     });
 
-    setState(select.value);
+    mapObjects.forEach((mapObject) => {
+      mapObject.addEventListener("load", () => {
+        scheduleMarkerSync();
+      });
+    });
+
+    scheduleMarkerSync();
   });
 }
 
@@ -406,6 +455,5 @@ initLocationBrowsers();
 initGlossaries();
 initAccordions();
 observeMeters();
-bindMapPins();
 syncAddressFields();
 syncHeaderState();

@@ -1,0 +1,507 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Igienair Startseite" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+        - img "Igienair" [ref=e5]
+      - navigation "Hauptnavigation" [ref=e6]:
+        - generic [ref=e7]:
+          - link "Unternehmen▾" [ref=e8] [cursor=pointer]:
+            - /url: unternehmen-2.html
+          - generic:
+            - link "Zertifizierungen":
+              - /url: zertifizierungen.html
+            - link "Nachhaltigkeit":
+              - /url: nachhaltigkeit.html
+            - link "Sicherheit":
+              - /url: sicherheit.html
+            - link "Qualität":
+              - /url: qualitaet.html
+            - link "Umweltschutz":
+              - /url: umweltschutz.html
+            - link "Standorte":
+              - /url: standorte.html
+        - generic [ref=e9]:
+          - link "Leistungen▾" [ref=e10] [cursor=pointer]:
+            - /url: leistungen-2.html
+          - generic:
+            - link "Inspektion & Gutachten":
+              - /url: inspektionundgutachten.html
+            - link "Reinigung & Desinfektion":
+              - /url: reinigung-desinfektion.html
+            - link "Instandsetzung & Sanierung":
+              - /url: instandsetzung-sanierung.html
+            - link "Energetische Inspektion":
+              - /url: energetische-inspektion-geg-2020.html
+        - generic [ref=e11]:
+          - link "Normen▾" [ref=e12] [cursor=pointer]:
+            - /url: normen-2.html
+          - generic:
+            - link "VDI 6022":
+              - /url: vdi-6022.html
+            - link "VDI 2047-2":
+              - /url: vdi-2047.html
+            - link "VDI 2052 & BGR 111":
+              - /url: vdi-2052-bgr-111.html
+            - link "DIN EN 15780":
+              - /url: din-en-15780.html
+            - button "DIN EN 14175"
+        - generic [ref=e13]:
+          - link "Anlagen▾" [ref=e14] [cursor=pointer]:
+            - /url: anlagen-2.html
+          - generic:
+            - link "Lüftungsanlagen":
+              - /url: lueftungsreinigung.html
+            - link "RLT-Anlagen":
+              - /url: rlt-hygiene.html
+            - button "Zu- & Abluftkanäle"
+            - link "Raumluftdesinfektion":
+              - /url: raumluftdesinfektion.html
+            - link "Verdunstungskühlanlage":
+              - /url: kuehlturmreinigung.html
+            - link "Splitklimageräte & Umluftkühlgeräte":
+              - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - link "Prozessabluft & Entrauchungsanlagen":
+              - /url: prozessabluft-und-entrauchungsanlagen.html
+            - link "Küchenabluftsysteme":
+              - /url: kuechenabluftsysteme.html
+            - link "Laborabzüge & Digestorien":
+              - /url: laborabzuege.html
+            - link "Verdampfer & Kondensatoren":
+              - /url: verdampfer-und-kondensatoren.html
+            - button "Reinräume"
+            - button "OP-Räume"
+            - button "Kühlregale"
+            - button "Textilschläuche"
+            - link "Rechenzentrum":
+              - /url: rechenzentrum.html
+            - button "Filterintegritätstest"
+            - link "Lecktest Schwebstofffilter":
+              - /url: lecktest-schwebstofffilter.html
+        - generic [ref=e15]:
+          - link "Kunden▾" [ref=e16] [cursor=pointer]:
+            - /url: kunden-2.html
+          - generic:
+            - link "Branchen":
+              - /url: branchen.html
+            - link "Referenzen":
+              - /url: referenzen.html
+            - button "Extranet"
+        - generic [ref=e17]:
+          - link "Jobs▾" [ref=e18] [cursor=pointer]:
+            - /url: jobs-2.html
+          - generic:
+            - button "Mitarbeiter technische Reinigung"
+            - button "Teamleiter technische Hygienereinigung"
+        - generic [ref=e19]:
+          - link "Standorte▾" [ref=e20] [cursor=pointer]:
+            - /url: standorte.html
+          - generic:
+            - button "Baden-Württemberg"
+            - button "Nordbayern"
+            - button "Südbayern"
+            - button "Rhein-Main"
+            - button "Nordrhein-Westfalen"
+            - button "Nord"
+            - button "Bodensee"
+            - button "Berlin"
+      - link "Angebot anfordern" [ref=e21] [cursor=pointer]:
+        - /url: "#angebot"
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: unternehmen-2.html
+            - text: Unternehmen
+          - link:
+            - /url: zertifizierungen.html
+            - text: Zertifizierungen
+          - link:
+            - /url: nachhaltigkeit.html
+            - text: Nachhaltigkeit
+          - link:
+            - /url: sicherheit.html
+            - text: Sicherheit
+          - link:
+            - /url: qualitaet.html
+            - text: Qualität
+          - link:
+            - /url: umweltschutz.html
+            - text: Umweltschutz
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+        - generic:
+          - link:
+            - /url: leistungen-2.html
+            - text: Leistungen
+          - link:
+            - /url: inspektionundgutachten.html
+            - text: Inspektion & Gutachten
+          - link:
+            - /url: reinigung-desinfektion.html
+            - text: Reinigung & Desinfektion
+          - link:
+            - /url: instandsetzung-sanierung.html
+            - text: Instandsetzung & Sanierung
+          - link:
+            - /url: energetische-inspektion-geg-2020.html
+            - text: Energetische Inspektion
+        - generic:
+          - link:
+            - /url: normen-2.html
+            - text: Normen
+          - link:
+            - /url: vdi-6022.html
+            - text: VDI 6022
+          - link:
+            - /url: vdi-2047.html
+            - text: VDI 2047-2
+          - link:
+            - /url: vdi-2052-bgr-111.html
+            - text: VDI 2052 & BGR 111
+          - link:
+            - /url: din-en-15780.html
+            - text: DIN EN 15780
+          - button: DIN EN 14175
+        - generic:
+          - link:
+            - /url: anlagen-2.html
+            - text: Anlagen
+          - link:
+            - /url: lueftungsreinigung.html
+            - text: Lüftungsanlagen
+          - link:
+            - /url: rlt-hygiene.html
+            - text: RLT-Anlagen
+          - button: Zu- & Abluftkanäle
+          - link:
+            - /url: raumluftdesinfektion.html
+            - text: Raumluftdesinfektion
+          - link:
+            - /url: kuehlturmreinigung.html
+            - text: Verdunstungskühlanlage
+          - link:
+            - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - text: Splitklimageräte & Umluftkühlgeräte
+          - link:
+            - /url: prozessabluft-und-entrauchungsanlagen.html
+            - text: Prozessabluft & Entrauchungsanlagen
+          - link:
+            - /url: kuechenabluftsysteme.html
+            - text: Küchenabluftsysteme
+          - link:
+            - /url: laborabzuege.html
+            - text: Laborabzüge & Digestorien
+          - link:
+            - /url: verdampfer-und-kondensatoren.html
+            - text: Verdampfer & Kondensatoren
+          - button: Reinräume
+          - button: OP-Räume
+          - button: Kühlregale
+          - button: Textilschläuche
+          - link:
+            - /url: rechenzentrum.html
+            - text: Rechenzentrum
+          - button: Filterintegritätstest
+          - link:
+            - /url: lecktest-schwebstofffilter.html
+            - text: Lecktest Schwebstofffilter
+        - generic:
+          - link:
+            - /url: kunden-2.html
+            - text: Kunden
+          - link:
+            - /url: branchen.html
+            - text: Branchen
+          - link:
+            - /url: referenzen.html
+            - text: Referenzen
+          - button: Extranet
+        - generic:
+          - link:
+            - /url: jobs-2.html
+            - text: Jobs
+          - button: Mitarbeiter technische Reinigung
+          - button: Teamleiter technische Hygienereinigung
+        - generic:
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+          - button: Baden-Württemberg
+          - button: Nordbayern
+          - button: Südbayern
+          - button: Rhein-Main
+          - button: Nordrhein-Westfalen
+          - button: Nord
+          - button: Bodensee
+          - button: Berlin
+  - navigation "Schnellzugriff" [ref=e22]:
+    - link "Kontakt" [ref=e23] [cursor=pointer]:
+      - /url: "#footer-contact"
+      - img [ref=e24]
+    - link "Angebot" [ref=e26] [cursor=pointer]:
+      - /url: "#angebot"
+      - img [ref=e27]
+    - link "Termin" [ref=e29] [cursor=pointer]:
+      - /url: "#cta"
+      - img [ref=e30]
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: TECHNISCHE HYGIENE
+        - heading "Raumlufthygiene für gesunde Raumluft" [level=1] [ref=e39]:
+          - text: Raumlufthygiene
+          - text: für gesunde Raumluft
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - article [ref=e42]:
+            - strong [ref=e43]: "14.000"
+            - generic [ref=e44]: Kunden deutschlandweit
+          - article [ref=e45]:
+            - strong [ref=e46]: "8"
+            - generic [ref=e47]: Standorte
+          - article [ref=e48]:
+            - strong [ref=e49]: "8"
+            - generic [ref=e50]: Lorem Ipsum
+        - link "Zum nächsten Abschnitt" [ref=e51] [cursor=pointer]:
+          - /url: "#zielsektion"
+          - generic [ref=e52]: ↓
+        - link "Angebot anfordern" [ref=e53] [cursor=pointer]:
+          - /url: "#angebot"
+    - generic [ref=e55]:
+      - article [ref=e56]:
+        - paragraph [ref=e57]: SAUBERE LUFT SICHERN
+        - heading "Technische Hygiene auf höchstem Niveau" [level=2] [ref=e58]
+        - paragraph [ref=e60]: Als spezialisiertes Unternehmen für Raumluft- und Hygienetechnik gewährleisten wir die fachgerechte Inspektion, Reinigung und Wartung von Lüftungs- und RLT-Anlagen. Unsere Leistungen erfolgen nach den geltenden Richtlinien, werden vollständig dokumentiert und transparent nachvollziehbar bereitgestellt.
+        - paragraph [ref=e61]: Über unser Angebitsformular können Sie uns alle relevanten Informationen zu Ihrem Projekt direkt übermitteln. Auf dieser Grundlage erstellen wir Ihnen zeitnah ein qualifiziertes, unverbindliches Angebot.
+      - complementary [ref=e62]:
+        - heading "Jetzt Angebot anfordern" [level=3] [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - generic [ref=e67]: Firmennamen
+              - textbox "Firmennamen" [ref=e68]:
+                - /placeholder: Firmenname
+            - generic [ref=e69]:
+              - generic [ref=e70]: Name
+              - textbox "Name" [ref=e71]:
+                - /placeholder: Ihr Vor- und Nachname
+            - generic [ref=e72]:
+              - generic [ref=e73]: E-Mail
+              - textbox "E-Mail" [ref=e74]:
+                - /placeholder: E-Mail-Adresse
+            - generic [ref=e75]:
+              - generic [ref=e76]: Telefonnummer
+              - textbox "Telefonnummer" [ref=e77]:
+                - /placeholder: Ihre Telefonnummer
+            - generic [ref=e78]:
+              - generic [ref=e79]: Straße
+              - textbox "Straße" [ref=e80]:
+                - /placeholder: Straße und Hausnummer
+            - generic [ref=e81]:
+              - generic [ref=e82]: Postleitzahl
+              - textbox "Postleitzahl" [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e85]: Durchführungsadresse
+            - combobox "Durchführungsadresse" [ref=e86]:
+              - option "Sind Durchführungsort und Anschrift identisch?" [disabled] [selected]
+              - option "ja"
+              - option "nein"
+          - generic [ref=e87]:
+            - generic [ref=e88]: Sie wünschen ein Angebot für
+            - combobox "Sie wünschen ein Angebot für" [ref=e89]:
+              - option "Sie wünschen ein Angebot für:" [disabled] [selected]
+              - option "Leistung A"
+              - option "Leistung B"
+              - option "Leistung C"
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]: Anzahl, Maße und Leistung der Anlagen oder Räumen
+              - textbox "Anzahl, Maße und Leistung der Anlagen oder Räumen" [ref=e93]:
+                - /placeholder: "Anzahl, Maße und Leistung der Anlagen oder Räumen:"
+            - generic [ref=e94]:
+              - generic [ref=e95]: Beschreibung der gewünschten Leistungen
+              - textbox "Beschreibung der gewünschten Leistungen" [ref=e96]:
+                - /placeholder: "Beschreibung der gewünschten Leistungen:"
+          - generic [ref=e97]:
+            - checkbox "Ich habe die Datenschutzbestimmungen gelesen und akzeptiert." [ref=e98]
+            - generic [ref=e99]:
+              - text: Ich habe die
+              - strong [ref=e100]: Datenschutzbestimmungen
+              - text: gelesen und akzeptiert.
+          - button "Jetzt Angebot anfordern" [ref=e101] [cursor=pointer]
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - paragraph [ref=e105]: BLINDTEXT
+        - heading "Individuelle Branchenlösungen für echte Raumlufthygiene" [level=2] [ref=e106]
+        - paragraph [ref=e107]:
+          - text: Unsere Spezialisten gehen in allen Bereichen der
+          - strong [ref=e108]: Lüftungsanlagenreinigung
+          - text: auf Ihre individuellen Herausforderungen ein. Wir bieten technische Hygiene und maßgeschneiderte Kundenlösungen in vielen verschiedenen Branchen. Raumlufttechnik in Gemeindeeinrichtungen oder in der Industrie, Hygieneanforderungen in der Gastronomie oder Hygieneinspektionen im Bereich Gesundheitswesen gehören zu unserem Leistungsportfolio
+        - button "Erfahren Sie mehr" [ref=e109] [cursor=pointer]
+      - generic "Branchen" [ref=e110]:
+        - article [ref=e111]:
+          - heading "Gesundheitswesen" [level=3] [ref=e112]
+        - article [ref=e113]:
+          - heading "Industrie" [level=3] [ref=e114]
+        - article [ref=e115]:
+          - heading "Pharmaindustrie" [level=3] [ref=e116]
+        - article [ref=e117]:
+          - heading "Gastronomie" [level=3] [ref=e118]
+        - article [ref=e119]:
+          - heading "Lebensmittel" [level=3] [ref=e120]
+        - article [ref=e121]:
+          - heading "Gemeinden" [level=3] [ref=e122]
+    - generic [ref=e124]:
+      - article [ref=e125]:
+        - paragraph [ref=e126]: REGIONAL & SCHNELL
+        - heading "Deutschlandweit präsent" [level=2] [ref=e127]
+        - paragraph [ref=e129]: Mit acht Standorten schaffen wir Nähe, kurze Reaktionszeiten und zuverlässige Präsenz. Ihre Anlagen betreuen wir flächendeckend mit erfahrenem Team und modernster Ausstattung.
+        - generic [ref=e130]:
+          - article [ref=e131]:
+            - strong [ref=e132]: "8"
+            - text: Standorte
+          - article [ref=e133]:
+            - strong [ref=e134]: "20.000"
+            - text: Kunden europaweit
+          - article [ref=e135]:
+            - strong [ref=e136]: "1.200"
+            - text: Lorem Ipsum
+        - button "Unsere Standorte" [ref=e137] [cursor=pointer]
+      - generic "Detaillierte Deutschlandkarte mit allen Bundesländern" [ref=e140]
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - paragraph [ref=e145]: LOREM IPSUM
+          - heading "Raumlufthygiene durch Reinigung und Desinfektion" [level=2] [ref=e146]
+        - button "Mehr Videos" [ref=e147] [cursor=pointer]
+      - generic [ref=e148]:
+        - article [ref=e149]:
+          - button "Reinigung und Desinfektion RLT-Anlage VDI 6022 Video laden" [ref=e150] [cursor=pointer]:
+            - img "Reinigung und Desinfektion RLT-Anlage VDI 6022" [ref=e151]
+            - generic [ref=e153]: Video laden
+        - article [ref=e154]:
+          - button "Brandschutzreinigung und Entfettung von Großküchenabluftsysteme sowie Absauganlagen Video laden" [ref=e155] [cursor=pointer]:
+            - img "Brandschutzreinigung und Entfettung von Großküchenabluftsysteme sowie Absauganlagen" [ref=e156]
+            - generic [ref=e158]: Video laden
+    - generic [ref=e160]:
+      - figure [ref=e161]:
+        - img "Techniker an einer Anlage" [ref=e162]
+      - article [ref=e163]:
+        - paragraph [ref=e164]: LOREM IPSUM
+        - heading "Lorem ipsum dolor sit" [level=2] [ref=e165]
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - heading "Sed fringilla mauris sit" [level=3] [ref=e169]
+            - paragraph [ref=e170]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          - heading "Sed fringilla mauris sit" [level=3] [ref=e172]
+          - heading "Sed fringilla mauris sit" [level=3] [ref=e174]
+          - heading "Sed fringilla mauris sit" [level=3] [ref=e176]
+    - generic [ref=e178]:
+      - paragraph [ref=e179]: LOREM IPSUM
+      - heading "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor." [level=2] [ref=e180]
+      - paragraph [ref=e181]: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - button "Termin vereinbaren" [ref=e182] [cursor=pointer]
+    - generic [ref=e184]:
+      - article [ref=e185]:
+        - paragraph [ref=e186]: LOREM IPSUM
+        - heading "Lorem ipsum dolor sit" [level=2] [ref=e187]
+        - paragraph [ref=e189]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - generic [ref=e190]:
+        - figure [ref=e191]:
+          - img "Filterintegritätstest" [ref=e192]
+        - generic [ref=e193]:
+          - article [ref=e194]:
+            - generic [ref=e195]:
+              - generic [ref=e196]: Your Title Goes Here
+              - strong [ref=e197]: 80%
+          - article [ref=e199]:
+            - generic [ref=e200]:
+              - generic [ref=e201]: Your Title Goes Here
+              - strong [ref=e202]: 95%
+          - article [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: Your Title Goes Here
+              - strong [ref=e207]: 75%
+        - button "Button" [ref=e209] [cursor=pointer]
+  - contentinfo [ref=e210]:
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - img "Igienair" [ref=e213]
+        - paragraph [ref=e214]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - generic [ref=e215]:
+        - heading "MENÜ" [level=2] [ref=e216]
+        - list [ref=e217]:
+          - listitem [ref=e218]:
+            - link "Unternehmen 3" [ref=e219] [cursor=pointer]:
+              - /url: unternehmen-2.html
+          - listitem [ref=e220]:
+            - link "Leistungen 3" [ref=e221] [cursor=pointer]:
+              - /url: leistungen-2.html
+          - listitem [ref=e222]:
+            - link "Normen 3" [ref=e223] [cursor=pointer]:
+              - /url: normen-2.html
+          - listitem [ref=e224]:
+            - link "Anlagen 3" [ref=e225] [cursor=pointer]:
+              - /url: anlagen-2.html
+          - listitem [ref=e226]:
+            - link "Kunden 3" [ref=e227] [cursor=pointer]:
+              - /url: kunden-2.html
+          - listitem [ref=e228]:
+            - link "Jobs 3" [ref=e229] [cursor=pointer]:
+              - /url: jobs-2.html
+          - listitem [ref=e230]:
+            - link "Standorte 3" [ref=e231] [cursor=pointer]:
+              - /url: standorte.html
+      - generic [ref=e232]:
+        - heading "STANDORTE" [level=2] [ref=e233]
+        - list [ref=e234]:
+          - listitem [ref=e235]:
+            - button "Baden-Württemberg" [ref=e236] [cursor=pointer]
+          - listitem [ref=e237]:
+            - button "Nordbayern" [ref=e238] [cursor=pointer]
+          - listitem [ref=e239]:
+            - button "Südbayern" [ref=e240] [cursor=pointer]
+          - listitem [ref=e241]:
+            - button "Rhein-Main" [ref=e242] [cursor=pointer]
+          - listitem [ref=e243]:
+            - button "Nordrhein-Westfalen" [ref=e244] [cursor=pointer]
+          - listitem [ref=e245]:
+            - button "Nord" [ref=e246] [cursor=pointer]
+          - listitem [ref=e247]:
+            - button "Bodensee" [ref=e248] [cursor=pointer]
+          - listitem [ref=e249]:
+            - button "Berlin" [ref=e250] [cursor=pointer]
+      - generic [ref=e251]:
+        - heading "KONTAKT" [level=2] [ref=e252]
+        - generic [ref=e253]:
+          - generic [ref=e254]: ●
+          - generic [ref=e255]:
+            - strong [ref=e256]: IGIENAIR GmbH
+            - paragraph [ref=e257]:
+              - text: Am Hardtwald 6-8
+              - text: 76275 Ettlingen
+        - generic [ref=e258]:
+          - generic [ref=e259]: ●
+          - link "+49 (0) 7243 3699101" [ref=e261] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e262]:
+          - generic [ref=e263]: ●
+          - link "+49 (0) 7243 3694 943" [ref=e265] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e266]:
+          - generic [ref=e267]: ●
+          - link "kontakt@igienair.com" [ref=e269] [cursor=pointer]:
+            - /url: "#!"
+    - generic [ref=e271]:
+      - generic [ref=e272]: © IGIENAIR 2025
+      - generic [ref=e273]:
+        - link "AGB" [ref=e274] [cursor=pointer]:
+          - /url: agb.html
+        - link "Datenschutz" [ref=e275] [cursor=pointer]:
+          - /url: datenschutz.html
+        - link "Impressum" [ref=e276] [cursor=pointer]:
+          - /url: impressum.html
+        - link "Cookie-Richtlinie (EU)" [ref=e277] [cursor=pointer]:
+          - /url: cookie-richtlinie-eu.html

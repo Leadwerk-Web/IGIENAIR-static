@@ -1,0 +1,288 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e3]:
+    - banner:
+      - generic [ref=e5]:
+        - img "logo-igienair-white" [ref=e9]
+        - generic [ref=e13]:
+          - navigation [ref=e15]:
+            - list [ref=e16]:
+              - listitem [ref=e17]:
+                - link "Unternehmen 3" [ref=e18] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/unternehmen-2/
+              - listitem [ref=e19]:
+                - link "Leistungen 3" [ref=e20] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/leistungen-2/
+              - listitem [ref=e21]:
+                - link "Normen 3" [ref=e22] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/normen-2/
+              - listitem [ref=e23]:
+                - link "Anlagen 3" [ref=e24] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/anlagen-2/
+              - listitem [ref=e25]:
+                - link "Kunden 3" [ref=e26] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/kunden-2/
+              - listitem [ref=e27]:
+                - link "Jobs 3" [ref=e28] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/jobs-2/
+              - listitem [ref=e29]:
+                - link "Standorte 3" [ref=e30] [cursor=pointer]:
+                  - /url: https://b15g1ap.myrdbx.io/standorte/
+          - text: a
+        - link "Angebot anfordern" [ref=e33] [cursor=pointer]:
+          - /url: ""
+        - img "deutschland blau" [ref=e37]
+    - generic [ref=e38]:
+      - article [ref=e40]:
+        - generic [ref=e43]:
+          - generic [ref=e46]:
+            - heading "Blindtext" [level=4] [ref=e49]
+            - heading "Kunden in Eberswalde" [level=1] [ref=e55]
+          - generic [ref=e56]:
+            - generic [ref=e58]:
+              - heading "Lorem Ipsum" [level=4] [ref=e61]
+              - heading "Für RLT-Anlagen und Kühlturm Reinigung in Eberswalde ist Igienair Ihr Ansprechpartner Nr. 1" [level=2] [ref=e64]
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - generic [ref=e73]:
+                  - paragraph [ref=e74]: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Eberswalde und Umgebung kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+                  - paragraph [ref=e75]:
+                    - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+                    - link "Hygieneinspektion VDI 6022" [ref=e76] [cursor=pointer]:
+                      - /url: https://igienair.de/hygieneinspektion-vdi-6022/
+                    - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+                  - paragraph [ref=e77]:
+                    - generic [ref=e78]: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Eberswalde kümmert.
+                  - paragraph [ref=e79]: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft."
+                  - paragraph [ref=e80]:
+                    - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+                    - link "technische Hygiene" [ref=e81] [cursor=pointer]:
+                      - /url: https://igienair.de/
+                    - text: bei Rückkühlwerken und RLT-Anlagen.
+                - link "Button" [ref=e83] [cursor=pointer]:
+                  - /url: ""
+              - img "2" [ref=e87]
+          - generic [ref=e88]:
+            - generic [ref=e90]:
+              - heading "Lorem Ipsum" [level=4] [ref=e93]
+              - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Eberswalde und Umgebung" [level=2] [ref=e96]'
+            - generic [ref=e103]:
+              - heading "Kühlturm Reinigung & Kühlturm Wartung" [level=3] [ref=e104]
+              - paragraph [ref=e105]: "Wir sorgen für beste Luftqualität in Eberswalde und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+            - generic [ref=e106]:
+              - img "kuehlturm_2" [ref=e110]
+              - generic [ref=e113]:
+                - heading "Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen" [level=4] [ref=e114]
+                - paragraph [ref=e115]: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+            - generic [ref=e116]:
+              - generic [ref=e119]:
+                - heading "Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen" [level=4] [ref=e120]
+                - paragraph [ref=e121]: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+                - paragraph [ref=e122]: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+              - img "kuehlturm_2" [ref=e126]
+            - generic [ref=e127]:
+              - img "kuehlturm_2" [ref=e131]
+              - generic [ref=e134]:
+                - heading "Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Eberswalde und Umgebung" [level=4] [ref=e135]:
+                  - strong [ref=e136]: Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Eberswalde und Umgebung
+                - paragraph [ref=e137]: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+            - generic [ref=e141]:
+              - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=3] [ref=e142]
+              - paragraph [ref=e143]:
+                - text: Mit einer professionellen hygienetechnischen
+                - link "Reinigung & Desinfektion" [ref=e144] [cursor=pointer]:
+                  - /url: https://igienair.de/reinigung-desinfektion/
+                - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+            - generic [ref=e145]:
+              - generic [ref=e148]:
+                - heading "Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052" [level=4] [ref=e149]
+                - paragraph [ref=e150]:
+                  - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+                  - link "Küchenabluftsysteme" [ref=e151] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/kuechenabluftsysteme/
+                  - text: .
+              - img "kuehlturm_2" [ref=e155]
+            - generic [ref=e156]:
+              - img "kuehlturm_2" [ref=e160]
+              - generic [ref=e163]:
+                - heading "Reinraumprüfung gemäß Norm EN ISO 14644" [level=4] [ref=e164]
+                - paragraph [ref=e165]:
+                  - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+                  - link "Reinraumqualifizierung" [ref=e166] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/reinraumqualifizierung/
+                  - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+                  - link "Digestorien" [ref=e167] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/laborabzuege/
+                  - text: gemäß
+                  - link "DIN EN ISO 14175" [ref=e168] [cursor=pointer]:
+                    - /url: https://igienair.de/normen/din-en-14175/
+                  - text: zu unserem Leistungsportfolio.
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - heading "Blindtext" [level=4] [ref=e174]
+              - heading "Quisque rutrum. Aenean imperdiet." [level=2] [ref=e177]
+              - paragraph [ref=e180]: Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+              - link "Erfahren Sie mehr" [ref=e182] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e183]:
+              - img "Gesundheitswesen" [ref=e186]
+              - heading "Gesundheitswesen" [level=4] [ref=e189]
+              - img "ia_industrie_weiß" [ref=e193]
+              - heading "Industrie" [level=4] [ref=e196]
+            - generic [ref=e197]:
+              - img "Pharma" [ref=e200]
+              - heading "Pharmaindustrie" [level=4] [ref=e203]
+              - img "ia_gastro_weiß" [ref=e207]
+              - heading "Gastronomie" [level=4] [ref=e210]
+            - generic [ref=e211]:
+              - img "Salat" [ref=e214]
+              - heading "Lebensmittel" [level=4] [ref=e217]
+              - img "ia_gemeinden2_weiß" [ref=e221]
+              - heading "Gemeinden" [level=4] [ref=e224]
+          - generic [ref=e226]:
+            - generic [ref=e227]:
+              - heading "Lorem Ipsum" [level=4] [ref=e230]
+              - heading "RLT-Anlagen und Kühlturm Reinigung in Eberswalde – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=3] [ref=e233]
+              - link "Button" [ref=e238] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e239]:
+              - paragraph [ref=e242]: "Als Experte für raumlufttechnische Hygiene bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+              - generic [ref=e244]:
+                - generic [ref=e247]: 
+                - generic [ref=e248]:
+                  - heading "Qualitätsversprechen:" [level=4] [ref=e249]
+                  - paragraph [ref=e251]: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden.
+              - generic [ref=e253]:
+                - generic [ref=e256]: 
+                - generic [ref=e257]:
+                  - heading "Leistungsspektrum:" [level=4] [ref=e258]
+                  - paragraph [ref=e260]: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach.
+              - generic [ref=e262]:
+                - generic [ref=e265]: 
+                - generic [ref=e266]:
+                  - heading "Kundennähe & Individualität:" [level=4] [ref=e267]
+                  - paragraph [ref=e269]: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt.
+              - paragraph [ref=e272]:
+                - generic [ref=e273]: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Eberswalde und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+      - contentinfo [ref=e274]:
+        - generic [ref=e275]:
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - img "Logo_Navi_1" [ref=e281]
+              - paragraph [ref=e284]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            - generic [ref=e285]:
+              - heading "MENÜ" [level=4] [ref=e288]
+              - navigation [ref=e291]:
+                - list [ref=e292]:
+                  - listitem [ref=e293]:
+                    - link "Unternehmen 3" [ref=e294] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/unternehmen-2/
+                      - generic [ref=e295]: Unternehmen
+                      - generic [ref=e296]: "3"
+                  - listitem [ref=e297]:
+                    - link "Leistungen 3" [ref=e298] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/leistungen-2/
+                      - generic [ref=e299]: Leistungen
+                      - generic [ref=e300]: "3"
+                  - listitem [ref=e301]:
+                    - link "Normen 3" [ref=e302] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/normen-2/
+                      - generic [ref=e303]: Normen
+                      - generic [ref=e304]: "3"
+                  - listitem [ref=e305]:
+                    - link "Anlagen 3" [ref=e306] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/anlagen-2/
+                      - generic [ref=e307]: Anlagen
+                      - generic [ref=e308]: "3"
+                  - listitem [ref=e309]:
+                    - link "Kunden 3" [ref=e310] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/kunden-2/
+                      - generic [ref=e311]: Kunden
+                      - generic [ref=e312]: "3"
+                  - listitem [ref=e313]:
+                    - link "Jobs 3" [ref=e314] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/jobs-2/
+                      - generic [ref=e315]: Jobs
+                      - generic [ref=e316]: "3"
+                  - listitem [ref=e317]:
+                    - link "Standorte 3" [ref=e318] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/standorte/
+                      - generic [ref=e319]: Standorte
+                      - generic [ref=e320]: "3"
+            - generic [ref=e321]:
+              - heading "STANDORTE" [level=4] [ref=e324]
+              - navigation [ref=e327]:
+                - list [ref=e328]:
+                  - listitem [ref=e329]:
+                    - link "Baden-Württemberg" [ref=e330] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e331]:
+                    - link "Nordbayern" [ref=e332] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e333]:
+                    - link "Südbayern" [ref=e334] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e335]:
+                    - link "Rhein-Main" [ref=e336] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e337]:
+                    - link "Nordrhein-Westfalen" [ref=e338] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e339]:
+                    - link "Nord" [ref=e340] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e341]:
+                    - link "Bodensee" [ref=e342] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e343]:
+                    - link "Berlin" [ref=e344] [cursor=pointer]:
+                      - /url: "#"
+            - generic [ref=e345]:
+              - heading "KONTAKT" [level=4] [ref=e348]
+              - generic [ref=e350]:
+                - generic [ref=e353]: 
+                - generic [ref=e354]:
+                  - heading "IGIENAIR GmbH" [level=4] [ref=e355]
+                  - paragraph [ref=e357]:
+                    - text: Am Hardtwald 6-8
+                    - text: 76275 Ettlingen
+              - generic [ref=e359]:
+                - generic [ref=e362]: 
+                - paragraph [ref=e365]: +49 (0) 7243 3699101
+              - generic [ref=e367]:
+                - generic [ref=e370]: 
+                - paragraph [ref=e373]: +49 (0) 7243 3694 943
+              - generic [ref=e375]:
+                - generic [ref=e378]: 
+                - paragraph [ref=e381]: kontakt@igienair.com
+          - generic [ref=e383]:
+            - paragraph [ref=e387]: © IGIENAIR 2025
+            - generic [ref=e391]:
+              - navigation [ref=e393]:
+                - list [ref=e394]:
+                  - listitem [ref=e395]:
+                    - link "AGB" [ref=e396] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/unternehmen/agb/
+                  - listitem [ref=e397]:
+                    - link "Datenschutz" [ref=e398] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/datenschutz/
+                  - listitem [ref=e399]:
+                    - link "Impressum" [ref=e400] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/impressum/
+                  - listitem [ref=e401]:
+                    - link "Cookie-Richtlinie (EU)" [ref=e402] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/cookie-richtlinie-eu/
+              - text: a
+            - link "Datenschutzeinstellungen 5" [ref=e405] [cursor=pointer]:
+              - /url: ""
+  - generic [ref=e406]:
+    - generic [ref=e407] [cursor=pointer]:
+      - text: 
+      - generic [ref=e411]: 
+    - generic [ref=e412] [cursor=pointer]:
+      - text: 
+      - generic [ref=e416]: 
+    - generic [ref=e417] [cursor=pointer]:
+      - text: 
+      - generic [ref=e421]: 
+  - text:   

@@ -1,0 +1,475 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Igienair Startseite" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Igienair" [ref=e5]
+      - navigation "Hauptnavigation" [ref=e6]:
+        - generic [ref=e7]:
+          - link "Unternehmen▾" [ref=e8] [cursor=pointer]:
+            - /url: unternehmen-2.html
+          - generic:
+            - link "Zertifizierungen":
+              - /url: zertifizierungen.html
+            - link "Nachhaltigkeit":
+              - /url: nachhaltigkeit.html
+            - link "Sicherheit":
+              - /url: sicherheit.html
+            - link "Qualität":
+              - /url: qualitaet.html
+            - link "Umweltschutz":
+              - /url: umweltschutz.html
+            - link "Standorte":
+              - /url: standorte.html
+        - generic [ref=e9]:
+          - link "Leistungen▾" [ref=e10] [cursor=pointer]:
+            - /url: leistungen-2.html
+          - generic:
+            - link "Inspektion & Gutachten":
+              - /url: inspektionundgutachten.html
+            - link "Reinigung & Desinfektion":
+              - /url: reinigung-desinfektion.html
+            - link "Instandsetzung & Sanierung":
+              - /url: instandsetzung-sanierung.html
+            - link "Energetische Inspektion":
+              - /url: energetische-inspektion-geg-2020.html
+        - generic [ref=e11]:
+          - link "Normen▾" [ref=e12] [cursor=pointer]:
+            - /url: normen-2.html
+          - generic:
+            - link "VDI 6022":
+              - /url: vdi-6022.html
+            - link "VDI 2047-2":
+              - /url: vdi-2047.html
+            - link "VDI 2052 & BGR 111":
+              - /url: vdi-2052-bgr-111.html
+            - link "DIN EN 15780":
+              - /url: din-en-15780.html
+            - button "DIN EN 14175"
+        - generic [ref=e13]:
+          - link "Anlagen▾" [ref=e14] [cursor=pointer]:
+            - /url: anlagen-2.html
+          - generic:
+            - link "Lüftungsanlagen":
+              - /url: lueftungsreinigung.html
+            - link "RLT-Anlagen":
+              - /url: rlt-hygiene.html
+            - link "Zu- & Abluftkanäle":
+              - /url: luftkanalreinigung.html
+            - link "Raumluftdesinfektion":
+              - /url: raumluftdesinfektion.html
+            - link "Verdunstungskühlanlage":
+              - /url: kuehlturmreinigung.html
+            - link "Splitklimageräte & Umluftkühlgeräte":
+              - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - link "Prozessabluft & Entrauchungsanlagen":
+              - /url: prozessabluft-und-entrauchungsanlagen.html
+            - link "Küchenabluftsysteme":
+              - /url: kuechenabluftsysteme.html
+            - link "Laborabzüge & Digestorien":
+              - /url: laborabzuege.html
+            - link "Verdampfer & Kondensatoren":
+              - /url: verdampfer-und-kondensatoren.html
+            - link "Reinräume":
+              - /url: reinraumqualifizierung.html
+            - link "OP-Räume":
+              - /url: op-raum-pruefung.html
+            - link "Kühlregale":
+              - /url: kuehlregale.html
+            - link "Textilschläuche":
+              - /url: textilschlaeuche.html
+            - link "Rechenzentrum":
+              - /url: rechenzentrum.html
+            - link "Filterintegritätstest":
+              - /url: filterintegritaetstest.html
+            - link "Lecktest Schwebstofffilter":
+              - /url: lecktest-schwebstofffilter.html
+        - generic [ref=e15]:
+          - link "Kunden▾" [ref=e16] [cursor=pointer]:
+            - /url: kunden-2.html
+          - generic:
+            - link "Branchen":
+              - /url: branchen.html
+            - link "Referenzen":
+              - /url: referenzen.html
+            - button "Extranet"
+        - generic [ref=e17]:
+          - link "Jobs▾" [ref=e18] [cursor=pointer]:
+            - /url: jobs-2.html
+          - generic:
+            - button "Mitarbeiter technische Reinigung"
+            - button "Teamleiter technische Hygienereinigung"
+        - generic [ref=e19]:
+          - link "Standorte▾" [ref=e20] [cursor=pointer]:
+            - /url: standorte.html
+          - generic:
+            - button "Baden-Württemberg"
+            - button "Nordbayern"
+            - button "Südbayern"
+            - button "Rhein-Main"
+            - button "Nordrhein-Westfalen"
+            - button "Nord"
+            - button "Bodensee"
+            - button "Berlin"
+      - link "Angebot anfordern" [ref=e21] [cursor=pointer]:
+        - /url: index.html#angebot
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: unternehmen-2.html
+            - text: Unternehmen
+          - link:
+            - /url: zertifizierungen.html
+            - text: Zertifizierungen
+          - link:
+            - /url: nachhaltigkeit.html
+            - text: Nachhaltigkeit
+          - link:
+            - /url: sicherheit.html
+            - text: Sicherheit
+          - link:
+            - /url: qualitaet.html
+            - text: Qualität
+          - link:
+            - /url: umweltschutz.html
+            - text: Umweltschutz
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+        - generic:
+          - link:
+            - /url: leistungen-2.html
+            - text: Leistungen
+          - link:
+            - /url: inspektionundgutachten.html
+            - text: Inspektion & Gutachten
+          - link:
+            - /url: reinigung-desinfektion.html
+            - text: Reinigung & Desinfektion
+          - link:
+            - /url: instandsetzung-sanierung.html
+            - text: Instandsetzung & Sanierung
+          - link:
+            - /url: energetische-inspektion-geg-2020.html
+            - text: Energetische Inspektion
+        - generic:
+          - link:
+            - /url: normen-2.html
+            - text: Normen
+          - link:
+            - /url: vdi-6022.html
+            - text: VDI 6022
+          - link:
+            - /url: vdi-2047.html
+            - text: VDI 2047-2
+          - link:
+            - /url: vdi-2052-bgr-111.html
+            - text: VDI 2052 & BGR 111
+          - link:
+            - /url: din-en-15780.html
+            - text: DIN EN 15780
+          - button: DIN EN 14175
+        - generic:
+          - link:
+            - /url: anlagen-2.html
+            - text: Anlagen
+          - link:
+            - /url: lueftungsreinigung.html
+            - text: Lüftungsanlagen
+          - link:
+            - /url: rlt-hygiene.html
+            - text: RLT-Anlagen
+          - link:
+            - /url: luftkanalreinigung.html
+            - text: Zu- & Abluftkanäle
+          - link:
+            - /url: raumluftdesinfektion.html
+            - text: Raumluftdesinfektion
+          - link:
+            - /url: kuehlturmreinigung.html
+            - text: Verdunstungskühlanlage
+          - link:
+            - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - text: Splitklimageräte & Umluftkühlgeräte
+          - link:
+            - /url: prozessabluft-und-entrauchungsanlagen.html
+            - text: Prozessabluft & Entrauchungsanlagen
+          - link:
+            - /url: kuechenabluftsysteme.html
+            - text: Küchenabluftsysteme
+          - link:
+            - /url: laborabzuege.html
+            - text: Laborabzüge & Digestorien
+          - link:
+            - /url: verdampfer-und-kondensatoren.html
+            - text: Verdampfer & Kondensatoren
+          - link:
+            - /url: reinraumqualifizierung.html
+            - text: Reinräume
+          - link:
+            - /url: op-raum-pruefung.html
+            - text: OP-Räume
+          - link:
+            - /url: kuehlregale.html
+            - text: Kühlregale
+          - link:
+            - /url: textilschlaeuche.html
+            - text: Textilschläuche
+          - link:
+            - /url: rechenzentrum.html
+            - text: Rechenzentrum
+          - link:
+            - /url: filterintegritaetstest.html
+            - text: Filterintegritätstest
+          - link:
+            - /url: lecktest-schwebstofffilter.html
+            - text: Lecktest Schwebstofffilter
+        - generic:
+          - link:
+            - /url: kunden-2.html
+            - text: Kunden
+          - link:
+            - /url: branchen.html
+            - text: Branchen
+          - link:
+            - /url: referenzen.html
+            - text: Referenzen
+          - button: Extranet
+        - generic:
+          - link:
+            - /url: jobs-2.html
+            - text: Jobs
+          - button: Mitarbeiter technische Reinigung
+          - button: Teamleiter technische Hygienereinigung
+        - generic:
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+          - button: Baden-Württemberg
+          - button: Nordbayern
+          - button: Südbayern
+          - button: Rhein-Main
+          - button: Nordrhein-Westfalen
+          - button: Nord
+          - button: Bodensee
+          - button: Berlin
+  - navigation "Schnellzugriff" [ref=e22]:
+    - link "Kontakt" [ref=e23] [cursor=pointer]:
+      - /url: "#footer-contact"
+      - img [ref=e24]
+    - link "Angebot" [ref=e26] [cursor=pointer]:
+      - /url: index.html#angebot
+      - img [ref=e27]
+    - link "Potsdam" [ref=e29] [cursor=pointer]:
+      - /url: "#potsdam-overview"
+      - img [ref=e30]
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - paragraph [ref=e35]: Blindtext
+      - heading "Kunden in Potsdam" [level=1] [ref=e36]
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: Lorem Ipsum
+        - heading "Für RLT-Anlagen und Kühlturm Reinigung in Potsdam ist Igienair Ihr Ansprechpartner Nr. 1" [level=2] [ref=e41]
+      - generic [ref=e43]:
+        - article [ref=e44]:
+          - paragraph [ref=e45]: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Potsdam kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+          - paragraph [ref=e46]:
+            - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+            - link "Hygieneinspektion VDI 6022" [ref=e47] [cursor=pointer]:
+              - /url: hygieneinspektion-vdi-6022.html
+            - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+          - paragraph [ref=e48]: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Potsdam kümmert.
+          - paragraph [ref=e49]: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft in Potsdam und Umgebung."
+          - paragraph [ref=e50]:
+            - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+            - link "technische Hygiene" [ref=e51] [cursor=pointer]:
+              - /url: index.html
+            - text: bei Rückkühlwerken und RLT-Anlagen in und um Potsdam.
+        - figure [ref=e52]:
+          - img "Technische Hygiene in Potsdam" [ref=e53]
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - paragraph [ref=e57]: Lorem Ipsum
+        - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Potsdam" [level=2] [ref=e58]'
+      - heading "Kühlturm Reinigung & Kühlturm Wartung Potsdam" [level=3] [ref=e60]
+      - paragraph [ref=e61]: "Wir sorgen für beste Luftqualität in Potsdam und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - figure [ref=e64]:
+            - img "Inspektion und Gutachtenerstellung für Kühltürme und RLT-Anlagen" [ref=e65]
+          - article [ref=e66]:
+            - heading "Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen" [level=3] [ref=e67]
+            - paragraph [ref=e68]: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+        - generic [ref=e69]:
+          - article [ref=e70]:
+            - heading "Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen" [level=3] [ref=e71]
+            - paragraph [ref=e72]: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+            - paragraph [ref=e73]: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+          - figure [ref=e74]:
+            - img "Reinigung und Desinfektion von Kühltürmen und RLT-Anlagen" [ref=e75]
+        - generic [ref=e76]:
+          - figure [ref=e77]:
+            - img "Instandsetzung und Sanierung von Kühltürmen und RLT-Anlagen in Potsdam" [ref=e78]
+          - article [ref=e79]:
+            - heading "Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Potsdam" [level=3] [ref=e80]
+            - paragraph [ref=e81]: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+        - generic [ref=e82]:
+          - article [ref=e83]:
+            - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=3] [ref=e84]
+            - paragraph [ref=e85]:
+              - text: Mit einer professionellen hygienetechnischen
+              - link "Reinigung & Desinfektion" [ref=e86] [cursor=pointer]:
+                - /url: reinigung-desinfektion.html
+              - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+            - heading "Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052" [level=3] [ref=e87]
+            - paragraph [ref=e88]:
+              - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+              - link "Küchenabluftsysteme" [ref=e89] [cursor=pointer]:
+                - /url: kuechenabluftsysteme.html
+              - text: .
+          - figure [ref=e90]:
+            - img "Professionelle hygienetechnische Reinigung und Brandschutzreinigung" [ref=e91]
+        - generic [ref=e92]:
+          - figure [ref=e93]:
+            - img "Reinraumprüfung gemäß Norm EN ISO 14644" [ref=e94]
+          - article [ref=e95]:
+            - heading "Reinraumprüfung gemäß Norm EN ISO 14644" [level=3] [ref=e96]
+            - paragraph [ref=e97]:
+              - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+              - link "Reinraumqualifizierung" [ref=e98] [cursor=pointer]:
+                - /url: reinraumqualifizierung.html
+              - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+              - link "Digestorien" [ref=e99] [cursor=pointer]:
+                - /url: laborabzuege.html
+              - text: gemäß
+              - link "DIN EN ISO 14175" [ref=e100] [cursor=pointer]:
+                - /url: "#!"
+              - text: zu unserem Leistungsportfolio.
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - paragraph [ref=e104]: Blindtext
+        - heading "Quisque rutrum. Aenean imperdiet." [level=2] [ref=e105]
+        - paragraph [ref=e107]: Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+        - button "Erfahren Sie mehr" [ref=e108] [cursor=pointer]
+      - generic "Branchen" [ref=e109]:
+        - article [ref=e110]:
+          - img "Gesundheitswesen" [ref=e111]
+          - heading "Gesundheitswesen" [level=3] [ref=e112]
+        - article [ref=e113]:
+          - img "Industrie" [ref=e114]
+          - heading "Industrie" [level=3] [ref=e115]
+        - article [ref=e116]:
+          - img "Pharmaindustrie" [ref=e117]
+          - heading "Pharmaindustrie" [level=3] [ref=e118]
+        - article [ref=e119]:
+          - img "Gastronomie" [ref=e120]
+          - heading "Gastronomie" [level=3] [ref=e121]
+        - article [ref=e122]:
+          - img "Lebensmittel" [ref=e123]
+          - heading "Lebensmittel" [level=3] [ref=e124]
+        - article [ref=e125]:
+          - img "Gemeinden" [ref=e126]
+          - heading "Gemeinden" [level=3] [ref=e127]
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - paragraph [ref=e131]: Lorem Ipsum
+        - heading "RLT-Anlagen und Kühlturm Reinigung in Potsdam – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=2] [ref=e132]
+        - button "Button" [ref=e134] [cursor=pointer]
+      - generic [ref=e135]:
+        - paragraph [ref=e136]: "Als Experte für raumlufttechnische Hygiene in Potsdam und Umgebung bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+        - generic [ref=e137]:
+          - article [ref=e138]:
+            - generic [ref=e140]:
+              - heading "Qualitätsversprechen:" [level=3] [ref=e141]
+              - paragraph [ref=e142]: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden.
+          - article [ref=e143]:
+            - generic [ref=e145]:
+              - heading "Leistungsspektrum:" [level=3] [ref=e146]
+              - paragraph [ref=e147]: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach.
+          - article [ref=e148]:
+            - generic [ref=e150]:
+              - heading "Kundennähe & Individualität:" [level=3] [ref=e151]
+              - paragraph [ref=e152]: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt.
+        - paragraph [ref=e153]: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Potsdam und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+  - contentinfo [ref=e154]:
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - img "Igienair" [ref=e157]
+        - paragraph [ref=e158]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - generic [ref=e159]:
+        - heading "MENÜ" [level=2] [ref=e160]
+        - list [ref=e161]:
+          - listitem [ref=e162]:
+            - link "Unternehmen 3" [ref=e163] [cursor=pointer]:
+              - /url: unternehmen-2.html
+          - listitem [ref=e164]:
+            - link "Leistungen 3" [ref=e165] [cursor=pointer]:
+              - /url: leistungen-2.html
+          - listitem [ref=e166]:
+            - link "Normen 3" [ref=e167] [cursor=pointer]:
+              - /url: normen-2.html
+          - listitem [ref=e168]:
+            - link "Anlagen 3" [ref=e169] [cursor=pointer]:
+              - /url: anlagen-2.html
+          - listitem [ref=e170]:
+            - link "Kunden 3" [ref=e171] [cursor=pointer]:
+              - /url: kunden-2.html
+          - listitem [ref=e172]:
+            - link "Jobs 3" [ref=e173] [cursor=pointer]:
+              - /url: jobs-2.html
+          - listitem [ref=e174]:
+            - link "Standorte 3" [ref=e175] [cursor=pointer]:
+              - /url: standorte.html
+      - generic [ref=e176]:
+        - heading "STANDORTE" [level=2] [ref=e177]
+        - list [ref=e178]:
+          - listitem [ref=e179]:
+            - button "Baden-Württemberg" [ref=e180] [cursor=pointer]
+          - listitem [ref=e181]:
+            - button "Nordbayern" [ref=e182] [cursor=pointer]
+          - listitem [ref=e183]:
+            - button "Südbayern" [ref=e184] [cursor=pointer]
+          - listitem [ref=e185]:
+            - button "Rhein-Main" [ref=e186] [cursor=pointer]
+          - listitem [ref=e187]:
+            - button "Nordrhein-Westfalen" [ref=e188] [cursor=pointer]
+          - listitem [ref=e189]:
+            - button "Nord" [ref=e190] [cursor=pointer]
+          - listitem [ref=e191]:
+            - button "Bodensee" [ref=e192] [cursor=pointer]
+          - listitem [ref=e193]:
+            - button "Berlin" [ref=e194] [cursor=pointer]
+      - generic [ref=e195]:
+        - heading "KONTAKT" [level=2] [ref=e196]
+        - generic [ref=e197]:
+          - generic [ref=e198]: ●
+          - generic [ref=e199]:
+            - strong [ref=e200]: IGIENAIR GmbH
+            - paragraph [ref=e201]:
+              - text: Am Hardtwald 6-8
+              - text: 76275 Ettlingen
+        - generic [ref=e202]:
+          - generic [ref=e203]: ●
+          - link "+49 (0) 7243 3699101" [ref=e205] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e206]:
+          - generic [ref=e207]: ●
+          - link "+49 (0) 7243 3694 943" [ref=e209] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e210]:
+          - generic [ref=e211]: ●
+          - link "kontakt@igienair.com" [ref=e213] [cursor=pointer]:
+            - /url: "#!"
+    - generic [ref=e215]:
+      - generic [ref=e216]: © IGIENAIR 2025
+      - generic [ref=e217]:
+        - link "AGB" [ref=e218] [cursor=pointer]:
+          - /url: agb.html
+        - link "Datenschutz" [ref=e219] [cursor=pointer]:
+          - /url: datenschutz.html
+        - link "Impressum" [ref=e220] [cursor=pointer]:
+          - /url: impressum.html
+        - link "Cookie-Richtlinie (EU)" [ref=e221] [cursor=pointer]:
+          - /url: cookie-richtlinie-eu.html

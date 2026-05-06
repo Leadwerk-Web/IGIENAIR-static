@@ -1,0 +1,256 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e3]:
+    - banner:
+      - generic [ref=e5]:
+        - img "logo-igienair-white" [ref=e9]
+        - generic [ref=e13]:
+          - text: 3 3 3 3 3 3 3
+          - generic [ref=e16]: a
+        - link "Angebot anfordern" [ref=e19] [cursor=pointer]:
+          - /url: ""
+        - img "deutschland blau" [ref=e23]
+    - generic [ref=e24]:
+      - article [ref=e26]:
+        - generic [ref=e29]:
+          - generic [ref=e32]:
+            - heading "Blindtext" [level=4] [ref=e35]
+            - heading "Kunden in Brandenburg" [level=1] [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e41]:
+              - heading "Lorem Ipsum" [level=4] [ref=e44]
+              - heading "Für RLT-Anlagen und Kühlturm Reinigung in Brandenburg ist Igienair Ihr Ansprechpartner Nr. 1" [level=2] [ref=e47]
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - generic [ref=e56]:
+                  - paragraph [ref=e57]: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Brandenburg kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+                  - paragraph [ref=e58]:
+                    - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+                    - link "Hygieneinspektion VDI 6022" [ref=e59] [cursor=pointer]:
+                      - /url: https://igienair.de/hygieneinspektion-vdi-6022/
+                    - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+                  - paragraph [ref=e60]: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Brandenburg kümmert.
+                  - paragraph [ref=e61]: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft in Brandenburg."
+                  - paragraph [ref=e62]:
+                    - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+                    - link "technische Hygiene" [ref=e63] [cursor=pointer]:
+                      - /url: https://igienair.de/
+                    - text: bei Rückkühlwerken und RLT-Anlagen in Brandenburg.
+                - link "Button" [ref=e65] [cursor=pointer]:
+                  - /url: ""
+              - img "2" [ref=e69]
+          - generic [ref=e70]:
+            - generic [ref=e72]:
+              - heading "Lorem Ipsum" [level=4] [ref=e75]
+              - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Brandenburg" [level=2] [ref=e78]'
+            - generic [ref=e85]:
+              - heading "Kühlturm Reinigung & Kühlturm Wartung Brandenburg" [level=3] [ref=e86]
+              - paragraph [ref=e87]: "Wir sorgen für beste Luftqualität in Brandenburg und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+            - generic [ref=e88]:
+              - img "kuehlturm_2" [ref=e92]
+              - generic [ref=e95]:
+                - heading "Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen" [level=4] [ref=e96]
+                - paragraph [ref=e97]: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+            - generic [ref=e98]:
+              - generic [ref=e101]:
+                - heading "Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen" [level=4] [ref=e102]
+                - paragraph [ref=e103]: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+                - paragraph [ref=e104]: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+              - img "kuehlturm_2" [ref=e108]
+            - generic [ref=e109]:
+              - img "kuehlturm_2" [ref=e113]
+              - generic [ref=e116]:
+                - heading "Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Brandenburg" [level=4] [ref=e117]:
+                  - text: Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in
+                  - strong [ref=e118]: Brandenburg
+                - paragraph [ref=e119]: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+            - generic [ref=e123]:
+              - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=3] [ref=e124]
+              - paragraph [ref=e125]:
+                - text: Mit einer professionellen hygienetechnischen
+                - link "Reinigung & Desinfektion" [ref=e126] [cursor=pointer]:
+                  - /url: https://igienair.de/reinigung-desinfektion/
+                - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+            - generic [ref=e127]:
+              - generic [ref=e130]:
+                - heading "Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052" [level=4] [ref=e131]
+                - paragraph [ref=e132]:
+                  - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+                  - link "Küchenabluftsysteme" [ref=e133] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/kuechenabluftsysteme/
+                  - text: .
+              - img "kuehlturm_2" [ref=e137]
+            - generic [ref=e138]:
+              - img "kuehlturm_2" [ref=e142]
+              - generic [ref=e145]:
+                - heading "Reinraumprüfung gemäß Norm EN ISO 14644" [level=4] [ref=e146]
+                - paragraph [ref=e147]:
+                  - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+                  - link "Reinraumqualifizierung" [ref=e148] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/reinraumqualifizierung/
+                  - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+                  - link "Digestorien" [ref=e149] [cursor=pointer]:
+                    - /url: https://igienair.de/anlagen/laborabzuege/
+                  - text: gemäß
+                  - link "DIN EN ISO 14175" [ref=e150] [cursor=pointer]:
+                    - /url: https://igienair.de/normen/din-en-14175/
+                  - text: zu unserem Leistungsportfolio.
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - heading "Blindtext" [level=4] [ref=e156]
+              - heading "Quisque rutrum. Aenean imperdiet." [level=2] [ref=e159]
+              - paragraph [ref=e162]: Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+              - link "Erfahren Sie mehr" [ref=e164] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e165]:
+              - img "Gesundheitswesen" [ref=e168]
+              - heading "Gesundheitswesen" [level=4] [ref=e171]
+              - img "ia_industrie_weiß" [ref=e175]
+              - heading "Industrie" [level=4] [ref=e178]
+            - generic [ref=e179]:
+              - img "Pharma" [ref=e182]
+              - heading "Pharmaindustrie" [level=4] [ref=e185]
+              - img "ia_gastro_weiß" [ref=e189]
+              - heading "Gastronomie" [level=4] [ref=e192]
+            - generic [ref=e193]:
+              - img "Salat" [ref=e196]
+              - heading "Lebensmittel" [level=4] [ref=e199]
+              - img "ia_gemeinden2_weiß" [ref=e203]
+              - heading "Gemeinden" [level=4] [ref=e206]
+          - generic [ref=e208]:
+            - generic [ref=e209]:
+              - heading "Lorem Ipsum" [level=4] [ref=e212]
+              - heading "RLT-Anlagen und Kühlturm Reinigung in Brandenburg – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=3] [ref=e215]
+              - link "Button" [ref=e220] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e221]:
+              - paragraph [ref=e224]: "Als Experte für raumlufttechnische Hygiene in Brandenburg bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+              - generic [ref=e226]:
+                - generic [ref=e229]: 
+                - generic [ref=e230]:
+                  - heading "Qualitätsversprechen:" [level=4] [ref=e231]
+                  - paragraph [ref=e233]: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden.
+              - generic [ref=e235]:
+                - generic [ref=e238]: 
+                - generic [ref=e239]:
+                  - heading "Leistungsspektrum:" [level=4] [ref=e240]
+                  - paragraph [ref=e242]: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach.
+              - generic [ref=e244]:
+                - generic [ref=e247]: 
+                - generic [ref=e248]:
+                  - heading "Kundennähe & Individualität:" [level=4] [ref=e249]
+                  - paragraph [ref=e251]: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt.
+              - paragraph [ref=e254]: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Brandenburg und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+      - contentinfo [ref=e255]:
+        - generic [ref=e256]:
+          - generic [ref=e258]:
+            - generic [ref=e259]:
+              - img "Logo_Navi_1" [ref=e262]
+              - paragraph [ref=e265]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            - generic [ref=e266]:
+              - heading "MENÜ" [level=4] [ref=e269]
+              - navigation [ref=e272]:
+                - list [ref=e273]:
+                  - listitem [ref=e274]:
+                    - link "Unternehmen 3" [ref=e275] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/unternehmen-2/
+                      - generic [ref=e276]: Unternehmen
+                      - generic [ref=e277]: "3"
+                  - listitem [ref=e278]:
+                    - link "Leistungen 3" [ref=e279] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/leistungen-2/
+                      - generic [ref=e280]: Leistungen
+                      - generic [ref=e281]: "3"
+                  - listitem [ref=e282]:
+                    - link "Normen 3" [ref=e283] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/normen-2/
+                      - generic [ref=e284]: Normen
+                      - generic [ref=e285]: "3"
+                  - listitem [ref=e286]:
+                    - link "Anlagen 3" [ref=e287] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/anlagen-2/
+                      - generic [ref=e288]: Anlagen
+                      - generic [ref=e289]: "3"
+                  - listitem [ref=e290]:
+                    - link "Kunden 3" [ref=e291] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/kunden-2/
+                      - generic [ref=e292]: Kunden
+                      - generic [ref=e293]: "3"
+                  - listitem [ref=e294]:
+                    - link "Jobs 3" [ref=e295] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/jobs-2/
+                      - generic [ref=e296]: Jobs
+                      - generic [ref=e297]: "3"
+                  - listitem [ref=e298]:
+                    - link "Standorte 3" [ref=e299] [cursor=pointer]:
+                      - /url: https://b15g1ap.myrdbx.io/standorte/
+                      - generic [ref=e300]: Standorte
+                      - generic [ref=e301]: "3"
+            - generic [ref=e302]:
+              - heading "STANDORTE" [level=4] [ref=e305]
+              - navigation [ref=e308]:
+                - list [ref=e309]:
+                  - listitem [ref=e310]:
+                    - link "Baden-Württemberg" [ref=e311] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e312]:
+                    - link "Nordbayern" [ref=e313] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e314]:
+                    - link "Südbayern" [ref=e315] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e316]:
+                    - link "Rhein-Main" [ref=e317] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e318]:
+                    - link "Nordrhein-Westfalen" [ref=e319] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e320]:
+                    - link "Nord" [ref=e321] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e322]:
+                    - link "Bodensee" [ref=e323] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=e324]:
+                    - link "Berlin" [ref=e325] [cursor=pointer]:
+                      - /url: "#"
+            - generic [ref=e326]:
+              - heading "KONTAKT" [level=4] [ref=e329]
+              - generic [ref=e331]:
+                - generic [ref=e334]: 
+                - generic [ref=e335]:
+                  - heading "IGIENAIR GmbH" [level=4] [ref=e336]
+                  - paragraph [ref=e338]:
+                    - text: Am Hardtwald 6-8
+                    - text: 76275 Ettlingen
+              - generic [ref=e340]:
+                - generic [ref=e343]: 
+                - paragraph [ref=e346]: +49 (0) 7243 3699101
+              - generic [ref=e348]:
+                - generic [ref=e351]: 
+                - paragraph [ref=e354]: +49 (0) 7243 3694 943
+              - generic [ref=e356]:
+                - generic [ref=e359]: 
+                - paragraph [ref=e362]: kontakt@igienair.com
+          - generic [ref=e364]:
+            - paragraph [ref=e368]: © IGIENAIR 2025
+            - generic [ref=e375]: a
+            - link "Datenschutzeinstellungen 5" [ref=e378] [cursor=pointer]:
+              - /url: ""
+  - generic [ref=e379]:
+    - generic [ref=e380] [cursor=pointer]:
+      - link "" [ref=e381]:
+        - /url: ""
+        - generic [ref=e383]: 
+      - text: 
+    - generic [ref=e384] [cursor=pointer]:
+      - link "" [ref=e385]:
+        - /url: ""
+        - generic [ref=e387]: 
+      - text: 
+    - generic [ref=e388] [cursor=pointer]:
+      - link "" [ref=e389]:
+        - /url: ""
+        - generic [ref=e391]: 
+      - text: 
+  - text:   

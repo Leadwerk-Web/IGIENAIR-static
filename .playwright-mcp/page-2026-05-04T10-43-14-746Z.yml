@@ -1,0 +1,373 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Igienair Startseite" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Igienair" [ref=e5]
+      - text: ▾ ▾ ▾ ▾ ▾ ▾ ▾
+      - button [ref=e6]
+      - link "Angebot anfordern" [ref=e10] [cursor=pointer]:
+        - /url: index.html#angebot
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: unternehmen-2.html
+            - text: Unternehmen
+          - link:
+            - /url: zertifizierungen.html
+            - text: Zertifizierungen
+          - link:
+            - /url: nachhaltigkeit.html
+            - text: Nachhaltigkeit
+          - link:
+            - /url: sicherheit.html
+            - text: Sicherheit
+          - link:
+            - /url: qualitaet.html
+            - text: Qualität
+          - link:
+            - /url: umweltschutz.html
+            - text: Umweltschutz
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+        - generic:
+          - link:
+            - /url: leistungen-2.html
+            - text: Leistungen
+          - link:
+            - /url: inspektionundgutachten.html
+            - text: Inspektion & Gutachten
+          - link:
+            - /url: reinigung-desinfektion.html
+            - text: Reinigung & Desinfektion
+          - link:
+            - /url: instandsetzung-sanierung.html
+            - text: Instandsetzung & Sanierung
+          - link:
+            - /url: energetische-inspektion-geg-2020.html
+            - text: Energetische Inspektion
+        - generic:
+          - link:
+            - /url: normen-2.html
+            - text: Normen
+          - link:
+            - /url: vdi-6022.html
+            - text: VDI 6022
+          - link:
+            - /url: vdi-2047.html
+            - text: VDI 2047-2
+          - link:
+            - /url: vdi-2052-bgr-111.html
+            - text: VDI 2052 & BGR 111
+          - link:
+            - /url: din-en-15780.html
+            - text: DIN EN 15780
+          - button: DIN EN 14175
+        - generic:
+          - link:
+            - /url: anlagen-2.html
+            - text: Anlagen
+          - link:
+            - /url: lueftungsreinigung.html
+            - text: Lüftungsanlagen
+          - link:
+            - /url: rlt-hygiene.html
+            - text: RLT-Anlagen
+          - link:
+            - /url: luftkanalreinigung.html
+            - text: Zu- & Abluftkanäle
+          - link:
+            - /url: raumluftdesinfektion.html
+            - text: Raumluftdesinfektion
+          - link:
+            - /url: kuehlturmreinigung.html
+            - text: Verdunstungskühlanlage
+          - link:
+            - /url: splitklimageraete-und-umluftkuehlgeraete.html
+            - text: Splitklimageräte & Umluftkühlgeräte
+          - link:
+            - /url: prozessabluft-und-entrauchungsanlagen.html
+            - text: Prozessabluft & Entrauchungsanlagen
+          - link:
+            - /url: kuechenabluftsysteme.html
+            - text: Küchenabluftsysteme
+          - link:
+            - /url: laborabzuege.html
+            - text: Laborabzüge & Digestorien
+          - link:
+            - /url: verdampfer-und-kondensatoren.html
+            - text: Verdampfer & Kondensatoren
+          - link:
+            - /url: reinraumqualifizierung.html
+            - text: Reinräume
+          - link:
+            - /url: op-raum-pruefung.html
+            - text: OP-Räume
+          - link:
+            - /url: kuehlregale.html
+            - text: Kühlregale
+          - link:
+            - /url: textilschlaeuche.html
+            - text: Textilschläuche
+          - link:
+            - /url: rechenzentrum.html
+            - text: Rechenzentrum
+          - link:
+            - /url: filterintegritaetstest.html
+            - text: Filterintegritätstest
+          - link:
+            - /url: lecktest-schwebstofffilter.html
+            - text: Lecktest Schwebstofffilter
+        - generic:
+          - link:
+            - /url: kunden-2.html
+            - text: Kunden
+          - link:
+            - /url: branchen.html
+            - text: Branchen
+          - link:
+            - /url: referenzen.html
+            - text: Referenzen
+          - button: Extranet
+        - generic:
+          - link:
+            - /url: jobs-2.html
+            - text: Jobs
+          - button: Mitarbeiter technische Reinigung
+          - button: Teamleiter technische Hygienereinigung
+        - generic:
+          - link:
+            - /url: standorte.html
+            - text: Standorte
+          - button: Baden-Württemberg
+          - button: Nordbayern
+          - button: Südbayern
+          - button: Rhein-Main
+          - button: Nordrhein-Westfalen
+          - button: Nord
+          - button: Bodensee
+          - button: Berlin
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Blindtext
+      - heading "Kunden in Frankfurt an der Oder" [level=1] [ref=e15]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: Lorem Ipsum
+        - heading "Für RLT-Anlagen und Kühlturm Reinigung in Frankfurt an der Oder ist Igienair Ihr Ansprechpartner Nr. 1" [level=2] [ref=e20]
+      - generic [ref=e22]:
+        - article [ref=e23]:
+          - paragraph [ref=e24]: Sie suchen ein kompetentes und kundennahes Unternehmen für die Begutachtung, Reinigung, Wartung und Desinfektion Ihrer Kühltürme und raumlufttechnischen Anlagen in Frankfurt an der Oder kümmert? Dann ist die Igienair GmbH der richtige Ansprechpartner für Sie!
+          - paragraph [ref=e25]:
+            - text: Neben den Bereichen Sanierung und Inspektion (u.a.
+            - link "Hygieneinspektion VDI 6022" [ref=e26] [cursor=pointer]:
+              - /url: hygieneinspektion-vdi-6022.html
+            - text: ) sind wir auch auf dem Gebiet der Hygieneleistungen für Sie da!
+          - paragraph [ref=e27]: Die Igienair GmbH verfügt über ein Team von hochqualifizierten und mehrfach zertifizierten Experten, das sich zuverlässig um Ihre Zu- und Abluftsysteme in Frankfurt an der Oder kümmert.
+          - paragraph [ref=e28]: "Unsere hygienetechnischen Dienstleistungen werden von Unternehmen in ganz unterschiedlichen Branchen in ganz Deutschland in Anspruch genommen. Egal ob Gesundheitswesen, Gastronomie oder Industrie: Igienair sorgt für frische und saubere Raumluft in Frankfurt an der Oder."
+          - paragraph [ref=e29]:
+            - text: "Wir vereinen alle wichtigen Leistungen unter einem Dach: Angefangen von der Inspektion über die Sanierung und Reinigung von RLT-Anlagen bis hin zur Erstellung von Gutachten. Igienair ist Ihr zuverlässiger Partner für"
+            - link "technische Hygiene" [ref=e30] [cursor=pointer]:
+              - /url: index.html
+            - text: bei Rückkühlwerken und RLT-Anlagen in Frankfurt an der Oder und Umgebung.
+        - figure [ref=e31]:
+          - img "Technische Hygiene in Frankfurt an der Oder" [ref=e32]
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: Lorem Ipsum
+        - 'heading "Technische Hygiene, Desinfektion, Sanierung, Gutachten & mehr: Alle Leistungen jetzt auch für Frankfurt an der Oder" [level=2] [ref=e37]'
+      - heading "Kühlturm Reinigung & Kühlturm Wartung" [level=3] [ref=e39]
+      - paragraph [ref=e40]: "Wir sorgen für beste Luftqualität in Frankfurt an der Oder und Umgebung. Unser umfangreiches Portfolio an Leistungen umfasst das Folgende:"
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - figure [ref=e43]:
+            - img "Inspektion und Gutachtenerstellung für Kühltürme und RLT-Anlagen" [ref=e44]
+          - article [ref=e45]:
+            - heading "Inspektion & Gutachtenerstellung für Kühltürme und RLT-Anlagen" [level=3] [ref=e46]
+            - paragraph [ref=e47]: Wir führen normgerechte Inspektionen (VDI 6022) durch und erstellen Gefährdungsbeurteilungen nach 42. BImSchV (VDI 2047-2) sowie darauf basierende rechtssichere Gutachten. Damit erhalten Sie eine konkrete Bewertung Ihrer RLT-Anlagen an die Hand, die Optimierungspotentiale und Handlungsbedarf aufzeigt. Igienair sorgt dafür, dass Ihre Anlagen stets allen gesetzlichen Vorschriften gerecht werden.
+        - generic [ref=e48]:
+          - article [ref=e49]:
+            - heading "Reinigung & Desinfektion von Kühltürmen und RLT-Anlagen" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Um einen hygienisch einwandfreien Betrieb Ihrer Kühltürme und RLT-Anlagen zu gewährleisten, führen wir hygienetechnische Reinigungen gemäß VDI 6022, DIN EN 15780 und VDI 2047 durch. Als zertifizierter Experte arbeiten wir exakt nach diesen Richtlinien, um Ihnen eine saubere Raumluft zu garantieren.
+            - paragraph [ref=e52]: Erkrankungen wie dem Sick Building Syndrome (SBS) oder einer Legionellose kann damit effektiv vorgebeugt werden.
+          - figure [ref=e53]:
+            - img "Reinigung und Desinfektion von Kühltürmen und RLT-Anlagen" [ref=e54]
+        - generic [ref=e55]:
+          - figure [ref=e56]:
+            - img "Instandsetzung und Sanierung von Kühltürmen und RLT-Anlagen in Frankfurt an der Oder" [ref=e57]
+          - article [ref=e58]:
+            - heading "Instandsetzung & Sanierung von Kühltürmen und RLT-Anlagen in Frankfurt an der Oder" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Poröse Innendämmungen oder Lecks in Ihren Zu- und Abluftanlagen schmälern deren operative und technische Leistungsfähigkeit. Neben den Energiekosten steigen die gesundheitlichen Risiken, die beispielsweise durch die Bildung von Schimmelpilzen und Bakterien hervorgerufen werden.
+        - generic [ref=e61]:
+          - article [ref=e62]:
+            - heading "Professionelle Hygienetechnische Reinigung vom Expertenteam" [level=3] [ref=e63]
+            - paragraph [ref=e64]:
+              - text: Mit einer professionellen hygienetechnischen
+              - link "Reinigung & Desinfektion" [ref=e65] [cursor=pointer]:
+                - /url: reinigung-desinfektion.html
+              - text: erhöhen Sie nicht nur die Lebensdauer Ihrer Anlagen, sondern sparen zudem Energiekosten und schützen Ihre Mitarbeiter vor gesundheitlichen Beeinträchtigungen. Fehlerhafte Ersatzteile tauschen wir aus, sodass im Anschluss eine Wartung nach VDMA 24186 problemlos durchgeführt werden kann.
+            - heading "Brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052" [level=3] [ref=e66]
+            - paragraph [ref=e67]:
+              - text: Die brandschutztechnische Reinigung gewerblicher Küchen gemäß VDI 2052 (Raumlufttechnische Anlagen für Küchen) und BGR 111 (Arbeiten in Küchenbetrieben) gewährleistet die Sicherheit und einwandfreie Funktion industrieller Absaug- und
+              - link "Küchenabluftsysteme" [ref=e68] [cursor=pointer]:
+                - /url: kuechenabluftsysteme.html
+              - text: .
+          - figure [ref=e69]:
+            - img "Professionelle hygienetechnische Reinigung und Brandschutzreinigung" [ref=e70]
+        - generic [ref=e71]:
+          - figure [ref=e72]:
+            - img "Reinraumprüfung gemäß Norm EN ISO 14644" [ref=e73]
+          - article [ref=e74]:
+            - heading "Reinraumprüfung gemäß Norm EN ISO 14644" [level=3] [ref=e75]
+            - paragraph [ref=e76]:
+              - text: OP-Räume und Reinräume müssen besonders hohen Anforderungen an die Raumluft genügen (
+              - link "Reinraumqualifizierung" [ref=e77] [cursor=pointer]:
+                - /url: reinraumqualifizierung.html
+              - text: ). Igienair sorgt mit verschiedenen Maßnahmen dafür, dass Ihre Räume der Norm EN ISO 14644 gerecht werden. Wir übernehmen sowohl Montage als auch Entsorgung von HEPA-Filtern und führen einen Integritätstest durch. Zudem zählt die Prüfung von Laborabzügen sowie
+              - link "Digestorien" [ref=e78] [cursor=pointer]:
+                - /url: laborabzuege.html
+              - text: gemäß
+              - link "DIN EN ISO 14175" [ref=e79] [cursor=pointer]:
+                - /url: "#!"
+              - text: zu unserem Leistungsportfolio.
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - paragraph [ref=e83]: Blindtext
+        - heading "Quisque rutrum. Aenean imperdiet." [level=2] [ref=e84]
+        - paragraph [ref=e86]: Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+        - button "Erfahren Sie mehr" [ref=e87] [cursor=pointer]
+      - generic "Branchen" [ref=e88]:
+        - article [ref=e89]:
+          - img "Gesundheitswesen" [ref=e90]
+          - heading "Gesundheitswesen" [level=3] [ref=e91]
+        - article [ref=e92]:
+          - img "Industrie" [ref=e93]
+          - heading "Industrie" [level=3] [ref=e94]
+        - article [ref=e95]:
+          - img "Pharmaindustrie" [ref=e96]
+          - heading "Pharmaindustrie" [level=3] [ref=e97]
+        - article [ref=e98]:
+          - img "Gastronomie" [ref=e99]
+          - heading "Gastronomie" [level=3] [ref=e100]
+        - article [ref=e101]:
+          - img "Lebensmittel" [ref=e102]
+          - heading "Lebensmittel" [level=3] [ref=e103]
+        - article [ref=e104]:
+          - img "Gemeinden" [ref=e105]
+          - heading "Gemeinden" [level=3] [ref=e106]
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - paragraph [ref=e110]: Lorem Ipsum
+        - heading "RLT-Anlagen und Kühlturm Reinigung in Frankfurt an der Oder – Verlassen Sie sich auf die zertifizierten Experten von Igienair" [level=2] [ref=e111]
+        - button "Button" [ref=e113] [cursor=pointer]
+      - generic [ref=e114]:
+        - paragraph [ref=e115]: "Als Experte für raumlufttechnische Hygiene in Frankfurt an der Oder bieten wir Ihnen eine breite Palette an Leistungen. Zudem profitieren unsere Kunden von einer Vielzahl an attraktiven Vorteilen:"
+        - generic [ref=e116]:
+          - article [ref=e117]:
+            - generic [ref=e119]:
+              - heading "Qualitätsversprechen:" [level=3] [ref=e120]
+              - paragraph [ref=e121]: Unsere Mitarbeiter können allesamt eine Vielzahl an Zertifizierungen aus dem Bereich der technischen Hygiene vorweisen und werden permanent geschult. Wir verfügen über die nötige Fachexpertise und die Erfahrung, um mit unserer Arbeit höchsten Qualitätsansprüchen und den relevanten Normen gerecht zu werden.
+          - article [ref=e122]:
+            - generic [ref=e124]:
+              - heading "Leistungsspektrum:" [level=3] [ref=e125]
+              - paragraph [ref=e126]: Bei Igienair bündeln wir sämtliche Bereiche und Dienstleistungen der technischen Hygiene unter einem Dach.
+          - article [ref=e127]:
+            - generic [ref=e129]:
+              - heading "Kundennähe & Individualität:" [level=3] [ref=e130]
+              - paragraph [ref=e131]: Wir gehen auf Ihre Bedürfnisse und die individuellen Anforderungen Ihrer Anlagen ein und erstellen ein maßgeschneidertes Hygienekonzept, das langfristig für saubere Luft und eine normkonforme Funktion Ihrer Anlagen sorgt.
+        - paragraph [ref=e132]: Bei offenen Fragen zu unseren Dienstleistungen sowie konkreten Fragestellungen bezüglich der Hygieneinspektion gemäß VDI 6022 oder der Reinigung von RLT-Anlagen in Frankfurt an der Oder und Umgebung stehen wir Ihnen jederzeit zur Verfügung. Sie erreichen uns sowohl telefonisch als auch per Mail.
+  - contentinfo [ref=e133]:
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - img "Igienair" [ref=e136]
+        - paragraph [ref=e137]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      - generic [ref=e138]:
+        - heading "MENÜ" [level=2] [ref=e139]
+        - list [ref=e140]:
+          - listitem [ref=e141]:
+            - link "Unternehmen 3" [ref=e142] [cursor=pointer]:
+              - /url: unternehmen-2.html
+          - listitem [ref=e143]:
+            - link "Leistungen 3" [ref=e144] [cursor=pointer]:
+              - /url: leistungen-2.html
+          - listitem [ref=e145]:
+            - link "Normen 3" [ref=e146] [cursor=pointer]:
+              - /url: normen-2.html
+          - listitem [ref=e147]:
+            - link "Anlagen 3" [ref=e148] [cursor=pointer]:
+              - /url: anlagen-2.html
+          - listitem [ref=e149]:
+            - link "Kunden 3" [ref=e150] [cursor=pointer]:
+              - /url: kunden-2.html
+          - listitem [ref=e151]:
+            - link "Jobs 3" [ref=e152] [cursor=pointer]:
+              - /url: jobs-2.html
+          - listitem [ref=e153]:
+            - link "Standorte 3" [ref=e154] [cursor=pointer]:
+              - /url: standorte.html
+      - generic [ref=e155]:
+        - heading "STANDORTE" [level=2] [ref=e156]
+        - list [ref=e157]:
+          - listitem [ref=e158]:
+            - button "Baden-Württemberg" [ref=e159] [cursor=pointer]
+          - listitem [ref=e160]:
+            - button "Nordbayern" [ref=e161] [cursor=pointer]
+          - listitem [ref=e162]:
+            - button "Südbayern" [ref=e163] [cursor=pointer]
+          - listitem [ref=e164]:
+            - button "Rhein-Main" [ref=e165] [cursor=pointer]
+          - listitem [ref=e166]:
+            - button "Nordrhein-Westfalen" [ref=e167] [cursor=pointer]
+          - listitem [ref=e168]:
+            - button "Nord" [ref=e169] [cursor=pointer]
+          - listitem [ref=e170]:
+            - button "Bodensee" [ref=e171] [cursor=pointer]
+          - listitem [ref=e172]:
+            - button "Berlin" [ref=e173] [cursor=pointer]
+      - generic [ref=e174]:
+        - heading "KONTAKT" [level=2] [ref=e175]
+        - generic [ref=e176]:
+          - generic [ref=e177]: ●
+          - generic [ref=e178]:
+            - strong [ref=e179]: IGIENAIR GmbH
+            - paragraph [ref=e180]:
+              - text: Am Hardtwald 6-8
+              - text: 76275 Ettlingen
+        - generic [ref=e181]:
+          - generic [ref=e182]: ●
+          - link "+49 (0) 7243 3699101" [ref=e184] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e185]:
+          - generic [ref=e186]: ●
+          - link "+49 (0) 7243 3694 943" [ref=e188] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=e189]:
+          - generic [ref=e190]: ●
+          - link "kontakt@igienair.com" [ref=e192] [cursor=pointer]:
+            - /url: "#!"
+    - generic [ref=e194]:
+      - generic [ref=e195]: © IGIENAIR 2025
+      - generic [ref=e196]:
+        - link "AGB" [ref=e197] [cursor=pointer]:
+          - /url: agb.html
+        - link "Datenschutz" [ref=e198] [cursor=pointer]:
+          - /url: datenschutz.html
+        - link "Impressum" [ref=e199] [cursor=pointer]:
+          - /url: impressum.html
+        - link "Cookie-Richtlinie (EU)" [ref=e200] [cursor=pointer]:
+          - /url: cookie-richtlinie-eu.html
+  - navigation "Schnellzugriff mobil" [ref=e201]:
+    - link "Kontakt" [ref=e202] [cursor=pointer]:
+      - /url: "#footer-contact"
+      - img [ref=e203]
+      - generic [ref=e205]: Kontakt
+    - link "Angebot" [ref=e206] [cursor=pointer]:
+      - /url: index.html#angebot
+      - img [ref=e207]
+      - generic [ref=e209]: Angebot
+    - link "Frankfurt an der Oder" [ref=e210] [cursor=pointer]:
+      - /url: "#frankfurt-oder-overview"
+      - img [ref=e211]
+      - generic [ref=e213]: Frankfurt/Oder

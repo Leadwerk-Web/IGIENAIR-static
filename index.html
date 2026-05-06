@@ -382,16 +382,15 @@
         </article>
 
         <div class="map-card">
-          <div class="map-card__image">
-            <img src="assets/images/map-screenshot.png" alt="Deutschlandkarte">
-            <button class="map-pin map-pin--baden" type="button" data-region="Baden-Württemberg"><span>Baden-Württemberg</span></button>
-            <button class="map-pin map-pin--nordbayern" type="button" data-region="Nordbayern"><span>Nordbayern</span></button>
-            <button class="map-pin map-pin--suedbayern" type="button" data-region="Südbayern"><span>Südbayern</span></button>
-            <button class="map-pin map-pin--rhein" type="button" data-region="Rhein-Main"><span>Rhein-Main</span></button>
-            <button class="map-pin map-pin--nrw" type="button" data-region="Nordrhein-Westfalen"><span>Nordrhein-Westfalen</span></button>
-            <button class="map-pin map-pin--nord" type="button" data-region="Nord"><span>Nord</span></button>
-            <button class="map-pin map-pin--bodensee" type="button" data-region="Bodensee"><span>Bodensee</span></button>
-            <button class="map-pin map-pin--berlin" type="button" data-region="Berlin"><span>Berlin</span></button>
+          <div class="map-card__image map-card__image--admin">
+            <object
+              class="map-card__admin-map"
+              type="image/svg+xml"
+              data="assets/images/germany-admin-map.svg"
+              aria-label="Detaillierte Deutschlandkarte mit allen Bundesländern"
+            >
+              <img src="assets/images/germany-admin-map.svg" alt="Detaillierte Deutschlandkarte mit allen Bundesländern">
+            </object>
           </div>
         </div>
       </div>
@@ -599,7 +598,6 @@
   <script src="script.js"></script>
 </body>
 </html>
-
 
 
 
