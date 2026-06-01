@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reinraumqualifizierung vom Experten - Vertrauen Sie Igienair</title>
   <meta name="description" content="Reinraumqualifizierung nach DIN EN ISO 14644 und DIN 1946 durch Igienair.">
-  <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-cleanroom">
   <header class="site-header" data-section="header">
     <div class="container site-header__inner">
-      <a class="brand" href="index.html" aria-label="Igienair Startseite">
-        <img class="brand__logo brand__logo--light" src="assets/images/logo-white.png" alt="Igienair">
-        <img class="brand__logo brand__logo--dark" src="assets/images/logo-color.png" alt="Igienair">
+                        <a class="brand" href="index.html" aria-label="Igienair Startseite">
+        <img class="brand__logo brand__logo--light" src="assets/images/Logo-weiss.svg" alt="">
+        <img class="brand__logo brand__logo--dark" src="assets/images/Logo.svg" alt="">
       </a>
       <nav class="desktop-nav" aria-label="Hauptnavigation">
         <div class="nav-item">
@@ -25,6 +25,7 @@
             <a class="nav-link" href="qualitaet.html">Qualit&auml;t</a>
             <a class="nav-link" href="umweltschutz.html">Umweltschutz</a>
             <a class="nav-link" href="standorte.html">Standorte</a>
+            <a class="nav-link" href="glossar.html">Glossar</a>
           </div>
         </div>
         <div class="nav-item">
@@ -115,6 +116,7 @@
           <a class="mobile-link" href="qualitaet.html">Qualit&auml;t</a>
           <a class="mobile-link" href="umweltschutz.html">Umweltschutz</a>
           <a class="mobile-link" href="standorte.html">Standorte</a>
+          <a class="mobile-link" href="glossar.html">Glossar</a>
         </div>
         <div class="mobile-menu__group">
           <a class="mobile-menu__group-title" href="leistungen-2.html">Leistungen</a>
@@ -184,7 +186,7 @@
     <main>
     <section class="company-hero" id="top" data-section="hero">
       <div class="container company-hero__content">
-        <p class="eyebrow">Blindtext</p>
+        <p class="eyebrow">Anlagen</p>
         <h1>Reinraum-qualifizierung vom Experten</h1>
       </div>
     </section>
@@ -287,21 +289,46 @@
       </div>
     </section>
 
-    <section class="tower-industries cleanroom-industries" data-section="industries">
-      <div class="container tower-industries__grid">
-        <article class="section-copy tower-industries__copy">
+    <section class="sectors" data-section="industries">
+      <div class="container sectors__layout">
+        <header class="sectors__header">
           <p class="eyebrow eyebrow--light">Blindtext</p>
           <h2>Quisque rutrum. Aenean imperdiet.</h2>
-          <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-          <button class="button button--ghost" type="button" data-inert>Erfahren Sie mehr</button>
-        </article>
-        <div class="tower-industries__sectors" aria-label="Branchenicons">
-          <article class="tower-sector-card"><img src="assets/images/sector-healthcare.png" alt=""><h3>Gesundheitswesen</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-industry.png" alt=""><h3>Industrie</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-pharma.png" alt=""><h3>Pharmaindustrie</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-gastronomy.png" alt=""><h3>Gastronomie</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-food.png" alt=""><h3>Lebensmittel</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-municipal.png" alt=""><h3>Gemeinden</h3></article>
+          <div class="gradient-line"></div>
+        </header>
+
+        <div class="sectors__columns">
+          <div class="sectors__copy">
+            <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+            <button class="button button--ghost" type="button" data-inert>Erfahren Sie mehr</button>
+          </div>
+
+          <div class="sector-grid" aria-label="Branchen">
+          <a class="sector-card" href="gesundheitswesen.html">
+            <img src="assets/images/sector-healthcare.png" alt="">
+            <h3>Gesundheitswesen</h3>
+          </a>
+          <a class="sector-card" href="industrie.html">
+            <img src="assets/images/sector-industry.png" alt="">
+            <h3>Industrie</h3>
+          </a>
+          <a class="sector-card" href="pharma.html">
+            <img src="assets/images/sector-pharma.png" alt="">
+            <h3>Pharmaindustrie</h3>
+          </a>
+          <a class="sector-card" href="gastronomie.html">
+            <img src="assets/images/sector-gastronomy.png" alt="">
+            <h3>Gastronomie</h3>
+          </a>
+          <a class="sector-card" href="lebensmittel.html">
+            <img src="assets/images/sector-food.png" alt="">
+            <h3>Lebensmittel</h3>
+          </a>
+          <a class="sector-card" href="gemeinden.html">
+            <img src="assets/images/sector-municipal.png" alt="">
+            <h3>Gemeinden</h3>
+          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -371,16 +398,14 @@
       </div>
     </section>
 
-    <section class="sustainability-accordion-section cleanroom-faq" data-section="faq">
-      <div class="container sustainability-accordion-section__grid">
-        <figure class="company-media-card company-media-card--portrait sustainability-accordion-section__media">
-          <img src="assets/images/company-team.jpg" alt="Mitarbeiter im Schutzanzug">
-        </figure>
-        <article class="section-copy sustainability-accordion-section__copy">
-          <p class="eyebrow">Lorem Ipsum</p>
+    <section class="sustainability-accordion-section home-faq cleanroom-faq" data-section="faq" id="reinraum-faq">
+      <div class="container faq-section">
+        <header class="faq-section__header">
+          <p class="eyebrow">H&Auml;UFIGE FRAGEN</p>
           <h2>FAQ Reinraumqualifizierung</h2>
           <div class="gradient-line"></div>
-          <div class="accordion" data-accordion>
+        </header>
+        <div class="accordion faq-accordion" data-accordion>
             <article class="accordion-item is-open" data-accordion-item>
               <h3 class="accordion-item__heading">
                 <button class="accordion-item__trigger" type="button" aria-expanded="true" aria-controls="cleanroom-faq-1" id="cleanroom-trigger-1" data-accordion-trigger>Warum ist eine Reinraumqualifizierung erforderlich?</button>
@@ -422,15 +447,14 @@
                 <p>Alle Ergebnisse halten wir f&uuml;r Sie in einem ausf&uuml;hrlichen Pr&uuml;fprotokoll fest. Dadurch k&ouml;nnen Sie die durchgef&uuml;hrte Qualifizierung, die gemessenen Werte und die getroffenen Ma&szlig;nahmen auch im Rahmen von Audits und Nachweispflichten belastbar dokumentieren.</p>
               </div>
             </article>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
   </main>
   <footer class="site-footer" id="footer-contact">
     <div class="container site-footer__main">
       <section class="footer-brand">
-        <img src="assets/images/logo-footer.png" alt="Igienair">
+        <img src="assets/images/Logo-weiss.svg" alt="Igienair">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
       </section>
       <section class="footer-column">

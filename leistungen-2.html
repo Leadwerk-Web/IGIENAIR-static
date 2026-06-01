@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leistungen - Igienair GmbH</title>
   <meta name="description" content="Leistungen - Igienair GmbH">
-  <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-services">
   <header class="site-header" data-section="header">
     <div class="container site-header__inner">
-      <a class="brand" href="index.html" aria-label="Igienair Startseite">
-        <img class="brand__logo brand__logo--light" src="assets/images/logo-white.png" alt="Igienair">
-        <img class="brand__logo brand__logo--dark" src="assets/images/logo-color.png" alt="Igienair">
+                        <a class="brand" href="index.html" aria-label="Igienair Startseite">
+        <img class="brand__logo brand__logo--light" src="assets/images/Logo-weiss.svg" alt="">
+        <img class="brand__logo brand__logo--dark" src="assets/images/Logo.svg" alt="">
       </a>
 
       <nav class="desktop-nav" aria-label="Hauptnavigation">
@@ -26,6 +26,7 @@
             <a class="nav-link" href="qualitaet.html">Qualit&auml;t</a>
             <a class="nav-link" href="umweltschutz.html">Umweltschutz</a>
             <a class="nav-link" href="standorte.html">Standorte</a>
+            <a class="nav-link" href="glossar.html">Glossar</a>
           </div>
         </div>
         <div class="nav-item">
@@ -119,6 +120,7 @@
           <a class="mobile-link" href="qualitaet.html">Qualit&auml;t</a>
           <a class="mobile-link" href="umweltschutz.html">Umweltschutz</a>
           <a class="mobile-link" href="standorte.html">Standorte</a>
+          <a class="mobile-link" href="glossar.html">Glossar</a>
         </div>
         <div class="mobile-menu__group">
           <a class="mobile-menu__group-title" href="leistungen-2.html" aria-current="page">Leistungen</a>
@@ -196,64 +198,103 @@
   <main>
     <section class="company-hero" id="top" data-section="hero">
       <div class="container company-hero__content">
-        <p class="eyebrow">Blindtext</p>
+        <p class="eyebrow">Leistungen</p>
         <h1>Unsere Leistungen</h1>
       </div>
     </section>
 
     <section class="services-intro" id="services-intro" data-section="intro">
-      <div class="container sustainability-intro__grid services-intro__grid">
+      <div class="container">
         <article class="section-copy services-intro__copy">
-          <p class="eyebrow">Lorem Ipsum</p>
+          <p class="eyebrow">TECHNISCHE HYGIENE</p>
           <h2>Wir bieten Ihnen weit mehr als technische Hygiene.</h2>
           <div class="gradient-line"></div>
           <p>Als Fachbetrieb f&uuml;r die technische Hygiene sind wir Ihr professioneller und kundenaher Partner. Wir gehen keine Kompromisse ein, denn beispielsweise die Implementierung eines staatlich gepr&uuml;ften Desinfektor sollte auch Ihre Mindestanforderung an Ihren Partner im Bereich der Luftkanalreinigung und Desinfektion Ihrer Zuluft- und auch Abluftanlage sein.</p>
           <p>Hygieneuntersuchungen und eine normkonforme Dokumentation Ihrer Audits sind ein selbstverst&auml;ndlicher Bestandteil unseres Leistungsspektrums.</p>
           <p>Standortnahe Serviceteams f&uuml;hren die Luftkanalreinigungen und Hygieneinspektionen nach VDI 6022 zeitnah aus und &uuml;bertreffen dabei &ndash; nicht zuletzt dank unseres hohen Eigenanspruchs &ndash; g&auml;ngige Industrie- und Branchenstandards. Wir bieten auch parallel Gef&auml;hrdungsbeurteilungen und Reinigung von K&uuml;hlt&uuml;rmen und Verdunstungsk&uuml;hlanlagen nach VDI 2047-2 und 42. BImSchV an. Damit werden alle m&ouml;gliche Keime wie Bakterien (z.B. Legionelle, Pseudomonas), Viren und Pilze entfernt.</p>
           <p>Sprechen Sie uns noch heute an und &uuml;berzeugen Sie sich selbst.</p>
-          <button class="button button--solid" type="button" data-inert>Button</button>
+          <a class="button button--solid" href="index.html#angebot">Angebot anfordern</a>
         </article>
-
-        <figure class="company-media-card services-intro__media">
-          <img src="assets/images/company-2.png" alt="Technikerin im Schutzanzug">
-        </figure>
       </div>
     </section>
 
-    <section class="services-overview" id="services-overview" data-section="overview">
-      <div class="container">
+    <section class="services-overview services-overview--glass" id="services-overview" data-section="overview">
+      <div class="services-overview__atmosphere services-overview__atmosphere--a" aria-hidden="true"></div>
+      <div class="services-overview__atmosphere services-overview__atmosphere--b" aria-hidden="true"></div>
+
+      <div class="container services-overview__inner">
         <header class="section-copy services-overview__header">
-          <p class="eyebrow">Lorem Ipsum</p>
+          <p class="eyebrow">UNSERE LEISTUNGEN</p>
           <h2>Unsere Leistungen im &Uuml;berblick</h2>
         </header>
 
-        <div class="services-overview__grid">
-          <article class="service-card">
-            <img src="assets/images/services-card-1.png" alt="Inspektion und Gutachten">
-            <h3>Inspektion &amp; Gutachten</h3>
-            <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
-            <a class="button button--solid" href="inspektionundgutachten.html">Button</a>
+        <div class="services-accordion" data-services-accordion aria-label="Leistungen im &Uuml;berblick">
+          <article class="services-accordion__item is-active" data-services-accordion-item tabindex="0">
+            <div class="services-accordion__panel">
+              <img class="services-accordion__image" src="assets/images/Leistungen/inspektionundgutachten/Inspektionsgutachten.jpg" alt="" loading="lazy" aria-hidden="true">
+              <div class="services-accordion__shade" aria-hidden="true"></div>
+              <div class="services-accordion__compact" aria-hidden="true">
+                <span class="services-accordion__index">01</span>
+                <p class="services-accordion__title-short">Inspektion &amp; Gutachten</p>
+              </div>
+              <div class="services-accordion__detail">
+                <span class="services-accordion__index">01</span>
+                <h3>Inspektion &amp; Gutachten</h3>
+                <p>Hygieneinspektionen nach VDI 6022, Gef&auml;hrdungsbeurteilungen und gerichtsverwertbare Gutachten &ndash; mit klaren Befunden und nachvollziehbaren Empfehlungen f&uuml;r Ihre Anlagen.</p>
+                <a class="button button--solid" href="inspektionundgutachten.html">Mehr erfahren</a>
+              </div>
+            </div>
           </article>
 
-          <article class="service-card">
-            <img src="assets/images/services-card-2.png" alt="Reinigung und Desinfektion">
-            <h3>Reinigung &amp; Desinfektion</h3>
-            <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
-            <a class="button button--solid" href="reinigung-desinfektion.html">Button</a>
+          <article class="services-accordion__item" data-services-accordion-item tabindex="0">
+            <div class="services-accordion__panel">
+              <img class="services-accordion__image" src="assets/images/Leistungen/Reinigung-desinfektion/Reinigung-Desinfektion.png" alt="" loading="lazy" aria-hidden="true">
+              <div class="services-accordion__shade" aria-hidden="true"></div>
+              <div class="services-accordion__compact" aria-hidden="true">
+                <span class="services-accordion__index">02</span>
+                <p class="services-accordion__title-short">Reinigung &amp; Desinfektion</p>
+              </div>
+              <div class="services-accordion__detail">
+                <span class="services-accordion__index">02</span>
+                <h3>Reinigung &amp; Desinfektion</h3>
+                <p>Professionelle Reinigung von RLT-Anlagen, Luftkan&auml;len, K&uuml;hlt&uuml;rmen und K&uuml;chenabluft &ndash; dokumentiert nach DIN EN 15780, VDI 6022 und VDI 2047.</p>
+                <a class="button button--solid" href="reinigung-desinfektion.html">Mehr erfahren</a>
+              </div>
+            </div>
           </article>
 
-          <article class="service-card">
-            <img src="assets/images/company-2.png" alt="Instandsetzung und Sanierung">
-            <h3>Instandsetzung &amp; Sanierung</h3>
-            <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
-            <a class="button button--solid" href="instandsetzung-sanierung.html">Button</a>
+          <article class="services-accordion__item" data-services-accordion-item tabindex="0">
+            <div class="services-accordion__panel">
+              <img class="services-accordion__image" src="assets/images/Instandsetzung.jpg" alt="" loading="lazy" aria-hidden="true">
+              <div class="services-accordion__shade" aria-hidden="true"></div>
+              <div class="services-accordion__compact" aria-hidden="true">
+                <span class="services-accordion__index">03</span>
+                <p class="services-accordion__title-short">Instandsetzung &amp; Sanierung</p>
+              </div>
+              <div class="services-accordion__detail">
+                <span class="services-accordion__index">03</span>
+                <h3>Instandsetzung &amp; Sanierung</h3>
+                <p>Funktionserhaltende Reparatur, Komponententausch und nachhaltige Sanierung &ndash; damit Ihre L&uuml;ftungs- und Klimatechnik wieder Spitzenleistung bringt.</p>
+                <a class="button button--solid" href="instandsetzung-sanierung.html">Mehr erfahren</a>
+              </div>
+            </div>
           </article>
 
-          <article class="service-card">
-            <img src="assets/images/services-card-4.png" alt="Energetische Inspektion">
-            <h3>Energetische Inspektion</h3>
-            <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
-            <a class="button button--solid" href="energetische-inspektion-geg-2020.html">Button</a>
+          <article class="services-accordion__item" data-services-accordion-item tabindex="0">
+            <div class="services-accordion__panel">
+              <img class="services-accordion__image" src="assets/images/Leistungen/Energetischeinspektion/EnergetischeInspektion.png" alt="" loading="lazy" aria-hidden="true">
+              <div class="services-accordion__shade" aria-hidden="true"></div>
+              <div class="services-accordion__compact" aria-hidden="true">
+                <span class="services-accordion__index">04</span>
+                <p class="services-accordion__title-short">Energetische Inspektion</p>
+              </div>
+              <div class="services-accordion__detail">
+                <span class="services-accordion__index">04</span>
+                <h3>Energetische Inspektion</h3>
+                <p>Energetische Inspektionen nach GEG 2020 und DIN SPEC 15240 &ndash; Energie sparen, CO<sub>2</sub> reduzieren, gesetzliche Pflichten sicher erf&uuml;llen.</p>
+                <a class="button button--solid" href="energetische-inspektion-geg-2020.html">Mehr erfahren</a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -263,8 +304,8 @@
   <footer class="site-footer" id="footer-contact">
     <div class="container site-footer__main">
       <section class="footer-brand">
-        <img src="assets/images/logo-footer.png" alt="Igienair">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <img src="assets/images/Logo-weiss.svg" alt="Igienair">
+        <p>Seit 2003 bieten wir als Familienunternehmen Expertise in technischer Hygiene und Raumlufthygiene. Inspektion, Reinigung und Wartung von L&uuml;ftungs- und RLT-Anlagen &ndash; normkonform dokumentiert und deutschlandweit f&uuml;r Sie im Einsatz.</p>
       </section>
 
       <section class="footer-column">

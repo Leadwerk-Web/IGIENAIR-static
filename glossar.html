@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glossar - Igienair GmbH</title>
-  <meta name="description" content="Glossar - Igienair GmbH">
-  <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
+  <meta name="description" content="Glossar zu Fachbegriffen der technischen Hygiene und Raumlufthygiene: Normen, Anlagen, Zertifizierungen und Leistungen von Igienair verst&auml;ndlich erkl&auml;rt.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-glossary">
   <header class="site-header" data-section="header">
     <div class="container site-header__inner">
-      <a class="brand" href="index.html" aria-label="Igienair Startseite">
-        <img class="brand__logo brand__logo--light" src="assets/images/logo-white.png" alt="Igienair">
-        <img class="brand__logo brand__logo--dark" src="assets/images/logo-color.png" alt="Igienair">
+                        <a class="brand" href="index.html" aria-label="Igienair Startseite">
+        <img class="brand__logo brand__logo--light" src="assets/images/Logo-weiss.svg" alt="">
+        <img class="brand__logo brand__logo--dark" src="assets/images/Logo.svg" alt="">
       </a>
 
       <nav class="desktop-nav" aria-label="Hauptnavigation">
@@ -26,6 +26,7 @@
             <a class="nav-link" href="qualitaet.html">Qualit&auml;t</a>
             <a class="nav-link" href="umweltschutz.html">Umweltschutz</a>
             <a class="nav-link" href="standorte.html">Standorte</a>
+            <a class="nav-link" href="glossar.html" aria-current="page">Glossar</a>
           </div>
         </div>
         <div class="nav-item">
@@ -119,6 +120,7 @@
           <a class="mobile-link" href="qualitaet.html">Qualit&auml;t</a>
           <a class="mobile-link" href="umweltschutz.html">Umweltschutz</a>
           <a class="mobile-link" href="standorte.html">Standorte</a>
+          <a class="mobile-link" href="glossar.html" aria-current="page">Glossar</a>
         </div>
         <div class="mobile-menu__group">
           <a class="mobile-menu__group-title" href="leistungen-2.html">Leistungen</a>
@@ -194,28 +196,41 @@
   </nav>
 
   <main>
-    <section class="company-hero glossary-hero" id="top" data-section="hero">
-      <div class="container company-hero__content glossary-hero__content">
+    <section class="company-hero" id="top" data-section="hero">
+      <div class="container company-hero__content">
+        <p class="eyebrow">Unternehmen</p>
         <h1>Glossar zur Raumlufthygiene und unseren Leistungen</h1>
       </div>
     </section>
 
-    <section class="company-section glossary-page" id="glossary-index" data-section="overview">
-      <div class="container glossary-page__wrap" data-glossary>
-        <div class="glossary-search-wrapper">
-          <form class="glossary-search-form" role="search" data-glossary-form>
-            <label class="screen-reader-text" for="glossary-search">Glossar durchsuchen</label>
-            <input id="glossary-search" type="search" name="gls_search" class="glossary-search-input" placeholder="Begriff suchen..." aria-label="Glossar durchsuchen" data-glossary-search>
-            <button type="submit" class="glossary-search-button" aria-label="Suchen">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span class="screen-reader-text">Suchen</span>
-            </button>
-          </form>
-        </div>
+    <section class="sustainability-intro glossary-intro" id="glossary-intro" data-section="intro">
+      <div class="container">
+        <article class="section-copy">
+          <p class="eyebrow">GLOSSAR</p>
+          <h2>Fachbegriffe verst&auml;ndlich erkl&auml;rt</h2>
+          <div class="gradient-line"></div>
+          <p>Von Normen und Zertifizierungen bis zu Anlagen und Verfahren &ndash; hier finden Sie kompakte Erkl&auml;rungen zentraler Begriffe aus der technischen Hygiene und Raumlufthygiene.</p>
+        </article>
+      </div>
+    </section>
 
-        <nav class="glossary-letter-nav" aria-label="Glossar Buchstabennavigation">
+    <section class="glossary-page" id="glossary-index" data-section="overview">
+      <div class="container glossary-page__wrap" data-glossary>
+        <div class="glossary-toolbar">
+          <div class="glossary-search-wrapper">
+            <form class="glossary-search-form" role="search" data-glossary-form>
+              <label class="screen-reader-text" for="glossary-search">Glossar durchsuchen</label>
+              <input id="glossary-search" type="search" name="gls_search" class="glossary-search-input" placeholder="Begriff suchen..." aria-label="Glossar durchsuchen" data-glossary-search>
+              <button type="submit" class="glossary-search-button" aria-label="Suchen">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="screen-reader-text">Suchen</span>
+              </button>
+            </form>
+          </div>
+
+          <nav class="glossary-letter-nav" aria-label="Glossar Buchstabennavigation">
           <ul class="glossary-letter-nav__list">
           <li class="glossary-letter-nav__item no-posts" data-glossary-nav-item data-letter="A"><span>A</span></li>
           <li class="glossary-letter-nav__item has-posts" data-glossary-nav-item data-letter="B"><a href="#B" data-letter-link>B</a></li>
@@ -244,7 +259,10 @@
           <li class="glossary-letter-nav__item no-posts" data-glossary-nav-item data-letter="Y"><span>Y</span></li>
           <li class="glossary-letter-nav__item no-posts" data-glossary-nav-item data-letter="Z"><span>Z</span></li>
           </ul>
-        </nav>
+          </nav>
+        </div>
+
+        <p class="glossary-empty" data-glossary-empty hidden>Keine Begriffe gefunden. Bitte passen Sie Ihre Suche an.</p>
 
         <div class="glossary-list" data-glossary-list>
         <section class="glossary-group" aria-labelledby="B" data-glossary-group data-letter="B">
@@ -256,7 +274,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Welche Bedeutung haben Hygieneinspektionen f&#252;r Unternehmen? Hygieneinspektionen sind f&#252;r Unternehmen, insbesondere in Branchen, in denen die Gesundheit und das Wohlbefinden von Mitarbeitern und Kunden direkt betroffen sind, von...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="brandschutzreinigung und entfettung von gro&#223;k&#252;chenabluftsystemen brandschutzreinigung und entfettung von gro&#223;k&#252;chenabluftsystemen: ein muss f&#252;r sicherheit und hygiene in der welt der gastronomie und lebensmittelverarbeitung sind gro&#223;- und systemk&#252;chen mit speziellen herausforderungen konfrontiert. eine der... b">
@@ -265,7 +282,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Brandschutzreinigung und Entfettung von Gro&#223;k&#252;chenabluftsystemen: Ein Muss f&#252;r Sicherheit und Hygiene In der Welt der Gastronomie und Lebensmittelverarbeitung sind Gro&#223;- und Systemk&#252;chen mit speziellen Herausforderungen konfrontiert. Eine der...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -279,7 +295,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist ein Digestorium (Laborabzug) Definition: Ein Digestorium, h&#228;ufig auch als Laborabzug oder Chemieabzug bezeichnet, ist eine spezielle Art von Arbeitsplatz oder Arbeitsplatzger&#228;t in Labors, das dazu dient,...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="din en 14175 norm din en 14175 norm: sicherheit und qualit&#228;t in der abzugstechnik die din en 14175 ist eine wichtige norm, die sich mit der abzugstechnik in labors und industriellen anwendungen... d">
@@ -288,7 +303,6 @@
                 <div class="glossary-card__excerpt">
                   <p>DIN EN 14175 Norm: Sicherheit und Qualit&#228;t in der Abzugstechnik Die DIN EN 14175 ist eine wichtige Norm, die sich mit der Abzugstechnik in Labors und industriellen Anwendungen...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="din en 15780 norm din en 15780 norm: anforderungen an die luftqualit&#228;t in geb&#228;uden die din en 15780 ist eine wichtige norm, die sich mit der luftqualit&#228;t in innenr&#228;umen befasst, insbesondere in... d">
@@ -297,7 +311,6 @@
                 <div class="glossary-card__excerpt">
                   <p>DIN EN 15780 Norm: Anforderungen an die Luftqualit&#228;t in Geb&#228;uden Die DIN EN 15780 ist eine wichtige Norm, die sich mit der Luftqualit&#228;t in Innenr&#228;umen befasst, insbesondere in...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -311,7 +324,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Energetische Inspektion von Klimaanlagen: Was ist das und warum ist sie so wichtig? Klimaanlagen sorgen f&#252;r angenehme Temperaturen und ein gutes Raumklima &#8211; in B&#252;ros, &#246;ffentlichen Geb&#228;uden und...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="entrauchungsanlage entrauchungsanlagen: sicherheit im brandfall und pflege f&#252;r maximale effizienz eine entrauchungsanlage ist eine entscheidende komponenten der geb&#228;udesicherheitstechnik, konzipiert, um im brandfall rauch und giftige gase aus dem geb&#228;ude... e">
@@ -320,7 +332,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Entrauchungsanlagen: Sicherheit im Brandfall und Pflege f&#252;r maximale Effizienz Eine Entrauchungsanlage ist eine entscheidende Komponenten der Geb&#228;udesicherheitstechnik, konzipiert, um im Brandfall Rauch und giftige Gase aus dem Geb&#228;ude...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -334,7 +345,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Fachbetrieb nach WHG Zertifizierung: Bedeutung, Wichtigkeit und Dienstleistungen f&#252;r Unternehmen Die WHG-Zertifizierung, die auf dem Wasserhaushaltsgesetz (WHG) basiert, ist f&#252;r Unternehmen in Deutschland von erheblicher Bedeutung, die mit...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="fgk-qm-01-zertifizierung was ist die fgk-qm-01-zertifizierung? die fgk-qm-01-zertifizierung ist ein spezifisches qualit&#228;tsmanagementsystem, das auf die bed&#252;rfnisse der heizungs-, l&#252;ftungs- und klimatechnik (hlk)-branche zugeschnitten ist. fgk steht f&#252;r &#8222;fachgemeinschaft f&#252;r kontrollierte... f">
@@ -343,7 +353,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist die FGK-QM-01-Zertifizierung? Die FGK-QM-01-Zertifizierung ist ein spezifisches Qualit&#228;tsmanagementsystem, das auf die Bed&#252;rfnisse der Heizungs-, L&#252;ftungs- und Klimatechnik (HLK)-Branche zugeschnitten ist. FGK steht f&#252;r &#8222;Fachgemeinschaft f&#252;r kontrollierte...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="filterintegrit&#228;tstest filterintegrit&#228;tstest: bedeutung, durchf&#252;hrung und normen in der modernen verfahrenstechnik und der pharmaindustrie sind filterintegrit&#228;tstests von entscheidender bedeutung, um sicherzustellen, dass filteranlagen effektiv arbeiten und keine kontamination in die... f">
@@ -352,7 +361,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Filterintegrit&#228;tstest: Bedeutung, Durchf&#252;hrung und Normen In der modernen Verfahrenstechnik und der Pharmaindustrie sind Filterintegrit&#228;tstests von entscheidender Bedeutung, um sicherzustellen, dass Filteranlagen effektiv arbeiten und keine Kontamination in die...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -366,7 +374,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist das Geb&#228;udeenergiegesetz (GEG 2020)? Das Geb&#228;udeenergiegesetz (GEG) von 2020 ist ein zentrales Element der deutschen Klimaschutz- und Energiepolitik. Es trat am 1. November 2020 in Kraft...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="gef&#228;hrdungsbeurteilung vdi 2047-2 gef&#228;hrdungsbeurteilungen nach vdi 2047-2: was ist das und warum ist sie so wichtig? die sicherheit und hygiene von verdunstungsk&#252;hlanlagen, k&#252;hlt&#252;rmen und nassabscheidern stehen im mittelpunkt der vdi-richtlinie 2047-2.... g">
@@ -375,7 +382,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Gef&#228;hrdungsbeurteilungen nach VDI 2047-2: Was ist das und warum ist sie so wichtig? Die Sicherheit und Hygiene von Verdunstungsk&#252;hlanlagen, K&#252;hlt&#252;rmen und Nassabscheidern stehen im Mittelpunkt der VDI-Richtlinie 2047-2....</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="gef&#228;hrdungsbeurteilung von rlt-anlagen die gef&#228;hrdungsbeurteilung von rlt-anlagen hintergrund: gef&#228;hrdungsbeurteilungen sind systematische untersuchungen, die darauf abzielen, potenzielle risiken und gefahren in zusammenhang mit raumlufttechnischen (rlt-) anlagen zu identifizieren, zu bewerten und geeignete... g">
@@ -384,7 +390,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Die Gef&#228;hrdungsbeurteilung von RLT-Anlagen Hintergrund: Gef&#228;hrdungsbeurteilungen sind systematische Untersuchungen, die darauf abzielen, potenzielle Risiken und Gefahren in Zusammenhang mit Raumlufttechnischen (RLT-) Anlagen zu identifizieren, zu bewerten und geeignete...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="gesetzliche vorschriften f&#252;r laborabz&#252;ge laborabz&#252;ge, auch digestorien genannt, unterliegen verschiedenen gesetzlichen vorschriften und normen, die in vielen l&#228;ndern den sicheren betrieb und die nutzung dieser einrichtungen regeln. diese vorschriften sind darauf ausgelegt,... g">
@@ -393,7 +398,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Laborabz&#252;ge, auch Digestorien genannt, unterliegen verschiedenen gesetzlichen Vorschriften und Normen, die in vielen L&#228;ndern den sicheren Betrieb und die Nutzung dieser Einrichtungen regeln. Diese Vorschriften sind darauf ausgelegt,...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -407,7 +411,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist eine Hygieneinspektion nach VDI 6022? Definition: Die Hygieneinspektion nach VDI 6022 ist eine umfassende Bewertung und &#220;berpr&#252;fung von raumlufttechnischen Anlagen (RLT-Anlagen) sowie von R&#228;umen, in denen...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="hygienetechnische reinigung hygienetechnische reinigung von raumlufttechnischen anlagen die hygienetechnische reinigung von raumlufttechnischen (rlt) anlagen ist ein entscheidender prozess, um die qualit&#228;t der raumluft zu sichern und damit das wohlbefinden und... h">
@@ -416,7 +419,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Hygienetechnische Reinigung von Raumlufttechnischen Anlagen Die hygienetechnische Reinigung von raumlufttechnischen (RLT) Anlagen ist ein entscheidender Prozess, um die Qualit&#228;t der Raumluft zu sichern und damit das Wohlbefinden und...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -430,7 +432,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Inspektionspflicht von Klimaanlagen und kombinierten Klima- und L&#252;ftungsanlagen nach dem Geb&#228;udeenergiegesetz (GEG 2020) Das Geb&#228;udeenergiegesetz (GEG), das am 1. November 2020 in Kraft trat, vereint die Regelungen zur...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="iso 14001:2015 zertifizierung iso 14001:2015 zertifizierung: bedeutung, wichtigkeit und unternehmensdienstleistungen die iso 14001:2015 ist eine international anerkannte norm, die spezifische anforderungen an ein umweltmanagementsystem (ums) definiert. sie ist teil der iso... i">
@@ -439,7 +440,6 @@
                 <div class="glossary-card__excerpt">
                   <p>ISO 14001:2015 Zertifizierung: Bedeutung, Wichtigkeit und Unternehmensdienstleistungen Die ISO 14001:2015 ist eine international anerkannte Norm, die spezifische Anforderungen an ein Umweltmanagementsystem (UMS) definiert. Sie ist Teil der ISO...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="iso 14644 norm iso 14644: normen f&#252;r reinr&#228;ume und kontrollierte umgebungen die iso 14644 ist eine international anerkannte normenreihe, die spezifische anforderungen f&#252;r die luftreinheit in reinr&#228;umen und anderen kontrollierten umgebungen... i">
@@ -448,7 +448,6 @@
                 <div class="glossary-card__excerpt">
                   <p>ISO 14644: Normen f&#252;r Reinr&#228;ume und kontrollierte Umgebungen Die ISO 14644 ist eine international anerkannte Normenreihe, die spezifische Anforderungen f&#252;r die Luftreinheit in Reinr&#228;umen und anderen kontrollierten Umgebungen...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="iso 9001:2015 zertifizierung die iso 9001:2015 ist ein international anerkanntes qualit&#228;tsmanagementsystem (qms), das organisationen dabei unterst&#252;tzt, ihre qualit&#228;t kontinuierlich zu verbessern und die kundenzufriedenheit zu steigern. die norm wurde im jahr... i">
@@ -457,7 +456,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Die ISO 9001:2015 ist ein international anerkanntes Qualit&#228;tsmanagementsystem (QMS), das Organisationen dabei unterst&#252;tzt, ihre Qualit&#228;t kontinuierlich zu verbessern und die Kundenzufriedenheit zu steigern. Die Norm wurde im Jahr...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -471,7 +469,6 @@
                 <div class="glossary-card__excerpt">
                   <p>K&#252;hlregale und technische Hygiene: Sicherstellung der Lebensmittelsicherheit und Qualit&#228;t In der heutigen Einzelhandelslandschaft sind K&#252;hlregale unverzichtbare Einrichtungen, die eine essentielle Rolle bei der Lagerung und Pr&#228;sentation von Lebensmitteln...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -485,7 +482,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Lecktest f&#252;r Schwebstofffilter: Maximale Sicherheitsstandards f&#252;r reine Luft In Bereichen, in denen saubere Luft von entscheidender Bedeutung ist, spielen Schwebstofffilter eine wesentliche Rolle bei der Aufrechterhaltung einer kontrollierten,...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="luftkanalreinigung professionelle luftkanalreinigung hintergrund: die luftkanalreinigung ist ein essenzieller bestandteil der instandhaltung von geb&#228;uden, insbesondere bei denen, die &#252;ber komplexe l&#252;ftungs- und klimaanlagen verf&#252;gen. diese systeme sind entscheidend f&#252;r... l">
@@ -494,7 +490,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Professionelle Luftkanalreinigung Hintergrund: Die Luftkanalreinigung ist ein essenzieller Bestandteil der Instandhaltung von Geb&#228;uden, insbesondere bei denen, die &#252;ber komplexe L&#252;ftungs- und Klimaanlagen verf&#252;gen. Diese Systeme sind entscheidend f&#252;r...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -508,7 +503,6 @@
                 <div class="glossary-card__excerpt">
                   <p>OP-Raum und OP-Raum Pr&#252;fung: Ein umfassender &#220;berblick In der modernen Medizin spielt der Operationsraum (OP-Raum) eine zentrale Rolle. Er ist der Ort, an dem chirurgische Eingriffe durchgef&#252;hrt werden,...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -522,7 +516,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Prozessabluftsysteme und Entrauchungsanlagen: Bedeutung, Funktionalit&#228;t und Sicherheit In industriellen und gewerblichen Betrieben ist die Kontrolle der Luftqualit&#228;t von entscheidender Bedeutung. Wenn Chemikalien, D&#228;mpfe, Rauch oder andere gef&#228;hrliche Stoffe...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -536,7 +529,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Rechenzentren: Ein Blick auf Definition, Anforderungen und Herausforderungen In einer zunehmend digitalisierten Welt spielen Rechenzentren (Data Centers) eine entscheidende Rolle. Sie sind das R&#252;ckgrat der modernen Informations- und...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="reinigung rechenzentrum reinigung eines rechenzentrums: sicherheitsstandards, verfahren und vorteile f&#252;r optimale betriebseffizienz ein rechenzentrum ist das herzst&#252;ck moderner unternehmen und organisationen und spielt eine zentrale rolle bei der verarbeitung, speicherung... r">
@@ -545,7 +537,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Reinigung eines Rechenzentrums: Sicherheitsstandards, Verfahren und Vorteile f&#252;r optimale Betriebseffizienz Ein Rechenzentrum ist das Herzst&#252;ck moderner Unternehmen und Organisationen und spielt eine zentrale Rolle bei der Verarbeitung, Speicherung...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="reinraum reinr&#228;ume: eindr&#252;cke, anforderungen und anwendungen in der modernen industrie und forschung wird oft ein kontrollierter und kontaminationsfreier arbeitsbereich ben&#246;tigt. reinr&#228;ume spielen hierbei eine entscheidende rolle. diese speziellen umgebungen... r">
@@ -554,7 +545,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Reinr&#228;ume: Eindr&#252;cke, Anforderungen und Anwendungen In der modernen Industrie und Forschung wird oft ein kontrollierter und kontaminationsfreier Arbeitsbereich ben&#246;tigt. Reinr&#228;ume spielen hierbei eine entscheidende Rolle. Diese speziellen Umgebungen...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="rlt-anlagen rlt-anlagen: definition und bedeutung definition: rlt-anlagen (raumlufttechnische anlagen) sind technische systeme, die zur aufbereitung, regelung und verteilung von raumluft in geb&#228;uden eingesetzt werden. sie umfassen komponenten wie l&#252;ftungsger&#228;te,... r">
@@ -563,7 +553,6 @@
                 <div class="glossary-card__excerpt">
                   <p>RLT-Anlagen: Definition und Bedeutung Definition: RLT-Anlagen (Raumlufttechnische Anlagen) sind technische Systeme, die zur Aufbereitung, Regelung und Verteilung von Raumluft in Geb&#228;uden eingesetzt werden. Sie umfassen Komponenten wie L&#252;ftungsger&#228;te,...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -577,7 +566,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist ein Splitklimager&#228;t? Ein Splitklimager&#228;t ist ein Klimasystem, das aus mindestens zwei getrennten Einheiten besteht: einer Innen- und einer Au&#223;eneinheit. Die beiden Teile sind durch K&#228;ltemittelleitungen miteinander...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -591,7 +579,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Textilschl&#228;uche &#8211; L&#252;ftungskan&#228;le aus Textil in modernen L&#252;ftungsanlagen Textilschl&#228;uche, auch als textile Luftausl&#228;sse oder Luftverteilsysteme aus Textil bekannt, sind innovative Komponenten moderner L&#252;ftungsanlagen. Sie bieten eine flexible, effiziente...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -605,7 +592,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist ein Umluftk&#252;hlger&#228;t? Ein Umluftk&#252;hlger&#228;t ist eine technische Vorrichtung, die in vielen Bereichen zur K&#252;hlung von R&#228;umen oder Produkten eingesetzt wird. Im Gegensatz zu herk&#246;mmlichen K&#252;hlsystemen, die...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -619,7 +605,6 @@
                 <div class="glossary-card__excerpt">
                   <p>VDI 2047-2: Risiken in K&#252;hlt&#252;rmen angemessen bewerten &#8211; Ein Leitfaden zu Risikoanalyse und Gef&#228;hrdungsbeurteilung Die VDI 2047-2 ist eine wichtige Richtlinie, die sich mit der Hygiene und dem...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="vdi 2052 &amp; bgr 111 vdi 2052 &amp; bgr 111: richtlinien f&#252;r die sicherheit und hygiene in der lebensmittelindustrie die vdi 2052 und bgr 111 sind bedeutende richtlinien, die einen rahmen f&#252;r die... v">
@@ -628,7 +613,6 @@
                 <div class="glossary-card__excerpt">
                   <p>VDI 2052 &amp; BGR 111: Richtlinien f&#252;r die Sicherheit und Hygiene in der Lebensmittelindustrie Die VDI 2052 und BGR 111 sind bedeutende Richtlinien, die einen Rahmen f&#252;r die...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="vdi 6022 richtlinienreihe vdi 6022: richtlinienreihe zur raumluftqualit&#228;t in innenr&#228;umen die vdi 6022 ist eine wichtige richtlinienreihe vom verein deutscher ingenieure (vdi), die die anforderungen an die raumluftqualit&#228;t in innenr&#228;umen regelt.... v">
@@ -637,7 +621,6 @@
                 <div class="glossary-card__excerpt">
                   <p>VDI 6022: Richtlinienreihe zur Raumluftqualit&#228;t in Innenr&#228;umen Die VDI 6022 ist eine wichtige Richtlinienreihe vom Verein Deutscher Ingenieure (VDI), die die Anforderungen an die Raumluftqualit&#228;t in Innenr&#228;umen regelt....</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="verdampfer und kondensatoren verdampfer und kondensatoren in k&#228;lteanlagen: funktion, bedeutung der sauberkeit und hygienevorschriften k&#228;lteanlagen sind aus vielen bereichen des t&#228;glichen lebens nicht mehr wegzudenken &#8211; von der k&#252;hlung in superm&#228;rkten... v">
@@ -646,7 +629,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Verdampfer und Kondensatoren in K&#228;lteanlagen: Funktion, Bedeutung der Sauberkeit und Hygienevorschriften K&#228;lteanlagen sind aus vielen Bereichen des t&#228;glichen Lebens nicht mehr wegzudenken &#8211; von der K&#252;hlung in Superm&#228;rkten...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
             <article class="glossary-card" data-glossary-card data-search="verdunstungsk&#252;hlanlagen verdunstungsk&#252;hlanlagen: funktionsweise, einsatzgebiete und gesetzliche vorgaben verdunstungsk&#252;hlanlagen sind entscheidende komponenten in vielen industriellen prozessen und gro&#223;en geb&#228;uden. sie sind bekannt f&#252;r ihre effizienz bei der k&#252;hlung und stellen... v">
@@ -655,7 +637,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Verdunstungsk&#252;hlanlagen: Funktionsweise, Einsatzgebiete und gesetzliche Vorgaben Verdunstungsk&#252;hlanlagen sind entscheidende Komponenten in vielen industriellen Prozessen und gro&#223;en Geb&#228;uden. Sie sind bekannt f&#252;r ihre Effizienz bei der K&#252;hlung und stellen...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -669,7 +650,6 @@
                 <div class="glossary-card__excerpt">
                   <p>Was ist die WHG Zertifizierung? Die T&#220;V-Zertifizierung nach WHG bezieht sich auf die Anforderungen des Wasserhaushaltsgesetzes (WHG) in Deutschland, welches den Schutz der Gew&#228;sser regelt. In diesem Kontext...</p>
                 </div>
-                <span class="glossary-card__cta">Mehr erfahren</span>
               </a>
             </article>
           </div>
@@ -682,8 +662,8 @@
   <footer class="site-footer" id="footer-contact">
     <div class="container site-footer__main">
       <section class="footer-brand">
-        <img src="assets/images/logo-footer.png" alt="Igienair">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <img src="assets/images/Logo-weiss.svg" alt="Igienair">
+        <p>Seit 2003 bieten wir als Familienunternehmen Expertise in technischer Hygiene und Raumlufthygiene. Inspektion, Reinigung und Wartung von L&uuml;ftungs- und RLT-Anlagen &ndash; normkonform dokumentiert und deutschlandweit f&uuml;r Sie im Einsatz.</p>
       </section>
       <section class="footer-column">
         <h2>MEN&Uuml;</h2>

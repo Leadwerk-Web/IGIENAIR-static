@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Koblenz - Igienair GmbH</title>
   <meta name="description" content="Koblenz - Igienair GmbH">
-  <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-reference-city page-filtertest">
   <header class="site-header" data-section="header">
     <div class="container site-header__inner">
-      <a class="brand" href="index.html" aria-label="Igienair Startseite">
-        <img class="brand__logo brand__logo--light" src="assets/images/logo-white.png" alt="Igienair">
-        <img class="brand__logo brand__logo--dark" src="assets/images/logo-color.png" alt="Igienair">
+                        <a class="brand" href="index.html" aria-label="Igienair Startseite">
+        <img class="brand__logo brand__logo--light" src="assets/images/Logo-weiss.svg" alt="">
+        <img class="brand__logo brand__logo--dark" src="assets/images/Logo.svg" alt="">
       </a>
 
       <nav class="desktop-nav" aria-label="Hauptnavigation">
@@ -26,6 +26,7 @@
             <a class="nav-link" href="qualitaet.html">Qualit&auml;t</a>
             <a class="nav-link" href="umweltschutz.html">Umweltschutz</a>
             <a class="nav-link" href="standorte.html">Standorte</a>
+            <a class="nav-link" href="glossar.html">Glossar</a>
           </div>
         </div>
         <div class="nav-item">
@@ -119,6 +120,7 @@
           <a class="mobile-link" href="qualitaet.html">Qualit&auml;t</a>
           <a class="mobile-link" href="umweltschutz.html">Umweltschutz</a>
           <a class="mobile-link" href="standorte.html">Standorte</a>
+          <a class="mobile-link" href="glossar.html">Glossar</a>
         </div>
         <div class="mobile-menu__group">
           <a class="mobile-menu__group-title" href="leistungen-2.html">Leistungen</a>
@@ -196,7 +198,7 @@
   <main>
     <section class="company-hero" id="top" data-section="hero">
       <div class="container company-hero__content">
-        <p class="eyebrow">Blindtext</p>
+        <p class="eyebrow">Anlagen</p>
         <h1>Kunden in Koblenz</h1>
       </div>
     </section>
@@ -285,21 +287,46 @@
       </div>
     </section>
 
-    <section class="tower-industries karlsruhe-industries" data-section="industries">
-      <div class="container tower-industries__grid">
-        <article class="section-copy tower-industries__copy">
+    <section class="sectors" data-section="industries">
+      <div class="container sectors__layout">
+        <header class="sectors__header">
           <p class="eyebrow eyebrow--light">Blindtext</p>
           <h2>Quisque rutrum. Aenean imperdiet.</h2>
-          <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-          <button class="button button--ghost" type="button" data-inert>Erfahren Sie mehr</button>
-        </article>
-        <div class="tower-industries__sectors" aria-label="Branchenicons">
-          <article class="tower-sector-card"><img src="assets/images/sector-healthcare.png" alt=""><h3>Gesundheitswesen</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-industry.png" alt=""><h3>Industrie</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-pharma.png" alt=""><h3>Pharmaindustrie</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-gastronomy.png" alt=""><h3>Gastronomie</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-food.png" alt=""><h3>Lebensmittel</h3></article>
-          <article class="tower-sector-card"><img src="assets/images/sector-municipal.png" alt=""><h3>Gemeinden</h3></article>
+          <div class="gradient-line"></div>
+        </header>
+
+        <div class="sectors__columns">
+          <div class="sectors__copy">
+            <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+            <button class="button button--ghost" type="button" data-inert>Erfahren Sie mehr</button>
+          </div>
+
+          <div class="sector-grid" aria-label="Branchen">
+          <a class="sector-card" href="gesundheitswesen.html">
+            <img src="assets/images/sector-healthcare.png" alt="">
+            <h3>Gesundheitswesen</h3>
+          </a>
+          <a class="sector-card" href="industrie.html">
+            <img src="assets/images/sector-industry.png" alt="">
+            <h3>Industrie</h3>
+          </a>
+          <a class="sector-card" href="pharma.html">
+            <img src="assets/images/sector-pharma.png" alt="">
+            <h3>Pharmaindustrie</h3>
+          </a>
+          <a class="sector-card" href="gastronomie.html">
+            <img src="assets/images/sector-gastronomy.png" alt="">
+            <h3>Gastronomie</h3>
+          </a>
+          <a class="sector-card" href="lebensmittel.html">
+            <img src="assets/images/sector-food.png" alt="">
+            <h3>Lebensmittel</h3>
+          </a>
+          <a class="sector-card" href="gemeinden.html">
+            <img src="assets/images/sector-municipal.png" alt="">
+            <h3>Gemeinden</h3>
+          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -342,7 +369,7 @@
   <footer class="site-footer" id="footer-contact">
     <div class="container site-footer__main">
       <section class="footer-brand">
-        <img src="assets/images/logo-footer.png" alt="Igienair">
+        <img src="assets/images/Logo-weiss.svg" alt="Igienair">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
       </section>
       <section class="footer-column">
