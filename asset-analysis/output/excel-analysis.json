@@ -1,0 +1,38 @@
+{
+  "pageCount": 123,
+  "sumMissing": 458,
+  "withMissing": 102,
+  "zeroMissing": 21,
+  "issues": [
+    {
+      "row": 16,
+      "issue": "keine_URL",
+      "title": "Gefährdungsbeurteilung VDI 2047-2"
+    },
+    {
+      "row": 132,
+      "issue": "keine_URL",
+      "title": "FAQs"
+    },
+    {
+      "row": 134,
+      "issue": "keine_URL",
+      "title": "Unternehmen / Kunden / Jobs / Standorte"
+    },
+    {
+      "row": 135,
+      "issue": "keine_URL",
+      "title": "Leistungen"
+    },
+    {
+      "row": 136,
+      "issue": "keine_URL",
+      "title": "Normen"
+    },
+    {
+      "row": 137,
+      "issue": "keine_URL",
+      "title": "Anlagen"
+    }
+  ]
+}

@@ -1,0 +1,2356 @@
+{
+  "generatedAt": "2026-06-04T22:00:37.308Z",
+  "startUrl": "https://igienair.de/",
+  "domain": "igienair.de",
+  "totalPages": 174,
+  "sources": {
+    "sitemapUrls": 164,
+    "crawlDiscoveredUrls": 174,
+    "sitemaps": [
+      "https://igienair.de/sitemap.xml",
+      "https://igienair.de/page-sitemap.xml",
+      "https://igienair.de/glossar-sitemap.xml"
+    ]
+  },
+  "mainSections": [
+    {
+      "name": "kunden",
+      "count": 75
+    },
+    {
+      "name": "glossar",
+      "count": 39
+    },
+    {
+      "name": "anlagen",
+      "count": 17
+    },
+    {
+      "name": "unternehmen",
+      "count": 7
+    },
+    {
+      "name": "normen",
+      "count": 6
+    },
+    {
+      "name": "jobs",
+      "count": 3
+    },
+    {
+      "name": "kontakt",
+      "count": 2
+    },
+    {
+      "name": "leistungen",
+      "count": 2
+    },
+    {
+      "name": "(startseite)",
+      "count": 1
+    },
+    {
+      "name": "branchen",
+      "count": 1
+    },
+    {
+      "name": "cookie-richtlinie-eu",
+      "count": 1
+    },
+    {
+      "name": "datenschutz",
+      "count": 1
+    },
+    {
+      "name": "downloads",
+      "count": 1
+    },
+    {
+      "name": "energetische-inspektion-geg-2020",
+      "count": 1
+    },
+    {
+      "name": "filterintegritaetstest",
+      "count": 1
+    },
+    {
+      "name": "gastronomie",
+      "count": 1
+    },
+    {
+      "name": "gefaehrdungsbeurteilung-vdi-2047",
+      "count": 1
+    },
+    {
+      "name": "gemeinden",
+      "count": 1
+    },
+    {
+      "name": "gesundheitswesen",
+      "count": 1
+    },
+    {
+      "name": "hygieneinspektion-vdi-6022",
+      "count": 1
+    },
+    {
+      "name": "impressum",
+      "count": 1
+    },
+    {
+      "name": "industrie",
+      "count": 1
+    },
+    {
+      "name": "inspektionundgutachten",
+      "count": 1
+    },
+    {
+      "name": "instandsetzung-sanierung",
+      "count": 1
+    },
+    {
+      "name": "kanaluntersuchung",
+      "count": 1
+    },
+    {
+      "name": "lebensmittel",
+      "count": 1
+    },
+    {
+      "name": "lecktest-schwebstofffilter",
+      "count": 1
+    },
+    {
+      "name": "login",
+      "count": 1
+    },
+    {
+      "name": "pharma",
+      "count": 1
+    },
+    {
+      "name": "reinigung-desinfektion",
+      "count": 1
+    },
+    {
+      "name": "rlt-hygiene",
+      "count": 1
+    }
+  ],
+  "similarOrDuplicateCandidates": [
+    {
+      "reason": "Gleicher Seitenname: kuehlregale",
+      "urls": [
+        "https://igienair.de/anlagen/kuehlregale",
+        "https://igienair.de/glossar/kuehlregale"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: luftkanalreinigung",
+      "urls": [
+        "https://igienair.de/anlagen/luftkanalreinigung",
+        "https://igienair.de/glossar/luftkanalreinigung"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: rechenzentrum",
+      "urls": [
+        "https://igienair.de/anlagen/rechenzentrum",
+        "https://igienair.de/glossar/rechenzentrum"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: textilschlaeuche",
+      "urls": [
+        "https://igienair.de/anlagen/textilschlaeuche",
+        "https://igienair.de/glossar/textilschlaeuche"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: verdampfer-und-kondensatoren",
+      "urls": [
+        "https://igienair.de/anlagen/verdampfer-und-kondensatoren",
+        "https://igienair.de/glossar/verdampfer-und-kondensatoren"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: filterintegritaetstest",
+      "urls": [
+        "https://igienair.de/filterintegritaetstest",
+        "https://igienair.de/glossar/filterintegritaetstest"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: gastronomie",
+      "urls": [
+        "https://igienair.de/gastronomie",
+        "https://igienair.de/kunden/gastronomie"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: gemeinden",
+      "urls": [
+        "https://igienair.de/gemeinden",
+        "https://igienair.de/kunden/gemeinden"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: lecktest-schwebstofffilter",
+      "urls": [
+        "https://igienair.de/glossar/lecktest-schwebstofffilter",
+        "https://igienair.de/lecktest-schwebstofffilter"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: vdi-2052-bgr-111",
+      "urls": [
+        "https://igienair.de/glossar/vdi-2052-bgr-111",
+        "https://igienair.de/normen/vdi-2052-bgr-111"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: inspektionundgutachten",
+      "urls": [
+        "https://igienair.de/inspektionundgutachten",
+        "https://igienair.de/leistungen/inspektionundgutachten"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: lebensmittel",
+      "urls": [
+        "https://igienair.de/kunden/lebensmittel",
+        "https://igienair.de/lebensmittel"
+      ]
+    },
+    {
+      "reason": "Gleicher Seitenname: pharma",
+      "urls": [
+        "https://igienair.de/kunden/pharma",
+        "https://igienair.de/pharma"
+      ]
+    }
+  ],
+  "onlyInCrawl": [
+    "/cookie-richtlinie-eu/",
+    "/gefaehrdungsbeurteilung-vdi-2047/",
+    "/kunden/gastronomie/",
+    "/kunden/gemeinden/",
+    "/kunden/gesundheit/",
+    "/kunden/lebensmittel/",
+    "/kunden/pharma/",
+    "/leistungen/inspektionundgutachten/",
+    "/login/",
+    "/normen/vdi-6022/"
+  ],
+  "onlyInSitemapNotReachedByCrawl": [],
+  "pages": [
+    {
+      "url": "https://igienair.de/",
+      "path": "/",
+      "depth": 0
+    },
+    {
+      "url": "https://igienair.de/anlagen",
+      "path": "/anlagen/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/anlagen/kuechenabluftsysteme",
+      "path": "/anlagen/kuechenabluftsysteme/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/kuehlregale",
+      "path": "/anlagen/kuehlregale/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/kuehlsysteme",
+      "path": "/anlagen/kuehlsysteme/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/kuehlturmreinigung",
+      "path": "/anlagen/kuehlturmreinigung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/laborabzuege",
+      "path": "/anlagen/laborabzuege/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/lueftungsanlagenreinigung",
+      "path": "/anlagen/lueftungsanlagenreinigung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/lueftungsreinigung",
+      "path": "/anlagen/lueftungsreinigung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/luftkanalreinigung",
+      "path": "/anlagen/luftkanalreinigung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/op-raum-pruefung",
+      "path": "/anlagen/op-raum-pruefung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/prozessabluft-und-entrauchungsanlagen",
+      "path": "/anlagen/prozessabluft-und-entrauchungsanlagen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/raumluftdesinfektion",
+      "path": "/anlagen/raumluftdesinfektion/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/rechenzentrum",
+      "path": "/anlagen/rechenzentrum/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/reinraumqualifizierung",
+      "path": "/anlagen/reinraumqualifizierung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/splitklimageraete-und-umluftkuehlgeraete",
+      "path": "/anlagen/splitklimageraete-und-umluftkuehlgeraete/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/textilschlaeuche",
+      "path": "/anlagen/textilschlaeuche/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/anlagen/verdampfer-und-kondensatoren",
+      "path": "/anlagen/verdampfer-und-kondensatoren/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/branchen",
+      "path": "/branchen/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/cookie-richtlinie-eu",
+      "path": "/cookie-richtlinie-eu/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/datenschutz",
+      "path": "/datenschutz/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/downloads",
+      "path": "/downloads/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/energetische-inspektion-geg-2020",
+      "path": "/energetische-inspektion-geg-2020/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/filterintegritaetstest",
+      "path": "/filterintegritaetstest/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/gastronomie",
+      "path": "/gastronomie/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/gefaehrdungsbeurteilung-vdi-2047",
+      "path": "/gefaehrdungsbeurteilung-vdi-2047/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/gemeinden",
+      "path": "/gemeinden/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/gesundheitswesen",
+      "path": "/gesundheitswesen/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/glossar",
+      "path": "/glossar/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/glossar/bedeutung-hygieneinspektionen-unternehmen",
+      "path": "/glossar/bedeutung-hygieneinspektionen-unternehmen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/brandschutzreinigung-entfettung-grosskuechenabluftsystemen",
+      "path": "/glossar/brandschutzreinigung-entfettung-grosskuechenabluftsystemen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/digestorium",
+      "path": "/glossar/digestorium/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/din-en-14175-norm",
+      "path": "/glossar/din-en-14175-norm/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/din-en-15780-norm",
+      "path": "/glossar/din-en-15780-norm/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/energetische-inspektion",
+      "path": "/glossar/energetische-inspektion/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/entrauchungsanlage",
+      "path": "/glossar/entrauchungsanlage/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/fachbetrieb-nach-whg",
+      "path": "/glossar/fachbetrieb-nach-whg/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/fgk-qm-01-zertifizierung",
+      "path": "/glossar/fgk-qm-01-zertifizierung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/filterintegritaetstest",
+      "path": "/glossar/filterintegritaetstest/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/gebaeudeenergiegesetz-geg-2020",
+      "path": "/glossar/gebaeudeenergiegesetz-geg-2020/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/gefaehrdungsbeurteilung-vdi-2047-2",
+      "path": "/glossar/gefaehrdungsbeurteilung-vdi-2047-2/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/gefaehrdungsbeurteilung-von-rlt-anlagen",
+      "path": "/glossar/gefaehrdungsbeurteilung-von-rlt-anlagen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/hygieneinspektion-nach-vdi-6022",
+      "path": "/glossar/hygieneinspektion-nach-vdi-6022/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/hygienetechnische-reinigung",
+      "path": "/glossar/hygienetechnische-reinigung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/inspektionspflicht-geg-2020",
+      "path": "/glossar/inspektionspflicht-geg-2020/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/iso-140012015-zertifizierung",
+      "path": "/glossar/iso-140012015-zertifizierung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/iso-14644-norm",
+      "path": "/glossar/iso-14644-norm/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/iso-90012015-zertifizierung",
+      "path": "/glossar/iso-90012015-zertifizierung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/kuehlregale",
+      "path": "/glossar/kuehlregale/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/lecktest-schwebstofffilter",
+      "path": "/glossar/lecktest-schwebstofffilter/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/luftkanalreinigung",
+      "path": "/glossar/luftkanalreinigung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/op-raum",
+      "path": "/glossar/op-raum/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/prozessabluftsystem",
+      "path": "/glossar/prozessabluftsystem/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/rechenzentrum",
+      "path": "/glossar/rechenzentrum/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/reinigung-rechenzentrum",
+      "path": "/glossar/reinigung-rechenzentrum/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/reinraum",
+      "path": "/glossar/reinraum/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/rlt-anlagen",
+      "path": "/glossar/rlt-anlagen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/splitklimageraet",
+      "path": "/glossar/splitklimageraet/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/textilschlaeuche",
+      "path": "/glossar/textilschlaeuche/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/umluftkuehlgeraet",
+      "path": "/glossar/umluftkuehlgeraet/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/vdi-2047-2",
+      "path": "/glossar/vdi-2047-2/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/vdi-2052-bgr-111",
+      "path": "/glossar/vdi-2052-bgr-111/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/vdi-6022-richtlinienreihe",
+      "path": "/glossar/vdi-6022-richtlinienreihe/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/verdampfer-und-kondensatoren",
+      "path": "/glossar/verdampfer-und-kondensatoren/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/verdunstungskuehlanlagen",
+      "path": "/glossar/verdunstungskuehlanlagen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/vorschriften-laborabzuege",
+      "path": "/glossar/vorschriften-laborabzuege/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/glossar/whg-zertifizierung",
+      "path": "/glossar/whg-zertifizierung/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/hygieneinspektion-vdi-6022",
+      "path": "/hygieneinspektion-vdi-6022/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/impressum",
+      "path": "/impressum/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/industrie",
+      "path": "/industrie/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/inspektionundgutachten",
+      "path": "/inspektionundgutachten/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/instandsetzung-sanierung",
+      "path": "/instandsetzung-sanierung/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/jobs",
+      "path": "/jobs/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/jobs/mitarbeiter-technische-reinigung-gesucht",
+      "path": "/jobs/mitarbeiter-technische-reinigung-gesucht/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/jobs/teamleiter-hygienereinigung-gesucht",
+      "path": "/jobs/teamleiter-hygienereinigung-gesucht/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kanaluntersuchung",
+      "path": "/kanaluntersuchung/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/kontakt",
+      "path": "/kontakt/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/kontakt/angebot-anfordern",
+      "path": "/kontakt/angebot-anfordern/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden",
+      "path": "/kunden/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/kunden/gastronomie",
+      "path": "/kunden/gastronomie/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden/gemeinden",
+      "path": "/kunden/gemeinden/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden/gesundheit",
+      "path": "/kunden/gesundheit/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden/lebensmittel",
+      "path": "/kunden/lebensmittel/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden/pharma",
+      "path": "/kunden/pharma/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen",
+      "path": "/kunden/referenzen/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg",
+      "path": "/kunden/referenzen/baden-wuerttemberg/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/freiburg",
+      "path": "/kunden/referenzen/baden-wuerttemberg/freiburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/heidelberg",
+      "path": "/kunden/referenzen/baden-wuerttemberg/heidelberg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/karlsruhe",
+      "path": "/kunden/referenzen/baden-wuerttemberg/karlsruhe/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/konstanz",
+      "path": "/kunden/referenzen/baden-wuerttemberg/konstanz/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/mannheim",
+      "path": "/kunden/referenzen/baden-wuerttemberg/mannheim/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/stuttgart",
+      "path": "/kunden/referenzen/baden-wuerttemberg/stuttgart/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/baden-wuerttemberg/ulm",
+      "path": "/kunden/referenzen/baden-wuerttemberg/ulm/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/bayern",
+      "path": "/kunden/referenzen/bayern/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/bayern/augsburg",
+      "path": "/kunden/referenzen/bayern/augsburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/bayern/ingolstadt",
+      "path": "/kunden/referenzen/bayern/ingolstadt/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/bayern/munchen",
+      "path": "/kunden/referenzen/bayern/munchen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/bayern/nurnberg",
+      "path": "/kunden/referenzen/bayern/nurnberg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/bayern/regensburg",
+      "path": "/kunden/referenzen/bayern/regensburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin",
+      "path": "/kunden/referenzen/berlin/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/bernau",
+      "path": "/kunden/referenzen/berlin/bernau/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/brandenburg",
+      "path": "/kunden/referenzen/berlin/brandenburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/brandenburg-havel",
+      "path": "/kunden/referenzen/berlin/brandenburg-havel/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/cottbus",
+      "path": "/kunden/referenzen/berlin/cottbus/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/eberswalde",
+      "path": "/kunden/referenzen/berlin/eberswalde/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/falkensee",
+      "path": "/kunden/referenzen/berlin/falkensee/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/frankfurt-oder",
+      "path": "/kunden/referenzen/berlin/frankfurt-oder/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/oranienburg",
+      "path": "/kunden/referenzen/berlin/oranienburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/berlin/potsdam",
+      "path": "/kunden/referenzen/berlin/potsdam/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg",
+      "path": "/kunden/referenzen/hamburg/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/bremen",
+      "path": "/kunden/referenzen/hamburg/bremen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/buxtehude",
+      "path": "/kunden/referenzen/hamburg/buxtehude/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/elmshorn",
+      "path": "/kunden/referenzen/hamburg/elmshorn/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/flensburg",
+      "path": "/kunden/referenzen/hamburg/flensburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/kiel",
+      "path": "/kunden/referenzen/hamburg/kiel/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/luebeck",
+      "path": "/kunden/referenzen/hamburg/luebeck/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/lueneburg",
+      "path": "/kunden/referenzen/hamburg/lueneburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/munster",
+      "path": "/kunden/referenzen/hamburg/munster/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/neumuenster",
+      "path": "/kunden/referenzen/hamburg/neumuenster/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/norderstedt",
+      "path": "/kunden/referenzen/hamburg/norderstedt/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hamburg/stade",
+      "path": "/kunden/referenzen/hamburg/stade/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hessen",
+      "path": "/kunden/referenzen/hessen/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hessen/darmstadt",
+      "path": "/kunden/referenzen/hessen/darmstadt/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hessen/frankfurt",
+      "path": "/kunden/referenzen/hessen/frankfurt/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hessen/giessen",
+      "path": "/kunden/referenzen/hessen/giessen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hessen/kassel",
+      "path": "/kunden/referenzen/hessen/kassel/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/hessen/wiesbaden",
+      "path": "/kunden/referenzen/hessen/wiesbaden/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/nrw",
+      "path": "/kunden/referenzen/nrw/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/nrw/bonn",
+      "path": "/kunden/referenzen/nrw/bonn/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/nrw/duesseldorf",
+      "path": "/kunden/referenzen/nrw/duesseldorf/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/nrw/duisburg",
+      "path": "/kunden/referenzen/nrw/duisburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/nrw/koeln",
+      "path": "/kunden/referenzen/nrw/koeln/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/nrw/wuppertal",
+      "path": "/kunden/referenzen/nrw/wuppertal/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee",
+      "path": "/kunden/referenzen/region-bodensee/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/biberach-an-der-riss",
+      "path": "/kunden/referenzen/region-bodensee/biberach-an-der-riss/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/friedrichshafen",
+      "path": "/kunden/referenzen/region-bodensee/friedrichshafen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/memmingen",
+      "path": "/kunden/referenzen/region-bodensee/memmingen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/ravensburg",
+      "path": "/kunden/referenzen/region-bodensee/ravensburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/sigmaringen",
+      "path": "/kunden/referenzen/region-bodensee/sigmaringen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/singen",
+      "path": "/kunden/referenzen/region-bodensee/singen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/region-bodensee/tuttlingen",
+      "path": "/kunden/referenzen/region-bodensee/tuttlingen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz",
+      "path": "/kunden/referenzen/rheinland-pfalz/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/bitburg",
+      "path": "/kunden/referenzen/rheinland-pfalz/bitburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/kaiserslautern",
+      "path": "/kunden/referenzen/rheinland-pfalz/kaiserslautern/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/koblenz",
+      "path": "/kunden/referenzen/rheinland-pfalz/koblenz/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/ludwigshafen",
+      "path": "/kunden/referenzen/rheinland-pfalz/ludwigshafen/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/mainz",
+      "path": "/kunden/referenzen/rheinland-pfalz/mainz/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/trier",
+      "path": "/kunden/referenzen/rheinland-pfalz/trier/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/rheinland-pfalz/wittlich",
+      "path": "/kunden/referenzen/rheinland-pfalz/wittlich/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/saarland",
+      "path": "/kunden/referenzen/saarland/",
+      "depth": 3
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/saarland/homburg",
+      "path": "/kunden/referenzen/saarland/homburg/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/saarland/merzig",
+      "path": "/kunden/referenzen/saarland/merzig/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/kunden/referenzen/saarland/saarbrucken",
+      "path": "/kunden/referenzen/saarland/saarbrucken/",
+      "depth": 4
+    },
+    {
+      "url": "https://igienair.de/lebensmittel",
+      "path": "/lebensmittel/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/lecktest-schwebstofffilter",
+      "path": "/lecktest-schwebstofffilter/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/leistungen",
+      "path": "/leistungen/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/leistungen/inspektionundgutachten",
+      "path": "/leistungen/inspektionundgutachten/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/login",
+      "path": "/login/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/normen",
+      "path": "/normen/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/normen/din-en-14175",
+      "path": "/normen/din-en-14175/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/normen/din-en-15780",
+      "path": "/normen/din-en-15780/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/normen/vdi-2047",
+      "path": "/normen/vdi-2047/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/normen/vdi-2052-bgr-111",
+      "path": "/normen/vdi-2052-bgr-111/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/normen/vdi-6022",
+      "path": "/normen/vdi-6022/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/pharma",
+      "path": "/pharma/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/reinigung-desinfektion",
+      "path": "/reinigung-desinfektion/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/rlt-hygiene",
+      "path": "/rlt-hygiene/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/unternehmen",
+      "path": "/unternehmen/",
+      "depth": 1
+    },
+    {
+      "url": "https://igienair.de/unternehmen/agb",
+      "path": "/unternehmen/agb/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/unternehmen/nachhaltigkeit",
+      "path": "/unternehmen/nachhaltigkeit/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/unternehmen/qualitaet",
+      "path": "/unternehmen/qualitaet/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/unternehmen/sicherheit",
+      "path": "/unternehmen/sicherheit/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/unternehmen/umweltschutz",
+      "path": "/unternehmen/umweltschutz/",
+      "depth": 2
+    },
+    {
+      "url": "https://igienair.de/unternehmen/zertifizierungen",
+      "path": "/unternehmen/zertifizierungen/",
+      "depth": 2
+    }
+  ],
+  "tree": {
+    "path": "/",
+    "urls": [
+      "https://igienair.de/"
+    ],
+    "children": [
+      {
+        "path": "/anlagen/",
+        "urls": [
+          "https://igienair.de/anlagen"
+        ],
+        "children": [
+          {
+            "path": "/anlagen/kuechenabluftsysteme/",
+            "urls": [
+              "https://igienair.de/anlagen/kuechenabluftsysteme"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/kuehlregale/",
+            "urls": [
+              "https://igienair.de/anlagen/kuehlregale"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/kuehlsysteme/",
+            "urls": [
+              "https://igienair.de/anlagen/kuehlsysteme"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/kuehlturmreinigung/",
+            "urls": [
+              "https://igienair.de/anlagen/kuehlturmreinigung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/laborabzuege/",
+            "urls": [
+              "https://igienair.de/anlagen/laborabzuege"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/lueftungsanlagenreinigung/",
+            "urls": [
+              "https://igienair.de/anlagen/lueftungsanlagenreinigung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/lueftungsreinigung/",
+            "urls": [
+              "https://igienair.de/anlagen/lueftungsreinigung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/luftkanalreinigung/",
+            "urls": [
+              "https://igienair.de/anlagen/luftkanalreinigung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/op-raum-pruefung/",
+            "urls": [
+              "https://igienair.de/anlagen/op-raum-pruefung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/prozessabluft-und-entrauchungsanlagen/",
+            "urls": [
+              "https://igienair.de/anlagen/prozessabluft-und-entrauchungsanlagen"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/raumluftdesinfektion/",
+            "urls": [
+              "https://igienair.de/anlagen/raumluftdesinfektion"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/rechenzentrum/",
+            "urls": [
+              "https://igienair.de/anlagen/rechenzentrum"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/reinraumqualifizierung/",
+            "urls": [
+              "https://igienair.de/anlagen/reinraumqualifizierung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/splitklimageraete-und-umluftkuehlgeraete/",
+            "urls": [
+              "https://igienair.de/anlagen/splitklimageraete-und-umluftkuehlgeraete"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/textilschlaeuche/",
+            "urls": [
+              "https://igienair.de/anlagen/textilschlaeuche"
+            ],
+            "children": []
+          },
+          {
+            "path": "/anlagen/verdampfer-und-kondensatoren/",
+            "urls": [
+              "https://igienair.de/anlagen/verdampfer-und-kondensatoren"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/branchen/",
+        "urls": [
+          "https://igienair.de/branchen"
+        ],
+        "children": []
+      },
+      {
+        "path": "/cookie-richtlinie-eu/",
+        "urls": [
+          "https://igienair.de/cookie-richtlinie-eu"
+        ],
+        "children": []
+      },
+      {
+        "path": "/datenschutz/",
+        "urls": [
+          "https://igienair.de/datenschutz"
+        ],
+        "children": []
+      },
+      {
+        "path": "/downloads/",
+        "urls": [
+          "https://igienair.de/downloads"
+        ],
+        "children": []
+      },
+      {
+        "path": "/energetische-inspektion-geg-2020/",
+        "urls": [
+          "https://igienair.de/energetische-inspektion-geg-2020"
+        ],
+        "children": []
+      },
+      {
+        "path": "/filterintegritaetstest/",
+        "urls": [
+          "https://igienair.de/filterintegritaetstest"
+        ],
+        "children": []
+      },
+      {
+        "path": "/gastronomie/",
+        "urls": [
+          "https://igienair.de/gastronomie"
+        ],
+        "children": []
+      },
+      {
+        "path": "/gefaehrdungsbeurteilung-vdi-2047/",
+        "urls": [
+          "https://igienair.de/gefaehrdungsbeurteilung-vdi-2047"
+        ],
+        "children": []
+      },
+      {
+        "path": "/gemeinden/",
+        "urls": [
+          "https://igienair.de/gemeinden"
+        ],
+        "children": []
+      },
+      {
+        "path": "/gesundheitswesen/",
+        "urls": [
+          "https://igienair.de/gesundheitswesen"
+        ],
+        "children": []
+      },
+      {
+        "path": "/glossar/",
+        "urls": [
+          "https://igienair.de/glossar"
+        ],
+        "children": [
+          {
+            "path": "/glossar/bedeutung-hygieneinspektionen-unternehmen/",
+            "urls": [
+              "https://igienair.de/glossar/bedeutung-hygieneinspektionen-unternehmen"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/brandschutzreinigung-entfettung-grosskuechenabluftsystemen/",
+            "urls": [
+              "https://igienair.de/glossar/brandschutzreinigung-entfettung-grosskuechenabluftsystemen"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/digestorium/",
+            "urls": [
+              "https://igienair.de/glossar/digestorium"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/din-en-14175-norm/",
+            "urls": [
+              "https://igienair.de/glossar/din-en-14175-norm"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/din-en-15780-norm/",
+            "urls": [
+              "https://igienair.de/glossar/din-en-15780-norm"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/energetische-inspektion/",
+            "urls": [
+              "https://igienair.de/glossar/energetische-inspektion"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/entrauchungsanlage/",
+            "urls": [
+              "https://igienair.de/glossar/entrauchungsanlage"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/fachbetrieb-nach-whg/",
+            "urls": [
+              "https://igienair.de/glossar/fachbetrieb-nach-whg"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/fgk-qm-01-zertifizierung/",
+            "urls": [
+              "https://igienair.de/glossar/fgk-qm-01-zertifizierung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/filterintegritaetstest/",
+            "urls": [
+              "https://igienair.de/glossar/filterintegritaetstest"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/gebaeudeenergiegesetz-geg-2020/",
+            "urls": [
+              "https://igienair.de/glossar/gebaeudeenergiegesetz-geg-2020"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/gefaehrdungsbeurteilung-vdi-2047-2/",
+            "urls": [
+              "https://igienair.de/glossar/gefaehrdungsbeurteilung-vdi-2047-2"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/gefaehrdungsbeurteilung-von-rlt-anlagen/",
+            "urls": [
+              "https://igienair.de/glossar/gefaehrdungsbeurteilung-von-rlt-anlagen"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/hygieneinspektion-nach-vdi-6022/",
+            "urls": [
+              "https://igienair.de/glossar/hygieneinspektion-nach-vdi-6022"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/hygienetechnische-reinigung/",
+            "urls": [
+              "https://igienair.de/glossar/hygienetechnische-reinigung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/inspektionspflicht-geg-2020/",
+            "urls": [
+              "https://igienair.de/glossar/inspektionspflicht-geg-2020"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/iso-140012015-zertifizierung/",
+            "urls": [
+              "https://igienair.de/glossar/iso-140012015-zertifizierung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/iso-14644-norm/",
+            "urls": [
+              "https://igienair.de/glossar/iso-14644-norm"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/iso-90012015-zertifizierung/",
+            "urls": [
+              "https://igienair.de/glossar/iso-90012015-zertifizierung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/kuehlregale/",
+            "urls": [
+              "https://igienair.de/glossar/kuehlregale"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/lecktest-schwebstofffilter/",
+            "urls": [
+              "https://igienair.de/glossar/lecktest-schwebstofffilter"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/luftkanalreinigung/",
+            "urls": [
+              "https://igienair.de/glossar/luftkanalreinigung"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/op-raum/",
+            "urls": [
+              "https://igienair.de/glossar/op-raum"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/prozessabluftsystem/",
+            "urls": [
+              "https://igienair.de/glossar/prozessabluftsystem"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/rechenzentrum/",
+            "urls": [
+              "https://igienair.de/glossar/rechenzentrum"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/reinigung-rechenzentrum/",
+            "urls": [
+              "https://igienair.de/glossar/reinigung-rechenzentrum"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/reinraum/",
+            "urls": [
+              "https://igienair.de/glossar/reinraum"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/rlt-anlagen/",
+            "urls": [
+              "https://igienair.de/glossar/rlt-anlagen"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/splitklimageraet/",
+            "urls": [
+              "https://igienair.de/glossar/splitklimageraet"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/textilschlaeuche/",
+            "urls": [
+              "https://igienair.de/glossar/textilschlaeuche"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/umluftkuehlgeraet/",
+            "urls": [
+              "https://igienair.de/glossar/umluftkuehlgeraet"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/vdi-2047-2/",
+            "urls": [
+              "https://igienair.de/glossar/vdi-2047-2"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/vdi-2052-bgr-111/",
+            "urls": [
+              "https://igienair.de/glossar/vdi-2052-bgr-111"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/vdi-6022-richtlinienreihe/",
+            "urls": [
+              "https://igienair.de/glossar/vdi-6022-richtlinienreihe"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/verdampfer-und-kondensatoren/",
+            "urls": [
+              "https://igienair.de/glossar/verdampfer-und-kondensatoren"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/verdunstungskuehlanlagen/",
+            "urls": [
+              "https://igienair.de/glossar/verdunstungskuehlanlagen"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/vorschriften-laborabzuege/",
+            "urls": [
+              "https://igienair.de/glossar/vorschriften-laborabzuege"
+            ],
+            "children": []
+          },
+          {
+            "path": "/glossar/whg-zertifizierung/",
+            "urls": [
+              "https://igienair.de/glossar/whg-zertifizierung"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/hygieneinspektion-vdi-6022/",
+        "urls": [
+          "https://igienair.de/hygieneinspektion-vdi-6022"
+        ],
+        "children": []
+      },
+      {
+        "path": "/impressum/",
+        "urls": [
+          "https://igienair.de/impressum"
+        ],
+        "children": []
+      },
+      {
+        "path": "/industrie/",
+        "urls": [
+          "https://igienair.de/industrie"
+        ],
+        "children": []
+      },
+      {
+        "path": "/inspektionundgutachten/",
+        "urls": [
+          "https://igienair.de/inspektionundgutachten"
+        ],
+        "children": []
+      },
+      {
+        "path": "/instandsetzung-sanierung/",
+        "urls": [
+          "https://igienair.de/instandsetzung-sanierung"
+        ],
+        "children": []
+      },
+      {
+        "path": "/jobs/",
+        "urls": [
+          "https://igienair.de/jobs"
+        ],
+        "children": [
+          {
+            "path": "/jobs/mitarbeiter-technische-reinigung-gesucht/",
+            "urls": [
+              "https://igienair.de/jobs/mitarbeiter-technische-reinigung-gesucht"
+            ],
+            "children": []
+          },
+          {
+            "path": "/jobs/teamleiter-hygienereinigung-gesucht/",
+            "urls": [
+              "https://igienair.de/jobs/teamleiter-hygienereinigung-gesucht"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/kanaluntersuchung/",
+        "urls": [
+          "https://igienair.de/kanaluntersuchung"
+        ],
+        "children": []
+      },
+      {
+        "path": "/kontakt/",
+        "urls": [
+          "https://igienair.de/kontakt"
+        ],
+        "children": [
+          {
+            "path": "/kontakt/angebot-anfordern/",
+            "urls": [
+              "https://igienair.de/kontakt/angebot-anfordern"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/kunden/",
+        "urls": [
+          "https://igienair.de/kunden"
+        ],
+        "children": [
+          {
+            "path": "/kunden/gastronomie/",
+            "urls": [
+              "https://igienair.de/kunden/gastronomie"
+            ],
+            "children": []
+          },
+          {
+            "path": "/kunden/gemeinden/",
+            "urls": [
+              "https://igienair.de/kunden/gemeinden"
+            ],
+            "children": []
+          },
+          {
+            "path": "/kunden/gesundheit/",
+            "urls": [
+              "https://igienair.de/kunden/gesundheit"
+            ],
+            "children": []
+          },
+          {
+            "path": "/kunden/lebensmittel/",
+            "urls": [
+              "https://igienair.de/kunden/lebensmittel"
+            ],
+            "children": []
+          },
+          {
+            "path": "/kunden/pharma/",
+            "urls": [
+              "https://igienair.de/kunden/pharma"
+            ],
+            "children": []
+          },
+          {
+            "path": "/kunden/referenzen/",
+            "urls": [
+              "https://igienair.de/kunden/referenzen"
+            ],
+            "children": [
+              {
+                "path": "/kunden/referenzen/baden-wuerttemberg/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/baden-wuerttemberg"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/freiburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/freiburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/heidelberg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/heidelberg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/karlsruhe/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/karlsruhe"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/konstanz/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/konstanz"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/mannheim/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/mannheim"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/stuttgart/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/stuttgart"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/baden-wuerttemberg/ulm/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/baden-wuerttemberg/ulm"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/bayern/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/bayern"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/bayern/augsburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/bayern/augsburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/bayern/ingolstadt/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/bayern/ingolstadt"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/bayern/munchen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/bayern/munchen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/bayern/nurnberg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/bayern/nurnberg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/bayern/regensburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/bayern/regensburg"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/berlin/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/berlin"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/berlin/bernau/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/bernau"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/brandenburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/brandenburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/brandenburg-havel/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/brandenburg-havel"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/cottbus/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/cottbus"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/eberswalde/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/eberswalde"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/falkensee/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/falkensee"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/frankfurt-oder/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/frankfurt-oder"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/oranienburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/oranienburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/berlin/potsdam/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/berlin/potsdam"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/hamburg/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/hamburg"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/hamburg/bremen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/bremen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/buxtehude/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/buxtehude"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/elmshorn/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/elmshorn"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/flensburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/flensburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/kiel/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/kiel"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/luebeck/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/luebeck"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/lueneburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/lueneburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/munster/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/munster"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/neumuenster/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/neumuenster"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/norderstedt/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/norderstedt"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hamburg/stade/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hamburg/stade"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/hessen/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/hessen"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/hessen/darmstadt/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hessen/darmstadt"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hessen/frankfurt/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hessen/frankfurt"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hessen/giessen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hessen/giessen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hessen/kassel/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hessen/kassel"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/hessen/wiesbaden/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/hessen/wiesbaden"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/nrw/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/nrw"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/nrw/bonn/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/nrw/bonn"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/nrw/duesseldorf/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/nrw/duesseldorf"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/nrw/duisburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/nrw/duisburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/nrw/koeln/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/nrw/koeln"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/nrw/wuppertal/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/nrw/wuppertal"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/region-bodensee/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/region-bodensee"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/biberach-an-der-riss/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/biberach-an-der-riss"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/friedrichshafen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/friedrichshafen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/memmingen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/memmingen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/ravensburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/ravensburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/sigmaringen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/sigmaringen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/singen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/singen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/region-bodensee/tuttlingen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/region-bodensee/tuttlingen"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/rheinland-pfalz/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/rheinland-pfalz"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/bitburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/bitburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/kaiserslautern/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/kaiserslautern"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/koblenz/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/koblenz"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/ludwigshafen/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/ludwigshafen"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/mainz/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/mainz"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/trier/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/trier"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/rheinland-pfalz/wittlich/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/rheinland-pfalz/wittlich"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "path": "/kunden/referenzen/saarland/",
+                "urls": [
+                  "https://igienair.de/kunden/referenzen/saarland"
+                ],
+                "children": [
+                  {
+                    "path": "/kunden/referenzen/saarland/homburg/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/saarland/homburg"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/saarland/merzig/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/saarland/merzig"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "path": "/kunden/referenzen/saarland/saarbrucken/",
+                    "urls": [
+                      "https://igienair.de/kunden/referenzen/saarland/saarbrucken"
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/lebensmittel/",
+        "urls": [
+          "https://igienair.de/lebensmittel"
+        ],
+        "children": []
+      },
+      {
+        "path": "/lecktest-schwebstofffilter/",
+        "urls": [
+          "https://igienair.de/lecktest-schwebstofffilter"
+        ],
+        "children": []
+      },
+      {
+        "path": "/leistungen/",
+        "urls": [
+          "https://igienair.de/leistungen"
+        ],
+        "children": [
+          {
+            "path": "/leistungen/inspektionundgutachten/",
+            "urls": [
+              "https://igienair.de/leistungen/inspektionundgutachten"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/login/",
+        "urls": [
+          "https://igienair.de/login"
+        ],
+        "children": []
+      },
+      {
+        "path": "/normen/",
+        "urls": [
+          "https://igienair.de/normen"
+        ],
+        "children": [
+          {
+            "path": "/normen/din-en-14175/",
+            "urls": [
+              "https://igienair.de/normen/din-en-14175"
+            ],
+            "children": []
+          },
+          {
+            "path": "/normen/din-en-15780/",
+            "urls": [
+              "https://igienair.de/normen/din-en-15780"
+            ],
+            "children": []
+          },
+          {
+            "path": "/normen/vdi-2047/",
+            "urls": [
+              "https://igienair.de/normen/vdi-2047"
+            ],
+            "children": []
+          },
+          {
+            "path": "/normen/vdi-2052-bgr-111/",
+            "urls": [
+              "https://igienair.de/normen/vdi-2052-bgr-111"
+            ],
+            "children": []
+          },
+          {
+            "path": "/normen/vdi-6022/",
+            "urls": [
+              "https://igienair.de/normen/vdi-6022"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/pharma/",
+        "urls": [
+          "https://igienair.de/pharma"
+        ],
+        "children": []
+      },
+      {
+        "path": "/reinigung-desinfektion/",
+        "urls": [
+          "https://igienair.de/reinigung-desinfektion"
+        ],
+        "children": []
+      },
+      {
+        "path": "/rlt-hygiene/",
+        "urls": [
+          "https://igienair.de/rlt-hygiene"
+        ],
+        "children": []
+      },
+      {
+        "path": "/unternehmen/",
+        "urls": [
+          "https://igienair.de/unternehmen"
+        ],
+        "children": [
+          {
+            "path": "/unternehmen/agb/",
+            "urls": [
+              "https://igienair.de/unternehmen/agb"
+            ],
+            "children": []
+          },
+          {
+            "path": "/unternehmen/nachhaltigkeit/",
+            "urls": [
+              "https://igienair.de/unternehmen/nachhaltigkeit"
+            ],
+            "children": []
+          },
+          {
+            "path": "/unternehmen/qualitaet/",
+            "urls": [
+              "https://igienair.de/unternehmen/qualitaet"
+            ],
+            "children": []
+          },
+          {
+            "path": "/unternehmen/sicherheit/",
+            "urls": [
+              "https://igienair.de/unternehmen/sicherheit"
+            ],
+            "children": []
+          },
+          {
+            "path": "/unternehmen/umweltschutz/",
+            "urls": [
+              "https://igienair.de/unternehmen/umweltschutz"
+            ],
+            "children": []
+          },
+          {
+            "path": "/unternehmen/zertifizierungen/",
+            "urls": [
+              "https://igienair.de/unternehmen/zertifizierungen"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

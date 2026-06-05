@@ -7,6 +7,12 @@
 }
 
 :root {
+  --h2-font-size: clamp(32px, 4vw, 48px);
+  --h2-font-weight: 500;
+
+  --h2-font-size: clamp(32px, 4vw, 48px);
+  --h2-font-weight: 500;
+
   --color-primary: #0161bf;
   --color-secondary: #009fe3;
   --color-accent: #8dc7ff;
@@ -28,8 +34,9 @@
   --hero-fade-color: var(--color-soft);
   --hero-overlay-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 61%, rgba(232, 243, 255, 0.82) 100%);
   --hero-fade-gradient: linear-gradient(180deg, rgba(232, 243, 255, 0), rgba(232, 243, 255, 0.98) 82%);
-  --company-section-hero-image: url("assets/images/Unternehmen-Hero.png");
-  --services-hero-image: url("assets/images/Genutze Bilder_LW/Leistungen/Leistungen_hero.png");
+  --company-section-hero-image: url("./Bildmaterial_final/shared/unternehmen-hero.png");
+  --anlagen-hero-image: url("./Bildmaterial_final/shared/anlagen-hero.jpeg");
+  --services-hero-image: url("./Bildmaterial_final/shared/leistungen-hero.png");
   --transition: 220ms ease;
 }
 
@@ -91,6 +98,11 @@ h4 {
 
 h3 {
   font-weight: 600;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
 }
 
 .container {
@@ -593,6 +605,56 @@ body.is-scrolled .button--header {
   display: none;
 }
 
+.scroll-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 24;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  background: linear-gradient(56deg, var(--color-primary) 0%, var(--color-secondary) 75%);
+  box-shadow: 0 12px 28px rgba(0, 126, 201, 0.28);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition:
+    opacity var(--transition),
+    visibility var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.scroll-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 126, 201, 0.34);
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+body.menu-open .scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .intro,
 .videos,
 .progress {
@@ -618,9 +680,7 @@ body.is-scrolled .button--header {
 .sectors__copy h2,
 .sectors__header h2,
 .cta-band h2 {
-  font-size: clamp(32px, 4vw, 48px);
   line-height: 1.14;
-  font-weight: 500;
   color: var(--color-primary);
 }
 
@@ -845,9 +905,7 @@ body.is-scrolled .button--header {
 
 .services-slider__intro h2 {
   margin: 0;
-  font-size: clamp(32px, 4.2vw, 50px);
   line-height: 1.12;
-  font-weight: 500;
   color: var(--color-primary);
 }
 
@@ -1255,6 +1313,10 @@ body.is-scrolled .button--header {
 
 .sectors__copy p {
   margin: 0;
+}
+
+.sectors__copy p + p {
+  margin-top: 14px;
 }
 
 .sectors__copy .button {
@@ -1760,9 +1822,7 @@ body.is-scrolled .button--header {
 }
 
 .feature__copy h2 {
-  font-size: clamp(32px, 4vw, 48px);
   line-height: 1.2;
-  font-weight: 500;
   color: var(--color-accent);
 }
 
@@ -2356,6 +2416,12 @@ body.menu-open .mobile-menu {
   font-weight: 600;
 }
 
+.company-testimonial p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
 .company-employees {
   padding: 88px 0 82px;
   background: var(--color-soft);
@@ -2373,7 +2439,7 @@ body.menu-open .mobile-menu {
   text-align: center;
   background:
     linear-gradient(180deg, rgba(1, 97, 191, 0.9) 0%, rgba(0, 159, 227, 0.9) 100%),
-    url("assets/images/company-cta-bg.png") center / cover no-repeat;
+    url("./Bildmaterial_final/shared/company-cta-bg.png") center / cover no-repeat;
 }
 
 .company-cta__inner {
@@ -2384,9 +2450,7 @@ body.menu-open .mobile-menu {
 
 .company-cta h2 {
   max-width: 1080px;
-  font-size: clamp(34px, 4vw, 48px);
   line-height: 1.2;
-  font-weight: 600;
 }
 
 .company-cta p {
@@ -2407,13 +2471,16 @@ body.menu-open .mobile-menu {
 
 .page-customers .site-header,
 .page-references .site-header,
+.page-referenzen .site-header,
 .page-reference-region .site-header,
 .page-industries .site-header {
   background: rgba(255, 255, 255, 0);
 }
 
 .page-customers .company-hero h1,
+.page-jobs .company-hero h1,
 .page-references .company-hero h1,
+.page-referenzen .company-hero h1,
 .page-reference-region .company-hero h1,
 .page-karlsruhe-reference .company-hero h1,
 .page-reference-city .company-hero h1,
@@ -2438,11 +2505,163 @@ body.menu-open .mobile-menu {
 }
 
 .customers-overview__copy h2 {
-  max-width: 11ch;
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.14;
 }
 
 .customers-overview__copy p + p {
   margin-top: 14px;
+}
+
+.customers-overview__cta {
+  margin-top: 22px;
+}
+
+.customers-teasers {
+  display: grid;
+  gap: clamp(16px, 2vw, 20px);
+  align-content: start;
+}
+
+.page-customers .customers-teaser {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  padding: clamp(18px, 2vw, 24px);
+  overflow: hidden;
+  border: 1px solid rgba(1, 97, 191, 0.1);
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(237, 244, 251, 0.88) 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 14px 34px rgba(1, 97, 191, 0.08);
+  backdrop-filter: blur(12px);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.page-customers .customers-teaser::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 159, 227, 0.06) 0%, transparent 52%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.page-customers .customers-teaser:hover,
+.page-customers .customers-teaser:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(1, 97, 191, 0.18);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 22px 44px rgba(1, 97, 191, 0.14);
+}
+
+.page-customers .customers-teaser:hover::before,
+.page-customers .customers-teaser:focus-visible::before {
+  opacity: 1;
+}
+
+.customers-teaser__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 112px;
+  margin: 0 0 14px;
+  overflow: visible;
+}
+
+.customers-teaser__icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  width: min(160px, 72%);
+  height: min(140px, 68%);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    rgba(0, 159, 227, 0.28) 0%,
+    rgba(1, 97, 191, 0.14) 42%,
+    transparent 78%
+  );
+  filter: blur(24px);
+  pointer-events: none;
+}
+
+.customers-teaser__icon img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: auto;
+  height: 80px;
+  object-fit: contain;
+  filter:
+    brightness(0) saturate(100%)
+    invert(35%) sepia(95%) saturate(2000%) hue-rotate(186deg) brightness(95%) contrast(101%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.customers-teaser__icon--map {
+  min-height: 128px;
+}
+
+.customers-teaser__icon--map img {
+  width: auto;
+  height: 112px;
+}
+
+.page-customers .customers-teaser:hover .customers-teaser__icon img,
+.page-customers .customers-teaser:focus-visible .customers-teaser__icon img {
+  transform: translateY(-4px) scale(1.04);
+}
+
+.customers-teaser__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.customers-teaser__body h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(20px, 1.8vw, 24px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.customers-teaser__body p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.customers-teaser__link {
+  margin-top: auto;
+  padding-top: 6px;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.customers-teaser__link::after {
+  content: " \2192";
 }
 
 .customers-card-stack {
@@ -2531,17 +2750,162 @@ body.menu-open .mobile-menu {
 }
 
 .industries-overview__copy h2 {
-  max-width: 11ch;
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.18;
+}
+
+.page-industries .industries-overview__intro {
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4.5rem);
+}
+
+.industries-overview__layout {
+  display: grid;
+  gap: 32px;
+  margin-bottom: clamp(34px, 5vw, 54px);
+}
+
+.industries-overview__heading {
+  margin: 0;
+}
+
+.industries-overview__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+}
+
+.industries-overview__columns > .industries-overview__copy,
+.industries-overview__columns > .industries-overview__icon-column,
+.industries-overview__columns > .industries-overview__media {
+  min-width: 0;
+}
+
+.industries-overview__columns > .industries-overview__copy {
+  grid-column: 1;
+}
+
+.industries-overview__columns > .industries-overview__icon-column,
+.industries-overview__columns > .industries-overview__media {
+  grid-column: 2;
+}
+
+.page-industries .industries-overview__copy {
+  max-width: none;
+}
+
+.page-industries .industries-overview__heading h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.14;
+}
+
+.page-industries .industries-overview__copy h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.3;
 }
 
 .industries-overview__copy p {
   max-width: 705px;
 }
 
+.page-industries .industries-overview__copy p {
+  max-width: none;
+}
+
+.page-industries .industries-overview__copy .industries-overview__cta {
+  margin-top: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
 .industries-overview__media {
-  max-width: 520px;
-  justify-self: end;
+  margin: 0;
+  max-width: 100%;
+  width: auto;
+  justify-self: center;
   aspect-ratio: 1 / 1;
+}
+
+.page-industries .industries-overview__icon-column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  min-height: clamp(220px, 28vw, 360px);
+  overflow: visible;
+}
+
+.page-industries .industries-overview__icon-column::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  width: min(520px, 135%);
+  height: min(480px, 125%);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    rgba(0, 159, 227, 0.32) 0%,
+    rgba(1, 97, 191, 0.18) 34%,
+    rgba(1, 97, 191, 0.08) 58%,
+    rgba(1, 97, 191, 0.025) 78%,
+    transparent 92%
+  );
+  filter: blur(52px);
+  pointer-events: none;
+  animation: state-map-glow 8s ease-in-out infinite alternate;
+}
+
+.page-industries .industries-overview__icon {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  width: min(100%, 320px);
+  padding: clamp(1rem, 3vw, 1.75rem);
+  overflow: visible;
+}
+
+.page-industries .industries-overview__icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter:
+    brightness(0) saturate(100%)
+    invert(35%) sepia(95%) saturate(2000%) hue-rotate(186deg) brightness(95%) contrast(101%)
+    drop-shadow(0 16px 32px rgba(1, 97, 191, 0.16))
+    drop-shadow(0 4px 10px rgba(0, 159, 227, 0.1));
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.page-industries .industries-overview__icon-column:hover .industries-overview__icon img {
+  transform: translateY(-6px) scale(1.025);
+  filter:
+    brightness(0) saturate(100%)
+    invert(35%) sepia(95%) saturate(2000%) hue-rotate(186deg) brightness(95%) contrast(101%)
+    drop-shadow(0 20px 38px rgba(1, 97, 191, 0.2))
+    drop-shadow(0 8px 18px rgba(0, 159, 227, 0.14));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-industries .industries-overview__icon-column::before {
+    animation: none;
+  }
+
+  .page-industries .industries-overview__icon img {
+    transition: none;
+  }
 }
 
 .industries-grid {
@@ -2619,6 +2983,263 @@ body.menu-open .mobile-menu {
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
+}
+
+.branchen-overview {
+  padding-top: clamp(54px, 6vw, 78px);
+  padding-bottom: clamp(64px, 7vw, 92px);
+}
+
+.branchen-overview__layout {
+  display: grid;
+  gap: clamp(34px, 5vw, 54px);
+}
+
+.branchen-overview__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  column-gap: clamp(2rem, 4vw, 4.5rem);
+  row-gap: 0;
+  align-items: start;
+}
+
+.branchen-overview__eyebrow {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 14px;
+}
+
+.branchen-overview__intro > .branchen-overview__heading,
+.branchen-overview__intro > .branchen-overview__copy {
+  min-width: 0;
+}
+
+.branchen-overview__heading {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+}
+
+.branchen-overview__copy {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  max-width: none;
+  align-self: start;
+}
+
+.branchen-overview__heading h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.14;
+}
+
+.branchen-overview__copy p {
+  max-width: none;
+}
+
+.branchen-overview__copy p + p {
+  margin-top: 12px;
+}
+
+.branchen-overview__cta {
+  margin-top: 22px;
+}
+
+.page-branchen .branchen-grid,
+.page-referenzen .branchen-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(16px, 2vw, 24px);
+  align-items: stretch;
+}
+
+@media (min-width: 992px) {
+  .page-branchen .branchen-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, auto));
+  }
+
+  .page-referenzen .branchen-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.page-branchen .branchen-card,
+.page-referenzen .branchen-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  height: 100%;
+  min-height: clamp(220px, 18vw, 280px);
+  padding: clamp(22px, 2.4vw, 28px);
+  overflow: hidden;
+  border: 1px solid rgba(1, 97, 191, 0.1);
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(237, 244, 251, 0.88) 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 14px 34px rgba(1, 97, 191, 0.08);
+  backdrop-filter: blur(12px);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.branchen-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 159, 227, 0.06) 0%, transparent 52%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.branchen-card:hover,
+.branchen-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(1, 97, 191, 0.18);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 22px 44px rgba(1, 97, 191, 0.14);
+}
+
+.branchen-card:hover::before,
+.branchen-card:focus-visible::before {
+  opacity: 1;
+}
+
+.branchen-card__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: clamp(112px, 12vw, 136px);
+  margin: 0 0 18px;
+  overflow: visible;
+}
+
+.branchen-card__icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  width: min(180px, 72%);
+  height: min(160px, 68%);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    rgba(0, 159, 227, 0.28) 0%,
+    rgba(1, 97, 191, 0.14) 42%,
+    transparent 78%
+  );
+  filter: blur(24px);
+  pointer-events: none;
+}
+
+.branchen-card__icon img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: auto;
+  height: clamp(72px, 8vw, 92px);
+  object-fit: contain;
+  filter:
+    brightness(0) saturate(100%)
+    invert(35%) sepia(95%) saturate(2000%) hue-rotate(186deg) brightness(95%) contrast(101%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.branchen-card:hover .branchen-card__icon img,
+.branchen-card:focus-visible .branchen-card__icon img {
+  transform: translateY(-4px) scale(1.04);
+}
+
+.branchen-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+}
+
+.branchen-card__body h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(22px, 2vw, 26px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.branchen-card__body p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.branchen-card__link {
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--color-secondary);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.branchen-card__link::after {
+  content: " \2192";
+}
+
+.page-referenzen .branchen-card__icon img {
+  filter:
+    drop-shadow(0 12px 24px rgba(1, 97, 191, 0.12))
+    drop-shadow(0 4px 8px rgba(0, 159, 227, 0.08));
+}
+
+.page-referenzen .branchen-card__icon img[src*="bodensee-quadrat"] {
+  height: clamp(64px, 7vw, 84px);
+  filter:
+    brightness(0) invert(1)
+    drop-shadow(0 12px 24px rgba(1, 97, 191, 0.12))
+    drop-shadow(0 4px 8px rgba(0, 159, 227, 0.08));
+}
+
+.page-referenzen .branchen-card__icon--photo img {
+  width: clamp(88px, 10vw, 112px);
+  height: clamp(64px, 7vw, 84px);
+  border-radius: 12px;
+  object-fit: cover;
+  filter: drop-shadow(0 12px 24px rgba(1, 97, 191, 0.14));
+}
+
+.page-referenzen .branchen-card:hover .branchen-card__icon img,
+.page-referenzen .branchen-card:focus-visible .branchen-card__icon img {
+  transform: translateY(-4px) scale(1.04);
+  filter:
+    drop-shadow(0 16px 28px rgba(1, 97, 191, 0.16))
+    drop-shadow(0 6px 12px rgba(0, 159, 227, 0.1));
+}
+
+.page-referenzen .branchen-card:hover .branchen-card__icon img[src*="bodensee-quadrat"],
+.page-referenzen .branchen-card:focus-visible .branchen-card__icon img[src*="bodensee-quadrat"] {
+  filter:
+    brightness(0) invert(1)
+    drop-shadow(0 16px 28px rgba(1, 97, 191, 0.16))
+    drop-shadow(0 6px 12px rgba(0, 159, 227, 0.1));
+}
+
+.page-referenzen .branchen-card:hover .branchen-card__icon--photo img,
+.page-referenzen .branchen-card:focus-visible .branchen-card__icon--photo img {
+  filter: drop-shadow(0 16px 28px rgba(1, 97, 191, 0.18));
 }
 
 .references-overview {
@@ -2715,6 +3336,170 @@ body.menu-open .mobile-menu {
   object-fit: cover;
 }
 
+.reference-region-overview__map {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  max-width: 100%;
+}
+
+.reference-region-overview__map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+}
+
+.page-reference-region .company-hero + section .reference-region-overview__side:has(.reference-region-overview__map) {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  align-self: start;
+  min-height: 0;
+}
+
+.page-reference-region .company-hero + section .reference-region-overview__map {
+  flex: none;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  height: auto;
+}
+
+.page-state-map .company-hero + section.reference-region-overview {
+  position: relative;
+  overflow: visible;
+  background:
+    radial-gradient(ellipse 70% 55% at 88% 18%, rgba(0, 159, 227, 0.14) 0%, transparent 58%),
+    radial-gradient(ellipse 55% 45% at 8% 88%, rgba(1, 97, 191, 0.1) 0%, transparent 52%),
+    linear-gradient(180deg, #e8f3ff 0%, #f3f9ff 42%, #ffffff 100%);
+}
+
+.page-state-map .company-hero + section.reference-region-overview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(1, 97, 191, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, transparent 72%);
+  pointer-events: none;
+}
+
+.page-state-map .company-hero + section.reference-region-overview .reference-region-overview__stack {
+  position: relative;
+  z-index: 1;
+}
+
+.page-state-map .reference-region-overview__copy .reference-region-overview__cta {
+  margin-top: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
+.page-state-map .reference-region-overview__stack .reference-region-overview__grid {
+  overflow: visible;
+}
+
+.page-state-map .reference-region-overview__map-column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(280px, 36vw, 420px);
+  overflow: visible;
+}
+
+.page-state-map .reference-region-overview__map-column::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  width: min(520px, 135%);
+  height: min(480px, 125%);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    rgba(0, 159, 227, 0.32) 0%,
+    rgba(1, 97, 191, 0.18) 34%,
+    rgba(1, 97, 191, 0.08) 58%,
+    rgba(1, 97, 191, 0.025) 78%,
+    transparent 92%
+  );
+  filter: blur(52px);
+  pointer-events: none;
+  animation: state-map-glow 8s ease-in-out infinite alternate;
+}
+
+.page-state-map .reference-region-overview__map {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 420px);
+  padding: clamp(1rem, 3vw, 1.75rem);
+  overflow: visible;
+}
+
+.page-state-map .reference-region-overview__map img[src*="bodensee-quadrat"] {
+  filter:
+    brightness(0) invert(1)
+    drop-shadow(0 16px 32px rgba(1, 97, 191, 0.16))
+    drop-shadow(0 4px 10px rgba(0, 159, 227, 0.1));
+}
+
+.page-state-map .reference-region-overview__map img {
+  position: relative;
+  z-index: 1;
+  filter:
+    drop-shadow(0 16px 32px rgba(1, 97, 191, 0.16))
+    drop-shadow(0 4px 10px rgba(0, 159, 227, 0.1));
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.page-state-map .reference-region-overview__map:hover img {
+  transform: translateY(-6px) scale(1.025);
+  filter:
+    drop-shadow(0 20px 38px rgba(1, 97, 191, 0.2))
+    drop-shadow(0 8px 18px rgba(0, 159, 227, 0.14));
+}
+
+.page-state-map .reference-region-overview__map:hover img[src*="bodensee-quadrat"] {
+  filter:
+    brightness(0) invert(1)
+    drop-shadow(0 20px 38px rgba(1, 97, 191, 0.2))
+    drop-shadow(0 8px 18px rgba(0, 159, 227, 0.14));
+}
+
+.page-state-map .reference-region-overview__stack > .reference-region-overview__locations-block .region-locations__pills {
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+@keyframes state-map-glow {
+  from {
+    opacity: 0.72;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-state-map .reference-region-overview__map-column::before {
+    animation: none;
+  }
+
+  .page-state-map .reference-region-overview__map img {
+    transition: none;
+  }
+}
+
 .reference-region-overview__cta {
   justify-self: start;
 }
@@ -2739,6 +3524,42 @@ body.menu-open .mobile-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.reference-region-overview__stack > .reference-region-overview__locations-block {
+  max-width: 1290px;
+  margin-top: 62px;
+}
+
+.reference-region-overview__stack > .reference-region-overview__locations-block + .reference-region-overview__locations-block {
+  margin-top: 42px;
+}
+
+.reference-region-overview__stack > .reference-region-overview__locations-block .region-locations__pills {
+  margin-top: 24px;
+}
+
+.region-locations__pills .cleaning-pill-list {
+  display: contents;
+}
+
+.region-locations__pills {
+  grid-auto-rows: 72px;
+  align-items: stretch;
+}
+
+.region-locations__pills .cleaning-pill {
+  height: 100%;
+  min-height: 72px;
+  box-sizing: border-box;
+}
+
+.reference-region-overview__stack > .reference-region-overview__locations-block h3 {
+  margin: 0 0 14px;
+  color: var(--color-primary);
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.3;
+  font-weight: 600;
 }
 
 .industries-band {
@@ -2815,15 +3636,11 @@ body.menu-open .mobile-menu {
   max-width: none;
 }
 
-.cleanroom-benefits__copy :is(h2, h3) {
+.cleanroom-benefits__copy h3 {
   margin: 0;
   color: var(--color-primary);
   font-size: clamp(30px, 2.8vw, 36px);
   line-height: 1.3;
-}
-
-.cleanroom-benefits__copy h2 {
-  font-weight: 500;
 }
 
 .cleanroom-benefits__lead {
@@ -2935,13 +3752,11 @@ body.menu-open .mobile-menu {
 .page-berlin .reference-region-overview__heading h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-berlin .karlsruhe-services__heading h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-berlin .reference-region-overview__copy p,
@@ -2954,6 +3769,10 @@ body.menu-open .mobile-menu {
 .page-berlin .reference-region-overview__locations-block {
   max-width: 1290px;
   margin-top: 62px;
+}
+
+.page-berlin .reference-region-overview__locations-block .berlin-locations__pills {
+  margin-top: 24px;
 }
 
 .page-berlin .reference-region-overview__locations-block h3,
@@ -2989,6 +3808,13 @@ body.menu-open .mobile-menu {
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-berlin a.berlin-location:hover,
+.page-berlin a.berlin-location:focus-visible {
+  color: var(--color-primary);
 }
 
 .page-berlin .location-pin {
@@ -3170,13 +3996,133 @@ body.menu-open .mobile-menu {
   align-items: stretch;
 }
 
+.duct-intro-overview .cleanroom-overview__grid {
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.airduct-intro-overview .cleanroom-overview__grid {
+  align-items: stretch;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.airduct-intro-overview__grid > .cleanroom-overview__copy:first-of-type {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.airduct-intro-overview__grid > .airduct-intro-overview__media:first-of-type {
+  grid-column: 4 / 6;
+  grid-row: 1;
+}
+
+.airduct-intro-overview__grid > .airduct-intro-overview__media:last-of-type {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+.airduct-intro-overview__grid > .airduct-intro-overview__aside {
+  grid-column: 3 / 6;
+  grid-row: 2;
+}
+
+.airduct-intro-overview__grid {
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+}
+
+.airduct-intro-overview__grid .airduct-intro-overview__media {
+  min-height: clamp(220px, 28vw, 360px);
+}
+
 .karlsruhe-overview .cleanroom-overview__copy .button {
+  margin-top: 22px;
+}
+
+.duct-intro-overview .cleanroom-overview__copy .button,
+.airduct-intro-overview .cleanroom-overview__copy .button {
   margin-top: 22px;
 }
 
 .karlsruhe-overview__media {
   justify-self: stretch;
   max-width: none;
+}
+
+.duct-intro-overview__media,
+.airduct-intro-overview__media {
+  justify-self: stretch;
+  max-width: none;
+}
+
+.airduct-intro-overview__aside {
+  align-self: center;
+  max-width: none;
+  color: #666666;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.airduct-intro-overview__aside p {
+  margin: 0;
+}
+
+.airduct-intro-overview__aside p + p {
+  margin-top: 14px;
+}
+
+.duct-guide-overview,
+.airduct-guide-overview {
+  padding: clamp(4.5rem, 7vw, 6.5rem) 0;
+  background: var(--color-soft);
+}
+
+.duct-guide-overview .cleanroom-overview__grid,
+.airduct-guide-overview .cleanroom-overview__grid {
+  align-items: stretch;
+}
+
+.duct-guide-overview__copy,
+.airduct-guide-overview__copy {
+  min-width: 0;
+  margin: 0;
+  align-self: start;
+}
+
+.duct-guide-overview__copy h2,
+.airduct-guide-overview__copy h2,
+.filtertest-overview.airduct-guide-overview .cleanroom-overview__copy h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.duct-guide-overview__copy .eyebrow,
+.airduct-guide-overview__copy .eyebrow {
+  margin-bottom: 14px;
+}
+
+.duct-guide-overview__copy p:not(.eyebrow) + p,
+.airduct-guide-overview__copy p:not(.eyebrow) + p {
+  margin-top: 0;
+}
+
+.duct-guide-overview .cleanroom-overview__copy .button,
+.airduct-guide-overview .cleanroom-overview__copy .button {
+  margin-top: 22px;
+}
+
+@media (max-width: 1100px) {
+  .duct-guide-overview .cleanroom-overview__grid,
+  .airduct-guide-overview .cleanroom-overview__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cleaning-services__pills.duct-guide-overview__pills,
+  .cleaning-services__pills.airduct-guide-overview__pills,
+  .cleaning-services__pills.tower-overview__pills {
+    align-self: start;
+  }
 }
 
 .karlsruhe-services {
@@ -3237,7 +4183,6 @@ body.menu-open .mobile-menu {
 .karlsruhe-benefits__intro h2 {
   max-width: none;
   color: var(--color-primary);
-  font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.18;
 }
 
@@ -3283,10 +4228,6 @@ body.menu-open .mobile-menu {
 
 .page-memmingen .karlsruhe-services__intro {
   max-width: 62ch;
-}
-
-.page-memmingen .karlsruhe-services__copy p + h3 {
-  margin-top: 1.4rem;
 }
 
 .page-memmingen .karlsruhe-benefits__intro h2 {
@@ -3371,6 +4312,122 @@ body.menu-open .mobile-menu {
 .jobs-overview {
   padding-top: 70px;
   padding-bottom: 86px;
+}
+
+.page-jobs .jobs-overview__copy h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.14;
+}
+
+.page-jobs .jobs-teasers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(16px, 2vw, 20px);
+  align-content: start;
+}
+
+.page-jobs .jobs-teaser {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(1, 97, 191, 0.1);
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(237, 244, 251, 0.88) 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 14px 34px rgba(1, 97, 191, 0.08);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.page-jobs .jobs-teaser::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 159, 227, 0.06) 0%, transparent 52%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.page-jobs .jobs-teaser:hover,
+.page-jobs .jobs-teaser:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(1, 97, 191, 0.18);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 22px 44px rgba(1, 97, 191, 0.14);
+}
+
+.page-jobs .jobs-teaser:hover::before,
+.page-jobs .jobs-teaser:focus-visible::before {
+  opacity: 1;
+}
+
+.jobs-teaser__media {
+  margin: 0;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #edf4fb;
+}
+
+.jobs-teaser__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.page-jobs .jobs-teaser:hover .jobs-teaser__media img,
+.page-jobs .jobs-teaser:focus-visible .jobs-teaser__media img {
+  transform: scale(1.03);
+}
+
+.jobs-teaser__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: clamp(18px, 2vw, 24px);
+}
+
+.jobs-teaser__body h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(20px, 1.8vw, 24px);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.jobs-teaser__body p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.jobs-teaser__link {
+  margin-top: auto;
+  padding-top: 6px;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.page-jobs .jobs-teaser__link::after {
+  content: " \2192";
 }
 
 .jobs-overview__grid {
@@ -3948,6 +5005,12 @@ body.menu-open .mobile-menu {
     var(--company-section-hero-image) center 42% / cover no-repeat;
 }
 
+.page-glossary-term .company-hero {
+  background:
+    var(--hero-overlay-gradient),
+    var(--company-section-hero-image) center 42% / cover no-repeat;
+}
+
 .page-sustainability .company-hero::after,
 .page-safety .company-hero::after,
 .page-quality .company-hero::after,
@@ -3978,6 +5041,141 @@ body.menu-open .mobile-menu {
   font-size: clamp(60px, 7vw, 100px);
   line-height: 0.96;
   letter-spacing: -0.04em;
+}
+
+.page-glossary-term .company-hero__content {
+  padding-top: 116px;
+  padding-bottom: 62px;
+}
+
+.page-glossary-term .company-hero h1 {
+  max-width: 22ch;
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.page-glossary-term .glossary-term-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.page-glossary-term .glossary-term-hero__actions .button--outline {
+  color: var(--color-white);
+  background: transparent;
+  border: 2px solid var(--color-white);
+}
+
+.page-glossary-term .glossary-term-hero__actions .button--outline:hover,
+.page-glossary-term .glossary-term-hero__actions .button--outline:focus-visible {
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--color-white);
+}
+
+.page-glossary-term .glossary-term {
+  padding: 72px 0 96px;
+}
+
+.page-glossary-term .glossary-term__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: 48px;
+  align-items: start;
+}
+
+.page-glossary-term .glossary-term__content h2 {
+  max-width: none;
+  margin-bottom: 1.25rem;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.page-glossary-term .glossary-term__content h3,
+.page-glossary-term .glossary-term__content h4 {
+  margin: 1.75rem 0 0.85rem;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.page-glossary-term .glossary-term__content p,
+.page-glossary-term .glossary-term__content li {
+  max-width: 72ch;
+  font-size: 16px;
+  line-height: 2;
+  color: #666;
+}
+
+.page-glossary-term .glossary-term__content p {
+  margin-bottom: 1.25rem;
+}
+
+.page-glossary-term .glossary-term__content ul,
+.page-glossary-term .glossary-term__content ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.35rem;
+}
+
+.page-glossary-term .glossary-term__content li + li {
+  margin-top: 0.35rem;
+}
+
+.page-glossary-term .glossary-term__content a.text-link,
+.page-glossary-term .glossary-term__content a {
+  color: var(--brand-blue, #0066cc);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.page-glossary-term .glossary-term__aside-card {
+  position: sticky;
+  top: 110px;
+  padding: 28px 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 48px rgba(15, 44, 89, 0.08);
+}
+
+.page-glossary-term .glossary-term__aside-title {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.page-glossary-term .glossary-term__aside-card p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.page-glossary-term .glossary-term__aside-card .button {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.page-glossary-term .company-hero::after {
+  height: 38%;
+  background: var(--hero-fade-gradient);
+}
+
+@media (max-width: 960px) {
+  .page-glossary-term .glossary-term__layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .page-glossary-term .glossary-term__aside-card {
+    position: static;
+  }
+
+  .page-glossary-term .company-hero h1 {
+    max-width: none;
+  }
 }
 
 .quality-intro__layout {
@@ -4075,9 +5273,9 @@ body.menu-open .mobile-menu {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(120% 80% at 0% 0%, rgba(141, 199, 255, 0.22) 0%, transparent 55%),
-    radial-gradient(90% 70% at 100% 100%, rgba(0, 159, 227, 0.12) 0%, transparent 50%),
-    linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+    radial-gradient(120% 80% at 0% 0%, rgba(141, 199, 255, 0.14) 0%, transparent 55%),
+    radial-gradient(90% 70% at 100% 100%, rgba(0, 159, 227, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #ffffff 0%, #e8f3ff 100%);
 }
 
 .home-faq .faq-section {
@@ -4097,9 +5295,7 @@ body.menu-open .mobile-menu {
 
 .home-faq .faq-section__header h2 {
   margin: 0;
-  font-size: clamp(32px, 4vw, 48px);
   line-height: 1.14;
-  font-weight: 500;
   color: var(--color-primary);
 }
 
@@ -4309,9 +5505,25 @@ body.menu-open .mobile-menu {
     grid-template-columns: 1fr;
   }
 
+  .industries-overview__columns {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+  }
+
   .quality-intro__columns {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .branchen-overview__intro {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .branchen-overview__eyebrow,
+  .branchen-overview__heading,
+  .branchen-overview__copy {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .inspection-intro__columns {
@@ -4454,6 +5666,13 @@ body.menu-open .mobile-menu {
     border-left: 0;
   }
 
+  .scroll-to-top {
+    right: 16px;
+    bottom: 74px;
+    width: 52px;
+    height: 52px;
+  }
+
   .site-footer__legal-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -4544,11 +5763,8 @@ body.menu-open .mobile-menu {
 
   .customers-link-card__label {
     justify-self: center;
-  }
-
     font-size: 20px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -4671,11 +5887,7 @@ body.menu-open .mobile-menu {
     font-size: 16px;
   }
 
-  .company-cta h2 {
-    font-size: 28px;
-  }
-
-  .company-cta p {
+.company-cta p {
     font-size: 18px;
     line-height: 1.75;
   }
@@ -4753,23 +5965,8 @@ body.menu-open .mobile-menu {
     padding-bottom: 58px;
   }
 
-  .customers-overview__copy h2 {
-    font-size: 28px;
-  }
-
-  .industries-overview__copy h2 {
-    font-size: 28px;
-  }
-
-  .jobs-overview__copy h2 {
-    font-size: 28px;
-  }
-
-  .legal-document__heading h2 {
-    font-size: 28px;
-  }
-
-  .references-grid {
+.customers-overview__copy h2,
+.references-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }
@@ -4783,7 +5980,8 @@ body.menu-open .mobile-menu {
     gap: 18px;
   }
 
-  .customers-card-stack {
+  .customers-card-stack,
+  .customers-teasers {
     gap: 14px;
   }
 
@@ -4793,6 +5991,16 @@ body.menu-open .mobile-menu {
 
   .industries-overview__intro {
     margin-bottom: 24px;
+  }
+
+  .page-industries .industries-overview__icon-column,
+  .page-industries .industries-overview__media {
+    max-width: min(100%, 360px);
+    justify-self: center;
+  }
+
+  .page-industries .industries-overview__icon-column {
+    min-height: clamp(220px, 58vw, 320px);
   }
 
   .industries-grid {
@@ -5087,9 +6295,7 @@ body.menu-open .mobile-menu {
 
 .locations-browser__header h2 {
   color: var(--color-primary);
-  font-size: clamp(34px, 4.4vw, 48px);
   line-height: 1.18;
-  font-weight: 500;
 }
 
 .locations-browser__layout,
@@ -5268,9 +6474,7 @@ body.menu-open .mobile-menu {
 .locations-grid__header h2 {
   margin: 0;
   color: var(--color-primary);
-  font-size: clamp(34px, 4.4vw, 48px);
   line-height: 1.18;
-  font-weight: 500;
 }
 
 .gradient-line--center {
@@ -5491,11 +6695,7 @@ body.menu-open .mobile-menu {
     margin-bottom: 30px;
   }
 
-  .locations-browser__header h2 {
-    font-size: 26px;
-  }
-
-  .locations-grid__cards {
+.locations-grid__cards {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -5582,7 +6782,8 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .page-services .services-intro,
 .page-services .services-overview,
-.page-services .services-overview--glass {
+.page-services .services-overview--glass,
+.page-air-duct-cleaning .airduct-services.services-overview--glass {
   background: transparent;
 }
 
@@ -5595,7 +6796,8 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   background: linear-gradient(80deg, #ffffff 8%, #ffffff 18%, rgba(255, 255, 255, 0.81) 98%);
 }
 
-.page-services .services-overview--glass {
+.page-services .services-overview--glass,
+.page-air-duct-cleaning .airduct-services.services-overview--glass {
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -6027,7 +7229,8 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     padding-bottom: 80px;
   }
 
-  .page-services .services-overview--glass {
+  .page-services .services-overview--glass,
+  .page-air-duct-cleaning .airduct-services.services-overview--glass {
     padding-top: 68px;
     padding-bottom: 80px;
   }
@@ -6059,12 +7262,8 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     margin-bottom: 34px;
   }
 
-  .services-overview__header h2,
-  .services-intro__copy h2 {
-    font-size: 28px;
-  }
-
-  .services-accordion {
+.services-overview__header h2,
+.services-accordion {
     flex-direction: column;
     min-height: 0;
     gap: 14px;
@@ -6240,39 +7439,39 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .inspection-card--hygieneinspektion {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-hygieneinspektion-vdi-6022.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-hygieneinspektion-vdi-6022.jpg");
 }
 
 .inspection-card--gefaehrdungsbeurteilung {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-gefaehrdungsbeurteilung-vdi-2047.png");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-gefaehrdungsbeurteilung-vdi-2047.png");
 }
 
 .inspection-card--kanaluntersuchung {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-kanaluntersuchung.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-kanaluntersuchung.jpg");
 }
 
 .inspection-card--reinraumqualifizierung {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-reinraumqualifizierung.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-reinraumqualifizierung.jpg");
 }
 
 .inspection-card--laborabzuege {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-laborabzuege.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-laborabzuege.jpg");
 }
 
 .inspection-card--splitklimageraete {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-splitklimageraete.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-splitklimageraete.jpg");
 }
 
 .inspection-card--filterintegritaetstest {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-filterintegritaetstest.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-filterintegritaetstest.jpg");
 }
 
 .inspection-card--op-raum-pruefung {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-op-raum-pruefung.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-op-raum-pruefung.jpg");
 }
 
 .inspection-card--lecktest {
-  --inspection-card-image: url("assets/images/Genutze Bilder_LW/Leistungen/inspektion-lecktest-schwebstofffilter.jpg");
+  --inspection-card-image: url("./Bildmaterial_final/shared/inspektion-lecktest-schwebstofffilter.jpg");
 }
 
 .inspection-card:hover,
@@ -6504,6 +7703,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   font-weight: 600;
   line-height: 1.35;
   text-align: left;
+  text-decoration: none;
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
 
@@ -6528,6 +7728,44 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   box-shadow: 0 12px 32px rgba(46, 163, 242, 0.2);
   background: linear-gradient(90deg, rgba(232, 243, 255, 0.98), #ffffff);
   border-color: rgba(0, 159, 227, 0.22);
+}
+
+.cleaning-services__pills.duct-guide-overview__pills,
+.cleaning-services__pills.airduct-guide-overview__pills {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-self: end;
+  justify-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.cleaning-services__pills.duct-guide-overview__pills .cleaning-pill-list,
+.cleaning-services__pills.airduct-guide-overview__pills .cleaning-pill-list,
+.cleaning-services__pills.tower-overview__pills .cleaning-pill-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+}
+
+.cleaning-services__pills.duct-guide-overview__pills .cleaning-pill,
+.cleaning-services__pills.airduct-guide-overview__pills .cleaning-pill,
+.cleaning-services__pills.tower-overview__pills .cleaning-pill {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 72px;
+  box-sizing: border-box;
 }
 
 .detail-videos {
@@ -6837,6 +8075,14 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     min-height: 68px;
   }
 
+  .region-locations__pills {
+    grid-auto-rows: 68px;
+  }
+
+  .region-locations__pills .cleaning-pill {
+    min-height: 68px;
+  }
+
   .page-repair .company-hero h1 {
     font-size: clamp(58px, 10vw, 84px);
   }
@@ -6876,11 +8122,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     margin-bottom: 34px;
   }
 
-  .inspection-types__header h2 {
-    font-size: 28px;
-  }
-
-  .inspection-types__grid {
+.inspection-types__grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
@@ -6919,13 +8161,9 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     gap: 34px;
   }
 
-  .cleaning-detail__copy h2,
-  .cleaning-services__heading h2,
-  .detail-videos .section-copy h2 {
-    font-size: 28px;
-  }
-
-  .cleaning-detail__row {
+.cleaning-detail__copy h2,
+.cleaning-services__heading h2,
+.cleaning-detail__row {
     gap: 24px;
   }
 
@@ -6944,6 +8182,14 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     min-height: 62px;
     padding: 16px 20px 16px 22px;
     font-size: 16px;
+  }
+
+  .region-locations__pills {
+    grid-auto-rows: 62px;
+  }
+
+  .region-locations__pills .cleaning-pill {
+    min-height: 62px;
   }
 
   .cleaning-pill::after {
@@ -6982,11 +8228,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     padding-bottom: 58px;
   }
 
-  .repair-detail__copy h2 {
-    font-size: 28px;
-  }
-
-  .repair-detail__grid {
+.repair-detail__grid {
     gap: 28px;
   }
 
@@ -7028,7 +8270,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 .energy-section--soft,.energy-benefits{background:linear-gradient(180deg,#e8f3ff 0%,#fff 100%)}
 .energy-intro__layout{display:grid;gap:32px}
 .energy-intro__header{margin:0}
-.energy-intro__header h2{max-width:none;line-height:1.12}
+.energy-intro__header h2 { max-width:none; line-height:1.12 }
 .energy-intro__columns{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(340px,.98fr);gap:54px;align-items:center}
 .energy-intro__columns--media-first{grid-template-columns:minmax(340px,.98fr) minmax(0,1.02fr)}
 .energy-intro__columns--media-first .energy-section__media{justify-self:start}
@@ -7040,7 +8282,7 @@ a.sector-card{color:inherit;text-decoration:none}
 .energy-geg__layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:stretch}
 .energy-geg__panel{margin:0;padding:40px 36px 38px;border-radius:12px;background:linear-gradient(180deg,#fff 0%,#f4f9ff 100%);box-shadow:0 2px 18px rgba(46,163,242,.12);border:1px solid rgba(1,97,191,.08);border-top:4px solid var(--color-primary)}
 .energy-geg__panel--accent{background:linear-gradient(180deg,#e8f3ff 0%,#fff 100%);border-top-color:var(--color-secondary)}
-.energy-geg__panel h2{line-height:1.14}
+.energy-geg__panel h2 { line-height:1.14 }
 .energy-geg__panel > p:not(.eyebrow){color:#666;font-size:16px;line-height:1.9}
 .energy-geg__panel > p + p{margin-top:14px}
 .energy-geg__panel .button{margin-top:22px}
@@ -7048,7 +8290,7 @@ a.sector-card{color:inherit;text-decoration:none}
 .energy-deadlines__layout{max-width:980px;margin:0 auto}
 .energy-deadlines__panel{margin:0;display:grid;gap:28px;padding:40px 36px;border-radius:12px;background:linear-gradient(135deg,#e8f3ff 0%,#fff 62%);box-shadow:0 2px 18px rgba(46,163,242,.12);border:1px solid rgba(1,97,191,.08)}
 .energy-deadlines__header{margin:0}
-.energy-deadlines__header h2{max-width:none;line-height:1.12}
+.energy-deadlines__header h2 { max-width:none; line-height:1.12 }
 .energy-deadlines__body{margin:0;max-width:none}
 .energy-deadlines__body > p{color:#666;font-size:16px;line-height:1.9}
 .energy-deadlines__body > p + p{margin-top:14px}
@@ -7058,7 +8300,7 @@ a.sector-card{color:inherit;text-decoration:none}
 .energy-section__grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(340px,.98fr);gap:54px;align-items:center}
 .energy-section__grid--reverse{grid-template-columns:minmax(340px,.98fr) minmax(0,1.02fr)}
 .energy-section__copy{max-width:672px}
-.energy-section__copy h2{line-height:1.14}
+.energy-section__copy h2 { line-height:1.14 }
 .energy-section__copy p+ p{margin-top:14px}
 .energy-section__copy .button{margin-top:22px}
 .energy-section__highlight{font-weight:700;color:var(--color-primary)}
@@ -7098,7 +8340,6 @@ a.sector-card{color:inherit;text-decoration:none}
   .energy-deadlines__panel{padding:28px 24px;gap:22px}
   .energy-deadlines__callout{font-size:16px;padding:18px 20px}
   .energy-section__grid{gap:28px}
-  .energy-section__copy h2,.energy-geg__panel h2,.energy-deadlines__header h2,.energy-text-block__copy h2,.energy-intro__header h2,.energy-benefits__header h2{font-size:28px}
   .energy-text-block__heading{margin-bottom:26px}
   .energy-dinspec__tile{padding:24px;font-size:15px;line-height:1.8}
   .energy-benefit-card{padding:24px 22px 24px 56px;font-size:15px;line-height:1.8}
@@ -7116,7 +8357,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(250px, 36vh, 360px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 44% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 44% / cover no-repeat;
 }
 
 .page-standards .company-hero::after,
@@ -7262,11 +8503,7 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .standards-overview__header h2 {
-    font-size: 28px;
-  }
-
-  .standards-overview__copy p {
+.standards-overview__copy p {
     max-width: none;
     font-size: 15px;
     line-height: 1.95;
@@ -7281,7 +8518,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(250px, 36vh, 360px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 44% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 44% / cover no-repeat;
 }
 
 .page-equipment .company-hero::after {
@@ -7303,75 +8540,87 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .equipment-overview {
-  padding: 70px 0 90px;
-  background: linear-gradient(180deg, #eef1f5 0%, #edf0f3 100%);
+  padding-top: clamp(54px, 6vw, 78px);
+  padding-bottom: clamp(64px, 7vw, 92px);
+}
+
+.equipment-overview__layout {
+  display: grid;
+  gap: clamp(34px, 5vw, 54px);
 }
 
 .equipment-overview__intro {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.78fr);
-  gap: 64px;
-  align-items: center;
-  margin-bottom: 52px;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  column-gap: clamp(2rem, 4vw, 4.5rem);
+  row-gap: 0;
+  align-items: start;
+}
+
+.equipment-overview__eyebrow {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 14px;
+  color: var(--color-primary);
+}
+
+.equipment-overview__intro > .equipment-overview__heading,
+.equipment-overview__intro > .equipment-overview__copy {
+  min-width: 0;
+}
+
+.equipment-overview__heading {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
 }
 
 .equipment-overview__copy {
-  max-width: 612px;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  max-width: none;
+  align-self: start;
+}
+
+.equipment-overview__heading h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.14;
 }
 
 .equipment-overview__copy p {
   color: #646464;
+  max-width: none;
 }
 
-.equipment-overview__copy .button {
+.equipment-overview__copy p + p {
+  margin-top: 12px;
+}
+
+.equipment-overview__cta {
   margin-top: 22px;
 }
 
-.equipment-overview__media {
-  max-width: 600px;
-  justify-self: end;
+.equipment-overview__locations-block {
+  max-width: 1290px;
 }
 
-.equipment-overview__lists {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px 36px;
+.equipment-overview__locations-block h3 {
+  margin: 0 0 14px;
+  color: var(--color-primary);
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.3;
+  font-weight: 600;
 }
 
-.equipment-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.equipment-list li {
-  position: relative;
-  padding: 0 0 18px 38px;
-  border-bottom: 1px solid rgba(1, 97, 191, 0.14);
-  color: #1f2f47;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 1.34;
-}
-
-.equipment-list li + li {
-  margin-top: 18px;
-}
-
-.equipment-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.36em;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.96);
-}
-
-.equipment-list span {
-  display: inline-block;
+.equipment-overview__pills {
+  margin-top: 24px;
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
 }
 
 @media (max-width: 980px) {
@@ -7381,17 +8630,14 @@ a.sector-card{color:inherit;text-decoration:none}
 
   .equipment-overview__intro {
     grid-template-columns: 1fr;
-    gap: 34px;
-    margin-bottom: 34px;
+    gap: 28px;
   }
 
-  .equipment-overview__media {
-    justify-self: center;
-  }
-
-  .equipment-overview__lists {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px 30px;
+  .equipment-overview__eyebrow,
+  .equipment-overview__heading,
+  .equipment-overview__copy {
+    grid-column: 1;
+    grid-row: auto;
   }
 }
 
@@ -7415,36 +8661,14 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .equipment-overview__copy h2 {
-    font-size: 28px;
-  }
-
-  .equipment-overview__copy p {
+.equipment-overview__copy p {
     font-size: 15px;
     line-height: 1.95;
   }
 
-  .equipment-overview__lists {
-    grid-template-columns: 1fr;
-    gap: 0;
+  .equipment-overview__locations-block h3 {
+    font-size: 24px;
   }
-
-  .equipment-list li {
-    padding-left: 32px;
-    padding-bottom: 14px;
-    font-size: 18px;
-  }
-
-  .equipment-list li + li {
-    margin-top: 14px;
-  }
-
-.equipment-list li::before {
-  top: 0.48em;
-  width: 8px;
-  height: 8px;
-  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.96);
-}
 }
 
 .page-duct-cleaning .site-header {
@@ -7455,7 +8679,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(300px, 46vh, 460px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-duct-cleaning .company-hero::after {
@@ -7492,19 +8716,68 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .duct-intro__grid,
 .duct-guide__grid,
-.duct-protection__grid,
-.duct-industries__intro,
+.duct-protection__layout {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2rem);
+}
+
+.duct-intro__grid,
 .duct-partner__grid {
   display: grid;
   align-items: center;
   gap: 56px;
+  grid-template-columns: minmax(0, 1.03fr) minmax(360px, 0.97fr);
 }
 
-.duct-intro__grid,
-.duct-protection__grid,
-.duct-industries__intro,
-.duct-partner__grid {
-  grid-template-columns: minmax(0, 1.03fr) minmax(360px, 0.97fr);
+.duct-industries__layout {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2rem);
+}
+
+.duct-industries__head {
+  max-width: 1290px;
+  margin: 0;
+}
+
+.duct-industries__head h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.duct-industries__head .eyebrow {
+  margin-bottom: 14px;
+  color: var(--color-primary);
+}
+
+.duct-industries__body {
+  max-width: none;
+  margin: 0;
+}
+
+.duct-protection__head {
+  max-width: 1290px;
+  margin: 0;
+}
+
+.duct-protection__head h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.duct-protection__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+  align-items: stretch;
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+}
+
+.duct-protection__body {
+  max-width: none;
+  align-self: center;
 }
 
 .duct-guide__grid {
@@ -7514,15 +8787,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .duct-intro__copy,
 .duct-guide__copy,
-.duct-protection__copy,
-.duct-industries__copy,
 .duct-partner__copy {
   max-width: 678px;
 }
 
 .duct-intro__copy h2,
 .duct-guide__copy h2,
-.duct-protection__copy h2,
 .duct-partner__copy h2 {
   line-height: 1.14;
 }
@@ -7533,10 +8803,6 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .duct-guide__copy h2 {
   max-width: 14ch;
-}
-
-.duct-protection__copy h2 {
-  max-width: 12.8ch;
 }
 
 .duct-partner__copy h2 {
@@ -7553,14 +8819,31 @@ a.sector-card{color:inherit;text-decoration:none}
 .duct-intro__copy .button,
 .duct-guide__copy .button,
 .duct-protection__copy .button,
-.duct-industries__copy .button,
 .duct-partner__copy .button {
   margin-top: 22px;
 }
 
-.duct-intro__media,
-.duct-protection__media,
-.duct-industries__media {
+.duct-protection__media {
+  align-self: stretch;
+  justify-self: stretch;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.duct-protection__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.duct-intro__media {
   max-width: 600px;
   justify-self: end;
 }
@@ -7614,146 +8897,220 @@ a.sector-card{color:inherit;text-decoration:none}
   text-underline-offset: 0.16em;
 }
 
-.duct-benefits {
-  padding: 78px 0 88px;
-  background: #ffffff;
+.page-duct-cleaning .duct-vorteile {
+  padding: 70px 0 82px;
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-soft) 100%);
 }
 
-.duct-benefits__intro {
-  max-width: 780px;
-  margin-bottom: 44px;
+.page-duct-cleaning .duct-vorteile .karlsruhe-services__heading {
+  max-width: 1290px;
+  margin-bottom: 0;
 }
 
-.duct-benefits__subintro {
-  max-width: 820px;
-  margin-bottom: 40px;
+.page-duct-cleaning .duct-vorteile .karlsruhe-services__heading h2 {
+  max-width: none;
+  line-height: 1.3;
 }
 
-.duct-benefits__subintro h2 {
-  max-width: 17ch;
-  line-height: 1.14;
+.page-duct-cleaning .duct-vorteile .filtertest-standard__stack {
+  gap: 48px;
+  margin-top: 35px;
 }
 
-.duct-benefits__subintro .button {
-  margin-top: 22px;
-}
-
-.duct-benefits__rows {
-  display: grid;
-  gap: 30px;
-}
-
-.duct-benefit {
-  display: grid;
-  grid-template-columns: minmax(340px, 0.9fr) minmax(0, 1.1fr);
+.page-duct-cleaning .duct-vorteile .filtertest-standard__row {
+  grid-template-columns: minmax(0, 383px) minmax(0, 836px);
+  justify-content: space-between;
+  gap: 71px;
   align-items: center;
-  gap: 44px;
 }
 
-.duct-benefit--reverse {
-  grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+.page-duct-cleaning .duct-vorteile .filtertest-standard__row--reverse {
+  grid-template-columns: minmax(0, 836px) minmax(0, 383px);
 }
 
-.duct-benefit__media {
-  max-width: 710px;
-}
-
-.duct-benefit__media img {
+.page-duct-cleaning .duct-vorteile .filtertest-standard__media {
+  align-self: center;
   width: 100%;
-  aspect-ratio: 710 / 493;
-  object-fit: cover;
-}
-
-.duct-benefit__copy h3 {
-  margin-bottom: 14px;
-  color: var(--color-primary);
-  font-size: clamp(28px, 3vw, 34px);
-  line-height: 1.2;
-  font-weight: 600;
-}
-
-.duct-benefit__copy p {
-  color: #666666;
-  font-size: 16px;
-  line-height: 2;
-}
-
-.duct-industries__intro {
-  margin-bottom: 40px;
-}
-
-.duct-industries__copy {
-  max-width: 640px;
-}
-
-.duct-industries__copy h2,
-.duct-branches__heading h2 {
-  max-width: 14ch;
-  line-height: 1.14;
-}
-
-.duct-industries__copy p {
-  color: #666666;
-}
-
-.duct-branches {
-  display: grid;
-  gap: 30px;
-}
-
-.duct-branches__heading {
-  max-width: 820px;
-}
-
-.duct-branches__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.duct-branch-card {
-  position: relative;
-  min-height: 188px;
-  padding: 30px 30px 28px 62px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-card);
-  background: linear-gradient(180deg, #ffffff 0%, #f4f9ff 100%);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.duct-branch-card::before {
-  content: "";
-  position: absolute;
-  left: 28px;
-  top: 36px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-}
-
-.duct-branch-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 34px rgba(46, 163, 242, 0.16);
-}
-
-.duct-branch-card h3 {
-  color: var(--color-primary);
-  font-size: 32px;
-  line-height: 1.2;
-  font-weight: 600;
-}
-
-.duct-branches__button {
+  max-width: 383px;
+  height: auto;
   justify-self: start;
 }
 
+.page-duct-cleaning .duct-vorteile .filtertest-standard__row--reverse .filtertest-standard__media {
+  justify-self: end;
+}
+
+.page-duct-cleaning .duct-vorteile .filtertest-standard__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-duct-cleaning .duct-vorteile .filtertest-standard__copy {
+  align-self: center;
+  max-width: 836px;
+}
+
+.page-duct-cleaning .duct-vorteile .filtertest-standard__copy p {
+  line-height: 2;
+}
+
+.page-duct-cleaning .duct-vorteile .filtertest-standard__copy h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .page-duct-cleaning .duct-vorteile .filtertest-standard__row,
+  .page-duct-cleaning .duct-vorteile .filtertest-standard__row--reverse {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 980px) {
+  .page-duct-cleaning .duct-vorteile .filtertest-standard__row,
+  .page-duct-cleaning .duct-vorteile .filtertest-standard__row--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .page-duct-cleaning .duct-vorteile .filtertest-standard__media,
+  .page-duct-cleaning .duct-vorteile .filtertest-standard__row--reverse .filtertest-standard__media {
+    justify-self: start;
+    max-width: none;
+  }
+}
+
+.duct-industries__body p {
+  color: #666666;
+}
+
+.page-duct-cleaning #notwendigkeit {
+  background: #e8f3ff;
+}
+
+.page-duct-cleaning .duct-industries__body .button {
+  margin-top: 22px;
+}
+
+.page-duct-cleaning #vorgehen .duct-industries__body .oproom-list {
+  margin: 1.5rem 0 1.75rem;
+  padding: 24px 26px 24px 30px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.page-duct-cleaning #vorgehen .duct-industries__body .oproom-list li {
+  position: relative;
+  padding-left: 26px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.page-duct-cleaning #vorgehen .duct-industries__body .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.page-duct-cleaning #vorgehen .duct-industries__body .oproom-list li + li {
+  margin-top: 14px;
+}
+
+.duct-branches {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+}
+
+.duct-branches__grid {
+  align-items: stretch;
+}
+
+.duct-branches__copy {
+  min-width: 0;
+  margin: 0;
+  max-width: none;
+  align-self: start;
+}
+
+.duct-branches__copy h2 {
+  margin: 0;
+  max-width: none;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.duct-branches__copy .eyebrow {
+  margin-bottom: 14px;
+}
+
 .duct-branches__note {
-  max-width: 1120px;
+  max-width: none;
   margin: 0;
   color: #666666;
   font-size: 16px;
   line-height: 2;
+}
+
+.duct-branches .cleanroom-overview__copy .button {
+  margin-top: 22px;
+}
+
+.cleaning-services__pills.duct-branches__pills {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-self: end;
+  justify-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.cleaning-services__pills.duct-branches__pills .cleaning-pill-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+}
+
+.cleaning-services__pills.duct-branches__pills .cleaning-pill {
+  width: 100%;
+  max-width: none;
+  min-height: 72px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .duct-branches__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cleaning-services__pills.duct-branches__pills {
+    align-self: start;
+  }
 }
 
 .cta-band--duct {
@@ -7791,31 +9148,15 @@ a.sector-card{color:inherit;text-decoration:none}
   color: #4b4b4b;
 }
 
-.duct-partner__features {
-  display: grid;
-  gap: 24px;
-}
-
-.duct-feature-card {
-  padding: 30px 30px 28px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-card);
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.duct-feature-card h3 {
-  margin-bottom: 14px;
-  color: var(--color-primary);
-  font-size: 26px;
-  line-height: 1.22;
-  font-weight: 600;
-}
-
-.duct-feature-card p {
+.duct-partner__features.karlsruhe-benefits__cards {
   margin: 0;
+  gap: 1rem;
+}
+
+.duct-partner__features .karlsruhe-benefit-card p {
   color: #666666;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.75;
 }
 
 @media (max-width: 980px) {
@@ -7827,28 +9168,19 @@ a.sector-card{color:inherit;text-decoration:none}
   .duct-intro__grid,
   .duct-guide__grid,
   .duct-protection__grid,
-  .duct-industries__intro,
-  .duct-partner__grid,
-  .duct-benefit,
-  .duct-benefit--reverse {
+  .duct-partner__grid {
     grid-template-columns: 1fr;
     gap: 34px;
   }
 
   .duct-intro__media,
-  .duct-protection__media,
-  .duct-industries__media,
-  .duct-benefit__media {
+  .duct-protection__media {
     justify-self: center;
   }
 
   .duct-anchor-card {
     position: static;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .duct-branches__grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -7871,25 +9203,20 @@ a.sector-card{color:inherit;text-decoration:none}
   .duct-intro,
   .duct-guide,
   .duct-protection,
-  .duct-benefits,
+  .duct-vorteile,
   .duct-industries,
   .duct-partner {
     padding-top: 56px;
     padding-bottom: 60px;
   }
 
-  .duct-intro__copy h2,
-  .duct-guide__copy h2,
-  .duct-protection__copy h2,
-  .duct-benefits__intro h2,
-  .duct-benefits__subintro h2,
-  .duct-industries__copy h2,
-  .duct-branches__heading h2,
-  .duct-partner__copy h2 {
-    font-size: 28px;
-  }
-
-  .duct-anchor-card {
+.duct-intro__copy h2,
+.duct-guide__copy h2,
+.duct-protection__head h2,
+.duct-vorteile .karlsruhe-services__heading h2,
+.duct-industries__head h2,
+.duct-branches__copy h2,
+.duct-anchor-card {
     grid-template-columns: 1fr;
   }
 
@@ -7898,22 +9225,9 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: 17px;
   }
 
-  .duct-benefit__copy h3,
-  .duct-branch-card h3,
-  .duct-feature-card h3 {
-    font-size: 24px;
-  }
-
-  .duct-benefit__copy p,
-  .duct-branches__note,
-  .duct-feature-card p {
+  .duct-branches__note {
     font-size: 15px;
     line-height: 1.9;
-  }
-
-  .duct-branch-card,
-  .duct-feature-card {
-    padding: 24px 22px;
   }
 
   .cta-band--duct {
@@ -8011,22 +9325,9 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .page-vdi6022 .vdi-intro__header h2 {
-    font-size: 28px;
-  }
-
-  .page-vdi2052 .vdi-intro__header h2 {
-    font-size: 28px;
-  }
-
-  .page-din15780 .vdi-intro__header h2,
-  .page-din14175 .vdi-intro__header h2 {
-    font-size: 28px;
-  }
-
-  .vdi-intro__copy h2 {
+.page-din15780 .vdi-intro__header h2,
+.vdi-intro__copy h2 {
     max-width: 11.4ch;
-    font-size: 28px;
   }
 
   .vdi-intro__copy p {
@@ -8145,11 +9446,10 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-vdi2047 .vdi-intro__copy h2 {
   max-width: 18.5ch;
-  font-size: 50px;
 }
 
 @media (max-width: 767px) {
-  .page-vdi2047 .vdi-intro__copy h2 {
+.page-vdi2047 .vdi-intro__copy h2 {
     max-width: 12.4ch;
   }
 }
@@ -8242,7 +9542,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(300px, 46vh, 460px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-air-duct-cleaning .company-hero::after {
@@ -8273,24 +9573,69 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .airduct-intro,
-.airduct-why,
-.airduct-services,
-.airduct-faq {
+.airduct-services {
   background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
 }
 
+.airduct-why {
+  background: linear-gradient(180deg, #ffffff 0%, #e8f3ff 100%);
+}
+
 .airduct-partner,
-.airduct-health,
-.airduct-expertise {
+.airduct-health {
   background: #ffffff;
+}
+
+.airduct-expertise {
+  background: #e8f3ff;
+  padding-bottom: 96px;
 }
 
 .airduct-intro__grid,
 .airduct-partner__grid,
-.airduct-why__grid,
-.airduct-health__grid {
+.airduct-why__grid {
   display: grid;
   gap: 52px;
+}
+
+.airduct-health__layout {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.airduct-health__head {
+  max-width: none;
+  margin: 0;
+}
+
+.airduct-health__head h2 {
+  max-width: none;
+  line-height: 1.3;
+}
+
+.airduct-health__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+  align-items: stretch;
+}
+
+.airduct-health__media {
+  justify-self: stretch;
+  align-self: stretch;
+  max-width: none;
+  height: 100%;
+}
+
+.airduct-health__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.airduct-health__copy {
+  align-self: center;
 }
 
 .airduct-intro__grid {
@@ -8308,19 +9653,28 @@ a.sector-card{color:inherit;text-decoration:none}
   grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.96fr);
 }
 
-.airduct-health__grid {
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.94fr);
-  align-items: start;
+.airduct-why .reference-overview__layout {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2rem);
+}
+
+.airduct-why .reference-overview__head {
+  max-width: 1290px;
+  margin: 0;
+}
+
+.airduct-why .reference-overview__head h2 {
+  max-width: none;
+  line-height: 1.3;
 }
 
 .airduct-intro__copy,
 .airduct-why__copy,
 .airduct-health__copy {
-  max-width: 760px;
+  max-width: none;
 }
 
-.airduct-intro__copy h2,
-.airduct-why__copy h2 {
+.airduct-intro__copy h2 {
   max-width: 15ch;
   line-height: 1.14;
 }
@@ -8329,26 +9683,23 @@ a.sector-card{color:inherit;text-decoration:none}
 .airduct-why__copy p + p,
 .airduct-partner__copy p + p,
 .airduct-health__copy p + p,
-.airduct-health__steps p + p,
-.airduct-expertise__content p + p {
+.airduct-expertise__footer .energy-deadlines__body > p + p {
   margin-top: 14px;
 }
 
 .airduct-partner__copy,
 .airduct-why__copy,
 .airduct-health__copy,
-.airduct-health__steps,
-.airduct-expertise__content,
+.airduct-expertise__intro,
 .airduct-list-card p,
-.airduct-expertise__footer p {
+.airduct-expertise__footer .energy-deadlines__body > p {
   color: #666666;
   font-size: 16px;
   line-height: 2;
 }
 
 .airduct-partner__copy .button,
-.airduct-why__copy .button,
-.airduct-expertise__heading .button {
+.airduct-why__copy .button {
   margin-top: 22px;
 }
 
@@ -8370,19 +9721,19 @@ a.sector-card{color:inherit;text-decoration:none}
   top: 112px;
 }
 
-.airduct-health__copy h3,
-.airduct-expertise__heading h3,
+.airduct-health__head h2,
+.airduct-expertise__head h2,
 .airduct-faq .faq-section__header h2 {
   color: var(--color-primary);
   line-height: 1.14;
 }
 
-.airduct-health__copy h3 {
+.airduct-health__head h2,
+.airduct-expertise__head h2 {
   font-size: clamp(34px, 4vw, 48px);
 }
 
 .airduct-health__copy h4,
-.airduct-health__steps h4,
 .airduct-list-card h4 {
   margin: 24px 0 12px;
   color: var(--color-primary);
@@ -8391,11 +9742,22 @@ a.sector-card{color:inherit;text-decoration:none}
   font-weight: 600;
 }
 
-.airduct-health__steps {
-  padding: 32px 34px;
-  border-radius: 12px;
-  box-shadow: var(--shadow-card);
-  background: linear-gradient(180deg, #ffffff 0%, #f4f9ff 100%);
+.airduct-health__steps-layout {
+  width: 100%;
+}
+
+.airduct-health__steps.energy-deadlines__panel {
+  margin: 0;
+}
+
+.airduct-health__steps .energy-deadlines__body .airduct-steps-list {
+  margin-top: 18px;
+}
+
+.airduct-health__steps .energy-deadlines__body .airduct-steps-list li {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 .airduct-point-list,
@@ -8437,38 +9799,257 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .airduct-services__header h2 {
-  max-width: 12ch;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-.airduct-expertise__heading {
-  max-width: 860px;
-  margin: 0 auto 36px;
+.airduct-services.services-overview--glass .services-overview__header {
+  max-width: none;
+}
+
+.airduct-expertise__layout {
+  display: grid;
+  gap: clamp(2.75rem, 5vw, 4.25rem);
+}
+
+.airduct-expertise__head {
+  max-width: none;
+  margin: 0;
+}
+
+.airduct-expertise__head h2 {
+  max-width: none;
+  line-height: 1.3;
+}
+
+.airduct-expertise__services h4,
+.airduct-expertise__cert-copy h4 {
+  margin: 0 0 18px;
+  color: var(--color-primary);
+  font-size: clamp(24px, 2.3vw, 30px);
+  line-height: 1.24;
+  font-weight: 600;
+}
+
+.airduct-expertise__cert-copy p + p {
+  margin-top: 14px;
+}
+
+.airduct-expertise__cert-copy .button {
+  margin-top: 22px;
+}
+
+.airduct-norm-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0 18px;
+  padding: clamp(18px, 2.5vw, 24px);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(232, 243, 255, 0.92) 100%);
+  border: 1px solid rgba(1, 97, 191, 0.14);
+  box-shadow:
+    0 18px 44px rgba(7, 57, 117, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.airduct-norm-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 14px 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(1, 97, 191, 0.12);
+  box-shadow: 0 4px 16px rgba(46, 163, 242, 0.1);
+  color: var(--color-primary);
+  font-size: clamp(13px, 1.05vw, 15px);
+  font-weight: 700;
+  line-height: 1.25;
   text-align: center;
+  text-decoration: none;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition),
+    background var(--transition);
 }
 
-.airduct-expertise__heading .gradient-line {
-  margin-left: auto;
-  margin-right: auto;
+.airduct-norm-tile:hover,
+.airduct-norm-tile:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(0, 159, 227, 0.28);
+  box-shadow: 0 12px 28px rgba(46, 163, 242, 0.18);
+  background: linear-gradient(180deg, #ffffff 0%, #f0f8ff 100%);
 }
 
-.airduct-expertise__heading h3 {
-  max-width: 15ch;
-  margin-left: auto;
-  margin-right: auto;
+.airduct-norm-tile:focus-visible {
+  outline: 2px solid rgba(0, 159, 227, 0.24);
+  outline-offset: 3px;
 }
 
-.airduct-expertise__content {
-  max-width: 1180px;
-  margin: 0 auto;
+.airduct-norm-tile--static {
+  cursor: default;
 }
 
-.airduct-expertise__lists {
+.airduct-norm-tile--static:hover,
+.airduct-norm-tile--static:focus-visible {
+  transform: none;
+  border-color: rgba(1, 97, 191, 0.12);
+  box-shadow: 0 4px 16px rgba(46, 163, 242, 0.1);
+  background: #ffffff;
+}
+
+@media (max-width: 1180px) {
+  .airduct-norm-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.airduct-expertise__services-pills {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-self: stretch;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  padding: clamp(24px, 3vw, 32px);
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.airduct-expertise__services-pills .cleaning-pill-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  margin: 34px 0 30px;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.airduct-expertise__services-pills .cleaning-pill {
+  position: relative;
+  justify-content: flex-start;
+  min-height: 64px;
+  padding: 16px 20px 16px 44px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.airduct-expertise__services-pills .cleaning-pill::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+}
+
+.airduct-expertise__services-pills .cleaning-pill--inactive {
+  opacity: 1;
+  cursor: default;
+}
+
+.airduct-expertise__intro .button {
+  margin-top: 22px;
+}
+
+.airduct-expertise__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+  align-items: stretch;
+}
+
+.airduct-expertise__media {
+  justify-self: stretch;
+  align-self: stretch;
+  max-width: none;
+  height: 100%;
+}
+
+.airduct-expertise__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.airduct-expertise__intro {
+  align-self: center;
+  max-width: none;
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.airduct-expertise__intro p {
+  margin: 0;
+}
+
+.airduct-expertise__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.75rem, 4.5vw, 4rem);
+  padding-top: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.airduct-expertise__services {
+  min-width: 0;
+}
+
+.airduct-expertise__cert {
+  width: 100%;
+  max-width: none;
+}
+
+.airduct-expertise__cert-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+  align-items: stretch;
+}
+
+.airduct-expertise__cert-media {
+  align-self: stretch;
+  max-width: none;
+  height: 100%;
+  min-height: 320px;
+}
+
+.airduct-expertise__cert-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.airduct-expertise__cert-copy {
+  align-self: center;
+  max-width: none;
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.airduct-expertise__cert-copy p {
+  margin: 0;
+}
+
+.airduct-expertise__footer-layout {
+  width: 100%;
+}
+
+.airduct-expertise__footer.energy-deadlines__panel {
+  margin: 0;
 }
 
 .airduct-list-card {
@@ -8486,12 +10067,9 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: 0;
 }
 
-.airduct-expertise__footer {
-  max-width: 1080px;
-}
-
 .airduct-faq .faq-section__header h2 {
-  max-width: 11ch;
+  max-width: none;
+  margin-inline: auto;
 }
 
 .airduct-faq .accordion-item__panel .airduct-copy-list {
@@ -8508,13 +10086,36 @@ a.sector-card{color:inherit;text-decoration:none}
   .airduct-partner__grid,
   .airduct-why__grid,
   .airduct-health__grid,
-  .airduct-expertise__lists {
+  .airduct-expertise__grid,
+  .airduct-expertise__cert-grid {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 28px;
+  }
+
+  .airduct-expertise__cert-media {
+    min-height: 260px;
+  }
+
+  .airduct-norm-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .airduct-norm-grid :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  .airduct-expertise__services-pills .cleaning-pill-list {
+    grid-template-columns: 1fr;
+  }
+
+  .airduct-intro-overview__grid > :is(article, figure) {
+    grid-column: 1 / -1;
   }
 
   .airduct-partner__media,
-  .airduct-why__media {
+  .airduct-why__media,
+  .airduct-health__media,
+  .airduct-expertise__media {
     justify-self: center;
   }
 
@@ -8544,35 +10145,53 @@ a.sector-card{color:inherit;text-decoration:none}
   .airduct-partner,
   .airduct-why,
   .airduct-health,
-  .airduct-services,
-  .airduct-expertise {
+  .airduct-services {
     padding-top: 56px;
     padding-bottom: 60px;
   }
 
-  .airduct-intro__copy h2,
-  .airduct-why__copy h2,
-  .airduct-health__copy h3,
-  .airduct-expertise__heading h3,
-  .airduct-faq .faq-section__header h2 {
-    font-size: 28px;
+  .airduct-expertise {
+    padding-top: 56px;
+    padding-bottom: 72px;
   }
 
-  .airduct-health__copy h4,
-  .airduct-health__steps h4,
+  .airduct-expertise__layout {
+    gap: 2.5rem;
+  }
+
+  .airduct-expertise__columns {
+    gap: 2.25rem;
+    padding-top: 0;
+  }
+
+.airduct-intro__copy h2,
+.airduct-why .reference-overview__head h2,
+.airduct-health__head h2,
+.airduct-expertise__head h2,
+.airduct-health__copy h4,
   .airduct-list-card h4 {
     font-size: 22px;
   }
 
-  .airduct-intro__nav {
+  .airduct-health__steps.energy-deadlines__panel {
+    padding: 28px 24px;
+    gap: 22px;
+  }
+
+  .airduct-expertise__footer.energy-deadlines__panel {
+    padding: 28px 24px;
+    gap: 22px;
+  }
+
+.airduct-intro__nav {
     grid-template-columns: 1fr;
   }
 
-  .airduct-health__steps,
   .airduct-list-card {
     padding: 24px 22px;
   }
 }
+
 .page-room-disinfection .site-header {
   background: rgba(255, 255, 255, 0);
 }
@@ -8581,7 +10200,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(300px, 42vh, 430px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-room-disinfection .company-hero::after {
@@ -8625,14 +10244,23 @@ a.sector-card{color:inherit;text-decoration:none}
   gap: 56px;
 }
 
+.roomdis-proof__layout {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.roomdis-proof__head {
+  max-width: none;
+}
+
 .roomdis-intro__copy,
 .roomdis-proof__copy {
   max-width: 700px;
 }
 
 .roomdis-intro__copy h2,
-.roomdis-phases__heading h3,
-.roomdis-proof__copy h3 {
+.roomdis-phases__heading h2,
+.roomdis-proof__head h2 {
   line-height: 1.14;
 }
 
@@ -8665,23 +10293,28 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .roomdis-phase-card {
-  padding: 32px 32px 30px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-card);
-  background: linear-gradient(180deg, #ffffff 0%, #f4f9ff 100%);
+  align-content: start;
+  height: auto;
 }
 
-.roomdis-phase-card h4,
-.roomdis-proof__copy h4 {
+.roomdis-phase-card .energy-deadlines__header h4 {
   margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
   color: var(--color-primary);
-  font-size: clamp(24px, 2.3vw, 30px);
-  line-height: 1.24;
+}
+
+.roomdis-proof__copy h4 {
+  margin: 18px 0 12px;
+  color: var(--color-primary);
+  font-size: 18px;
+  line-height: 1.4;
   font-weight: 600;
 }
 
 .roomdis-phase-card p,
-.roomdis-proof__copy p,
+.roomdis-proof__copy p:not(.eyebrow),
 .roomdis-proof__list li {
   color: #666666;
   font-size: 16px;
@@ -8689,27 +10322,35 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .roomdis-proof__list {
-  margin: 14px 0 0;
-  padding: 0;
+  margin: 18px 0 0;
+  padding: 24px 26px 24px 30px;
   list-style: none;
   display: grid;
-  gap: 12px;
+  gap: 14px;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
 }
 
 .roomdis-proof__list li {
   position: relative;
-  padding-left: 24px;
+  padding-left: 26px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 .roomdis-proof__list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.76em;
-  width: 8px;
-  height: 8px;
+  top: 0.62em;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
 }
 
 @media (max-width: 980px) {
@@ -8754,13 +10395,9 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .roomdis-intro__copy h2,
-  .roomdis-phases__heading h3,
-  .roomdis-proof__copy h3 {
-    font-size: 28px;
-  }
-
-  .roomdis-phase-card h4,
+.roomdis-intro__copy h2,
+.roomdis-phases__heading h2,
+.roomdis-phase-card h4,
   .roomdis-proof__copy h4 {
     font-size: 22px;
   }
@@ -8778,7 +10415,7 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("assets/images/certifications-hero-bg.png");
+  background-image: var(--hero-overlay-gradient), url("./Bildmaterial_final/shared/anlage-kuehlturmreinigung4.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -8800,7 +10437,6 @@ a.sector-card{color:inherit;text-decoration:none}
   max-width: 12ch;
 }
 
-.tower-overview,
 .tower-standard,
 .tower-risks,
 .tower-analysis,
@@ -8809,15 +10445,22 @@ a.sector-card{color:inherit;text-decoration:none}
   padding: clamp(4.5rem, 7vw, 6.5rem) 0;
 }
 
-.tower-overview,
-.tower-standard,
+.tower-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
 .tower-analysis,
 .tower-about {
   background-image: linear-gradient(1deg, #e8f3ff 0%, #ffffff 100%);
 }
 
-.tower-risks {
+.tower-standard {
   background: #e8f3ff;
+}
+
+.tower-risks {
+  background: #ffffff;
 }
 
 .tower-documentation {
@@ -8825,6 +10468,16 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .tower-overview__layout,
+.tower-standard__layout,
+.tower-risks__layout,
+.tower-analysis__layout,
+.tower-documentation__layout,
+.tower-about__layout {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2rem);
+}
+
+.tower-overview__grid,
 .tower-standard__grid,
 .tower-analysis__grid,
 .tower-documentation__grid,
@@ -8834,7 +10487,7 @@ a.sector-card{color:inherit;text-decoration:none}
   align-items: start;
 }
 
-.tower-overview__layout {
+.tower-overview__grid {
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
 }
 
@@ -8848,27 +10501,24 @@ a.sector-card{color:inherit;text-decoration:none}
   grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr);
 }
 
+.page-cooling-tower .reference-overview__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-cooling-tower .reference-overview__head h2 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.2;
+}
+
 .tower-overview__content,
 .tower-standard__copy,
 .tower-analysis__copy,
-.tower-risks__intro,
-.tower-documentation__heading,
-.tower-about__heading,
+.tower-documentation__copy,
 .tower-about__copy,
 .tower-industries__copy {
   max-width: none;
-}
-
-.tower-overview__content h2,
-.tower-standard__copy h2,
-.tower-analysis__copy h3,
-.tower-risks__intro h3,
-.tower-documentation__heading h3,
-.tower-about__heading h3,
-.tower-industries__copy h2 {
-  color: #0161bf;
-  font-size: clamp(2rem, 3.2vw, 3rem);
-  line-height: 1.2;
 }
 
 .tower-industries__copy h2 {
@@ -8883,15 +10533,46 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: 1rem;
 }
 
-.tower-overview__anchors {
-  margin-top: 2rem;
-  max-width: 27rem;
+.tower-overview__content .button,
+.tower-standard__copy .button,
+.tower-analysis__copy .button {
+  margin-top: 1.25rem;
+}
+
+.tower-overview__panel-layout {
+  width: 100%;
+}
+
+.tower-overview__panel-layout .energy-deadlines__header h3,
+.page-cooling-tower .tower-risks .energy-deadlines__header h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .tower-overview__aside {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.tower-overview__pills {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-self: start;
+  justify-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
 }
 
 .tower-overview__media,
@@ -8902,8 +10583,7 @@ a.sector-card{color:inherit;text-decoration:none}
   overflow: hidden;
 }
 
-.tower-highlight,
-.tower-risk-card {
+.tower-highlight {
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 18px 40px rgba(1, 97, 191, 0.12);
@@ -8925,34 +10605,24 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: 1.25rem;
 }
 
-.tower-risks__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.tower-risks__button {
-  flex-shrink: 0;
-}
-
 .tower-risks__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 2.5vw, 1.75rem);
+  align-items: start;
 }
 
-.tower-risk-card {
-  padding: clamp(1.5rem, 2.4vw, 2rem);
+.tower-risks .energy-deadlines__panel {
+  align-content: start;
+  height: auto;
 }
 
-.tower-risk-card h4,
 .tower-documentation__copy h4 {
   color: #0161bf;
   font-size: 1.25rem;
   line-height: 1.35;
   margin-bottom: 0.9rem;
+  padding-top: 25px;
 }
 
 .tower-industries {
@@ -9104,7 +10774,7 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 @media (max-width: 1100px) {
-  .tower-overview__layout,
+  .tower-overview__grid,
   .tower-standard__grid,
   .tower-analysis__grid,
   .tower-documentation__grid,
@@ -9124,11 +10794,6 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(2.6rem, 8vw, 3.85rem);
   }
 
-  .tower-risks__header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
   .tower-risks__grid,
   .tower-industries__sectors {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -9145,7 +10810,10 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 4rem;
   }
 
-  .tower-overview,
+  .tower-overview {
+    padding: 64px 0;
+  }
+
   .tower-standard,
   .tower-risks,
   .tower-analysis,
@@ -9155,17 +10823,8 @@ a.sector-card{color:inherit;text-decoration:none}
     padding: 4.25rem 0;
   }
 
-  .tower-overview__content h2,
-  .tower-standard__copy h2,
-  .tower-analysis__copy h3,
-  .tower-risks__intro h3,
-  .tower-documentation__heading h3,
-  .tower-about__heading h3,
-  .tower-industries__copy h2 {
-    font-size: 1.85rem;
-  }
-
-  .tower-risks__grid,
+.page-cooling-tower .reference-overview__head h2,
+.tower-risks__grid,
   .tower-industries__sectors {
     grid-template-columns: 1fr;
   }
@@ -9174,6 +10833,11 @@ a.sector-card{color:inherit;text-decoration:none}
     min-height: 10.5rem;
   }
 }
+.page-splitcooling .repair-detail {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
 .page-splitcooling .site-header {
   background: rgba(255, 255, 255, 0);
 }
@@ -9182,7 +10846,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(260px, 40vh, 400px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-splitcooling .company-hero::after {
@@ -9203,8 +10867,12 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.04em;
 }
 
-.page-splitcooling .repair-detail__copy h2 {
-  max-width: 15ch;
+.page-splitcooling .repair-detail__header h2 {
+  max-width: none;
+}
+
+.page-splitcooling .repair-detail__copy .button {
+  margin-top: 22px;
 }
 
 .page-splitcooling .repair-detail__copy p:last-child {
@@ -9245,7 +10913,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(260px, 40vh, 400px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-processair .company-hero::after {
@@ -9266,8 +10934,12 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.04em;
 }
 
-.page-processair .repair-detail__copy h2 {
-  max-width: 12ch;
+.page-processair .repair-detail__header h2 {
+  max-width: 14ch;
+}
+
+.page-processair .repair-detail__copy .button {
+  margin-top: 22px;
 }
 
 .page-cold-shelves .site-header,
@@ -9280,7 +10952,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(260px, 40vh, 400px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-cold-shelves .company-hero::after,
@@ -9310,9 +10982,20 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.04em;
 }
 
-.page-cold-shelves .repair-detail__copy h2,
-.page-datacenter .repair-detail__copy h2 {
-  max-width: 11ch;
+.page-cold-shelves .repair-detail__header h2 {
+  max-width: none;
+}
+
+.page-cold-shelves .repair-detail__copy .button {
+  margin-top: 22px;
+}
+
+.page-datacenter .repair-detail__header h2 {
+  max-width: none;
+}
+
+.page-datacenter .repair-detail__copy .button {
+  margin-top: 22px;
 }
 
 .page-cooling-systems .site-header {
@@ -9323,7 +11006,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(280px, 40vh, 390px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 44% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 44% / cover no-repeat;
 }
 
 .page-cooling-systems .company-hero::after {
@@ -9344,9 +11027,26 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.045em;
 }
 
-.cooling-systems-overview,
 .cooling-systems-section--soft {
   background: linear-gradient(180deg, #eef7ff 0%, #ffffff 100%);
+}
+
+.page-cooling-systems .cooling-systems-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-cooling-systems .cooling-systems-overview.tower-overview {
+  padding: 72px 0 80px;
+}
+
+.page-cooling-systems .tower-overview__content .button {
+  margin-top: 22px;
+}
+
+.page-cooling-systems .tower-overview__content p + p,
+.page-cooling-systems .cooling-systems-overview__copy p + p {
+  margin-top: 1rem;
 }
 
 .cooling-systems-overview,
@@ -9375,6 +11075,82 @@ a.sector-card{color:inherit;text-decoration:none}
   align-items: start;
 }
 
+#verdunstungskuhlanlage {
+  background: #e8f3ff;
+  background-image: none;
+}
+
+.cooling-systems-textpair {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+  column-gap: 56px;
+  row-gap: clamp(20px, 3vw, 28px);
+  align-items: start;
+  grid-template-areas:
+    "eyebrow ."
+    "head side"
+    "lead side";
+}
+
+.cooling-systems-textpair__eyebrow {
+  grid-area: eyebrow;
+  margin: 0;
+}
+
+.cooling-systems-textpair__head {
+  grid-area: head;
+  max-width: 720px;
+}
+
+.cooling-systems-textpair__lead {
+  grid-area: lead;
+  max-width: 720px;
+}
+
+.cooling-systems-textpair__side {
+  grid-area: side;
+  max-width: none;
+}
+
+.cooling-systems-textpair__head h2 {
+  margin: 0;
+}
+
+.cooling-systems-headgrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
+  column-gap: 56px;
+  row-gap: clamp(28px, 4vw, 40px);
+  align-items: start;
+  grid-template-areas:
+    "head head"
+    "copy media";
+}
+
+.cooling-systems-headgrid__head {
+  grid-area: head;
+  max-width: none;
+}
+
+.cooling-systems-headgrid__head h2 {
+  margin: 0;
+  line-height: 1.14;
+}
+
+.cooling-systems-headgrid__copy {
+  grid-area: copy;
+  max-width: none;
+}
+
+.cooling-systems-headgrid__copy .button {
+  margin-top: 22px;
+}
+
+.cooling-systems-headgrid__media {
+  grid-area: media;
+  align-self: center;
+}
+
 .cooling-systems-overview__copy,
 .cooling-systems-section__copy {
   max-width: 720px;
@@ -9391,6 +11167,15 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .cooling-systems-section__copy h2 {
   max-width: 13.4ch;
+}
+
+.cooling-systems-headgrid__head.cooling-systems-section__copy {
+  max-width: none;
+  width: 100%;
+}
+
+.cooling-systems-headgrid__head.cooling-systems-section__copy h2 {
+  max-width: none;
 }
 
 .cooling-systems-overview__copy .button,
@@ -9416,6 +11201,52 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .cooling-systems-section__copy--side .oproom-list {
   margin-top: 0;
+}
+
+#verdunstungskuhlanlage .cooling-systems-benefits {
+  margin-top: 24px;
+  padding: 28px 30px 30px;
+  border: 1px solid rgba(0, 159, 227, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 14px 36px rgba(46, 163, 242, 0.12);
+}
+
+#verdunstungskuhlanlage .cooling-systems-benefits h3 {
+  margin: 0 0 16px;
+  color: var(--color-primary);
+  font-size: clamp(22px, 2.2vw, 28px);
+  line-height: 1.28;
+}
+
+#verdunstungskuhlanlage .cooling-systems-benefits .oproom-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#verdunstungskuhlanlage .cooling-systems-benefits .oproom-list li {
+  position: relative;
+  padding-left: 26px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+#verdunstungskuhlanlage .cooling-systems-benefits .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+#verdunstungskuhlanlage .cooling-systems-benefits .oproom-list li + li {
+  margin-top: 14px;
 }
 
 .cooling-systems-section__media {
@@ -9470,9 +11301,26 @@ a.sector-card{color:inherit;text-decoration:none}
 
   .cooling-systems-overview__grid,
   .cooling-systems-section__grid,
-  .cooling-systems-section__grid--textpair {
+  .cooling-systems-section__grid--textpair,
+  .cooling-systems-textpair,
+  .cooling-systems-headgrid {
     grid-template-columns: 1fr;
     gap: 34px;
+  }
+
+  .cooling-systems-headgrid {
+    grid-template-areas:
+      "head"
+      "copy"
+      "media";
+  }
+
+  .cooling-systems-textpair {
+    grid-template-areas:
+      "eyebrow"
+      "head"
+      "side"
+      "lead";
   }
 
   .cooling-systems-overview__nav {
@@ -9505,12 +11353,8 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .cooling-systems-overview__copy h2,
-  .cooling-systems-section__copy h2 {
-    font-size: 28px;
-  }
-
-  .cooling-systems-section__copy p,
+.cooling-systems-overview__copy h2,
+.cooling-systems-section__copy p,
   .cooling-systems-section__copy--side .oproom-list li {
     font-size: 15px;
     line-height: 1.95;
@@ -9548,7 +11392,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(260px, 40vh, 400px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-kitchen-exhaust .company-hero::after {
@@ -9573,12 +11417,29 @@ a.sector-card{color:inherit;text-decoration:none}
   max-width: 12ch;
 }
 
+.page-kitchen-exhaust .kitchen-detail__intro {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.page-kitchen-exhaust .kitchen-detail__head {
+  max-width: none;
+}
+
+.page-kitchen-exhaust .kitchen-detail__head h2 {
+  max-width: none;
+}
+
+.page-kitchen-exhaust .repair-detail__copy .button {
+  margin-top: 22px;
+}
+
 .page-kitchen-exhaust .kitchen-detail {
   padding-bottom: 94px;
 }
 
-.page-kitchen-exhaust .kitchen-detail__grid + .kitchen-detail__grid {
-  margin-top: 72px;
+.page-kitchen-exhaust .kitchen-detail__intro + .kitchen-detail__intro {
+  margin-top: clamp(88px, 10vw, 112px);
 }
 
 .page-kitchen-exhaust .kitchen-detail__grid--reverse {
@@ -9599,8 +11460,8 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(48px, 10vw, 78px);
   }
 
-  .page-kitchen-exhaust .kitchen-detail__grid + .kitchen-detail__grid {
-    margin-top: 56px;
+  .page-kitchen-exhaust .kitchen-detail__intro + .kitchen-detail__intro {
+    margin-top: 72px;
   }
 
   .page-kitchen-exhaust .kitchen-detail__grid--reverse {
@@ -9637,7 +11498,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(300px, 46vh, 460px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/anlagen-laborabzug.jpeg") center 42% / cover no-repeat;
 }
 
 .page-laborabzug .company-hero::after {
@@ -9658,31 +11519,47 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.045em;
 }
 
-.page-laborabzug .repair-detail__copy h2 {
-  max-width: 12.8ch;
+.page-laborabzug .reference-overview__head {
+  max-width: none;
+  margin: 0;
 }
 
-.page-laborabzug .repair-detail__copy .button,
+.page-laborabzug .reference-overview__head h2 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.2;
+}
+
+.page-laborabzug .tower-overview__content .button,
 .page-laborabzug .tower-analysis__copy .button,
 .page-laborabzug .tower-about__copy .button {
   margin-top: 22px;
 }
 
-.page-laborabzug .labor-guide {
-  padding-top: 10px;
+.page-laborabzug .labor-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
 }
 
-.page-laborabzug .labor-guide .duct-guide__copy h2 {
-  max-width: 11ch;
+.page-laborabzug .labor-protection.duct-protection {
+  padding-top: 76px;
 }
 
 .page-laborabzug .labor-section__heading {
-  max-width: 920px;
-  margin-bottom: 42px;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.page-laborabzug .labor-steps__intro {
+  max-width: none;
+}
+
+.page-laborabzug .labor-steps__intro p + p {
+  margin-top: 1rem;
 }
 
 .page-laborabzug .labor-frequency__grid {
-  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
   align-items: center;
 }
 
@@ -9694,10 +11571,36 @@ a.sector-card{color:inherit;text-decoration:none}
   background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
 }
 
-.page-laborabzug .labor-examiner .tower-analysis__copy h3,
-.page-laborabzug .labor-steps .labor-section__heading h3,
-.page-laborabzug .labor-about .tower-about__heading h3 {
-  max-width: 16ch;
+.page-laborabzug .labor-examiner__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-laborabzug .labor-examiner__grid {
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+}
+
+.page-laborabzug .labor-examiner__copy {
+  max-width: none;
+}
+
+.page-laborabzug .labor-about__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-laborabzug .labor-about__grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: center;
+}
+
+.page-laborabzug .labor-about__copy {
+  max-width: none;
+}
+
+.page-laborabzug .labor-about .tower-about__head h2 {
+  max-width: none;
 }
 
 .page-laborabzug .labor-industries {
@@ -9706,6 +11609,20 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-laborabzug .labor-steps__grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.page-laborabzug .labor-steps__card {
+  height: 100%;
+  align-content: start;
+}
+
+.page-laborabzug .labor-steps .energy-deadlines__header h4 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .page-laborabzug .labor-steps__note {
@@ -9725,7 +11642,9 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-laborabzug .labor-frequency__grid,
-  .page-laborabzug .labor-steps__grid {
+  .page-laborabzug .labor-steps__grid,
+  .page-laborabzug .labor-examiner__grid,
+  .page-laborabzug .labor-about__grid {
     grid-template-columns: 1fr;
   }
 }
@@ -9746,13 +11665,20 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(42px, 12vw, 64px);
   }
 
-  .page-laborabzug .labor-guide {
-    padding-top: 0;
+  .page-laborabzug .labor-overview {
+    padding-top: 56px;
+    padding-bottom: 58px;
   }
 
-  .page-laborabzug .labor-section__heading {
-    margin-bottom: 32px;
+  .page-laborabzug .labor-protection.duct-protection {
+    padding-top: 56px;
+    padding-bottom: 60px;
   }
+}
+
+.page-evaporators .repair-detail {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
 }
 
 .page-evaporators .site-header {
@@ -9763,7 +11689,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(260px, 40vh, 400px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-evaporators .company-hero::after {
@@ -9784,8 +11710,12 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.04em;
 }
 
-.page-evaporators .repair-detail__copy h2 {
-  max-width: 11ch;
+.page-evaporators .repair-detail__header h2 {
+  max-width: none;
+}
+
+.page-evaporators .repair-detail__copy .button {
+  margin-top: 22px;
 }
 
 @media (max-width: 980px) {
@@ -9821,9 +11751,9 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("assets/images/certifications-hero-bg.png");
-  background-position: center;
-  background-size: cover;
+  background:
+    var(--hero-overlay-gradient),
+    url("./Bildmaterial_final/shared/anlagen-reinraumqualifizierung1.jpeg") center 42% / cover no-repeat;
 }
 
 .page-cleanroom .company-hero::after {
@@ -9845,6 +11775,153 @@ a.sector-card{color:inherit;text-decoration:none}
   font-size: clamp(58px, 6vw, 92px);
   line-height: 0.95;
   letter-spacing: -0.045em;
+}
+
+.page-cleanroom .reference-overview__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-cleanroom .reference-overview__head h2,
+.page-cleanroom .reference-overview__head h3 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.2;
+}
+
+.page-cleanroom .tower-overview__content .button {
+  margin-top: 22px;
+}
+
+.page-cleanroom .cleanroom-overview.tower-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-cleanroom .cleanroom-types {
+  background: #e8f3ff;
+}
+
+.page-cleanroom .cleanroom-about {
+  background: #e8f3ff;
+  background-image: none;
+}
+
+.page-cleanroom .cleanroom-types__tile,
+.page-cleanroom .cleanroom-process__tile {
+  padding: 1.3rem 1.35rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(1, 97, 191, 0.1);
+  border: none;
+  height: 100%;
+  align-content: start;
+}
+
+.page-cleanroom .cleanroom-types__tile .gradient-line {
+  display: none;
+}
+
+.page-cleanroom .cleanroom-types__grid {
+  align-items: stretch;
+  gap: 1.25rem 1.5rem;
+}
+
+.page-cleanroom .cleanroom-types .energy-deadlines__header h3 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.2rem, 1.85vw, 1.42rem);
+  line-height: 1.34;
+  font-weight: 600;
+  color: #0161bf;
+}
+
+.page-cleanroom .cleanroom-process__tile h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1.08rem;
+  line-height: 1.34;
+  font-weight: 600;
+  color: #0161bf;
+}
+
+.page-cleanroom .cleanroom-types .energy-deadlines__body > p,
+.page-cleanroom .cleanroom-process__tile p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.page-cleanroom .cleanroom-process__grid {
+  align-items: stretch;
+  gap: 1.25rem 1.5rem;
+}
+
+.page-cleanroom .cleanroom-process__tile {
+  align-items: start;
+  gap: clamp(1rem, 1.6vw, 1.35rem);
+}
+
+.page-cleanroom .cleanroom-process__tile .cleanroom-types__dot {
+  margin-top: 0.42rem;
+}
+
+.page-cleanroom .cleanroom-process__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-cleanroom .cleanroom-process__top {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: center;
+}
+
+.page-cleanroom .cleanroom-process__copy {
+  max-width: none;
+}
+
+.page-cleanroom .cleanroom-about__grid {
+  grid-template-columns: 1fr;
+}
+
+.page-cleanroom .cleanroom-about__reasons {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-cleanroom .cleanroom-filter__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-cleanroom .cleanroom-filter.energy-section {
+  padding: clamp(4.5rem, 7vw, 6.5rem) 0;
+}
+
+.page-cleanroom .cleanroom-filter__body {
+  max-width: none;
+}
+
+.page-cleanroom .cleanroom-filter__columns {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.98fr) minmax(0, 1.02fr);
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+  align-items: center;
+}
+
+.page-cleanroom .cleanroom-filter__media {
+  justify-self: start;
+  max-width: none;
+}
+
+.page-cleanroom .cleanroom-filter__panel-layout {
+  width: 100%;
+  margin-top: clamp(1.5rem, 3vw, 3rem);
+}
+
+.page-cleanroom .cleanroom-filter__panel-layout .energy-deadlines__header h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .cleanroom-overview,
@@ -9892,7 +11969,6 @@ a.sector-card{color:inherit;text-decoration:none}
 .cleanroom-about__copy h2,
 .cleanroom-faq .faq-section__header h2 {
   color: #0161bf;
-  font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.18;
 }
 
@@ -9937,7 +12013,6 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .cleanroom-process__subintro h3,
-.cleanroom-filter__callout h3,
 .cleanroom-about__copy h3 {
   color: #0161bf;
   font-size: clamp(1.4rem, 2.15vw, 1.95rem);
@@ -9983,18 +12058,6 @@ a.sector-card{color:inherit;text-decoration:none}
   padding: clamp(1.5rem, 2.4vw, 2rem);
 }
 
-.cleanroom-filter__callout {
-  margin-top: 1.75rem;
-  padding: 1.5rem 1.6rem;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #f7fbff 0%, #eef7ff 100%);
-  box-shadow: 0 18px 40px rgba(1, 97, 191, 0.08);
-}
-
-.cleanroom-filter__callout h3 {
-  margin-bottom: 0.85rem;
-}
-
 .cleanroom-about__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -10035,6 +12098,7 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .cleanroom-faq .faq-section__header h2 {
   max-width: 11ch;
+  margin-inline: auto;
 }
 
 @media (max-width: 1100px) {
@@ -10060,7 +12124,8 @@ a.sector-card{color:inherit;text-decoration:none}
 
   .cleanroom-types__grid,
   .cleanroom-process__grid,
-  .cleanroom-about__reasons {
+  .cleanroom-about__reasons,
+  .page-cleanroom .cleanroom-filter__columns {
     grid-template-columns: 1fr;
   }
 }
@@ -10081,6 +12146,11 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(40px, 12vw, 62px);
   }
 
+  .page-cleanroom .cleanroom-overview.tower-overview {
+    padding-top: 56px;
+    padding-bottom: 58px;
+  }
+
   .cleanroom-overview,
   .cleanroom-types,
   .cleanroom-process,
@@ -10091,16 +12161,16 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .cleanroom-overview__copy h2,
-  .cleanroom-types__heading h2,
-  .cleanroom-process__intro h2,
-  .cleanroom-filter__copy h2,
-  .cleanroom-about__copy h2,
-  .cleanroom-faq .faq-section__header h2,
-  .cleanroom-process__subintro h3,
-  .cleanroom-filter__callout h3,
-  .cleanroom-about__copy h3 {
-    font-size: 28px;
+.cleanroom-overview__copy h2,
+.cleanroom-types__heading h2,
+.cleanroom-process__intro h2,
+.cleanroom-filter__copy h2,
+.cleanroom-about__copy h2,
+.cleanroom-faq .faq-section__header h2,
+.cleanroom-process__subintro h3,
+.page-cleanroom .cleanroom-types .energy-deadlines__header h3,
+.page-cleanroom .cleanroom-filter__panel-layout .energy-deadlines__header h3,
+.cleanroom-about__copy h3 {
   }
 
   .cleanroom-overview__nav {
@@ -10118,7 +12188,7 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("assets/images/certifications-hero-bg.png");
+  background-image: var(--hero-overlay-gradient), url("./Bildmaterial_final/shared/anlagen-op4.png");
   background-position: center;
   background-size: cover;
 }
@@ -10154,15 +12224,22 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .oproom-overview,
-.oproom-checks,
 .oproom-partner,
 .oproom-faq {
   background-image: linear-gradient(1deg, #e8f3ff 0%, #ffffff 100%);
 }
 
-.oproom-purpose,
-.oproom-classes {
+.oproom-checks {
+  background: #e8f3ff;
+  background-image: none;
+}
+
+.oproom-purpose {
   background: #ffffff;
+}
+
+.oproom-classes {
+  background: linear-gradient(180deg, #ffffff 0%, #e8f3ff 100%);
 }
 
 .oproom-overview__grid,
@@ -10178,6 +12255,29 @@ a.sector-card{color:inherit;text-decoration:none}
   align-items: start;
 }
 
+.page-oproom .reference-overview__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-oproom .reference-overview__head h2 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.2;
+}
+
+.page-oproom .tower-overview__content .button {
+  margin-top: 22px;
+}
+
+.page-oproom .tower-overview__content p + p {
+  margin-top: 1rem;
+}
+
+.page-oproom .cleanroom-overview.tower-overview {
+  padding: 72px 0 80px;
+}
+
 .oproom-section-grid,
 .oproom-partner__top {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.92fr);
@@ -10185,11 +12285,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .oproom-overview__copy h2,
 .oproom-section-copy h2,
+.oproom-purpose__head h2,
+.oproom-checks__head h2,
 .oproom-classes__intro h2,
-.oproom-partner__copy h2,
+.oproom-partner__head h2,
 .oproom-faq .faq-section__header h2 {
   color: #0161bf;
-  font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.18;
 }
 
@@ -10202,6 +12303,7 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .oproom-overview__copy .button,
+.oproom-section-copy .button,
 .oproom-partner__footer .button {
   margin-top: 22px;
 }
@@ -10248,16 +12350,79 @@ a.sector-card{color:inherit;text-decoration:none}
   justify-self: start;
 }
 
+.oproom-checks__layout {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.oproom-purpose__layout {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.oproom-partner__layout {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.oproom-checks__head,
+.oproom-purpose__head,
+.oproom-partner__head {
+  max-width: none;
+}
+
+.page-oproom .oproom-purpose .oproom-list,
+.page-oproom .oproom-checks .oproom-list,
+.page-oproom .oproom-partner .oproom-list {
+  margin: 1.5rem 0 0;
+  padding: 24px 26px 24px 30px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.page-oproom .oproom-purpose .oproom-list li,
+.page-oproom .oproom-checks .oproom-list li,
+.page-oproom .oproom-partner .oproom-list li {
+  position: relative;
+  padding-left: 26px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.page-oproom .oproom-purpose .oproom-list li::before,
+.page-oproom .oproom-checks .oproom-list li::before,
+.page-oproom .oproom-partner .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.page-oproom .oproom-purpose .oproom-list li + li,
+.page-oproom .oproom-checks .oproom-list li + li,
+.page-oproom .oproom-partner .oproom-list li + li {
+  margin-top: 14px;
+}
+
 .oproom-classes__top {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1.5rem 2rem;
   margin-bottom: 1.25rem;
 }
 
 .oproom-classes__intro {
-  max-width: 760px;
+  max-width: none;
+}
+
+.page-oproom .oproom-classes .button {
+  margin-top: 22px;
 }
 
 .oproom-classes__grid {
@@ -10287,27 +12452,25 @@ a.sector-card{color:inherit;text-decoration:none}
   font-size: 1.02rem;
 }
 
-.oproom-partner__grid {
-  display: grid;
-  gap: 2rem;
-}
-
 .oproom-partner__benefits {
   margin-top: 1.2rem;
 }
 
 .oproom-faq .faq-section__header h2 {
-  max-width: 12ch;
+  max-width: none;
+  margin-inline: auto;
 }
 
 @media (max-width: 1100px) {
   .oproom-overview__grid,
+  .page-oproom .tower-overview__grid,
   .oproom-section-grid,
   .oproom-partner__top {
     grid-template-columns: 1fr;
   }
 
   .oproom-overview__nav,
+  .page-oproom .tower-overview__aside,
   .oproom-section-media {
     justify-self: start;
   }
@@ -10317,11 +12480,6 @@ a.sector-card{color:inherit;text-decoration:none}
   .page-oproom .company-hero h1 {
     max-width: 11ch;
     font-size: clamp(50px, 9vw, 80px);
-  }
-
-  .oproom-classes__top {
-    display: grid;
-    justify-content: start;
   }
 
   .oproom-classes__grid {
@@ -10355,15 +12513,14 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .oproom-overview__copy h2,
-  .oproom-section-copy h2,
-  .oproom-classes__intro h2,
-  .oproom-partner__copy h2,
-  .oproom-faq .faq-section__header h2 {
-    font-size: 28px;
-  }
-
-  .oproom-overview__nav {
+.oproom-overview__copy h2,
+.page-oproom .reference-overview__head h2,
+.oproom-section-copy h2,
+.oproom-purpose__head h2,
+.oproom-checks__head h2,
+.oproom-classes__intro h2,
+.oproom-partner__head h2,
+.oproom-overview__nav {
     max-width: none;
   }
 }
@@ -10378,7 +12535,7 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("assets/images/certifications-hero-bg.png");
+  background-image: var(--hero-overlay-gradient), url("./Bildmaterial_final/shared/certifications-hero-bg.png");
   background-position: center;
   background-size: cover;
 }
@@ -10407,7 +12564,7 @@ a.sector-card{color:inherit;text-decoration:none}
 .page-memmingen .company-hero {
   background-image:
     var(--hero-overlay-gradient),
-    url("assets/images/memmingen-hero.png");
+    url("./Bildmaterial_final/shared/memmingen-hero.png");
   background-position: center 42%;
   background-size: cover;
 }
@@ -10422,6 +12579,215 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .filtertest-overview {
   background-image: linear-gradient(1deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-filtertest .reference-overview__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-filtertest .reference-overview__head h2,
+.page-filtertest .reference-overview__head h3 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.2;
+}
+
+.page-filtertest .filtertest-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-filtertest .tower-overview__content .button {
+  margin-top: 22px;
+}
+
+.page-filtertest .tower-overview__content p + p {
+  margin-top: 1rem;
+}
+
+.page-filtertest .filtertest-scope {
+  background: linear-gradient(180deg, #ffffff 0%, #e8f3ff 100%);
+}
+
+.page-filtertest .filtertest-scope__heading {
+  max-width: none;
+  margin-bottom: 2rem;
+}
+
+.page-filtertest .filtertest-scope__heading h2 {
+  max-width: none;
+  line-height: 1.14;
+}
+
+.page-filtertest .filtertest-scope__body {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.page-filtertest .filtertest-scope__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+}
+
+.page-filtertest .filtertest-scope__col {
+  max-width: none;
+}
+
+.page-filtertest .filtertest-scope__col p + p {
+  margin-top: 1rem;
+}
+
+.page-filtertest .filtertest-scope .oproom-list,
+.page-filtertest .filtertest-procedure .oproom-list {
+  margin: 1.25rem 0 0;
+  padding: 22px 24px 22px 28px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.page-filtertest .filtertest-scope .oproom-list li,
+.page-filtertest .filtertest-procedure .oproom-list li {
+  position: relative;
+  padding-left: 24px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.page-filtertest .filtertest-scope .oproom-list li::before,
+.page-filtertest .filtertest-procedure .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.page-filtertest .filtertest-scope .oproom-list li + li,
+.page-filtertest .filtertest-procedure .oproom-list li + li {
+  margin-top: 14px;
+}
+
+.page-filtertest .filtertest-scope__cta {
+  max-width: none;
+}
+
+.page-filtertest .filtertest-scope__cta .button {
+  margin-top: 22px;
+}
+
+.page-filtertest .filtertest-procedure__layout {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.page-filtertest .filtertest-procedure__head {
+  max-width: none;
+}
+
+.page-filtertest .filtertest-procedure__head h2 {
+  max-width: none;
+  margin: 0;
+  line-height: 1.14;
+}
+
+.page-filtertest .filtertest-procedure__copy {
+  max-width: none;
+}
+
+.page-filtertest .filtertest-why {
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-filtertest .filtertest-why__layout {
+  display: grid;
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.page-filtertest .filtertest-why__heading {
+  max-width: none;
+  margin: 0;
+}
+
+.page-filtertest .filtertest-why__heading h2 {
+  max-width: none;
+  line-height: 1.14;
+}
+
+.page-filtertest .filtertest-why__copy {
+  max-width: none;
+}
+
+.page-filtertest .filtertest-why__copy p + p {
+  margin-top: 1rem;
+}
+
+.page-filtertest .filtertest-why__pills.cleaning-services__pills {
+  display: block;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.page-filtertest .filtertest-why__pills {
+  margin-top: 1.5rem;
+  margin-bottom: clamp(28px, 4vw, 40px);
+}
+
+.page-filtertest .filtertest-why__pills + p {
+  margin-top: 0;
+}
+
+.page-filtertest .filtertest-why__pills .cleaning-pill-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+}
+
+.page-filtertest .filtertest-why__pills .cleaning-pill {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 72px;
+  padding: 18px 24px 18px 28px;
+  border-radius: 999px;
+  font-size: 18px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.page-filtertest .filtertest-why__pills .cleaning-pill::before {
+  display: none;
+}
+
+.page-filtertest .filtertest-why__pills .cleaning-pill::after {
+  flex: none;
+  margin-left: 18px;
+}
+
+.page-filtertest .filtertest-why__copy .button {
+  margin-top: 22px;
+}
+
+.filtertest-overview.duct-guide-overview,
+.filtertest-overview.airduct-guide-overview {
+  background-color: var(--color-soft);
+  background-image: none;
 }
 
 .filtertest-overview .cleanroom-overview__copy h2 {
@@ -10478,6 +12844,14 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: 1rem;
 }
 
+[data-section="services"] .filtertest-standard__copy p:has(+ h3) {
+  padding-bottom: 30px;
+}
+
+[data-section="services"] .filtertest-standard__copy p + h3 {
+  margin-top: 0;
+}
+
 .filtertest-standard__media,
 .filtertest-procedure__media {
   justify-self: end;
@@ -10500,8 +12874,106 @@ a.sector-card{color:inherit;text-decoration:none}
   max-width: 9.4ch;
 }
 
-.page-leaktest .filtertest-overview .cleanroom-overview__copy h2 {
-  max-width: 14ch;
+.page-leaktest .reference-overview__head {
+  max-width: none;
+  margin: 0;
+}
+
+.page-leaktest .reference-overview__head h2,
+.page-leaktest .reference-overview__head h3 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.2;
+}
+
+.page-leaktest .leaktest-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-leaktest .leaktest-purpose {
+  background: var(--color-soft);
+}
+
+.page-leaktest .leaktest-schedule {
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-leaktest .leaktest-process {
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-soft) 100%);
+}
+
+.page-leaktest .leaktest-why {
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-leaktest .sectors__copy {
+  display: grid;
+  gap: 18px;
+}
+
+.page-leaktest .sectors__copy p,
+.page-leaktest .leaktest-why__column p,
+.page-leaktest .leaktest-why__footer p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.page-leaktest .sectors__copy p + p,
+.page-leaktest .leaktest-why__column p + p,
+.page-leaktest .leaktest-why__footer p + p {
+  margin-top: 0;
+}
+
+.page-leaktest .sectors__copy .duct-inline-link,
+.page-leaktest .leaktest-why__column .duct-inline-link,
+.page-leaktest .leaktest-why__footer .text-link {
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.page-leaktest .leaktest-why .oproom-list {
+  margin: 1.25rem 0 0;
+  padding: 22px 24px 22px 28px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.page-leaktest .leaktest-why .oproom-list li {
+  position: relative;
+  padding-left: 24px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.page-leaktest .leaktest-why .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.page-leaktest .leaktest-why .oproom-list li + li {
+  margin-top: 14px;
+}
+
+.page-leaktest .tower-overview__content .button {
+  margin-top: 22px;
 }
 
 .leaktest-purpose .filtertest-standard__row {
@@ -10509,9 +12981,7 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .leaktest-purpose .filtertest-standard__copy h2,
-.leaktest-schedule__heading h2,
-.leaktest-process__heading h2,
-.leaktest-why__heading h2 {
+.leaktest-process__heading h2 {
   max-width: 14ch;
   line-height: 1.14;
 }
@@ -10521,8 +12991,13 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .leaktest-schedule__heading {
-  max-width: 960px;
+  max-width: none;
   margin-bottom: 2rem;
+}
+
+.leaktest-schedule__heading h2 {
+  max-width: none;
+  line-height: 1.14;
 }
 
 .leaktest-schedule__grid {
@@ -10539,25 +13014,55 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: 1rem;
 }
 
+.leaktest-schedule .oproom-list {
+  margin: 1.25rem 0 0;
+  padding: 22px 24px 22px 28px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.leaktest-schedule .oproom-list li {
+  position: relative;
+  padding-left: 24px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.leaktest-schedule .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.leaktest-schedule .oproom-list li + li {
+  margin-top: 14px;
+}
+
 .leaktest-schedule__col .button {
   margin-top: 22px;
 }
 
 .leaktest-process__hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
-  gap: clamp(1.75rem, 3vw, 3.5rem);
-  align-items: end;
   margin-bottom: 2rem;
 }
 
 .leaktest-process__heading {
-  max-width: 960px;
+  max-width: none;
+  margin: 0;
 }
 
-.leaktest-process__media {
-  justify-self: end;
-  max-width: 600px;
+.leaktest-process__heading h2 {
+  max-width: none;
 }
 
 .leaktest-process__intro {
@@ -10572,50 +13077,45 @@ a.sector-card{color:inherit;text-decoration:none}
 .leaktest-step-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 24px;
+  gap: 1.25rem 1.5rem;
+  align-items: stretch;
 }
 
-.leaktest-step-card {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px;
+.page-leaktest .leaktest-process .cleanroom-process__tile {
+  padding: 1.3rem 1.35rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(1, 97, 191, 0.1);
+  border: none;
+  height: 100%;
+  align-content: start;
   align-items: start;
-  padding: 20px 22px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 18px rgba(46, 163, 242, 0.12);
+  gap: clamp(1rem, 1.6vw, 1.35rem);
 }
 
-.leaktest-step-card__icon {
-  width: 12px;
-  height: 12px;
-  margin-top: 8px;
-  border: 2px solid var(--color-accent);
-  border-radius: 50%;
-}
-
-.leaktest-step-card h3 {
+.page-leaktest .leaktest-process .cleanroom-process__tile p {
   margin: 0;
-  color: var(--color-primary);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.55;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 .leaktest-why {
   background: #fff;
 }
 
-.leaktest-why__head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 34px;
+.leaktest-why__heading {
+  max-width: none;
+  margin: 0 0 34px;
 }
 
-.leaktest-why__heading {
-  max-width: 920px;
+.leaktest-why__heading h2 {
+  max-width: none;
+  line-height: 1.14;
+}
+
+.leaktest-why__button {
+  margin-top: 40px;
 }
 
 .leaktest-why__content {
@@ -10632,10 +13132,6 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .leaktest-why__footer {
   max-width: 1060px;
-}
-
-.leaktest-why__footer p {
-  margin-bottom: 18px;
 }
 
 .leaktest-why__footer h3 {
@@ -10660,6 +13156,11 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(50px, 9vw, 80px);
   }
 
+  .page-filtertest .filtertest-overview {
+    padding-top: 56px;
+    padding-bottom: 58px;
+  }
+
   .page-memmingen .company-hero h1 {
     max-width: 16ch;
     font-size: clamp(52px, 8vw, 84px);
@@ -10667,6 +13168,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
   .page-leaktest .company-hero h1 {
     max-width: 8.8ch;
+  }
+
+  .page-leaktest .leaktest-overview {
+    padding-top: 56px;
+    padding-bottom: 58px;
   }
 
   .filtertest-standard__row,
@@ -10681,24 +13187,15 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .leaktest-schedule__grid,
-  .leaktest-process__hero,
   .leaktest-step-grid,
-  .leaktest-why__content {
+  .leaktest-why__content,
+  .page-filtertest .filtertest-scope__grid {
     grid-template-columns: 1fr;
-  }
-
-  .leaktest-process__media {
-    justify-self: center;
-  }
-
-  .leaktest-why__head {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 
 @media (max-width: 767px) {
-  .page-memmingen .memmingen-overview__head h2 {
+.page-memmingen .memmingen-overview__head h2 {
     max-width: 12ch;
   }
 
@@ -10733,14 +13230,13 @@ a.sector-card{color:inherit;text-decoration:none}
     padding-bottom: 60px;
   }
 
-  .leaktest-schedule__heading h2,
-  .leaktest-process__heading h2,
-  .leaktest-why__heading h2,
-  .leaktest-purpose .filtertest-standard__copy h2 {
-    font-size: 28px;
-  }
-
-  .leaktest-process__hero {
+.leaktest-schedule__heading h2,
+.leaktest-process__heading h2,
+.leaktest-why__heading h2,
+.leaktest-purpose .filtertest-standard__copy h2,
+.page-filtertest .filtertest-scope__heading h2,
+.page-filtertest .filtertest-procedure__head h2,
+.leaktest-process__hero {
     margin-bottom: 24px;
   }
 
@@ -10748,17 +13244,8 @@ a.sector-card{color:inherit;text-decoration:none}
     margin-bottom: 24px;
   }
 
-  .leaktest-step-card {
-    padding: 18px;
-  }
-
-  .leaktest-step-card h3 {
-    font-size: 17px;
-    line-height: 1.5;
-  }
-
-  .leaktest-why__head {
-    margin-bottom: 26px;
+  .page-leaktest .leaktest-process .cleanroom-process__tile {
+    padding: 1.15rem 1.2rem;
   }
 
   .leaktest-why__footer h3 {
@@ -10774,7 +13261,7 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(320px, 46vh, 480px);
   background:
     linear-gradient(180deg, rgba(5, 15, 28, 0.72) 0%, rgba(5, 15, 28, 0.38) 62%, rgba(255, 255, 255, 0.82) 100%),
-    url("assets/images/certifications-hero-bg.png") center 42% / cover no-repeat;
+    url("./Bildmaterial_final/shared/certifications-hero-bg.png") center 42% / cover no-repeat;
 }
 
 .page-textile-ducts .company-hero::after {
@@ -10788,52 +13275,83 @@ a.sector-card{color:inherit;text-decoration:none}
   padding-bottom: 58px;
 }
 
-.page-textile-ducts .company-hero__content .eyebrow {
-  color: rgba(255, 255, 255, 0.76);
-}
-
 .page-textile-ducts .company-hero h1 {
-  max-width: 15.5ch;
-  font-size: clamp(54px, 5.8vw, 84px);
+  max-width: none;
+  font-size: clamp(48px, 5.2vw, 78px);
   line-height: 0.96;
   letter-spacing: -0.045em;
 }
 
 .page-textile-ducts .textile-intro {
-  padding-top: 82px;
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
 }
 
-.page-textile-ducts .textile-intro__copy h2 {
-  max-width: 11.2ch;
+.page-textile-ducts .textile-intro__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  column-gap: clamp(1.75rem, 3vw, 3.5rem);
+  row-gap: 0;
+  align-items: start;
+}
+
+.page-textile-ducts .textile-intro__eyebrow {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 14px;
+}
+
+.page-textile-ducts .textile-intro__columns > .textile-intro__header,
+.page-textile-ducts .textile-intro__columns > .textile-intro__copy {
+  min-width: 0;
+}
+
+.page-textile-ducts .textile-intro__header {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+}
+
+.page-textile-ducts .textile-intro__header h2 {
+  max-width: none;
+}
+
+.page-textile-ducts .textile-intro__copy {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  max-width: none;
+  align-self: start;
+}
+
+.page-textile-ducts .textile-intro__copy p + p {
+  margin-top: 14px;
 }
 
 .page-textile-ducts .textile-intro__copy .button {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .textile-services {
   padding: 84px 0 94px;
-  background: linear-gradient(180deg, #ffffff 0%, #f4f9ff 100%);
-}
-
-.textile-services__top {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 28px;
-  align-items: end;
-  margin-bottom: 22px;
+  background: var(--color-soft);
 }
 
 .textile-services__heading {
-  max-width: 810px;
+  margin: 0 0 22px;
+  max-width: none;
 }
 
 .textile-services__heading h2 {
-  max-width: 14ch;
+  max-width: none;
 }
 
 .textile-services__heading .gradient-line {
   margin-bottom: 0;
+}
+
+.textile-services__button {
+  margin-top: 40px;
 }
 
 .textile-services__body {
@@ -10842,6 +13360,7 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .textile-services__body p,
 .textile-services__notes p,
+.textile-services__closing,
 .textile-list-card li {
   color: #525252;
   font-size: 16px;
@@ -10904,28 +13423,23 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: 34px;
 }
 
-.textile-services__closing {
-  max-width: 22ch;
-  margin-top: 8px;
-  font-size: clamp(24px, 3vw, 34px);
-  font-weight: 500;
-  line-height: 1.22;
-  color: var(--color-primary);
-}
-
 @media (max-width: 980px) {
   .page-textile-ducts .company-hero h1 {
-    max-width: 12.5ch;
+    max-width: none;
     font-size: clamp(46px, 9vw, 74px);
   }
 
-  .textile-services__top,
-  .textile-services__lists {
+  .textile-services__lists,
+  .page-textile-ducts .textile-intro__columns {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 
-  .textile-services__button {
-    justify-self: start;
+  .page-textile-ducts .textile-intro__eyebrow,
+  .page-textile-ducts .textile-intro__header,
+  .page-textile-ducts .textile-intro__copy {
+    grid-column: 1;
+    grid-row: auto;
   }
 }
 
@@ -10941,7 +13455,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-textile-ducts .company-hero h1 {
-    max-width: 10.5ch;
+    max-width: none;
     font-size: clamp(38px, 11vw, 56px);
   }
 
@@ -11373,9 +13887,9 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("assets/images/certifications-hero-bg.png");
-  background-position: center;
-  background-size: cover;
+  background:
+    var(--hero-overlay-gradient),
+    url("./Bildmaterial_final/shared/anlagen-lueftungsreinigung7.jpeg") center 42% / cover no-repeat;
 }
 
 .page-hygiene-inspection .company-hero::after {
@@ -11399,21 +13913,330 @@ a.sector-card{color:inherit;text-decoration:none}
   letter-spacing: -0.045em;
 }
 
-.hygiene-overview .cleanroom-overview__copy h2,
-.hygiene-air .filtertest-standard__heading h2,
-.hygiene-legal .filtertest-procedure__copy h2,
-.hygiene-services .duct-partner__copy h2 {
+.page-hygiene-inspection .hygiene-overview {
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-hygiene-inspection .hygiene-air {
+  background: #e8f3ff;
+}
+
+.page-hygiene-inspection .hygiene-air .filtertest-standard__heading {
+  max-width: none;
+}
+
+.page-hygiene-inspection .hygiene-air .filtertest-standard__heading h2 {
+  max-width: none;
+}
+
+.hygiene-overview__layout {
+  display: grid;
+  gap: 32px;
+}
+
+.hygiene-overview__header {
+  margin: 0;
+}
+
+.hygiene-overview__header h2 {
+  color: #0161bf;
+  line-height: 1.18;
+  max-width: none;
+}
+
+.hygiene-overview__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.hygiene-overview__body {
+  margin: 0;
+}
+
+.hygiene-overview__body p + p {
+  margin-top: 1rem;
+}
+
+.hygiene-overview__body .button {
+  margin-top: 22px;
+}
+
+.hygiene-overview__media {
+  margin: 0;
+  max-width: 520px;
+  width: 100%;
+  justify-self: end;
+  align-self: start;
+}
+
+.hygiene-legal .filtertest-procedure__copy h2 {
   max-width: 15ch;
 }
 
+.hygiene-services__layout {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hygiene-services__header {
+  margin: 0;
+}
+
+.hygiene-services__header h2 {
+  color: #0161bf;
+  line-height: 1.18;
+  max-width: none;
+}
+
+.hygiene-services__copy {
+  max-width: none;
+}
+
+.hygiene-services .duct-partner__copy h2 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.18;
+}
+
+.page-hygiene-inspection .hygiene-services .oproom-list {
+  margin: 1.25rem 0 0;
+  padding: 22px 24px 22px 28px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.page-hygiene-inspection .hygiene-services .oproom-list li {
+  position: relative;
+  padding-left: 24px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.page-hygiene-inspection .hygiene-services .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.page-hygiene-inspection .hygiene-services .oproom-list li + li {
+  margin-top: 14px;
+}
+
+.page-hygiene-inspection .hygiene-services .hygiene-services__list .oproom-list {
+  margin-top: 0;
+}
+
+.page-hygiene-inspection .hygiene-benefits__layout {
+  display: grid;
+  gap: 32px;
+}
+
+.page-hygiene-inspection .hygiene-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.75rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.page-hygiene-inspection .hygiene-benefits__eyebrow {
+  grid-column: 1;
+  margin-bottom: 0;
+}
+
+.page-hygiene-inspection .hygiene-benefits__spacer {
+  grid-column: 2;
+}
+
+.page-hygiene-inspection .hygiene-benefits__copy {
+  grid-column: 1;
+}
+
+.page-hygiene-inspection .hygiene-benefits__aside {
+  grid-column: 2;
+}
+
+.page-hygiene-inspection .hygiene-benefits .cleanroom-about__copy h2,
+.page-hygiene-inspection .hygiene-benefits__copy h2 {
+  color: #0161bf;
+  line-height: 1.18;
+  max-width: none;
+}
+
+.page-hygiene-inspection .hygiene-benefits__aside h3 {
+  margin: 0 0 1.25rem;
+  color: #0161bf;
+  font-size: clamp(1.4rem, 2.15vw, 1.95rem);
+  line-height: 1.3;
+}
+
+.page-hygiene-inspection .hygiene-benefits .oproom-list {
+  margin: 0;
+  padding: 22px 24px 22px 28px;
+  list-style: none;
+  border: 1px solid rgba(0, 159, 227, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(46, 163, 242, 0.1);
+}
+
+.page-hygiene-inspection .hygiene-benefits .oproom-list li {
+  position: relative;
+  padding-left: 24px;
+  color: #3f5568;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.page-hygiene-inspection .hygiene-benefits .oproom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(56deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 0 6px rgba(0, 159, 227, 0.12);
+}
+
+.page-hygiene-inspection .hygiene-benefits .oproom-list li + li {
+  margin-top: 14px;
+}
+
+.page-hygiene-inspection .hygiene-benefits__aside .oproom-list + p {
+  margin-top: 1.25rem;
+}
+
+.page-hygiene-inspection .hygiene-benefits__aside .button {
+  margin-top: 22px;
+}
+
+.hygiene-legal__layout {
+  display: grid;
+  gap: clamp(2rem, 3vw, 3rem);
+}
+
+.hygiene-legal__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+  align-items: start;
+}
+
+.hygiene-legal__intro {
+  display: grid;
+  gap: 32px;
+}
+
+.hygiene-legal__header {
+  margin: 0;
+}
+
+.hygiene-legal__header h2 {
+  color: #0161bf;
+  line-height: 1.18;
+  max-width: none;
+}
+
+.hygiene-legal__lead {
+  margin: 0;
+}
+
+.hygiene-legal__lead p + p {
+  margin-top: 1rem;
+}
+
+.hygiene-legal__media {
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+  justify-self: end;
+  align-self: start;
+}
+
+.hygiene-legal__body {
+  margin: 0;
+}
+
+.hygiene-legal__body p + p,
+.hygiene-legal__body h3 + p {
+  margin-top: 1rem;
+}
+
+.hygiene-legal__body h3 {
+  margin: 0 0 0.9rem;
+  color: var(--color-primary);
+  font-size: clamp(1.18rem, 1.8vw, 1.42rem);
+  line-height: 1.35;
+}
+
+.hygiene-legal__body .button {
+  margin-top: 22px;
+}
+
+.hygiene-air .filtertest-standard__row--nav {
+  align-items: start;
+}
+
 .hygiene-air__anchors {
+  position: sticky;
+  top: 112px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 24rem;
   justify-self: end;
+  align-self: start;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.page-hygiene-inspection .cleaning-services__pills.hygiene-air__pills {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  grid-template-columns: none;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 0;
+  padding: clamp(22px, 3vw, 32px);
+  border-color: rgba(1, 97, 191, 0.2);
+  box-shadow:
+    0 24px 56px rgba(7, 57, 117, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.hygiene-air__pills .cleaning-pill-list {
+  display: grid;
+  flex: 1;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  min-height: 0;
+}
+
+.page-hygiene-inspection .hygiene-air__pills .cleaning-pill {
+  height: 100%;
+  min-height: 0;
+  padding: clamp(12px, 1.6vw, 18px) clamp(18px, 2.2vw, 24px);
+  font-size: clamp(15px, 1.5vw, 18px);
 }
 
 .hygiene-air .filtertest-standard__copy h3,
-.hygiene-legal .filtertest-procedure__copy h3 {
+.hygiene-legal .hygiene-legal__body h3 {
   margin: 1.2rem 0 0.9rem;
   color: var(--color-primary);
   font-size: clamp(1.18rem, 1.8vw, 1.42rem);
@@ -11421,7 +14244,7 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .hygiene-air .filtertest-standard__copy .button,
-.hygiene-legal .filtertest-procedure__copy .button {
+.hygiene-legal .hygiene-legal__body .button {
   margin-top: 22px;
 }
 
@@ -11429,46 +14252,92 @@ a.sector-card{color:inherit;text-decoration:none}
   margin-top: clamp(4rem, 6vw, 5rem);
 }
 
-.hygiene-service-list {
-  columns: 2;
-  column-gap: 2rem;
+.hygiene-services__panel {
+  margin: 22px 0 28px;
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, #f4f9ff 100%);
+  box-shadow: 0 2px 18px rgba(46, 163, 242, 0.12);
+  border: 1px solid rgba(1, 97, 191, 0.08);
+  border-top: 4px solid var(--color-secondary);
 }
 
-.hygiene-service-list li {
-  break-inside: avoid;
+.hygiene-services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 32px;
+  align-items: start;
+}
+
+.hygiene-services__item {
+  color: #4b6074;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.hygiene-services__item p {
+  position: relative;
+  margin: 0;
+  padding-left: 22px;
+  font-weight: 600;
+}
+
+.hygiene-services__item p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(0, 159, 227, 0.16);
+  transform: translateY(-50%);
 }
 
 .company-cta--hygiene .company-cta__inner {
   gap: 18px;
 }
 
-.hygiene-benefit-list {
+.hygiene-benefit-grid {
   display: grid;
-  gap: 0.9rem;
-  width: min(920px, 100%);
-  margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  width: min(980px, 100%);
+  margin: 8px 0 4px;
   padding: 0;
-  text-align: left;
   list-style: none;
 }
 
-.hygiene-benefit-list li {
+.hygiene-benefit-grid li {
   position: relative;
-  padding-left: 1.4rem;
+  padding: 22px 24px 22px 58px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: var(--color-white);
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.65;
+  text-align: left;
 }
 
-.hygiene-benefit-list li::before {
-  content: "";
+.hygiene-benefit-grid li::before {
+  content: "→";
   position: absolute;
-  left: 0;
-  top: 0.7em;
-  width: 8px;
-  height: 8px;
+  left: 20px;
+  top: 22px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.22);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .rlt-benefit-list {
@@ -11507,10 +14376,67 @@ a.sector-card{color:inherit;text-decoration:none}
   .hygiene-air__anchors {
     justify-self: start;
     max-width: none;
+    align-self: start;
   }
 
-  .hygiene-service-list {
-    columns: 1;
+  .hygiene-air__pills {
+    height: auto;
+    max-height: none;
+  }
+
+  .hygiene-air__pills .cleaning-pill-list {
+    grid-template-rows: none;
+    height: auto;
+  }
+
+  .hygiene-air__pills .cleaning-pill {
+    height: auto;
+    min-height: 72px;
+    padding: 18px 24px 18px 28px;
+    font-size: 18px;
+  }
+
+  .hygiene-overview__columns {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hygiene-overview__media {
+    justify-self: start;
+    max-width: none;
+  }
+
+  .hygiene-legal__columns {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hygiene-legal__media {
+    justify-self: center;
+    max-width: none;
+  }
+
+  .hygiene-services__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hygiene-benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hygiene-inspection .hygiene-benefits__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .page-hygiene-inspection .hygiene-benefits__spacer {
+    display: none;
+  }
+
+  .page-hygiene-inspection .hygiene-benefits__copy,
+  .page-hygiene-inspection .hygiene-benefits__aside {
+    grid-column: 1;
   }
 }
 
@@ -11529,6 +14455,37 @@ a.sector-card{color:inherit;text-decoration:none}
     max-width: 7.4ch;
     font-size: clamp(40px, 11vw, 60px);
   }
+
+  .hygiene-services__panel {
+    padding: 24px 22px;
+  }
+
+  .hygiene-services__item {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hygiene-services__item p {
+    padding-left: 20px;
+  }
+
+  .hygiene-services__item p::before {
+    width: 8px;
+    height: 8px;
+  }
+
+  .hygiene-benefit-grid li {
+    padding: 18px 20px 18px 52px;
+    font-size: 0.98rem;
+  }
+
+  .hygiene-benefit-grid li::before {
+    left: 16px;
+    top: 18px;
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+  }
 }
 
 .page-channel-inspection .site-header {
@@ -11541,11 +14498,9 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image:
+  background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png");
-  background-position: center;
-  background-size: cover;
+    var(--services-hero-image) center 42% / cover no-repeat;
 }
 
 .page-channel-inspection .company-hero::after {
@@ -11574,41 +14529,89 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .channel-overview {
-  background-image: linear-gradient(1deg, #e8f3ff 0%, #ffffff 100%);
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
 }
 
-.channel-overview .cleanroom-overview__copy h2,
-.channel-robot .filtertest-procedure__copy h2 {
-  max-width: 14ch;
-  color: var(--color-primary);
-  font-size: clamp(1.95rem, 2.45vw, 2.3rem);
-  line-height: 1.24;
+.channel-overview__layout {
+  display: grid;
+  gap: 32px;
 }
 
-.channel-overview .cleanroom-overview__copy p + p,
-.channel-robot .filtertest-procedure__copy p + p {
-  margin-top: 1rem;
+.channel-overview__header {
+  margin: 0;
 }
 
-.channel-overview .company-media-card,
-.channel-robot .company-media-card {
-  max-width: 600px;
+.channel-overview__header h2,
+.channel-robot__header h2 {
+  max-width: none;
+  color: #0161bf;
+  line-height: 1.18;
 }
 
-.channel-robot {
-  background-image: linear-gradient(1deg, #e8f3ff 0%, #ffffff 100%);
-}
-
-.channel-robot .filtertest-procedure__grid {
-  grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1fr);
+.channel-overview__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+  gap: 48px;
   align-items: start;
 }
 
-.channel-robot .filtertest-procedure__media {
-  justify-self: start;
+.channel-overview__body {
+  margin: 0;
 }
 
-.channel-robot .filtertest-procedure__copy {
+.channel-overview__body p + p,
+.channel-robot__body p + p {
+  margin-top: 1rem;
+}
+
+.channel-overview__body .button,
+.channel-robot__body .button {
+  margin-top: 22px;
+}
+
+.channel-overview__media,
+.channel-robot__media {
+  max-width: 600px;
+}
+
+.channel-overview__media {
+  margin: 0;
+  width: 100%;
+  justify-self: end;
+  align-self: start;
+}
+
+.channel-robot {
+  background: #e8f3ff;
+}
+
+.channel-robot__grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 3vw, 3.5rem);
+  align-items: start;
+}
+
+.channel-robot__aside {
+  display: grid;
+  gap: 28px;
+  align-content: start;
+}
+
+.channel-robot__header {
+  margin: 0;
+}
+
+.channel-robot__media {
+  margin: 0;
+  width: 100%;
+  justify-self: start;
+  align-self: start;
+}
+
+.channel-robot__body {
+  margin: 0;
   max-width: none;
 }
 
@@ -11617,12 +14620,22 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(48px, 10vw, 84px);
   }
 
-  .channel-robot .filtertest-procedure__grid {
+  .channel-robot__grid {
     grid-template-columns: 1fr;
   }
 
-  .channel-robot .filtertest-procedure__media {
-    justify-self: stretch;
+  .channel-robot__media {
+    max-width: none;
+  }
+
+  .channel-overview__columns {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .channel-overview__media {
+    justify-self: start;
+    max-width: none;
   }
 }
 
@@ -11642,11 +14655,7 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(40px, 11.5vw, 62px);
   }
 
-  .channel-overview .cleanroom-overview__copy h2,
-  .channel-robot .filtertest-procedure__copy h2 {
-    max-width: 12ch;
-    font-size: clamp(1.85rem, 8vw, 2.1rem);
-  }
+.channel-overview__header h2,
 }
 
 .page-berlin .site-header .site-header__inner,
@@ -11701,7 +14710,6 @@ a.sector-card{color:inherit;text-decoration:none}
 .page-bernau .bernau-overview__head h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-bernau .bernau-overview__grid {
@@ -11750,7 +14758,6 @@ a.sector-card{color:inherit;text-decoration:none}
 .page-bernau .bernau-services__heading h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-bernau .karlsruhe-services__subheading {
@@ -11801,14 +14808,9 @@ a.sector-card{color:inherit;text-decoration:none}
   font-weight: 600;
 }
 
-.page-bernau .bernau-services__copy p + h3 {
-  margin-top: 28px;
-}
-
 .page-bernau .cleanroom-benefits__copy h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -11906,7 +14908,6 @@ a.sector-card{color:inherit;text-decoration:none}
 .page-brandenburg .brandenburg-overview__head h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-brandenburg .brandenburg-overview__grid {
@@ -11955,7 +14956,6 @@ a.sector-card{color:inherit;text-decoration:none}
 .page-brandenburg .brandenburg-services__heading h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-brandenburg .karlsruhe-services__subheading {
@@ -12006,14 +15006,9 @@ a.sector-card{color:inherit;text-decoration:none}
   font-weight: 600;
 }
 
-.page-brandenburg .brandenburg-services__copy p + h3 {
-  margin-top: 28px;
-}
-
 .page-brandenburg .cleanroom-benefits__copy h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -12075,7 +15070,17 @@ a.sector-card{color:inherit;text-decoration:none}
   min-height: clamp(330px, 40vh, 440px);
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/job-cleaning-hero.png") center 48% / cover no-repeat;
+    var(--company-section-hero-image) center / cover no-repeat;
+}
+
+.page-job-detail .job-intro.tower-overview {
+  padding-top: clamp(58px, 4vw, 72px);
+  padding-bottom: clamp(58px, 4vw, 78px);
+}
+
+.page-job-detail .job-intro .tower-overview__content h2 {
+  line-height: 1.12;
+  letter-spacing: -0.03em;
 }
 
 .page-job-detail .job-detail-hero::after {
@@ -12134,9 +15139,7 @@ a.sector-card{color:inherit;text-decoration:none}
 .job-detail-heading h2 {
   max-width: none;
   color: var(--color-primary);
-  font-size: clamp(34px, 3.6vw, 48px);
   line-height: 1.22;
-  font-weight: 600;
 }
 
 .page-job-detail .section-copy .button {
@@ -12177,6 +15180,164 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-detail-heading--center .eyebrow {
   justify-content: center;
+}
+
+.job-detail-heading--center .gradient-line,
+.job-detail-heading--center .gradient-line--center {
+  margin-inline: auto;
+}
+
+.page-job-detail .company-testimonials__intro {
+  max-width: none;
+  margin-inline: auto;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.page-job-detail .job-voices__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.job-about__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.job-profile__panel {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.job-tasks-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(38px, 6vw, 72px);
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.page-job-detail .job-tasks-layout .job-gallery-slider__slide img {
+  height: clamp(260px, 32vw, 380px);
+}
+
+.job-gallery-slider {
+  position: relative;
+}
+
+.job-gallery-slider__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.job-gallery-slider__counter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.job-gallery-slider__counter-sep {
+  color: rgba(1, 97, 191, 0.45);
+  font-weight: 500;
+}
+
+.job-gallery-slider__nav-group {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.job-gallery-slider__nav {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(0, 159, 227, 0.22);
+  border-radius: 50%;
+  color: var(--color-secondary);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 16px rgba(0, 126, 201, 0.12);
+  transition: transform var(--transition), background-color var(--transition), border-color var(--transition);
+  cursor: pointer;
+}
+
+.job-gallery-slider__nav svg {
+  width: 18px;
+  height: 18px;
+}
+
+.job-gallery-slider__nav:hover,
+.job-gallery-slider__nav:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(0, 159, 227, 0.42);
+  background: #fff;
+}
+
+.job-gallery-slider__viewport {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
+}
+
+.job-gallery-slider__viewport:focus-visible {
+  outline: 2px solid rgba(0, 159, 227, 0.45);
+  outline-offset: 4px;
+}
+
+.job-gallery-slider__track {
+  display: flex;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.job-gallery-slider__slide {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+.job-gallery-slider__slide img {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 42vw, 420px);
+  object-fit: cover;
+}
+
+.job-gallery-slider__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.job-gallery-slider__dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 159, 227, 0.22);
+  transition: transform var(--transition), background-color var(--transition);
+  cursor: pointer;
+}
+
+.job-gallery-slider__dot.is-active {
+  transform: scale(1.15);
+  background: var(--color-secondary);
+}
+
+.job-gallery-slider__dot:hover,
+.job-gallery-slider__dot:focus-visible {
+  background: rgba(0, 159, 227, 0.55);
 }
 
 .job-benefits-grid {
@@ -12306,16 +15467,41 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-process-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 4vw, 34px);
 }
 
 .job-process-card {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  align-items: start;
-  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  min-height: 100%;
+  padding: 28px 22px 26px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
-.job-process-card > span {
+.job-process-card__icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  color: var(--color-secondary);
+  background: linear-gradient(135deg, rgba(1, 97, 191, 0.12), rgba(0, 159, 227, 0.18));
+}
+
+.job-process-card__icon svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+.job-process-card > span:not(.job-process-card__icon) {
   margin-top: 7px;
   color: var(--color-secondary);
   font-size: 22px;
@@ -12324,7 +15510,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-process-card h3,
 .job-process-card p {
-  grid-column: 2;
+  grid-column: unset;
+  width: 100%;
+}
+
+.job-process-card h3 {
+  margin-bottom: 10px;
 }
 
 .job-apply-note {
@@ -12346,9 +15537,11 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .job-detail-split,
+  .job-tasks-layout,
   .job-benefits-grid,
   .job-quote-grid,
-  .job-process-grid {
+  .job-process-grid,
+  .page-job-detail .job-voices__grid {
     grid-template-columns: 1fr;
   }
 
@@ -12495,7 +15688,8 @@ body[class*="page-"] .job-detail-hero h1 {
 }
 
 .page-customers .company-hero,
-.page-jobs .company-hero {
+.page-jobs .company-hero,
+.page-job-detail .job-detail-hero {
   background:
     var(--hero-overlay-gradient),
     var(--company-section-hero-image) center / cover no-repeat;
@@ -12510,7 +15704,7 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-equipment .company-hero {
   background:
     var(--hero-overlay-gradient),
-    url("assets/images/certifications-hero-bg.png") center 44% / cover no-repeat;
+    var(--anlagen-hero-image) center 44% / cover no-repeat;
 }
 
 .page-company .company-hero::after,
@@ -12518,6 +15712,7 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-equipment .company-hero::after,
 .page-customers .company-hero::after,
 .page-jobs .company-hero::after,
+.page-job-detail .job-detail-hero::after,
 .page-locations .company-hero::after {
   height: 38%;
   background: var(--hero-fade-gradient);
@@ -12540,8 +15735,15 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-reference-city .company-hero + section,
 .page-reference-region .company-hero + section,
 .page-karlsruhe-reference .company-hero + section,
+.page-duct-cleaning .company-hero + section[data-section="intro"],
+.page-air-duct-cleaning .company-hero + section[data-section="intro"],
 .page-references .company-hero + section {
   background: linear-gradient(180deg, var(--color-soft) 0%, var(--color-white) 100%);
+}
+
+.page-duct-cleaning .company-hero + section + section[data-section="guide"],
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] {
+  background: var(--color-soft);
 }
 
 .page-reference-city .company-hero + section + section,
@@ -12552,6 +15754,10 @@ body[class*="page-"] .job-detail-hero h1 {
 
 .page-reference-city .company-hero + section .reference-overview__layout,
 .page-reference-region .company-hero + section .reference-region-overview__stack,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .reference-overview__layout,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .reference-overview__layout,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .reference-overview__layout,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .reference-overview__layout,
 .page-references .company-hero + section .reference-overview__layout {
   display: grid;
   gap: clamp(1.75rem, 3vw, 2rem);
@@ -12562,6 +15768,10 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-reference-city .company-hero + section .memmingen-overview__head,
 .page-reference-city .company-hero + section .bernau-overview__head,
 .page-reference-city .company-hero + section .brandenburg-overview__head,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .reference-overview__head,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .reference-overview__head,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .reference-overview__head,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .reference-overview__head,
 .page-references .company-hero + section .reference-overview__head {
   max-width: 1290px;
   margin: 0;
@@ -12572,10 +15782,13 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-reference-city .company-hero + section .memmingen-overview__head h2,
 .page-reference-city .company-hero + section .bernau-overview__head h2,
 .page-reference-city .company-hero + section .brandenburg-overview__head h2,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .reference-overview__head h2,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .reference-overview__head h2,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .reference-overview__head h2,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .reference-overview__head h2,
 .page-references .company-hero + section .reference-overview__head h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-reference-region .company-hero + section .reference-region-overview__stack .reference-region-overview__grid {
@@ -12590,7 +15803,11 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-reference-city .company-hero + section[data-section="overview"] .memmingen-overview__grid,
 .page-reference-city .company-hero + section[data-section="overview"] .bernau-overview__grid,
 .page-reference-city .company-hero + section[data-section="overview"] .brandenburg-overview__grid,
-.page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__grid {
+.page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__grid,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__grid,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__grid {
   display: grid;
   grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
   gap: clamp(1.75rem, 3vw, 3.5rem);
@@ -12598,12 +15815,21 @@ body[class*="page-"] .job-detail-hero h1 {
   justify-content: normal;
 }
 
+.page-air-duct-cleaning .company-hero + section[data-section="intro"].airduct-intro-overview .cleanroom-overview__grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: stretch;
+}
+
 .page-reference-city .company-hero + section[data-section="overview"] :is(
   .cleanroom-overview__grid,
   .memmingen-overview__grid,
   .bernau-overview__grid,
   .brandenburg-overview__grid
-) > :is(article, figure) {
+) > :is(article, figure),
+.page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid > :is(article, figure),
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid > :is(article, figure),
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__grid > :is(article, .cleaning-services__pills),
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__grid > :is(article, .cleaning-services__pills) {
   min-height: 0;
 }
 
@@ -12611,7 +15837,11 @@ body[class*="page-"] .job-detail-hero h1 {
   .cleanroom-overview__copy,
   .bernau-overview__copy,
   .brandenburg-overview__copy
-) {
+),
+.page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__copy,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__copy,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__copy,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__copy {
   max-width: none;
 }
 
@@ -12620,7 +15850,11 @@ body[class*="page-"] .job-detail-hero h1 {
   .bernau-overview__copy,
   .brandenburg-overview__copy
 ) .button,
-.page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__copy .button {
+.page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__copy .button,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__copy .button,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__copy .button,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__copy .button,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__copy .button {
   margin-top: 22px;
 }
 
@@ -12629,7 +15863,11 @@ body[class*="page-"] .job-detail-hero h1 {
   .bernau-overview__copy,
   .brandenburg-overview__copy
 ) p + p,
-.page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__copy p + p {
+.page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__copy p + p,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__copy p + p,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__copy p + p,
+.page-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__copy p + p,
+.page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__copy p + p {
   margin-top: 1rem;
 }
 
@@ -12651,11 +15889,15 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-reference-city .company-hero + section[data-section="overview"] .bernau-overview__grid > figure.company-media-card,
 .page-reference-city .company-hero + section[data-section="overview"] .brandenburg-overview__grid > figure.company-media-card,
 .page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__grid > figure.company-media-card,
+.page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid > figure.company-media-card,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid > figure.company-media-card,
 .page-reference-city .company-hero + section[data-section="overview"] :is(
   .karlsruhe-overview__media,
   .bernau-overview__media,
   .brandenburg-overview__media
-) {
+),
+.page-duct-cleaning .company-hero + section[data-section="intro"] .duct-intro-overview__media,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] .airduct-intro-overview__media {
   align-self: stretch;
   justify-self: stretch;
   width: 100%;
@@ -12666,7 +15908,9 @@ body[class*="page-"] .job-detail-hero h1 {
 }
 
 .page-reference-city .company-hero + section[data-section="overview"] figure.company-media-card img,
-.page-karlsruhe-reference .company-hero + section[data-section="overview"] figure.company-media-card img {
+.page-karlsruhe-reference .company-hero + section[data-section="overview"] figure.company-media-card img,
+.page-duct-cleaning .company-hero + section[data-section="intro"] figure.company-media-card img,
+.page-air-duct-cleaning .company-hero + section[data-section="intro"] figure.company-media-card img {
   display: block;
   width: 100%;
   height: 100%;
@@ -12684,7 +15928,7 @@ body[class*="page-"] .job-detail-hero h1 {
   min-height: 100%;
 }
 
-.page-reference-region .company-hero + section .reference-region-overview__media {
+.page-reference-region .company-hero + section .reference-region-overview__media:not(.reference-region-overview__map) {
   flex: 1 1 0;
   width: 100%;
   max-width: none;
@@ -12711,7 +15955,11 @@ body[class*="page-"] .job-detail-hero h1 {
   .page-reference-city .company-hero + section[data-section="overview"] .memmingen-overview__grid,
   .page-reference-city .company-hero + section[data-section="overview"] .bernau-overview__grid,
   .page-reference-city .company-hero + section[data-section="overview"] .brandenburg-overview__grid,
-  .page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__grid {
+  .page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__grid,
+  .page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid,
+  .page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid,
+  .page-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__grid,
+  .page-air-duct-cleaning .company-hero + section + section[data-section="guide"] .cleanroom-overview__grid {
     grid-template-columns: 1fr;
   }
 
@@ -12720,16 +15968,25 @@ body[class*="page-"] .job-detail-hero h1 {
   .page-reference-city .company-hero + section[data-section="overview"] .bernau-overview__grid > figure.company-media-card,
   .page-reference-city .company-hero + section[data-section="overview"] .brandenburg-overview__grid > figure.company-media-card,
   .page-karlsruhe-reference .company-hero + section[data-section="overview"] .cleanroom-overview__grid > figure.company-media-card,
+  .page-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid > figure.company-media-card,
+  .page-air-duct-cleaning .company-hero + section[data-section="intro"] .cleanroom-overview__grid > figure.company-media-card,
   .page-references .company-hero + section .industries-overview__intro > figure.company-media-card,
-  .page-reference-region .company-hero + section .reference-region-overview__media {
+  .page-reference-region .company-hero + section .reference-region-overview__media:not(.reference-region-overview__map) {
     height: auto;
     min-height: clamp(220px, 42vw, 360px);
     flex: none;
     aspect-ratio: 16 / 10;
   }
 
+  .page-reference-region .company-hero + section .reference-region-overview__map {
+    aspect-ratio: auto;
+    min-height: 0;
+  }
+
   .page-reference-city .company-hero + section[data-section="overview"] figure.company-media-card img,
-  .page-karlsruhe-reference .company-hero + section[data-section="overview"] figure.company-media-card img {
+  .page-karlsruhe-reference .company-hero + section[data-section="overview"] figure.company-media-card img,
+  .page-duct-cleaning .company-hero + section[data-section="intro"] figure.company-media-card img,
+  .page-air-duct-cleaning .company-hero + section[data-section="intro"] figure.company-media-card img {
     height: auto;
     min-height: 0;
     aspect-ratio: 16 / 10;
@@ -12752,7 +16009,6 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-karlsruhe-reference .company-hero + section + section .karlsruhe-services__heading h2 {
   max-width: none;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 .page-reference-city .company-hero + section + section .karlsruhe-services__head {
@@ -12853,7 +16109,6 @@ body[class*="page-"] .job-detail-hero h1 {
 .city-reference-benefits__intro h2 {
   max-width: none;
   color: var(--color-primary);
-  font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.18;
 }
 
@@ -12987,5 +16242,268 @@ body[class*="page-"] .job-detail-hero h1 {
     height: auto;
     min-height: clamp(220px, 42vw, 360px);
     aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-branchen .branchen-card,
+  .page-referenzen .branchen-card {
+    min-height: auto;
+  }
+
+  .page-branchen .branchen-card__icon,
+  .page-referenzen .branchen-card__icon {
+    min-height: 104px;
+    margin-bottom: 14px;
+  }
+
+  .page-branchen .branchen-card__icon img,
+  .page-referenzen .branchen-card__icon img {
+    height: 72px;
+  }
+}
+
+.page-anlagen .company-hero {
+  background:
+    var(--hero-overlay-gradient),
+    var(--anlagen-hero-image) center 42% / cover no-repeat;
+}
+
+.page-offer .site-header {
+  background: rgba(255, 255, 255, 0);
+}
+
+.page-offer .company-hero {
+  background:
+    var(--hero-overlay-gradient),
+    var(--company-section-hero-image) center 42% / cover no-repeat;
+}
+
+.page-offer .company-hero::after {
+  height: 38%;
+  background: var(--hero-fade-gradient);
+}
+
+.page-offer .company-hero__content {
+  padding-top: 116px;
+  padding-bottom: 62px;
+}
+
+.page-offer .company-hero h1 {
+  max-width: none;
+  font-size: clamp(60px, 7vw, 100px);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+}
+
+.page-offer .offer-hero__cta {
+  margin-top: 28px;
+}
+
+.page-offer .offer-page {
+  position: relative;
+  padding: 72px 0 80px;
+  background: linear-gradient(180deg, #e8f3ff 0%, #ffffff 100%);
+}
+
+.page-offer .offer-page__layout {
+  display: grid;
+  gap: clamp(36px, 4.5vw, 52px);
+}
+
+.page-offer .offer-page__intro {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-offer .offer-page__intro h2 {
+  max-width: none;
+  line-height: 1.14;
+}
+
+.page-offer .offer-page__intro .gradient-line {
+  margin-inline: auto;
+}
+
+.page-offer .offer-page__form-card {
+  width: 100%;
+  max-width: none;
+}
+
+.page-offer .quote-form--offer {
+  gap: 20px;
+  padding: clamp(28px, 3vw, 36px) clamp(24px, 3.5vw, 40px);
+}
+
+.page-offer .quote-form--offer input,
+.page-offer .quote-form--offer select,
+.page-offer .quote-form--offer textarea {
+  padding: 16px 18px;
+  font-size: 15px;
+}
+
+.page-offer .quote-form__grid--wide {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.page-offer .quote-form__field--full {
+  grid-column: 1 / -1;
+}
+
+.page-offer .quote-form__grid--textareas {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.page-offer .quote-form__grid--textareas textarea {
+  min-height: 200px;
+  line-height: 1.55;
+}
+
+.page-offer .quote-form__services {
+  margin: 0;
+  padding: 20px 18px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+}
+
+.page-offer .quote-form__services legend {
+  padding: 0 6px;
+  color: #0161bf;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.page-offer .quote-form__checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.page-offer .quote-form__check {
+  margin: 0;
+  font-size: 14px;
+}
+
+.page-offer .quote-form__services.is-invalid {
+  border-color: rgba(220, 53, 69, 0.55);
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.12);
+}
+
+.page-offer .quote-form__field-error {
+  margin: 12px 0 0;
+  color: #c82333;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.page-offer .quote-form__field-error[hidden] {
+  display: none;
+}
+
+.page-offer .quote-form__alt-address {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 18px 16px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+}
+
+.page-offer .quote-form__alt-address legend {
+  padding: 0 6px;
+  color: #0161bf;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.page-offer .quote-form__alt-address[hidden] {
+  display: none;
+}
+
+.page-offer .checkbox .text-link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.page-offer .offer-page__note {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-offer .offer-page__note p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #4a5f75;
+}
+
+.page-offer .offer-page__note p + p {
+  margin-top: 14px;
+}
+
+.page-offer .offer-page__breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 10px;
+  color: #6b7f93;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.page-offer .offer-page__breadcrumb .text-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.page-offer .offer-page__breadcrumb .text-link:hover,
+.page-offer .offer-page__breadcrumb .text-link:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+  .page-offer .quote-form__grid--wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-offer .company-hero h1 {
+    font-size: clamp(40px, 9vw, 58px);
+  }
+}
+
+@media (max-width: 767px) {
+  .page-offer .offer-page {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
+.page-offer .quote-form__grid,
+  .page-offer .quote-form__grid--wide,
+  .page-offer .quote-form__grid--textareas {
+    grid-template-columns: 1fr;
+  }
+
+  .page-offer .quote-form__field--full {
+    grid-column: auto;
+  }
+
+  .page-offer .quote-form__checks {
+    grid-template-columns: 1fr;
   }
 }

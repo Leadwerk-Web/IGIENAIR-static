@@ -1,0 +1,78 @@
+# Zusammenfassung – Seitenstruktur igienair.de
+
+Anzahl gefundener Seiten: 174
+Quelle Sitemap: 164 URLs
+Quelle Crawl: 174 URLs (11 abgerufen)
+
+## Wichtigste Hauptbereiche
+- /kunden/ → 75 Seite(n)
+- /glossar/ → 39 Seite(n)
+- /anlagen/ → 17 Seite(n)
+- /unternehmen/ → 7 Seite(n)
+- /normen/ → 6 Seite(n)
+- /jobs/ → 3 Seite(n)
+- /kontakt/ → 2 Seite(n)
+- /leistungen/ → 2 Seite(n)
+- / → 1 Seite(n)
+- /branchen/ → 1 Seite(n)
+- /cookie-richtlinie-eu/ → 1 Seite(n)
+- /datenschutz/ → 1 Seite(n)
+- /downloads/ → 1 Seite(n)
+- /energetische-inspektion-geg-2020/ → 1 Seite(n)
+- /filterintegritaetstest/ → 1 Seite(n)
+
+## Nur in Sitemap (nicht per Crawl erreicht)
+- (keine)
+
+## Nur per Crawl (nicht in Sitemap)
+- /cookie-richtlinie-eu/
+- /gefaehrdungsbeurteilung-vdi-2047/
+- /kunden/gastronomie/
+- /kunden/gemeinden/
+- /kunden/gesundheit/
+- /kunden/lebensmittel/
+- /kunden/pharma/
+- /leistungen/inspektionundgutachten/
+- /login/
+- /normen/vdi-6022/
+
+## Mögliche doppelte oder ähnliche URLs
+- Gleicher Seitenname: kuehlregale:
+  - /anlagen/kuehlregale/
+  - /glossar/kuehlregale/
+- Gleicher Seitenname: luftkanalreinigung:
+  - /anlagen/luftkanalreinigung/
+  - /glossar/luftkanalreinigung/
+- Gleicher Seitenname: rechenzentrum:
+  - /anlagen/rechenzentrum/
+  - /glossar/rechenzentrum/
+- Gleicher Seitenname: textilschlaeuche:
+  - /anlagen/textilschlaeuche/
+  - /glossar/textilschlaeuche/
+- Gleicher Seitenname: verdampfer-und-kondensatoren:
+  - /anlagen/verdampfer-und-kondensatoren/
+  - /glossar/verdampfer-und-kondensatoren/
+- Gleicher Seitenname: filterintegritaetstest:
+  - /filterintegritaetstest/
+  - /glossar/filterintegritaetstest/
+- Gleicher Seitenname: gastronomie:
+  - /gastronomie/
+  - /kunden/gastronomie/
+- Gleicher Seitenname: gemeinden:
+  - /gemeinden/
+  - /kunden/gemeinden/
+- Gleicher Seitenname: lecktest-schwebstofffilter:
+  - /glossar/lecktest-schwebstofffilter/
+  - /lecktest-schwebstofffilter/
+- Gleicher Seitenname: vdi-2052-bgr-111:
+  - /glossar/vdi-2052-bgr-111/
+  - /normen/vdi-2052-bgr-111/
+- Gleicher Seitenname: inspektionundgutachten:
+  - /inspektionundgutachten/
+  - /leistungen/inspektionundgutachten/
+- Gleicher Seitenname: lebensmittel:
+  - /kunden/lebensmittel/
+  - /lebensmittel/
+- Gleicher Seitenname: pharma:
+  - /kunden/pharma/
+  - /pharma/

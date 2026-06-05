@@ -1,0 +1,979 @@
+{
+  "generatedAt": "2026-06-05T00:52:01.853Z",
+  "dryRun": false,
+  "totalImages": 155,
+  "totalUsages": 1654,
+  "copies": [
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Lueftungsreinigung1.jpeg",
+      "to": "Bildmaterial_final/anlagen/anlagen-lueftungsreinigung1.jpeg",
+      "category": "anlagen",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Lueftungsreinigung6.png",
+      "to": "Bildmaterial_final/anlagen/anlagen-lueftungsreinigung6.png",
+      "category": "anlagen",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Reinraumqualifizierung2.jpeg",
+      "to": "Bildmaterial_final/anlagen/anlagen-reinraumqualifizierung2.jpeg",
+      "category": "anlagen",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Splitklimageraet.jpeg",
+      "to": "Bildmaterial_final/anlagen/anlagen-splitklimageraet.jpeg",
+      "category": "anlagen",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Filterintegritaetstest.jpeg",
+      "to": "Bildmaterial_final/anlagen/filterintegritaetstest/anlagen-filterintegritaetstest.jpeg",
+      "category": "anlagen/filterintegritaetstest",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Kuechenabluftsysteme1.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuechenabluftsysteme/anlagen-kuechenabluftsysteme1.jpeg",
+      "category": "anlagen/kuechenabluftsysteme",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Kuechenabluftsysteme2.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuechenabluftsysteme/anlagen-kuechenabluftsysteme2.jpeg",
+      "category": "anlagen/kuechenabluftsysteme",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Kuehlregale.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuehlregale/anlagen-kuehlregale.jpeg",
+      "category": "anlagen/kuehlregale",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Kuehlregale1.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuehlsysteme/anlagen-kuehlregale1.jpeg",
+      "category": "anlagen/kuehlsysteme",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Verdampfer2.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuehlsysteme/anlagen-verdampfer2.jpeg",
+      "category": "anlagen/kuehlsysteme",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlage_Kuehlturmreinigung1.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuehlturmreinigung/anlage-kuehlturmreinigung1.jpeg",
+      "category": "anlagen/kuehlturmreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlage_Kuehlturmreinigung2.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuehlturmreinigung/anlage-kuehlturmreinigung2.jpeg",
+      "category": "anlagen/kuehlturmreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlage_Kuehlturmreinigung3.jpeg",
+      "to": "Bildmaterial_final/anlagen/kuehlturmreinigung/anlage-kuehlturmreinigung3.jpeg",
+      "category": "anlagen/kuehlturmreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Laborabzug1.jpeg",
+      "to": "Bildmaterial_final/anlagen/laborabzuege/anlagen-laborabzug1.jpeg",
+      "category": "anlagen/laborabzuege",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Laborabzug2.jpeg",
+      "to": "Bildmaterial_final/anlagen/laborabzuege/anlagen-laborabzug2.jpeg",
+      "category": "anlagen/laborabzuege",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Laborabzug3.jpeg",
+      "to": "Bildmaterial_final/anlagen/laborabzuege/anlagen-laborabzug3.jpeg",
+      "category": "anlagen/laborabzuege",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Leistungen_RLT-Anlagen1.jpeg",
+      "to": "Bildmaterial_final/anlagen/lueftungsanlagenreinigung/anlagen-leistungen-rlt-anlagen1.jpeg",
+      "category": "anlagen/lueftungsanlagenreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Leistungen_RLT-Anlagen2.jpeg",
+      "to": "Bildmaterial_final/anlagen/lueftungsanlagenreinigung/anlagen-leistungen-rlt-anlagen2.jpeg",
+      "category": "anlagen/lueftungsanlagenreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Leistungen_RLT-Anlagen3.png",
+      "to": "Bildmaterial_final/anlagen/lueftungsanlagenreinigung/anlagen-leistungen-rlt-anlagen3.png",
+      "category": "anlagen/lueftungsanlagenreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Leistungen_RLT-Anlagen4.jpg",
+      "to": "Bildmaterial_final/anlagen/lueftungsanlagenreinigung/anlagen-leistungen-rlt-anlagen4.jpg",
+      "category": "anlagen/lueftungsanlagenreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Leistungen_RLT-Anlagen5.jpeg",
+      "to": "Bildmaterial_final/anlagen/lueftungsanlagenreinigung/anlagen-leistungen-rlt-anlagen5.jpeg",
+      "category": "anlagen/lueftungsanlagenreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Lueftungsreinigung2.jpg",
+      "to": "Bildmaterial_final/anlagen/lueftungsreinigung/anlagen-lueftungsreinigung2.jpg",
+      "category": "anlagen/lueftungsreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Lueftungsreinigung3.png",
+      "to": "Bildmaterial_final/anlagen/lueftungsreinigung/anlagen-lueftungsreinigung3.png",
+      "category": "anlagen/lueftungsreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Lueftungsreinigung5.jpeg",
+      "to": "Bildmaterial_final/anlagen/lueftungsreinigung/anlagen-lueftungsreinigung5.jpeg",
+      "category": "anlagen/lueftungsreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Luftkanalreinigung 1.jpeg",
+      "to": "Bildmaterial_final/anlagen/luftkanalreinigung/luftkanalreinigung-anlagen-anlagen-luftkanalreinigung-1.jpeg",
+      "category": "anlagen/luftkanalreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Luftkanalreinigung 2.png",
+      "to": "Bildmaterial_final/anlagen/luftkanalreinigung/luftkanalreinigung-anlagen-anlagen-luftkanalreinigung-2.png",
+      "category": "anlagen/luftkanalreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Luftkanalreinigung 3.jpeg",
+      "to": "Bildmaterial_final/anlagen/luftkanalreinigung/luftkanalreinigung-anlagen-anlagen-luftkanalreinigung-3.jpeg",
+      "category": "anlagen/luftkanalreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Luftkanalreinigung 4.jpeg",
+      "to": "Bildmaterial_final/anlagen/luftkanalreinigung/luftkanalreinigung-anlagen-anlagen-luftkanalreinigung-4.jpeg",
+      "category": "anlagen/luftkanalreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Luftkanalreinigung 5.jpeg",
+      "to": "Bildmaterial_final/anlagen/luftkanalreinigung/luftkanalreinigung-anlagen-anlagen-luftkanalreinigung-5.jpeg",
+      "category": "anlagen/luftkanalreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Luftkanalreinigung 6.png",
+      "to": "Bildmaterial_final/anlagen/luftkanalreinigung/luftkanalreinigung-anlagen-anlagen-luftkanalreinigung-6.png",
+      "category": "anlagen/luftkanalreinigung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_OP1.png",
+      "to": "Bildmaterial_final/anlagen/op-raum-pruefung/anlagen-op1.png",
+      "category": "anlagen/op-raum-pruefung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_OP2.png",
+      "to": "Bildmaterial_final/anlagen/op-raum-pruefung/anlagen-op2.png",
+      "category": "anlagen/op-raum-pruefung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_OP3.png",
+      "to": "Bildmaterial_final/anlagen/op-raum-pruefung/anlagen-op3.png",
+      "category": "anlagen/op-raum-pruefung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Prozessabluft.jpeg",
+      "to": "Bildmaterial_final/anlagen/prozessabluft-und-entrauchungsanlagen/anlagen-prozessabluft.jpeg",
+      "category": "anlagen/prozessabluft-und-entrauchungsanlagen",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Raumluftdesinfektion1.JPG",
+      "to": "Bildmaterial_final/anlagen/raumluftdesinfektion/anlagen-raumluftdesinfektion1-jpg.jpg",
+      "category": "anlagen/raumluftdesinfektion",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Raumluftdesinfektion2.JPG",
+      "to": "Bildmaterial_final/anlagen/raumluftdesinfektion/anlagen-raumluftdesinfektion2-jpg.jpg",
+      "category": "anlagen/raumluftdesinfektion",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Rechenzentrum.jpeg",
+      "to": "Bildmaterial_final/anlagen/rechenzentrum/anlagen-rechenzentrum.jpeg",
+      "category": "anlagen/rechenzentrum",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Verdampfer.jpeg",
+      "to": "Bildmaterial_final/anlagen/verdampfer-und-kondensatoren/anlagen-verdampfer.jpeg",
+      "category": "anlagen/verdampfer-und-kondensatoren",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/bodensee-quadrat.svg",
+      "to": "Bildmaterial_final/icons/bodensee-quadrat.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/downloads/brochure-thumb.jpg",
+      "to": "Bildmaterial_final/icons/brochure-thumb.jpg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/germany-admin-map.svg",
+      "to": "Bildmaterial_final/icons/germany-admin-map.svg",
+      "category": "icons",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/germany-badge.png",
+      "to": "Bildmaterial_final/icons/germany-badge.png",
+      "category": "icons",
+      "usages": 129
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-baden-wuerttemberg.svg",
+      "to": "Bildmaterial_final/icons/karte-baden-wuerttemberg.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-bayern.svg",
+      "to": "Bildmaterial_final/icons/karte-bayern.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-hamburg.svg",
+      "to": "Bildmaterial_final/icons/karte-hamburg.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-hessen.svg",
+      "to": "Bildmaterial_final/icons/karte-hessen.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-nordrhein-westfalen.svg",
+      "to": "Bildmaterial_final/icons/karte-nordrhein-westfalen.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-rheinland-pfalz.svg",
+      "to": "Bildmaterial_final/icons/karte-rheinland-pfalz.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/karte-saarland.svg",
+      "to": "Bildmaterial_final/icons/karte-saarland.svg",
+      "category": "icons",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/sector-food.png",
+      "to": "Bildmaterial_final/icons/sector-food.png",
+      "category": "icons",
+      "usages": 75
+    },
+    {
+      "from": "assets/images/sector-gastronomy.png",
+      "to": "Bildmaterial_final/icons/sector-gastronomy.png",
+      "category": "icons",
+      "usages": 75
+    },
+    {
+      "from": "assets/images/sector-healthcare.png",
+      "to": "Bildmaterial_final/icons/sector-healthcare.png",
+      "category": "icons",
+      "usages": 75
+    },
+    {
+      "from": "assets/images/sector-industry.png",
+      "to": "Bildmaterial_final/icons/sector-industry.png",
+      "category": "icons",
+      "usages": 76
+    },
+    {
+      "from": "assets/images/sector-municipal.png",
+      "to": "Bildmaterial_final/icons/sector-municipal.png",
+      "category": "icons",
+      "usages": 75
+    },
+    {
+      "from": "assets/images/sector-pharma.png",
+      "to": "Bildmaterial_final/icons/sector-pharma.png",
+      "category": "icons",
+      "usages": 75
+    },
+    {
+      "from": "assets/images/job-cleaning-gallery-6.png",
+      "to": "Bildmaterial_final/jobs/job-cleaning-gallery-6.png",
+      "category": "jobs",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Jobs/MA_technischeReinigung.webp",
+      "to": "Bildmaterial_final/jobs/ma-technischereinigung.webp",
+      "category": "jobs",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/job-cleaning-gallery-4.png",
+      "to": "Bildmaterial_final/jobs/mitarbeiter-technische-reinigung-gesucht/job-cleaning-gallery-4.png",
+      "category": "jobs/mitarbeiter-technische-reinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/job-cleaning-gallery-5.png",
+      "to": "Bildmaterial_final/jobs/mitarbeiter-technische-reinigung-gesucht/job-cleaning-gallery-5.png",
+      "category": "jobs/mitarbeiter-technische-reinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/job-cleaning-gallery-7.png",
+      "to": "Bildmaterial_final/jobs/mitarbeiter-technische-reinigung-gesucht/job-cleaning-gallery-7.png",
+      "category": "jobs/mitarbeiter-technische-reinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/job-cleaning-gallery-8.png",
+      "to": "Bildmaterial_final/jobs/mitarbeiter-technische-reinigung-gesucht/job-cleaning-gallery-8.png",
+      "category": "jobs/mitarbeiter-technische-reinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/job-teamleiter-gallery-1.png",
+      "to": "Bildmaterial_final/jobs/teamleiter-hygienereinigung-gesucht/job-teamleiter-gallery-1.png",
+      "category": "jobs/teamleiter-hygienereinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/job-teamleiter-gallery-2.png",
+      "to": "Bildmaterial_final/jobs/teamleiter-hygienereinigung-gesucht/job-teamleiter-gallery-2.png",
+      "category": "jobs/teamleiter-hygienereinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/job-teamleiter-gallery-3.png",
+      "to": "Bildmaterial_final/jobs/teamleiter-hygienereinigung-gesucht/job-teamleiter-gallery-3.png",
+      "category": "jobs/teamleiter-hygienereinigung-gesucht",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Jobs/TL_technischeHygienereinigung.webp",
+      "to": "Bildmaterial_final/jobs/tl-technischehygienereinigung.webp",
+      "category": "jobs",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/zentrale.png",
+      "to": "Bildmaterial_final/jobs/zentrale.png",
+      "category": "jobs",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/energetischeinspektion_anforderungen.jpg",
+      "to": "Bildmaterial_final/leistungen/energetische-inspektion-geg-2020/energetischeinspektion-anforderungen.jpg",
+      "category": "leistungen/energetische-inspektion-geg-2020",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/energetischeinspektion_betreiberpflicht.jpeg",
+      "to": "Bildmaterial_final/leistungen/energetische-inspektion-geg-2020/energetischeinspektion-betreiberpflicht.jpeg",
+      "category": "leistungen/energetische-inspektion-geg-2020",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/energetischeinspektion_lueftungsanlage.png",
+      "to": "Bildmaterial_final/leistungen/energetische-inspektion-geg-2020/energetischeinspektion-lueftungsanlage.png",
+      "category": "leistungen/energetische-inspektion-geg-2020",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_Hygieneinspektion1.png",
+      "to": "Bildmaterial_final/leistungen/hygieneinspektion-vdi-6022/leistungen-hygieneinspektion1.png",
+      "category": "leistungen/hygieneinspektion-vdi-6022",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_Hygieneinspektion2.jpeg",
+      "to": "Bildmaterial_final/leistungen/hygieneinspektion-vdi-6022/leistungen-hygieneinspektion2.jpeg",
+      "category": "leistungen/hygieneinspektion-vdi-6022",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_Hygieneinspektion3.png",
+      "to": "Bildmaterial_final/leistungen/hygieneinspektion-vdi-6022/leistungen-hygieneinspektion3.png",
+      "category": "leistungen/hygieneinspektion-vdi-6022",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_Inspektionsgutachten.png",
+      "to": "Bildmaterial_final/leistungen/inspektionundgutachten/leistungen-inspektionsgutachten.png",
+      "category": "leistungen/inspektionundgutachten",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Sanierung_Nachher.png",
+      "to": "Bildmaterial_final/leistungen/instandsetzung-sanierung/sanierung-nachher.png",
+      "category": "leistungen/instandsetzung-sanierung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Sanierung_Vorher.png",
+      "to": "Bildmaterial_final/leistungen/instandsetzung-sanierung/sanierung-vorher.png",
+      "category": "leistungen/instandsetzung-sanierung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_Kanaluntersuchung.jpg",
+      "to": "Bildmaterial_final/leistungen/kanaluntersuchung/leistungen-kanaluntersuchung.jpg",
+      "category": "leistungen/kanaluntersuchung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_Kanaluntersuchung1.png",
+      "to": "Bildmaterial_final/leistungen/kanaluntersuchung/leistungen-kanaluntersuchung1.png",
+      "category": "leistungen/kanaluntersuchung",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/desinfektion1.jpeg",
+      "to": "Bildmaterial_final/leistungen/reinigung-desinfektion/desinfektion1.jpeg",
+      "category": "leistungen/reinigung-desinfektion",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/desinfektion2.png",
+      "to": "Bildmaterial_final/leistungen/reinigung-desinfektion/desinfektion2.png",
+      "category": "leistungen/reinigung-desinfektion",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/desinfektion3.png",
+      "to": "Bildmaterial_final/leistungen/reinigung-desinfektion/desinfektion3.png",
+      "category": "leistungen/reinigung-desinfektion",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/favicon.svg",
+      "to": "Bildmaterial_final/logos/favicon.svg",
+      "category": "logos",
+      "usages": 129
+    },
+    {
+      "from": "assets/images/Logo-weiss.svg",
+      "to": "Bildmaterial_final/logos/logo-weiss.svg",
+      "category": "logos",
+      "usages": 267
+    },
+    {
+      "from": "assets/images/Logo.svg",
+      "to": "Bildmaterial_final/logos/logo.svg",
+      "category": "logos",
+      "usages": 129
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Normen/DIN EN 14175.png",
+      "to": "Bildmaterial_final/normen/din-en-14175/din-en-14175-normen-din-en-14175.png",
+      "category": "normen/din-en-14175",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Normen/DIN EN 15780.png",
+      "to": "Bildmaterial_final/normen/din-en-15780/din-en-15780-normen-din-en-15780.png",
+      "category": "normen/din-en-15780",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Normen/VDI 2052 & BGR 111.png",
+      "to": "Bildmaterial_final/normen/vdi-2052-bgr-111/vdi-2052-bgr-111-normen-vdi-2052-bgr-111.png",
+      "category": "normen/vdi-2052-bgr-111",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Normen/VDI 6022.png",
+      "to": "Bildmaterial_final/normen/vdi-6022/vdi-6022-normen-vdi-6022.png",
+      "category": "normen/vdi-6022",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Berlin.webp",
+      "to": "Bildmaterial_final/referenzen/berlin.webp",
+      "category": "referenzen",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Brandschutzvorschriften.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-brandschutzvorschriften.jpeg",
+      "category": "referenzen",
+      "usages": 5
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Hygiene.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-hygiene.jpeg",
+      "category": "referenzen",
+      "usages": 6
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuechenabluft1.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuechenabluft1.jpeg",
+      "category": "referenzen",
+      "usages": 5
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuechenabluft2.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuechenabluft2.jpeg",
+      "category": "referenzen",
+      "usages": 5
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuechenabluft3.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuechenabluft3.jpeg",
+      "category": "referenzen",
+      "usages": 6
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuechenabluft4.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuechenabluft4.jpeg",
+      "category": "referenzen",
+      "usages": 5
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuechenabluft5.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuechenabluft5.jpeg",
+      "category": "referenzen",
+      "usages": 5
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuehlturm.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuehlturm.jpeg",
+      "category": "referenzen",
+      "usages": 7
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuehlturm2.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuehlturm2.jpeg",
+      "category": "referenzen",
+      "usages": 4
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuehlturm3.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuehlturm3.jpeg",
+      "category": "referenzen",
+      "usages": 7
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuehlturm4.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuehlturm4.jpeg",
+      "category": "referenzen",
+      "usages": 6
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuehlturm5.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuehlturm5.jpeg",
+      "category": "referenzen",
+      "usages": 8
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Kuehlturm6.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-kuehlturm6.jpeg",
+      "category": "referenzen",
+      "usages": 6
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_ReinigungDesinfektion1.jpg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinigungdesinfektion1.jpg",
+      "category": "referenzen",
+      "usages": 10
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_ReinigungDesinfektion2.jpg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinigungdesinfektion2.jpg",
+      "category": "referenzen",
+      "usages": 10
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_ReinigungDesinfektion3.png",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinigungdesinfektion3.png",
+      "category": "referenzen",
+      "usages": 10
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_ReinigungDesinfektion4.png",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinigungdesinfektion4.png",
+      "category": "referenzen",
+      "usages": 10
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_ReinigungDesinfektion5.png",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinigungdesinfektion5.png",
+      "category": "referenzen",
+      "usages": 10
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_ReinigungDesinfektion6.jpg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinigungdesinfektion6.jpg",
+      "category": "referenzen",
+      "usages": 9
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Reinraum.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinraum.jpeg",
+      "category": "referenzen",
+      "usages": 12
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Reinraum2.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinraum2.jpeg",
+      "category": "referenzen",
+      "usages": 12
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Reinraum3.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinraum3.jpeg",
+      "category": "referenzen",
+      "usages": 11
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Reinraum4.JPG",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinraum4-jpg.jpg",
+      "category": "referenzen",
+      "usages": 12
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Reinraum5.jpg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-reinraum5.jpg",
+      "category": "referenzen",
+      "usages": 12
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen.jpeg",
+      "category": "referenzen",
+      "usages": 16
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen2.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen2.jpeg",
+      "category": "referenzen",
+      "usages": 11
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen3.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen3.jpeg",
+      "category": "referenzen",
+      "usages": 16
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen4.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen4.jpeg",
+      "category": "referenzen",
+      "usages": 12
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen5.jpeg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen5.jpeg",
+      "category": "referenzen",
+      "usages": 16
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen6.png",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen6.png",
+      "category": "referenzen",
+      "usages": 11
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen7.jpg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen7.jpg",
+      "category": "referenzen",
+      "usages": 13
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_RLT-Anlagen8.jpg",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-rlt-anlagen8.jpg",
+      "category": "referenzen",
+      "usages": 12
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Referenzen/Referenzen_Leistungen_Sanierung-Lueftungsanlagen.png",
+      "to": "Bildmaterial_final/referenzen/referenzen-leistungen-sanierung-lueftungsanlagen.png",
+      "category": "referenzen",
+      "usages": 58
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlage_Kuehlturmreinigung4.jpeg",
+      "to": "Bildmaterial_final/shared/anlage-kuehlturmreinigung4.jpeg",
+      "category": "shared",
+      "usages": 4
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Hero.jpeg",
+      "to": "Bildmaterial_final/shared/anlagen-hero.jpeg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Laborabzug.jpeg",
+      "to": "Bildmaterial_final/shared/anlagen-laborabzug.jpeg",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Lueftungsreinigung7.jpeg",
+      "to": "Bildmaterial_final/shared/anlagen-lueftungsreinigung7.jpeg",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_OP4.png",
+      "to": "Bildmaterial_final/shared/anlagen-op4.png",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Anlagen/Anlagen_Reinraumqualifizierung1.jpeg",
+      "to": "Bildmaterial_final/shared/anlagen-reinraumqualifizierung1.jpeg",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/certifications-hero-bg.png",
+      "to": "Bildmaterial_final/shared/certifications-hero-bg.png",
+      "category": "shared",
+      "usages": 26
+    },
+    {
+      "from": "assets/images/company-cta-bg.png",
+      "to": "Bildmaterial_final/shared/company-cta-bg.png",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Leistungen/Energetischeinspektion/EnergetischeInspektion.png",
+      "to": "Bildmaterial_final/shared/energetischeinspektion.png",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-filterintegritaetstest.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-filterintegritaetstest.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-gefaehrdungsbeurteilung-vdi-2047.png",
+      "to": "Bildmaterial_final/shared/inspektion-gefaehrdungsbeurteilung-vdi-2047.png",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-hygieneinspektion-vdi-6022.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-hygieneinspektion-vdi-6022.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-kanaluntersuchung.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-kanaluntersuchung.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-laborabzuege.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-laborabzuege.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-lecktest-schwebstofffilter.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-lecktest-schwebstofffilter.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-op-raum-pruefung.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-op-raum-pruefung.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-reinraumqualifizierung.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-reinraumqualifizierung.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/inspektion-splitklimageraete.jpg",
+      "to": "Bildmaterial_final/shared/inspektion-splitklimageraete.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Leistungen/inspektionundgutachten/Inspektionsgutachten.jpg",
+      "to": "Bildmaterial_final/shared/inspektionsgutachten.jpg",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Instandsetzung.jpg",
+      "to": "Bildmaterial_final/shared/instandsetzung.jpg",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Leistungen/Leistungen_hero.png",
+      "to": "Bildmaterial_final/shared/leistungen-hero.png",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/memmingen-hero.png",
+      "to": "Bildmaterial_final/shared/memmingen-hero.png",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Leistungen/Reinigung-desinfektion/Reinigung-Desinfektion.png",
+      "to": "Bildmaterial_final/shared/reinigung-desinfektion.png",
+      "category": "shared",
+      "usages": 3
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Normen/VDI 2047-2.png",
+      "to": "Bildmaterial_final/shared/shared-normen-vdi-2047-2.png",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Unternehmen-Hero.png",
+      "to": "Bildmaterial_final/shared/unternehmen-hero.png",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/video-poster-1.jpg",
+      "to": "Bildmaterial_final/shared/video-poster-1.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/video-poster-2.jpg",
+      "to": "Bildmaterial_final/shared/video-poster-2.jpg",
+      "category": "shared",
+      "usages": 2
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Unternehmen/Unternehmen-Qualitat.png",
+      "to": "Bildmaterial_final/unternehmen/qualitaet/unternehmen-qualitat.png",
+      "category": "unternehmen/qualitaet",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Unternehmen/Unternehmen_Arbeitssicherheit.jpg",
+      "to": "Bildmaterial_final/unternehmen/sicherheit/unternehmen-arbeitssicherheit.jpg",
+      "category": "unternehmen/sicherheit",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Unternehmen/Unternehmen_Umweltschutz.jpg",
+      "to": "Bildmaterial_final/unternehmen/umweltschutz/unternehmen-umweltschutz.jpg",
+      "category": "unternehmen/umweltschutz",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Unternehmen/Unternehmen_Team.png",
+      "to": "Bildmaterial_final/unternehmen/unternehmen-team.png",
+      "category": "unternehmen",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Unternehmen/Unternehmen_TechnischeHygiene.jpg",
+      "to": "Bildmaterial_final/unternehmen/unternehmen-technischehygiene.jpg",
+      "category": "unternehmen",
+      "usages": 1
+    },
+    {
+      "from": "assets/images/Genutze Bilder_LW/Unternehmen/Unternehmen_Umweltschutz.jpeg",
+      "to": "Bildmaterial_final/unternehmen/unternehmen-umweltschutz.jpeg",
+      "category": "unternehmen",
+      "usages": 2
+    },
+    {
+      "from": "assets/certificates/btga-preview.png",
+      "to": "Bildmaterial_final/unternehmen/zertifizierungen/btga-preview.png",
+      "category": "unternehmen/zertifizierungen",
+      "usages": 1
+    }
+  ],
+  "problemsBefore": [],
+  "problemsAfter": [],
+  "folders": [
+    "anlagen",
+    "anlagen/filterintegritaetstest",
+    "anlagen/kuechenabluftsysteme",
+    "anlagen/kuehlregale",
+    "anlagen/kuehlsysteme",
+    "anlagen/kuehlturmreinigung",
+    "anlagen/laborabzuege",
+    "anlagen/lueftungsanlagenreinigung",
+    "anlagen/lueftungsreinigung",
+    "anlagen/luftkanalreinigung",
+    "anlagen/op-raum-pruefung",
+    "anlagen/prozessabluft-und-entrauchungsanlagen",
+    "anlagen/raumluftdesinfektion",
+    "anlagen/rechenzentrum",
+    "anlagen/verdampfer-und-kondensatoren",
+    "icons",
+    "jobs",
+    "jobs/mitarbeiter-technische-reinigung-gesucht",
+    "jobs/teamleiter-hygienereinigung-gesucht",
+    "leistungen/energetische-inspektion-geg-2020",
+    "leistungen/hygieneinspektion-vdi-6022",
+    "leistungen/inspektionundgutachten",
+    "leistungen/instandsetzung-sanierung",
+    "leistungen/kanaluntersuchung",
+    "leistungen/reinigung-desinfektion",
+    "logos",
+    "normen/din-en-14175",
+    "normen/din-en-15780",
+    "normen/vdi-2052-bgr-111",
+    "normen/vdi-6022",
+    "referenzen",
+    "shared",
+    "unternehmen",
+    "unternehmen/qualitaet",
+    "unternehmen/sicherheit",
+    "unternehmen/umweltschutz",
+    "unternehmen/zertifizierungen"
+  ]
+}

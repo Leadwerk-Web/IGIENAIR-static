@@ -1,3 +1,37 @@
+function resolveSitePath(urlPath) {
+  const script = document.querySelector('script[src*="script.js"]');
+  let prefix = "";
+
+  if (script) {
+    const src = script.getAttribute("src") || "";
+    if (!src.startsWith("/")) {
+      const ups = (src.match(/\.\.\//g) || []).length;
+      prefix = ups ? "../".repeat(ups) : "";
+    } else {
+      return urlPath;
+    }
+  }
+
+  const qIdx = urlPath.indexOf("?");
+  const query = qIdx >= 0 ? urlPath.slice(qIdx) : "";
+  const pathAndHash = qIdx >= 0 ? urlPath.slice(0, qIdx) : urlPath;
+  const hashIdx = pathAndHash.indexOf("#");
+  const hash = hashIdx >= 0 ? pathAndHash.slice(hashIdx) : "";
+  const pathname = hashIdx >= 0 ? pathAndHash.slice(0, hashIdx) : pathAndHash;
+
+  let target;
+  if (!pathname || pathname === "/") {
+    target = "index.html";
+  } else if (/^\/(assets\/|styles\.css|script\.js)/.test(pathname)) {
+    target = pathname.slice(1);
+  } else {
+    const clean = pathname.replace(/^\/+|\/+$/g, "");
+    target = `${clean}/index.html`;
+  }
+
+  return `${prefix}${target}${hash}${query}`;
+}
+
 const body = document.body;
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
@@ -28,6 +62,37 @@ function syncAddressFields() {
   altAddress.hidden = !isDifferent;
   altAddress.querySelectorAll("input").forEach((input) => {
     input.required = Boolean(isDifferent);
+  });
+}
+
+function initOfferForm() {
+  const form = document.querySelector(".quote-form--offer");
+  if (!form) return;
+
+  const servicesFieldset = form.querySelector("[data-offer-services]");
+  const serviceCheckboxes = form.querySelectorAll('input[name="offer-type[]"]');
+  const servicesError = form.querySelector("[data-offer-services-error]");
+
+  const hasServiceSelection = () => Array.from(serviceCheckboxes).some((box) => box.checked);
+
+  const syncServicesValidation = () => {
+    if (!servicesFieldset) return;
+    const isValid = hasServiceSelection();
+    servicesFieldset.classList.toggle("is-invalid", !isValid);
+    if (servicesError) {
+      servicesError.hidden = isValid;
+    }
+  };
+
+  serviceCheckboxes.forEach((box) => {
+    box.addEventListener("change", syncServicesValidation);
+  });
+
+  form.addEventListener("submit", (event) => {
+    if (hasServiceSelection()) return;
+    event.preventDefault();
+    syncServicesValidation();
+    servicesFieldset?.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 }
 
@@ -528,6 +593,44 @@ function initKeyboard() {
   });
 }
 
+function initScrollToTop() {
+  if (document.querySelector(".scroll-to-top")) {
+    return;
+  }
+
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "scroll-to-top";
+  button.setAttribute("aria-label", "Nach oben scrollen");
+  button.innerHTML =
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.2 5.7 11.5l1.4 1.4L12 8l5 5 1.4-1.4L12 5.2Z"/></svg>';
+
+  document.body.appendChild(button);
+
+  const threshold = 120;
+  const scrollBehavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? "auto"
+    : "smooth";
+
+  const syncVisibility = () => {
+    const show = window.scrollY > threshold;
+    button.classList.toggle("is-visible", show);
+  };
+
+  button.addEventListener("click", () => {
+    const topTarget = document.getElementById("top");
+    if (topTarget) {
+      topTarget.scrollIntoView({ behavior: scrollBehavior, block: "start" });
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: scrollBehavior });
+  });
+
+  window.addEventListener("scroll", syncVisibility, { passive: true });
+  syncVisibility();
+}
+
 const presenceMapStateLabels = {
   "Baden__x26__Württemberg": "Baden-Württemberg",
   "Bayern": "Bayern",
@@ -549,7 +652,7 @@ const presenceMapStateLabels = {
 
 const presenceMapLocationStates = {
   "Baden__x26__Württemberg": {
-    href: "standorte.html#standort-baden-wuerttemberg",
+    href: "/kontakt/#standort-baden-wuerttemberg",
     cardIds: ["standort-baden-wuerttemberg", "standort-bodensee-tuttlingen"],
     locations: [
       {
@@ -571,7 +674,7 @@ const presenceMapLocationStates = {
     ],
   },
   "Bayern": {
-    href: "standorte.html#standort-nordbayern-oberasbach",
+    href: "/kontakt/#standort-nordbayern-oberasbach",
     cardIds: ["standort-nordbayern-oberasbach", "standort-suedbayern-eching"],
     locations: [
       {
@@ -593,7 +696,7 @@ const presenceMapLocationStates = {
     ],
   },
   "Hessen": {
-    href: "standorte.html#standort-rhein-main-niedernhausen",
+    href: "/kontakt/#standort-rhein-main-niedernhausen",
     cardIds: ["standort-rhein-main-niedernhausen"],
     locations: [
       {
@@ -607,7 +710,7 @@ const presenceMapLocationStates = {
     ],
   },
   "Berlin": {
-    href: "standorte.html#standort-berlin",
+    href: "/kontakt/#standort-berlin",
     cardIds: ["standort-berlin"],
     locations: [
       {
@@ -621,7 +724,7 @@ const presenceMapLocationStates = {
     ],
   },
   "Nordrhein-Westfalen": {
-    href: "standorte.html#standort-nordrhein-westfalen",
+    href: "/kontakt/#standort-nordrhein-westfalen",
     cardIds: ["standort-nordrhein-westfalen"],
     locations: [
       {
@@ -635,7 +738,7 @@ const presenceMapLocationStates = {
     ],
   },
   "Niedersachsen": {
-    href: "standorte.html#standort-nord-winsen",
+    href: "/kontakt/#standort-nord-winsen",
     cardIds: ["standort-nord-winsen"],
     locations: [
       {
@@ -845,7 +948,7 @@ function initPresenceMap() {
         return;
       }
 
-      window.location.href = location.href;
+      window.location.href = resolveSitePath(location.href);
     };
 
     land.addEventListener("mouseenter", (event) => {
@@ -1223,6 +1326,190 @@ function initCleaningMediaHeights() {
   sync();
 }
 
+function initHygieneAirNavHeight() {
+  const row = document.querySelector(".hygiene-air .filtertest-standard__row--nav");
+  if (!row) {
+    return;
+  }
+
+  const copy = row.querySelector(".filtertest-standard__copy");
+  const anchors = row.querySelector(".hygiene-air__anchors");
+  if (!copy || !anchors) {
+    return;
+  }
+
+  const desktopQuery = window.matchMedia("(min-width: 981px)");
+
+  const sync = () => {
+    if (!desktopQuery.matches) {
+      anchors.style.removeProperty("height");
+      return;
+    }
+
+    anchors.style.height = `${copy.offsetHeight}px`;
+  };
+
+  if (typeof ResizeObserver !== "undefined") {
+    const observer = new ResizeObserver(sync);
+    observer.observe(copy);
+  }
+
+  window.addEventListener("resize", sync, { passive: true });
+  desktopQuery.addEventListener("change", sync);
+
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(sync);
+  }
+
+  sync();
+}
+
+function initJobGallerySlider() {
+  document.querySelectorAll("[data-job-gallery]").forEach((slider) => {
+    const viewport = slider.querySelector("[data-gallery-viewport]");
+    const track = slider.querySelector("[data-gallery-track]");
+    const slides = Array.from(slider.querySelectorAll("[data-gallery-slide]"));
+    const prevBtn = slider.querySelector("[data-gallery-prev]");
+    const nextBtn = slider.querySelector("[data-gallery-next]");
+    const dots = Array.from(slider.querySelectorAll("[data-gallery-to]"));
+    const currentEl = slider.querySelector("[data-gallery-current]");
+    const totalEl = slider.querySelector("[data-gallery-total]");
+
+    if (!viewport || !track || slides.length === 0) {
+      return;
+    }
+
+    const total = slides.length;
+    let index = 0;
+    let autoplayTimer = null;
+    const autoplayDelay = 6000;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (totalEl) {
+      totalEl.textContent = String(total).padStart(2, "0");
+    }
+
+    function render() {
+      const slideWidth = slides[0]?.getBoundingClientRect().width || viewport.clientWidth;
+      track.style.transform = `translate3d(${-slideWidth * index}px, 0, 0)`;
+      slides.forEach((slide, i) => {
+        const isActive = i === index;
+        slide.classList.toggle("is-active", isActive);
+        slide.setAttribute("aria-hidden", isActive ? "false" : "true");
+      });
+      dots.forEach((dot, i) => dot.classList.toggle("is-active", i === index));
+      if (currentEl) {
+        currentEl.textContent = String(index + 1).padStart(2, "0");
+      }
+    }
+
+    function goTo(next) {
+      index = (next + total) % total;
+      render();
+    }
+
+    function nextSlide() {
+      goTo(index + 1);
+    }
+
+    function prevSlide() {
+      goTo(index - 1);
+    }
+
+    function startAutoplay() {
+      if (reduceMotion) {
+        return;
+      }
+      stopAutoplay();
+      autoplayTimer = window.setInterval(nextSlide, autoplayDelay);
+    }
+
+    function stopAutoplay() {
+      if (autoplayTimer !== null) {
+        window.clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    }
+
+    prevBtn?.addEventListener("click", () => {
+      prevSlide();
+      startAutoplay();
+    });
+
+    nextBtn?.addEventListener("click", () => {
+      nextSlide();
+      startAutoplay();
+    });
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        goTo(Number(dot.dataset.galleryTo || "0"));
+        startAutoplay();
+      });
+    });
+
+    viewport.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        prevSlide();
+        startAutoplay();
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        nextSlide();
+        startAutoplay();
+      }
+    });
+
+    slider.addEventListener("mouseenter", stopAutoplay);
+    slider.addEventListener("mouseleave", startAutoplay);
+    slider.addEventListener("focusin", stopAutoplay);
+    slider.addEventListener("focusout", (event) => {
+      if (!slider.contains(event.relatedTarget)) {
+        startAutoplay();
+      }
+    });
+
+    let touchStartX = 0;
+    const swipeThreshold = 40;
+
+    viewport.addEventListener("touchstart", (event) => {
+      touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    viewport.addEventListener("touchend", (event) => {
+      const delta = event.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(delta) < swipeThreshold) {
+        return;
+      }
+      if (delta < 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+      startAutoplay();
+    }, { passive: true });
+
+    window.addEventListener("resize", render, { passive: true });
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startAutoplay();
+          } else {
+            stopAutoplay();
+          }
+        });
+      }, { threshold: 0.25 });
+      observer.observe(slider);
+    } else {
+      startAutoplay();
+    }
+
+    render();
+  });
+}
+
 function initServicesAccordion() {
   const accordion = document.querySelector("[data-services-accordion]");
   if (!accordion) {
@@ -1270,11 +1557,13 @@ function initServicesAccordion() {
 
 window.addEventListener("scroll", syncHeaderState, { passive: true });
 addressSelect?.addEventListener("change", syncAddressFields);
+initOfferForm();
 
 initMenu();
 initAnchors();
 initInertControls();
 initKeyboard();
+initScrollToTop();
 initVideos();
 initCertificateGalleries();
 initLocationBrowsers();
@@ -1284,8 +1573,10 @@ observeMeters();
 initSectorAnimations();
 initSectorsColumnBalance();
 initServicesSlider();
+initJobGallerySlider();
 initImageCompare();
 initCleaningMediaHeights();
+initHygieneAirNavHeight();
 initServicesAccordion();
 initPresenceMap();
 syncAddressFields();
