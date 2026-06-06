@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "project": "IGIENAIR",
+  "page_count": 176,
+  "canonical_manifest": "mapping.json",
+  "activation_order": [
+    "leadwerk-fields",
+    "leadwerk-wpml-clone",
+    "leadwerk_theme",
+    "leadwerk_importer"
+  ]
+}

@@ -1,0 +1,13 @@
+/*
+Theme Name: Leadwerk IGIENAIR
+Theme URI: https://igienair.de/
+Author: Leadwerk
+Description: Structured IGIENAIR migration theme.
+Version: 2.9.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: leadwerk-theme
+*/
+
+.leadwerk-consent-embed{display:grid;min-height:280px;place-items:center;background:#eef4f8}
+.leadwerk-form-fallback{padding:1rem;border:1px solid #b8c7d1;background:#f7fafc}
