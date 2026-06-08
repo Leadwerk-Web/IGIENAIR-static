@@ -65,34 +65,52 @@ function syncAddressFields() {
   });
 }
 
-function initOfferForm() {
-  const form = document.querySelector(".quote-form--offer");
-  if (!form) return;
+function initQuoteForms() {
+  const dankeUrl = resolveSitePath("/danke/");
 
-  const servicesFieldset = form.querySelector("[data-offer-services]");
-  const serviceCheckboxes = form.querySelectorAll('input[name="offer-type[]"]');
-  const servicesError = form.querySelector("[data-offer-services-error]");
+  document.querySelectorAll(".quote-form--offer").forEach((form) => {
+    const servicesFieldset = form.querySelector("[data-offer-services]");
+    const serviceCheckboxes = form.querySelectorAll('input[name="offer-type[]"]');
+    const servicesError = form.querySelector("[data-offer-services-error]");
 
-  const hasServiceSelection = () => Array.from(serviceCheckboxes).some((box) => box.checked);
+    const hasServiceSelection = () =>
+      serviceCheckboxes.length === 0 ||
+      Array.from(serviceCheckboxes).some((box) => box.checked);
 
-  const syncServicesValidation = () => {
-    if (!servicesFieldset) return;
-    const isValid = hasServiceSelection();
-    servicesFieldset.classList.toggle("is-invalid", !isValid);
-    if (servicesError) {
-      servicesError.hidden = isValid;
-    }
-  };
+    const syncServicesValidation = () => {
+      if (!servicesFieldset) return;
+      const isValid = hasServiceSelection();
+      servicesFieldset.classList.toggle("is-invalid", !isValid);
+      if (servicesError) {
+        servicesError.hidden = isValid;
+      }
+    };
 
-  serviceCheckboxes.forEach((box) => {
-    box.addEventListener("change", syncServicesValidation);
+    serviceCheckboxes.forEach((box) => {
+      box.addEventListener("change", syncServicesValidation);
+    });
+
+    form.addEventListener("submit", (event) => {
+      if (!form.checkValidity()) return;
+
+      if (!hasServiceSelection()) {
+        event.preventDefault();
+        syncServicesValidation();
+        servicesFieldset?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+
+      event.preventDefault();
+      window.location.href = dankeUrl;
+    });
   });
 
-  form.addEventListener("submit", (event) => {
-    if (hasServiceSelection()) return;
-    event.preventDefault();
-    syncServicesValidation();
-    servicesFieldset?.scrollIntoView({ behavior: "smooth", block: "center" });
+  document.querySelectorAll(".quote-form:not(.quote-form--offer)").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      if (!form.checkValidity()) return;
+      event.preventDefault();
+      window.location.href = dankeUrl;
+    });
   });
 }
 
@@ -1555,7 +1573,7 @@ function initServicesAccordion() {
 
 window.addEventListener("scroll", syncHeaderState, { passive: true });
 addressSelect?.addEventListener("change", syncAddressFields);
-initOfferForm();
+initQuoteForms();
 
 initMenu();
 initAnchors();

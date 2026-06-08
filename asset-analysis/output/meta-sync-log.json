@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-06-08T10:53:27.160Z",
+  "summary": {
+    "updated": 167,
+    "failed": 0,
+    "redirectStubs": 8,
+    "redirectFailed": 0
+  },
+  "failed": [],
+  "redirectResults": [
+    {
+      "staticFile": "gastronomie/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "gemeinden/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "gesundheitswesen/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "pharma/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "lebensmittel/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "inspektionundgutachten/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "instandsetzung-sanierung/index.html",
+      "ok": true
+    },
+    {
+      "staticFile": "reinigung-desinfektion/index.html",
+      "ok": true
+    }
+  ],
+  "samples": [
+    {
+      "file": "index.html",
+      "title": "Technische Hygiene ᐅ Raumlufthygiene für gesunde Raumluft"
+    },
+    {
+      "file": "anlagen/index.html",
+      "title": "Anlagen - Igienair GmbH"
+    },
+    {
+      "file": "anlagen/kuechenabluftsysteme/index.html",
+      "title": "Küchenabluftsysteme ᐅ Brandschutztechnische Reinigung"
+    },
+    {
+      "file": "anlagen/kuehlregale/index.html",
+      "title": "Kühlregale - Igienair GmbH"
+    },
+    {
+      "file": "anlagen/kuehlsysteme/index.html",
+      "title": "Kühlsysteme - Igienair GmbH"
+    }
+  ]
+}

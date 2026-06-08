@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-06-08T10:54:56.644Z",
+  "summary": {
+    "compared": 173,
+    "titleDescriptionMatch": 173,
+    "mismatches": 0,
+    "fetchErrors": 0,
+    "staticMissingCanonical": 1,
+    "staticMissingOg": 0,
+    "liveWithCanonical": 172,
+    "liveWithOg": 173
+  },
+  "mismatches": [],
+  "errors": [],
+  "samplesMatch": [
+    {
+      "staticFile": "index.html",
+      "title": "Technische Hygiene ᐅ Raumlufthygiene für gesunde Raumluft"
+    },
+    {
+      "staticFile": "anlagen/index.html",
+      "title": "Anlagen - Igienair GmbH"
+    },
+    {
+      "staticFile": "anlagen/kuechenabluftsysteme/index.html",
+      "title": "Küchenabluftsysteme ᐅ Brandschutztechnische Reinigung"
+    },
+    {
+      "staticFile": "anlagen/kuehlregale/index.html",
+      "title": "Kühlregale - Igienair GmbH"
+    },
+    {
+      "staticFile": "anlagen/kuehlsysteme/index.html",
+      "title": "Kühlsysteme - Igienair GmbH"
+    }
+  ]
+}

@@ -504,6 +504,36 @@ body.is-scrolled .button--header {
   text-wrap: balance;
 }
 
+.hero-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 10px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hero-breadcrumb__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.hero-breadcrumb__link:hover,
+.hero-breadcrumb__link:focus-visible {
+  text-decoration: underline;
+}
+
+.hero-breadcrumb__current {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.hero-breadcrumb__sep {
+  opacity: 0.72;
+}
+
 .hero__bottom {
   display: grid;
   flex-shrink: 0;
@@ -1925,10 +1955,39 @@ body.menu-open .scroll-to-top {
   padding: 72px 0 80px;
 }
 
+@media (min-width: 1181px) {
+  .site-footer__main {
+    grid-template-rows: auto 1fr;
+    row-gap: 28px;
+    column-gap: 48px;
+  }
+
+  .footer-brand {
+    display: contents;
+  }
+
+  .footer-brand img {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  .footer-brand p {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .site-footer__main > .footer-column {
+    grid-row: 2;
+    align-self: start;
+  }
+}
+
 .footer-brand img {
-  width: 210px;
+  width: 170px;
   height: auto;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .footer-column h2 {
@@ -2132,7 +2191,7 @@ body.menu-open .mobile-menu {
 }
 
 /* Inhaltsabschnitte unter dem Hero: einheitlicher Verlauf wie Qualität */
-main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
+main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.sectors):not(.home-faq) {
   background: var(--company-section-gradient);
 }
 
@@ -2429,15 +2488,25 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   gap: 24px;
 }
 
+.company-testimonial-grid > *,
+.page-job-detail .job-voices__grid > * {
+  min-width: 0;
+}
+
 .company-testimonial {
   display: grid;
-  grid-template-columns: 18px 1fr;
+  grid-template-columns: 18px minmax(0, 1fr);
   gap: 18px;
+  min-width: 0;
   min-height: 100%;
   padding: 26px 24px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.08);
+}
+
+.company-testimonial > div {
+  min-width: 0;
 }
 
 .company-testimonial__mark {
@@ -2451,12 +2520,14 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   color: var(--color-dark);
   font-size: 20px;
   font-weight: 600;
+  overflow-wrap: break-word;
 }
 
 .company-testimonial p {
   margin: 0;
   color: var(--color-muted);
   line-height: 1.75;
+  overflow-wrap: break-word;
 }
 
 .company-employees {
@@ -2809,7 +2880,6 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
 .industries-overview__columns {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
   gap: clamp(2rem, 4vw, 4.5rem);
   align-items: center;
 }
@@ -2820,13 +2890,19 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   min-width: 0;
 }
 
-.industries-overview__columns > .industries-overview__copy {
-  grid-column: 1;
-}
+@media (min-width: 981px) {
+  .industries-overview__columns {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+  }
 
-.industries-overview__columns > .industries-overview__icon-column,
-.industries-overview__columns > .industries-overview__media {
-  grid-column: 2;
+  .industries-overview__columns > .industries-overview__copy {
+    grid-column: 1;
+  }
+
+  .industries-overview__columns > .industries-overview__icon-column,
+  .industries-overview__columns > .industries-overview__media {
+    grid-column: 2;
+  }
 }
 
 .page-industries .industries-overview__copy {
@@ -3034,15 +3110,12 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
 .branchen-overview__intro {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   column-gap: clamp(2rem, 4vw, 4.5rem);
   row-gap: 0;
   align-items: start;
 }
 
 .branchen-overview__eyebrow {
-  grid-column: 1;
-  grid-row: 1;
   margin-bottom: 14px;
 }
 
@@ -3052,17 +3125,34 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 }
 
 .branchen-overview__heading {
-  grid-column: 1;
-  grid-row: 2;
   margin: 0;
 }
 
 .branchen-overview__copy {
-  grid-column: 2;
-  grid-row: 2;
   margin: 0;
   max-width: none;
   align-self: start;
+}
+
+@media (min-width: 981px) {
+  .branchen-overview__intro {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
+
+  .branchen-overview__eyebrow {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .branchen-overview__heading {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .branchen-overview__copy {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 .branchen-overview__heading h2 {
@@ -3234,6 +3324,18 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
 .branchen-card__link::after {
   content: " \2192";
+}
+
+.page-downloads .branchen-card__icon--pdf img {
+  width: clamp(68px, 7.5vw, 84px);
+  height: clamp(84px, 9vw, 104px);
+  filter: drop-shadow(0 10px 22px rgba(1, 97, 191, 0.16));
+}
+
+.page-downloads .branchen-card:hover .branchen-card__icon--pdf img,
+.page-downloads .branchen-card:focus-visible .branchen-card__icon--pdf img {
+  transform: translateY(-4px) scale(1.04);
+  filter: drop-shadow(0 16px 28px rgba(1, 97, 191, 0.22));
 }
 
 .page-referenzen .branchen-card__icon img {
@@ -4040,27 +4142,32 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
 .airduct-intro-overview .cleanroom-overview__grid {
   align-items: stretch;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.airduct-intro-overview__grid > .cleanroom-overview__copy:first-of-type {
-  grid-column: 1 / 4;
-  grid-row: 1;
-}
+@media (min-width: 981px) {
+  .airduct-intro-overview .cleanroom-overview__grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 
-.airduct-intro-overview__grid > .airduct-intro-overview__media:first-of-type {
-  grid-column: 4 / 6;
-  grid-row: 1;
-}
+  .airduct-intro-overview__grid > .cleanroom-overview__copy:first-of-type {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
 
-.airduct-intro-overview__grid > .airduct-intro-overview__media:last-of-type {
-  grid-column: 1 / 3;
-  grid-row: 2;
-}
+  .airduct-intro-overview__grid > .airduct-intro-overview__media:first-of-type {
+    grid-column: 4 / 6;
+    grid-row: 1;
+  }
 
-.airduct-intro-overview__grid > .airduct-intro-overview__aside {
-  grid-column: 3 / 6;
-  grid-row: 2;
+  .airduct-intro-overview__grid > .airduct-intro-overview__media:last-of-type {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .airduct-intro-overview__grid > .airduct-intro-overview__aside {
+    grid-column: 3 / 6;
+    grid-row: 2;
+  }
 }
 
 .airduct-intro-overview__grid {
@@ -5227,9 +5334,14 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
 .quality-intro__columns {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
   gap: 48px;
   align-items: start;
+}
+
+@media (min-width: 1101px) {
+  .quality-intro__columns {
+    grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+  }
 }
 
 .quality-intro__body {
@@ -5539,12 +5651,40 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   .customers-overview__grid,
   .company-locations__body,
   .sustainability-intro__grid,
-  .sustainability-accordion-section__grid {
+  .sustainability-accordion-section__grid,
+  .locations-intro__grid {
     grid-template-columns: 1fr;
   }
 
   .industries-overview__columns {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .industries-overview__columns > .industries-overview__copy,
+  .industries-overview__columns > .industries-overview__icon-column,
+  .industries-overview__columns > .industries-overview__media {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .page-industries .industries-overview__icon-column {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page-industries .industries-overview__icon-column::before {
+    width: min(100%, 320px);
+    height: min(100%, 300px);
+    filter: blur(36px);
+  }
+
+  .page-industries .industries-overview,
+  .page-industries .industries-overview__layout,
+  .page-industries .industries-overview__columns {
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   .quality-intro__columns {
@@ -5593,6 +5733,14 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   .inspection-intro__media {
     max-width: 560px;
     justify-self: start;
+  }
+
+  .inspection-intro__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
   }
 
   .quality-intro__media {
@@ -5787,7 +5935,8 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   }
 
   .jobs-overview__grid {
-    grid-template-columns: minmax(0, 0.92fr) minmax(280px, 0.82fr);
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .legal-document__columns {
@@ -5826,44 +5975,94 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   }
 
   .hero h1 {
-    max-width: 320px;
-    font-size: 40px;
-    line-height: 0.96;
+    max-width: 100%;
+    font-size: clamp(26px, 7.2vw, 34px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .hero .eyebrow--hero {
+    margin-bottom: 8px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero__fade {
+    height: min(200px, 46%);
   }
 
   .hero__content {
-    padding-top: 122px;
+    flex: 0 0 auto;
+    align-content: start;
+    justify-items: center;
+    padding-top: 104px;
+    padding-bottom: 16px;
+    min-height: 0;
   }
 
   .hero__bottom {
-    gap: 16px;
-    padding-bottom: 74px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    gap: 14px;
+    padding-top: 8px;
+    padding-bottom: calc(58px + 24px);
   }
 
   .hero-stats {
     align-items: center;
-    flex-direction: column;
-    gap: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+    width: min(100%, 340px);
+    padding: 14px 18px;
+    border-radius: 14px;
     text-align: center;
+    background: rgba(9, 40, 89, 0.82);
+    box-shadow: 0 10px 28px rgba(7, 57, 117, 0.22);
   }
 
   .hero-stat {
+    flex: 1 1 88px;
+    min-width: 88px;
     max-width: none;
   }
 
   .hero-stat strong {
-    margin-bottom: 6px;
-    font-size: 48px;
+    margin-bottom: 4px;
+    font-size: clamp(24px, 7vw, 30px);
+    color: var(--color-secondary);
   }
 
   .hero-stat span {
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.94);
   }
 
   .hero-scroll {
-    width: 108px;
-    height: 108px;
-    font-size: 36px;
+    width: 72px;
+    height: 72px;
+    font-size: 28px;
+  }
+
+  .hero__cta {
+    width: min(100%, 280px);
+    min-height: 48px;
+    font-size: 14px;
   }
 
   .quote-form__grid {
@@ -5882,6 +6081,34 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   .sectors,
   .cta-band {
     padding-block: 64px;
+  }
+
+  .cta-band__inner {
+    gap: 14px;
+  }
+
+  .cta-band .eyebrow--light {
+    margin-bottom: 4px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .cta-band h2 {
+    max-width: 100%;
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  .cta-band p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .cta-band .button--ghost {
+    min-height: 48px;
+    padding: 12px 22px;
+    font-size: 14px;
   }
 
   .sectors .sector-grid {
@@ -5907,13 +6134,72 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
     padding: 14px 16px;
   }
 
-  .company-hero__content {
-    padding-top: 88px;
+  :root {
+    --subpage-hero-height: auto;
+    --subpage-hero-min-height: clamp(240px, 38svh, 340px);
+    --hero-mobile-padding-top: 78px;
+    --h2-font-size: clamp(26px, 6.8vw, 32px);
+  }
+
+  .company-hero,
+  body[class*="page-"] .company-hero,
+  body[class*="page-"] .vdi-hero,
+  body[class*="page-"] .job-detail-hero {
+    height: auto;
+    min-height: var(--subpage-hero-min-height);
+  }
+
+  .company-hero__content,
+  body[class*="page-"] .company-hero__content,
+  body[class*="page-"] .vdi-hero__content,
+  body[class*="page-"] .job-detail-hero__content {
+    align-content: start;
+    place-content: start center;
+    height: auto;
+    min-height: var(--subpage-hero-min-height);
+    padding-top: var(--hero-mobile-padding-top);
     padding-bottom: 20px;
   }
 
-  .company-hero h1 {
-    font-size: 40px;
+  .company-hero__content .eyebrow,
+  body[class*="page-"] .company-hero__content .eyebrow,
+  body[class*="page-"] .vdi-hero__content .eyebrow,
+  body[class*="page-"] .job-detail-hero__content .eyebrow {
+    margin-bottom: 8px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-breadcrumb {
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 1.45;
+    gap: 4px 6px;
+  }
+
+  .company-hero h1,
+  body[class*="page-"] .company-hero h1,
+  body[class*="page-"] .vdi-hero h1,
+  body[class*="page-"] .job-detail-hero h1 {
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.12;
+    max-width: 100%;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  h2,
+  .section-copy h2,
+  .sectors__copy h2,
+  .sectors__header h2,
+  .cta-band h2,
+  .faq-section__header h2 {
+    font-size: var(--h2-font-size);
+    line-height: 1.16;
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: break-word;
   }
 
   .company-logo-grid,
@@ -5936,10 +6222,10 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   }
 
   .page-certifications .company-hero h1 {
-    max-width: 286px;
-    font-size: 86px;
-    line-height: 0.78;
-    overflow-wrap: anywhere;
+    max-width: 100%;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.12;
+    overflow-wrap: break-word;
   }
 
   .page-customers .company-hero h1,
@@ -5950,32 +6236,18 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
   .page-karlsruhe-reference .company-hero h1,
   .page-reference-city .company-hero h1,
   .page-industries .company-hero h1 {
-    font-size: clamp(40px, 11vw, 54px);
-  }
-
-  .page-sustainability .company-hero__content,
-  .page-safety .company-hero__content,
-  .page-quality .company-hero__content,
-  .page-glossary .company-hero__content {
-    padding-top: 92px;
-    padding-bottom: 38px;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.12;
   }
 
   .page-sustainability .company-hero h1,
   .page-safety .company-hero h1,
-  .page-quality .company-hero h1 {
-    max-width: none;
-    font-size: clamp(52px, 15vw, 72px);
-    line-height: 0.9;
-  }
-
-  .page-glossary .company-hero h1 {
-    max-width: 13.5ch;
-    font-size: clamp(52px, 15vw, 72px);
-    line-height: 0.9;
-  }
-
-    padding-block: 56px;
+  .page-quality .company-hero h1,
+  .page-glossary .company-hero h1,
+  .page-glossary-term .company-hero h1 {
+    max-width: 100%;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.12;
   }
 
   .customers-overview {
@@ -6039,6 +6311,21 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
   .page-industries .industries-overview__icon-column {
     min-height: clamp(220px, 58vw, 320px);
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .page-industries .industries-overview__icon-column::before {
+    width: min(100%, 300px);
+    height: min(100%, 280px);
+    filter: blur(32px);
+  }
+
+  .page-industries .industries-overview,
+  .page-industries .industries-overview__layout,
+  .page-industries .industries-overview__columns {
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   .industries-grid {
@@ -6172,10 +6459,15 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 }
 
 .locations-intro__grid {
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
   gap: 48px;
   align-items: center;
   overflow: visible;
+}
+
+@media (min-width: 1101px) {
+  .locations-intro__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
+  }
 }
 
 .locations-intro__media {
@@ -6670,7 +6962,7 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 
 @media (max-width: 980px) {
   .page-locations .company-hero h1 {
-    font-size: clamp(54px, 9vw, 84px);
+    font-size: clamp(42px, 8vw, 60px);
   }
 
   .locations-browser,
@@ -6679,11 +6971,19 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
     padding-block: 70px;
   }
 
+  .locations-intro__grid {
+    gap: 36px;
+  }
+
   .locations-browser__layout,
   .locations-contact__grid {
     grid-template-columns: 1fr;
     grid-template-rows: none;
     gap: 34px;
+  }
+
+  .locations-contact__grid {
+    row-gap: 24px;
   }
 
   .locations-contact__eyebrow,
@@ -6710,37 +7010,156 @@ main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
 }
 
 @media (max-width: 767px) {
-  .page-locations .company-hero {
-    min-height: var(--subpage-hero-height);
-  }
-
-  .page-locations .company-hero__content {
-    min-height: var(--subpage-hero-height);
-    padding-top: 108px;
-    padding-bottom: 38px;
-  }
-
-  .page-locations .company-hero h1 {
-    font-size: clamp(46px, 13vw, 66px);
-  }
-
   .locations-intro {
-    padding-top: 56px;
-    padding-bottom: 58px;
+    padding-block: 56px;
+    overflow: hidden;
   }
 
-  .locations-browser__header {
-    margin-bottom: 30px;
-  }
-
-.locations-grid__cards {
+  .locations-intro__grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
+  }
+
+  .locations-intro__copy h2 {
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  .locations-intro__detail,
+  .locations-intro__copy p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .locations-intro__copy .button {
+    width: min(100%, 280px);
+  }
+
+  .locations-intro__media {
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .locations-intro__media.company-locations__map {
+    max-width: none;
+    padding: 18px 14px 14px;
+    border-radius: 16px;
+  }
+
+  .locations-intro__media.company-locations__map .de-map__stage {
+    width: min(100%, 320px);
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .locations-grid {
+    padding-block: 56px;
+  }
+
+  .locations-grid__header {
+    margin-bottom: 28px;
+  }
+
+  .locations-grid__header h2 {
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  .locations-grid__header h2 br {
+    display: none;
+  }
+
+  .locations-grid__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .locations-grid-card__head {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .locations-grid-card__pin svg {
+    width: 28px;
+    height: 28px;
   }
 
   .location-browser-card h3,
   .locations-grid-card h3 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+
+  .locations-grid-card__copy p,
+  .locations-grid-card p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .locations-grid-card .location-row {
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .locations-grid-card .location-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+
+  .locations-grid-card .location-row a,
+  .locations-grid-card .location-row p {
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .location-stack--compact {
+    margin-top: 12px;
+    gap: 6px;
+  }
+
+  .locations-contact {
+    padding-block: 56px 72px;
+  }
+
+  .locations-contact__grid {
+    row-gap: 20px;
+    column-gap: 0;
+  }
+
+  .locations-contact__title {
+    line-height: 1.16;
+  }
+
+  .locations-contact__copy {
+    max-width: none;
+  }
+
+  .locations-contact__copy p,
+  .locations-contact__copy a {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .locations-contact__copy .button {
+    width: min(100%, 280px);
+  }
+
+  .locations-contact__map {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .locations-contact__map iframe {
+    min-height: clamp(220px, 52vw, 280px);
+    height: clamp(220px, 52vw, 280px);
+  }
+
+  .locations-browser__header {
+    margin-bottom: 30px;
   }
 
   .location-row {
@@ -7379,30 +7798,35 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .page-inspection .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
   background:
     var(--hero-overlay-gradient),
     var(--services-hero-image) center 42% / cover no-repeat;
 }
 
+@media (min-width: 768px) {
+  .page-inspection .company-hero {
+    min-height: clamp(260px, 40vh, 400px);
+  }
+
+  .page-inspection .company-hero__content {
+    min-height: clamp(260px, 40vh, 400px);
+    padding-top: 116px;
+    padding-bottom: 62px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .page-inspection .company-hero h1 {
+    max-width: min(100%, 18ch);
+    font-size: clamp(60px, 7vw, 100px);
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+  }
+}
+
 .page-inspection .company-hero::after {
   height: 38%;
   background: var(--hero-fade-gradient);
-}
-
-.page-inspection .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
-  padding-top: 116px;
-  padding-bottom: 62px;
-  justify-items: center;
-  text-align: center;
-}
-
-.page-inspection .company-hero h1 {
-  max-width: min(100%, 18ch);
-  font-size: clamp(60px, 7vw, 100px);
-  line-height: 0.96;
-  letter-spacing: -0.04em;
 }
 
 .inspection-intro__layout {
@@ -7416,9 +7840,14 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .inspection-intro__columns {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
   gap: 48px;
   align-items: start;
+}
+
+@media (min-width: 1101px) {
+  .inspection-intro__columns {
+    grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+  }
 }
 
 .inspection-intro__body {
@@ -7591,9 +8020,14 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .cleaning-intro__columns {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: 40px;
   align-items: start;
+}
+
+@media (min-width: 1101px) {
+  .cleaning-intro__columns {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
 }
 
 .cleaning-intro__body {
@@ -7633,13 +8067,18 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .cleaning-detail__row {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   align-items: start;
   gap: 40px;
 }
 
-.cleaning-detail__row--reverse {
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+@media (min-width: 981px) {
+  .cleaning-detail__row {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
+
+  .cleaning-detail__row--reverse {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
 }
 
 .cleaning-detail__copy {
@@ -7879,9 +8318,14 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .repair-detail__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
   gap: 56px;
   align-items: start;
+}
+
+@media (min-width: 981px) {
+  .repair-detail__grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  }
 }
 
 .repair-detail__copy {
@@ -8136,78 +8580,186 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 @media (max-width: 767px) {
-  .page-inspection .company-hero {
-    min-height: var(--subpage-hero-height);
-  }
-
-  .page-inspection .company-hero__content {
-    min-height: var(--subpage-hero-height);
-    padding-top: 108px;
-    padding-bottom: 38px;
-  }
-
   .page-inspection .company-hero h1 {
-    max-width: min(100%, 16ch);
-    font-size: clamp(46px, 14vw, 74px);
+    max-width: 100%;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
   }
 
-  .inspection-types {
-    padding-top: 58px;
-    padding-bottom: 64px;
+  .page-inspection .company-hero h1 br {
+    display: none;
   }
 
-  .inspection-types__header {
-    margin-bottom: 34px;
+  .inspection-intro.services-intro {
+    padding-block: 56px;
   }
 
-.inspection-types__grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .inspection-card {
-    min-height: 114px;
-    padding: 24px;
-  }
-
-  .inspection-card span {
-    font-size: clamp(17px, 4.2vw, 22px);
-    line-height: 1.22;
-  }
-
-  .page-cleaning .company-hero {
-    min-height: var(--subpage-hero-height);
-  }
-
-  .page-cleaning .company-hero__content {
-    min-height: var(--subpage-hero-height);
-    padding-top: 108px;
-    padding-bottom: 38px;
-  }
-
-  .page-cleaning .company-hero h1 {
-    max-width: 7.4ch;
-    font-size: clamp(46px, 13vw, 74px);
-  }
-
-  .cleaning-detail {
-    padding-top: 56px;
-    padding-bottom: 58px;
-  }
-
-  .cleaning-detail__stack {
-    gap: 34px;
-  }
-
-.cleaning-detail__copy h2,
-.cleaning-services__heading h2,
-.cleaning-detail__row {
+  .inspection-intro__layout {
     gap: 24px;
   }
 
+  .inspection-intro__columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .inspection-intro__header h2 {
+    line-height: 1.16;
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .inspection-intro__body p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .inspection-intro__media {
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .inspection-intro__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .inspection-types {
+    padding-block: 56px 64px;
+  }
+
+  .inspection-types__header {
+    margin-bottom: 28px;
+  }
+
+  .inspection-types__header h2 {
+    line-height: 1.16;
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .inspection-types__header h2 br {
+    display: none;
+  }
+
+  .inspection-types__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .inspection-card {
+    min-height: 0;
+    padding: 20px 18px;
+  }
+
+  .inspection-card:hover,
+  .inspection-card:focus-visible {
+    transform: none;
+  }
+
+  .inspection-card span {
+    font-size: clamp(16px, 4.5vw, 19px);
+    line-height: 1.35;
+  }
+
+  .inspection-faq h2 {
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  .page-cleaning .company-hero h1 {
+    max-width: 100%;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .page-cleaning .company-hero h1 br {
+    display: none;
+  }
+
+  .cleaning-detail {
+    padding-block: 56px;
+  }
+
+  .cleaning-intro__layout {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .cleaning-intro__columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cleaning-intro__body p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .cleaning-intro__media,
+  .cleaning-detail__media {
+    width: 100%;
+    max-width: none;
+    height: auto !important;
+    min-height: 0;
+  }
+
+  .cleaning-intro__media img,
+  .cleaning-detail__media img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .cleaning-detail__stack {
+    gap: 32px;
+  }
+
+  .cleaning-detail__row,
+  .cleaning-detail__row--reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cleaning-detail__copy h2,
+  .cleaning-intro__header h2,
+  .cleaning-services__heading h2 {
+    max-width: 100%;
+    line-height: 1.16;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .cleaning-detail__copy p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
   .cleaning-services {
-    padding-top: 58px;
-    padding-bottom: 64px;
+    padding-block: 56px 64px;
+  }
+
+  .cleaning-services__top {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 28px;
   }
 
   .cleaning-services__summary-list {
@@ -9284,9 +9836,14 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .vdi-intro__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
   gap: 66px;
   align-items: start;
+}
+
+@media (min-width: 981px) {
+  .vdi-intro__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
+  }
 }
 
 .vdi-intro__copy {
@@ -9359,22 +9916,40 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .vdi-intro {
-    padding-top: 56px;
-    padding-bottom: 60px;
+    padding-block: 56px;
   }
 
-.page-din15780 .vdi-intro__header h2,
-.vdi-intro__copy h2 {
-    max-width: 11.4ch;
+  .page-din15780 .vdi-intro__header h2,
+  .vdi-intro__copy h2,
+  .vdi-intro__header h2 {
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: break-word;
   }
 
   .vdi-intro__copy p {
     font-size: 15px;
-    line-height: 1.95;
+    line-height: 1.65;
   }
 
-  .vdi-intro__grid {
-    gap: 28px;
+  .vdi-intro__grid,
+  .vdi-intro__columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .vdi-intro__media {
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .vdi-intro__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
   }
 }
 
@@ -9403,9 +9978,14 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-vdi6022 .vdi-intro__columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px;
   align-items: center;
+}
+
+@media (min-width: 981px) {
+  .page-vdi6022 .vdi-intro__columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .page-vdi6022 .vdi-intro__copy {
@@ -9437,9 +10017,14 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-vdi2052 .vdi-intro__columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px;
   align-items: start;
+}
+
+@media (min-width: 981px) {
+  .page-vdi2052 .vdi-intro__columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .page-vdi2052 .vdi-intro__copy {
@@ -9472,9 +10057,15 @@ a.sector-card{color:inherit;text-decoration:none}
 .page-din15780 .vdi-intro__columns,
 .page-din14175 .vdi-intro__columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px;
   align-items: start;
+}
+
+@media (min-width: 981px) {
+  .page-din15780 .vdi-intro__columns,
+  .page-din14175 .vdi-intro__columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .page-din15780 .vdi-intro__copy,
@@ -9654,7 +10245,6 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .airduct-health__grid {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   gap: clamp(1.75rem, 3vw, 3.5rem);
   align-items: stretch;
 }
@@ -9677,18 +10267,31 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .airduct-intro__grid {
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
   align-items: start;
 }
 
 .airduct-partner__grid,
 .airduct-why__grid {
-  grid-template-columns: minmax(340px, 0.92fr) minmax(0, 1.08fr);
   align-items: center;
 }
 
-.airduct-why__grid {
-  grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.96fr);
+@media (min-width: 981px) {
+  .airduct-health__grid {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
+
+  .airduct-intro__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  }
+
+  .airduct-partner__grid,
+  .airduct-why__grid {
+    grid-template-columns: minmax(340px, 0.92fr) minmax(0, 1.08fr);
+  }
+
+  .airduct-why__grid {
+    grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.96fr);
+  }
 }
 
 .airduct-why .reference-overview__layout {
@@ -9771,7 +10374,9 @@ a.sector-card{color:inherit;text-decoration:none}
   font-size: clamp(34px, 4vw, 48px);
 }
 
+.airduct-health__copy h3,
 .airduct-health__copy h4,
+.airduct-list-card h3,
 .airduct-list-card h4 {
   margin: 24px 0 12px;
   color: var(--color-primary);
@@ -9861,7 +10466,9 @@ a.sector-card{color:inherit;text-decoration:none}
   line-height: 1.3;
 }
 
+.airduct-expertise__services h3,
 .airduct-expertise__services h4,
+.airduct-expertise__cert-copy h3,
 .airduct-expertise__cert-copy h4 {
   margin: 0 0 18px;
   color: var(--color-primary);
@@ -10002,9 +10609,14 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .airduct-expertise__grid {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   gap: clamp(1.75rem, 3vw, 3.5rem);
   align-items: stretch;
+}
+
+@media (min-width: 981px) {
+  .airduct-expertise__grid {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
 }
 
 .airduct-expertise__media {
@@ -10051,9 +10663,14 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .airduct-expertise__cert-grid {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: clamp(1.75rem, 3vw, 3.5rem);
   align-items: stretch;
+}
+
+@media (min-width: 981px) {
+  .airduct-expertise__cert-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
 }
 
 .airduct-expertise__cert-media {
@@ -10206,7 +10823,9 @@ a.sector-card{color:inherit;text-decoration:none}
 .airduct-why .reference-overview__head h2,
 .airduct-health__head h2,
 .airduct-expertise__head h2,
+.airduct-health__copy h3,
 .airduct-health__copy h4,
+  .airduct-list-card h3,
   .airduct-list-card h4 {
     font-size: 22px;
   }
@@ -10335,6 +10954,7 @@ a.sector-card{color:inherit;text-decoration:none}
   height: auto;
 }
 
+.roomdis-phase-card .energy-deadlines__header h3,
 .roomdis-phase-card .energy-deadlines__header h4 {
   margin: 0 0 12px;
   font-size: 20px;
@@ -10343,6 +10963,7 @@ a.sector-card{color:inherit;text-decoration:none}
   color: var(--color-primary);
 }
 
+.roomdis-proof__copy h3,
 .roomdis-proof__copy h4 {
   margin: 18px 0 12px;
   color: var(--color-primary);
@@ -10435,7 +11056,9 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .roomdis-intro__copy h2,
 .roomdis-phases__heading h2,
+.roomdis-phase-card h3,
 .roomdis-phase-card h4,
+  .roomdis-proof__copy h3,
   .roomdis-proof__copy h4 {
     font-size: 22px;
   }
@@ -10526,7 +11149,17 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .tower-overview__grid {
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: start;
+}
+
+.tower-overview__grid > * {
+  min-width: 0;
+}
+
+@media (min-width: 981px) {
+  .tower-overview__grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  }
 }
 
 .tower-standard__grid,
@@ -10655,6 +11288,7 @@ a.sector-card{color:inherit;text-decoration:none}
   height: auto;
 }
 
+.tower-documentation__copy h3,
 .tower-documentation__copy h4 {
   color: #0161bf;
   font-size: 1.25rem;
@@ -11655,6 +12289,7 @@ a.sector-card{color:inherit;text-decoration:none}
   align-content: start;
 }
 
+.page-laborabzug .labor-steps .energy-deadlines__header h3,
 .page-laborabzug .labor-steps .energy-deadlines__header h4 {
   margin: 0 0 12px;
   font-size: 20px;
@@ -13526,20 +14161,20 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-glossary {
-  min-height: 100vh;
+  background: #ffffff;
+}
+
+.page-glossary main {
   background: var(--company-section-gradient);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+}
+
+.page-glossary main > .company-hero ~ section:not(.company-cta):not(.sectors):not(.home-faq) {
+  background: transparent;
 }
 
 .page-glossary-term {
   min-height: 100vh;
   background: var(--company-section-gradient);
-}
-
-.page-glossary .glossary-intro,
-.page-glossary .glossary-page {
-  background: transparent;
 }
 
 .glossary-intro {
@@ -15173,9 +15808,18 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-detail-split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
   gap: clamp(48px, 8vw, 150px);
   align-items: center;
+}
+
+.job-detail-split > * {
+  min-width: 0;
+}
+
+@media (min-width: 981px) {
+  .job-detail-split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
 }
 
 .page-job-detail .section-copy h2,
@@ -15238,7 +15882,13 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-job-detail .job-voices__grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (min-width: 981px) {
+  .page-job-detail .job-voices__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .job-about__media img {
@@ -15257,11 +15907,20 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-tasks-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(38px, 6vw, 72px);
   align-items: center;
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.job-tasks-layout > * {
+  min-width: 0;
+}
+
+@media (min-width: 981px) {
+  .job-tasks-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
 }
 
 .page-job-detail .job-tasks-layout .job-gallery-slider__slide img {
@@ -15270,6 +15929,9 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-gallery-slider {
   position: relative;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .job-gallery-slider__head {
@@ -15328,6 +15990,8 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-gallery-slider__viewport {
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
 }
@@ -15345,6 +16009,9 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-gallery-slider__slide {
   flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   margin: 0;
 }
 
@@ -15385,10 +16052,17 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .job-benefits-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 34px clamp(72px, 10vw, 170px);
+  gap: 34px;
   max-width: 1180px;
   margin: 0 auto;
+}
+
+@media (min-width: 981px) {
+  .job-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(72px, 10vw, 170px);
+    row-gap: 34px;
+  }
 }
 
 .job-info-item h3,
@@ -15579,6 +16253,35 @@ a.sector-card{color:inherit;text-decoration:none}
     font-size: clamp(46px, 9vw, 70px);
   }
 
+  .page-job-detail .job-intro.tower-overview,
+  .page-job-detail .job-detail-section {
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
+  .page-job-detail .job-voices__grid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .page-job-detail .company-testimonial {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page-job-detail .tower-overview__grid > *,
+  .page-job-detail .job-detail-split > *,
+  .page-job-detail .job-tasks-layout > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .page-job-detail .job-gallery-slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .job-detail-split,
   .job-tasks-layout,
   .job-benefits-grid,
@@ -15670,12 +16373,14 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 }
 
-/* Hero-Höhen: Startseite 100vh, alle Unterseiten 40vh */
-.hero {
-  display: flex;
-  flex-direction: column;
-  min-height: var(--hero-height);
-  height: var(--hero-height);
+/* Hero-Höhen: Startseite 100vh (Desktop), alle Unterseiten 40vh */
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--hero-height);
+    height: var(--hero-height);
+  }
 }
 
 body[class*="page-"] .company-hero,
@@ -16548,5 +17253,415 @@ body[class*="page-"] .job-detail-hero h1 {
 
   .page-offer .quote-form__checks {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  [class*="page-"] .company-hero,
+  [class*="page-"] .vdi-hero,
+  [class*="page-"] .job-detail-hero {
+    height: auto !important;
+    min-height: var(--subpage-hero-min-height) !important;
+  }
+
+  [class*="page-"] .company-hero__content,
+  [class*="page-"] .vdi-hero__content,
+  [class*="page-"] .job-detail-hero__content {
+    align-content: start !important;
+    place-content: start center !important;
+    height: auto !important;
+    min-height: var(--subpage-hero-min-height) !important;
+    padding-top: var(--hero-mobile-padding-top) !important;
+    padding-bottom: 20px !important;
+  }
+
+  [class*="page-"] .company-hero h1,
+  [class*="page-"] .vdi-hero h1,
+  [class*="page-"] .job-detail-hero h1 {
+    font-size: clamp(24px, 6.8vw, 32px) !important;
+    line-height: 1.12 !important;
+    max-width: 100% !important;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .page-inspection .company-hero h1 br {
+    display: none;
+  }
+
+  .page-cleaning .cleaning-intro__columns,
+  .page-cleaning .cleaning-detail__row,
+  .page-cleaning .cleaning-detail__row--reverse,
+  .page-cleaning .cleaning-services__top {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-cleaning .cleaning-intro__media img,
+  .page-cleaning .cleaning-detail__media img {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .page-air-duct-cleaning .airduct-intro-overview__grid > :is(article, figure) {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+  }
+
+  .page-air-duct-cleaning .airduct-intro__grid,
+  .page-air-duct-cleaning .airduct-partner__grid,
+  .page-air-duct-cleaning .airduct-why__grid,
+  .page-air-duct-cleaning .airduct-health__grid,
+  .page-air-duct-cleaning .airduct-expertise__grid,
+  .page-air-duct-cleaning .airduct-expertise__cert-grid,
+  .page-air-duct-cleaning .airduct-intro-overview .cleanroom-overview__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-air-duct-cleaning .airduct-why__media,
+  .page-air-duct-cleaning .airduct-health__media,
+  .page-air-duct-cleaning .airduct-expertise__media,
+  .page-air-duct-cleaning .airduct-expertise__cert-media,
+  .page-air-duct-cleaning .airduct-intro-overview__media {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  .page-air-duct-cleaning .airduct-why__media img,
+  .page-air-duct-cleaning .airduct-health__media img,
+  .page-air-duct-cleaning .airduct-expertise__media img,
+  .page-air-duct-cleaning .airduct-expertise__cert-media img,
+  .page-air-duct-cleaning .airduct-intro-overview__media img {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .page-air-duct-cleaning .airduct-intro__copy h2,
+  .page-air-duct-cleaning .airduct-why .reference-overview__head h2,
+  .page-air-duct-cleaning .airduct-health__head h2,
+  .page-air-duct-cleaning .airduct-expertise__head h2 {
+    max-width: 100% !important;
+  }
+
+  .page-branchen .branchen-overview__intro {
+    grid-template-columns: 1fr !important;
+    row-gap: 0;
+  }
+
+  .page-branchen .branchen-overview__eyebrow,
+  .page-branchen .branchen-overview__heading,
+  .page-branchen .branchen-overview__copy {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+
+  .page-industries .industries-overview__columns {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .page-industries .industries-overview__columns > .industries-overview__copy,
+  .page-industries .industries-overview__columns > .industries-overview__icon-column,
+  .page-industries .industries-overview__columns > .industries-overview__media {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+
+  .page-industries .industries-overview__icon-column,
+  .page-industries .industries-overview__media {
+    width: 100% !important;
+    max-width: min(100%, 360px) !important;
+    justify-self: center !important;
+    min-height: clamp(220px, 58vw, 320px) !important;
+    overflow: hidden !important;
+  }
+
+  .page-industries .industries-overview__icon-column::before {
+    width: min(100%, 280px) !important;
+    height: min(100%, 260px) !important;
+    filter: blur(24px) !important;
+  }
+
+  .page-industries .industries-overview,
+  .page-industries .industries-overview__layout,
+  .page-industries .industries-overview__columns {
+    overflow-x: clip !important;
+    max-width: 100% !important;
+  }
+
+  .page-industries .industries-overview__icon {
+    width: min(100%, 280px) !important;
+    max-width: 100% !important;
+    margin-inline: auto;
+  }
+
+  .page-industries .industries-overview__icon img {
+    max-width: 100%;
+  }
+
+  .page-jobs .company-hero h1,
+  .page-job-detail .job-detail-hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .page-job-detail .job-intro.tower-overview,
+  .page-job-detail .job-detail-section,
+  .page-jobs .jobs-overview {
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
+  .page-job-detail .tower-overview__grid > *,
+  .page-job-detail .job-detail-split > *,
+  .page-job-detail .job-tasks-layout > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .page-job-detail .job-detail-split,
+  .page-job-detail .job-tasks-layout,
+  .page-job-detail .job-benefits-grid,
+  .page-job-detail .job-process-grid,
+  .page-job-detail .job-quote-grid,
+  .page-job-detail .job-voices__grid,
+  .page-job-detail .tower-overview__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-job-detail .job-voices__grid > *,
+  .page-job-detail .company-testimonial,
+  .page-job-detail .company-testimonial > div {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .page-job-detail .company-testimonial h3,
+  .page-job-detail .company-testimonial p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .page-job-detail .job-about__media {
+    width: 100% !important;
+    max-width: none !important;
+    justify-self: stretch !important;
+  }
+
+  .page-job-detail .job-about__media img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .page-job-detail .tower-overview__pills,
+  .page-job-detail .tower-overview__aside {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .page-job-detail .tower-overview__pills .cleaning-pill {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .page-job-detail .job-gallery-slider {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .page-job-detail .job-gallery-slider__viewport {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .page-jobs .jobs-teaser,
+  .page-jobs .jobs-teaser__media,
+  .page-jobs .jobs-teaser__media img {
+    max-width: 100%;
+  }
+
+  .page-industries .industries-overview__heading h2,
+  .page-industries .industries-overview__copy h2 {
+    max-width: 100% !important;
+  }
+
+  /* Site-weit: Text+Bild-Layouts einspaltig auf Mobile */
+  main .company-grid,
+  main .company-grid--narrow,
+  main .company-locations__body,
+  main .sustainability-intro__grid,
+  main .sustainability-accordion-section__grid,
+  main .locations-intro__grid,
+  main .inspection-intro__columns,
+  main .cleaning-intro__columns,
+  main .cleaning-detail__row,
+  main .cleaning-detail__row--reverse,
+  main .vdi-intro__grid,
+  main .vdi-intro__columns,
+  main .quality-intro__columns,
+  main .repair-detail__grid,
+  main .services-intro__grid,
+  main .intro__grid,
+  main .feature__grid,
+  main .branchen-overview__intro,
+  main .industries-overview__columns,
+  main .standards-overview__columns,
+  main .duct-intro__grid,
+  main .duct-guide__grid,
+  main .airduct-intro__grid,
+  main .airduct-partner__grid,
+  main .airduct-why__grid,
+  main .airduct-health__grid,
+  main .airduct-expertise__grid,
+  main .airduct-expertise__cert-grid,
+  main .airduct-expertise__columns,
+  main .roomdis-intro__grid,
+  main .tower-overview__grid,
+  main .job-detail-split,
+  main .job-tasks-layout,
+  main .job-benefits-grid,
+  main .job-process-grid,
+  main .job-quote-grid,
+  main .jobs-overview__grid,
+  main .cooling-systems-overview__grid,
+  main .cooling-systems-section__grid,
+  main .cleanroom-overview__grid,
+  main .oproom-overview__grid,
+  main .cleanroom-filter__columns,
+  main .hygiene-overview__columns,
+  main .filtertest-standard__row,
+  main .hygiene-benefits__grid,
+  main .energy-intro__columns,
+  main .energy-section__grid,
+  main .energy-section__grid--reverse,
+  main .energy-geg__layout,
+  main .energy-dinspec__grid,
+  main .cleaning-services__top,
+  main .reference-region-overview__grid,
+  main .kitchen-detail__grid,
+  main .kitchen-detail__grid--reverse,
+  main .memmingen-overview__grid,
+  main .textile-intro__columns,
+  main .filtertest-procedure__grid,
+  main .leaktest-purpose__grid,
+  main .hygiene-overview__layout,
+  main .hygiene-services__top,
+  main .page-berlin .reference-region-overview__grid,
+  main .page-berlin .filtertest-standard__row,
+  main .karlsruhe-overview .cleanroom-overview__grid,
+  main .duct-intro-overview .cleanroom-overview__grid,
+  main .airduct-intro-overview .cleanroom-overview__grid,
+  main .airduct-guide-overview .cleanroom-overview__grid,
+  main .duct-vorteile .filtertest-standard__row,
+  main .page-duct-cleaning .duct-vorteile .filtertest-standard__row {
+    grid-template-columns: 1fr !important;
+  }
+
+  main .company-media-card,
+  main [class*="intro__media"],
+  main [class*="detail__media"],
+  main .vdi-intro__media,
+  main .quality-intro__media,
+  main .repair-detail__media,
+  main .sustainability-intro__media,
+  main .sustainability-accordion-section__media,
+  main .cleanroom-overview__media,
+  main .oproom-overview__media,
+  main .airduct-intro-overview__media,
+  main .airduct-why__media,
+  main .airduct-health__media,
+  main .airduct-expertise__media,
+  main .airduct-expertise__cert-media,
+  main .energy-section__media,
+  main .filtertest-standard__media,
+  main .hygiene-overview__media,
+  main .textile-intro__media {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  main .company-media-card img,
+  main [class*="intro__media"] img,
+  main [class*="detail__media"] img,
+  main .vdi-intro__media img,
+  main .quality-intro__media img,
+  main .repair-detail__media img,
+  main .sustainability-intro__media img,
+  main .cleanroom-overview__media img,
+  main .energy-section__media img,
+  main .filtertest-standard__media img,
+  main .airduct-why__media img,
+  main .airduct-health__media img,
+  main .airduct-expertise__media img,
+  main .airduct-expertise__cert-media img,
+  main .airduct-intro-overview__media img {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  main .section-copy h2,
+  main .vdi-intro__copy h2,
+  main .vdi-intro__header h2,
+  main .repair-detail__copy h2,
+  main .cleaning-detail__copy h2,
+  main .quality-intro__header h2,
+  main .cleaning-intro__header h2,
+  main .filtertest-standard__copy h2,
+  main .cleanroom-overview__copy h2 {
+    max-width: 100% !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  h2,
+  .section-copy h2,
+  .faq-section__header h2,
+  .cta-band h2,
+  .inspection-intro__header h2,
+  .inspection-types__header h2,
+  .locations-intro__copy h2,
+  .locations-grid__header h2,
+  .locations-contact__title {
+    font-size: clamp(26px, 6.8vw, 32px) !important;
+    line-height: 1.16 !important;
+    max-width: 100% !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .hero {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .hero__content {
+    flex: 0 0 auto !important;
+    min-height: 0 !important;
+    padding-top: 104px !important;
   }
 }
