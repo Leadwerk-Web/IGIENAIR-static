@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "Raleway";
   src: url("assets/fonts/raleway-latin.woff2") format("woff2");
   font-weight: 100 900;
@@ -29,11 +29,39 @@
   --radius-lg: 18px;
   --container: min(1200px, calc(100vw - 64px));
   --hero-height: 100vh;
-  --subpage-hero-height: 40vh;
+  --subpage-hero-height: 50vh;
+  --subpage-hero-min-height: 50vh;
   --subpage-hero-content-padding-top: 0;
+  --subpage-hero-h1-size: clamp(44px, 4.8vw, 56px);
+  --home-hero-h1-size: clamp(44px, 6.4vw, 88px);
+  --hero-eyebrow-color: #8dc7ff;
+  --hero-eyebrow-text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.78),
+    0 0 14px rgba(0, 0, 0, 0.42);
+  --hero-stats-card-bg: rgba(9, 40, 89, 0.88);
+  --hero-stats-card-border: rgba(141, 199, 255, 0.28);
+  --hero-stats-card-shadow: 0 12px 32px rgba(7, 57, 117, 0.28);
+  --content-image-focus-mobile: center top;
+  --content-image-aspect-mobile: 4 / 3;
+  --content-image-portrait-aspect-mobile: 4 / 5;
   --hero-fade-color: var(--color-soft);
-  --hero-overlay-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 61%, rgba(232, 243, 255, 0.82) 100%);
-  --hero-fade-gradient: linear-gradient(180deg, rgba(232, 243, 255, 0), rgba(232, 243, 255, 0.98) 82%);
+  --hero-fade-band-height: 45%;
+  --hero-overlay-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.42) 50%,
+    rgba(0, 0, 0, 0.26) 66%,
+    rgba(232, 243, 255, 0.48) 80%,
+    rgba(232, 243, 255, 0.85) 91%,
+    var(--hero-fade-color) 100%
+  );
+  --hero-fade-gradient: linear-gradient(
+    180deg,
+    rgba(232, 243, 255, 0) 0%,
+    rgba(232, 243, 255, 0.32) 54%,
+    rgba(232, 243, 255, 0.58) 76%,
+    var(--hero-fade-color) 100%
+  );
   --company-section-gradient: linear-gradient(180deg, var(--color-soft) 0%, #ffffff 100%);
   --company-section-hero-image: url("./Bildmaterial_final/shared/unternehmen-hero.webp");
   --anlagen-hero-image: url("./Bildmaterial_final/shared/anlagen-hero.webp");
@@ -417,8 +445,14 @@ body.is-scrolled .button--header {
 
 .hero {
   position: relative;
+  left: 50%;
+  right: 50%;
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
   min-height: var(--hero-height);
   height: var(--hero-height);
   color: var(--color-white);
@@ -477,7 +511,7 @@ body.is-scrolled .button--header {
 .hero__content,
 .hero__bottom {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero__content {
@@ -490,14 +524,23 @@ body.is-scrolled .button--header {
   text-align: center;
 }
 
+.eyebrow--hero,
+.company-hero__content .eyebrow,
+.vdi-hero__content .eyebrow,
+.job-detail-hero__content .eyebrow {
+  color: var(--hero-eyebrow-color);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: var(--hero-eyebrow-text-shadow);
+}
+
 .eyebrow--hero {
   margin-bottom: 16px;
-  color: var(--color-secondary);
 }
 
 .hero h1 {
   max-width: 980px;
-  font-size: clamp(52px, 7.5vw, 100px);
+  font-size: var(--home-hero-h1-size);
   font-weight: 600;
   line-height: 0.94;
   letter-spacing: -0.03em;
@@ -511,27 +554,41 @@ body.is-scrolled .button--header {
   align-items: center;
   gap: 8px 10px;
   margin-top: 18px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 14px;
+  color: #8dc7ff;
+  font-size: 15px;
+  font-weight: 600;
   line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.78),
+    0 0 14px rgba(0, 0, 0, 0.42);
 }
 
 .hero-breadcrumb__link {
-  color: var(--color-secondary);
+  color: #8dc7ff;
+  font-weight: 600;
   text-decoration: none;
+  text-shadow: inherit;
 }
 
 .hero-breadcrumb__link:hover,
 .hero-breadcrumb__link:focus-visible {
+  color: #ffffff;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .hero-breadcrumb__current {
-  color: rgba(255, 255, 255, 0.96);
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: inherit;
 }
 
 .hero-breadcrumb__sep {
-  opacity: 0.72;
+  color: #8dc7ff;
+  font-weight: 600;
+  opacity: 0.95;
+  text-shadow: inherit;
 }
 
 .hero__bottom {
@@ -757,7 +814,7 @@ body.menu-open .scroll-to-top {
 
 .quote-card h3 {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 34px 24px 30px;
   color: var(--color-white);
   text-align: center;
@@ -772,7 +829,7 @@ body.menu-open .scroll-to-top {
 
 .quote-form {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: grid;
   gap: 14px;
   padding: 24px;
@@ -1018,7 +1075,7 @@ body.menu-open .scroll-to-top {
 
 .services-slider__viewport {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
   padding: var(--slider-bleed-y) 40px var(--slider-bleed-bottom);
   margin-inline: -40px;
@@ -1076,7 +1133,7 @@ body.menu-open .scroll-to-top {
 
 .service-slide__media img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1247,7 +1304,11 @@ body.menu-open .scroll-to-top {
   }
 
   .service-slide__media {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
+  }
+
+  .service-slide__media img {
+    object-position: var(--content-image-focus-mobile);
   }
 
   .services-slider__nav {
@@ -2036,8 +2097,52 @@ body.menu-open .scroll-to-top {
   background: var(--color-white);
 }
 
+.footer-column--contact .contact-item__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+  border-radius: 0;
+  background: none;
+  color: var(--color-white);
+  font-size: 0;
+  line-height: 1;
+}
+
+.footer-column--contact .contact-item__icon::before {
+  display: block;
+  color: var(--color-white);
+  font-size: 21px;
+  line-height: 1;
+}
+
+.footer-column--contact .contact-item:nth-child(2) .contact-item__icon::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.footer-column--contact .contact-item:nth-child(3) .contact-item__icon::before {
+  content: "\2706";
+}
+
+.footer-column--contact .contact-item:nth-child(4) .contact-item__icon::before {
+  content: "\213B";
+  font-size: 18px;
+}
+
+.footer-column--contact .contact-item:nth-child(5) .contact-item__icon::before {
+  content: "\2709";
+  font-size: 19px;
+}
+
 .contact-item strong,
-.contact-item a {
+.contact-item a,
+.footer-column--contact .contact-item:nth-child(4) > div {
   font-size: 18px;
   font-weight: 600;
 }
@@ -2133,36 +2238,67 @@ body.menu-open .mobile-menu {
   background: rgba(255, 255, 255, 0);
 }
 
-.company-hero {
+.company-hero,
+.job-detail-hero,
+.vdi-hero {
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center center;
   position: relative;
+  left: 50%;
+  right: 50%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-inline: 0;
   min-height: var(--subpage-hero-height);
   height: var(--subpage-hero-height);
   color: var(--color-white);
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center / cover no-repeat;
+  background-color: var(--hero-fade-color);
+  background-image: var(--hero-bg-image);
+  background-position: var(--hero-bg-position);
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
-.company-hero::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 38%;
-  background: var(--hero-fade-gradient);
+.company-hero::before,
+.job-detail-hero::before,
+.vdi-hero::before {
+  content: none;
+  display: none;
 }
 
-.company-hero__content {
-  position: relative;
+.company-hero::after,
+.job-detail-hero::after,
+.vdi-hero::after {
+  content: "";
+  position: absolute;
   z-index: 1;
+  inset: 0;
+  background:
+    var(--hero-fade-gradient) bottom / 100% var(--hero-fade-band-height) no-repeat,
+    var(--hero-overlay-gradient);
+  box-shadow: inset 0 -8px 0 8px var(--hero-fade-color);
+  pointer-events: none;
+}
+
+.company-hero__content,
+.job-detail-hero__content,
+.vdi-hero__content {
+  position: relative;
+  z-index: 2;
   display: grid;
   flex: 1 1 auto;
   justify-items: center;
   align-content: center;
   gap: 0;
-  width: 100%;
+  width: min(var(--container), 100%);
+  max-width: 100%;
+  margin-inline: auto;
   min-height: 0;
   padding-top: 96px;
   padding-bottom: 28px;
@@ -2172,11 +2308,10 @@ body.menu-open .mobile-menu {
 
 .company-hero__content .eyebrow {
   margin-bottom: 16px;
-  color: var(--color-secondary);
 }
 
 .company-hero h1 {
-  font-size: 66px;
+  font-size: var(--subpage-hero-h1-size);
   font-weight: 500;
   line-height: 1.1;
   color: var(--color-white);
@@ -2191,7 +2326,9 @@ body.menu-open .mobile-menu {
 }
 
 /* Inhaltsabschnitte unter dem Hero: einheitlicher Verlauf wie Qualität */
-main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.sectors):not(.home-faq) {
+main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.sectors):not(.home-faq),
+main > .job-detail-hero + section {
+  margin-top: -6px;
   background: var(--company-section-gradient);
 }
 
@@ -2594,7 +2731,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .page-reference-city .company-hero h1,
 .page-industries .company-hero h1 {
   max-width: none;
-  font-size: clamp(44px, 5vw, 60px);
+  font-size: clamp(38px, 4.4vw, 54px);
 }
 
 .customers-overview {
@@ -2712,7 +2849,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .customers-teaser__icon img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   width: auto;
   height: 80px;
@@ -2816,7 +2953,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .customers-link-card__icon,
 .customers-link-card__label {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .customers-link-card__icon {
@@ -2980,7 +3117,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .page-industries .industries-overview__icon {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
   width: min(100%, 320px);
   padding: clamp(1rem, 3vw, 1.75rem);
@@ -2993,7 +3130,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   height: auto;
   object-fit: contain;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   filter:
     brightness(0) saturate(100%)
     invert(35%) sepia(95%) saturate(2000%) hue-rotate(186deg) brightness(95%) contrast(101%)
@@ -3077,7 +3214,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .reference-card h3,
 .reference-card span {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
 }
 
@@ -3275,7 +3412,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .branchen-card__icon img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   width: auto;
   height: clamp(72px, 8vw, 92px);
@@ -3532,7 +3669,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .page-state-map .company-hero + section.reference-region-overview .reference-region-overview__stack {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .page-state-map .reference-region-overview__copy .reference-region-overview__cta {
@@ -3576,7 +3713,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .page-state-map .reference-region-overview__map {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(100%, 420px);
   padding: clamp(1rem, 3vw, 1.75rem);
   overflow: visible;
@@ -3591,7 +3728,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .page-state-map .reference-region-overview__map img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   filter:
     drop-shadow(0 16px 32px rgba(1, 97, 191, 0.16))
     drop-shadow(0 4px 10px rgba(0, 159, 227, 0.1));
@@ -3834,9 +3971,8 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 }
 
 .page-berlin .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-berlin main .container,
@@ -3845,7 +3981,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 }
 
 .page-berlin .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -3856,7 +3992,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .page-berlin .company-hero h1 {
   max-width: none;
-  font-size: clamp(58px, 6vw, 100px);
+  font-size: clamp(50px, 5.3vw, 88px);
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: -0.045em;
@@ -4091,7 +4227,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
   .page-berlin .filtertest-standard__media,
   .page-berlin .filtertest-standard__row--reverse .filtertest-standard__media {
-    justify-self: start;
+    justify-self: center;
   }
 }
 
@@ -4102,11 +4238,12 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   }
 
   .page-berlin .company-hero {
-    min-height: 260px;
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
   }
 
   .page-berlin .company-hero__content {
-    min-height: 260px;
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 30px;
   }
@@ -4534,6 +4671,16 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+@media (max-width: 980px) {
+  .jobs-teaser__media {
+    aspect-ratio: var(--content-image-portrait-aspect-mobile);
+  }
+
+  .jobs-teaser__media img {
+    object-position: var(--content-image-focus-mobile);
+  }
+}
+
 .page-jobs .jobs-teaser:hover .jobs-teaser__media img,
 .page-jobs .jobs-teaser:focus-visible .jobs-teaser__media img {
   transform: scale(1.03);
@@ -4636,7 +4783,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .job-card h3,
 .job-card span {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
 }
 
@@ -5013,13 +5160,12 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 }
 
 .page-certifications .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-certifications .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -5030,7 +5176,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .page-certifications .company-hero h1 {
   max-width: none;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -5144,22 +5290,20 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .page-safety .company-hero,
 .page-quality .company-hero,
 .page-glossary .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-glossary-term .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-sustainability .company-hero::after,
 .page-safety .company-hero::after,
 .page-quality .company-hero::after,
 .page-glossary .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -5175,14 +5319,14 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .page-safety .company-hero h1,
 .page-quality .company-hero h1 {
   max-width: none;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
 
 .page-glossary .company-hero h1 {
   max-width: 16ch;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -5304,7 +5448,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 }
 
 .page-glossary-term .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -5618,7 +5762,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   }
 
   .page-certifications .company-hero h1 {
-    font-size: clamp(64px, 12vw, 100px);
+    font-size: clamp(56px, 10.5vw, 88px);
   }
 }
 
@@ -5726,32 +5870,37 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
     width: 100%;
     height: auto;
     min-height: clamp(220px, 42vw, 360px);
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 
   .inspection-intro__media {
     max-width: 560px;
-    justify-self: start;
+    justify-self: center;
+    margin-inline: auto;
   }
 
   .inspection-intro__media img {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 
   .quality-intro__media {
     max-width: 560px;
-    justify-self: start;
+    justify-self: center;
+    margin-inline: auto;
   }
 
   .company-media-card--portrait,
   .company-sustainability .company-media-card,
   .sustainability-intro__media {
-    justify-self: start;
+    justify-self: center;
+    margin-inline: auto;
   }
 
   .company-branches {
@@ -5790,12 +5939,55 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   }
 
   .hero h1 {
-    font-size: clamp(44px, 9vw, 100px);
+    font-size: clamp(38px, 7.8vw, 88px);
   }
 
   .hero-stats {
-    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 12px 20px;
+    width: min(100%, 420px);
+    margin-inline: auto;
+    padding: 16px 22px;
+    border-radius: 16px;
+    text-align: center;
+    background: var(--hero-stats-card-bg);
+    border: 1px solid var(--hero-stats-card-border);
+    box-shadow: var(--hero-stats-card-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .hero-stat {
+    flex: 1 1 92px;
+    min-width: 92px;
+    max-width: none;
+  }
+
+  .hero-stat strong {
+    margin-bottom: 6px;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.55),
+      0 0 14px rgba(0, 159, 227, 0.32);
+  }
+
+  .hero-stat span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-eyebrow-color);
+  }
+
+  .hero__bottom {
+    gap: 20px;
+    padding-bottom: 36px;
   }
 
   .intro__grid,
@@ -5905,7 +6097,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   }
 
   .page-certifications .company-hero h1 {
-    font-size: clamp(64px, 12vw, 100px);
+    font-size: clamp(56px, 10.5vw, 88px);
   }
 
   .page-customers .company-hero h1,
@@ -5919,11 +6111,11 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   .page-sustainability .company-hero h1,
   .page-safety .company-hero h1,
   .page-quality .company-hero h1 {
-    font-size: clamp(64px, 12vw, 100px);
+    font-size: clamp(56px, 10.5vw, 88px);
   }
 
   .page-glossary .company-hero h1 {
-    font-size: clamp(64px, 12vw, 100px);
+    font-size: clamp(56px, 10.5vw, 88px);
   }
 
   .industries-grid {
@@ -5952,6 +6144,186 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
     justify-self: center;
     font-size: 20px;
   }
+
+  /* Site-weit: Text+Bild einspaltig + Bilder zentriert (Burger-Menü) */
+  main .company-grid,
+  main .company-grid--narrow,
+  main .company-locations__body,
+  main .sustainability-intro__grid,
+  main .sustainability-accordion-section__grid,
+  main .locations-intro__grid,
+  main .inspection-intro__columns,
+  main .cleaning-intro__columns,
+  main .cleaning-detail__row,
+  main .cleaning-detail__row--reverse,
+  main .vdi-intro__grid,
+  main .vdi-intro__columns,
+  main .quality-intro__columns,
+  main .repair-detail__grid,
+  main .services-intro__grid,
+  main .intro__grid,
+  main .feature__grid,
+  main .progress__grid,
+  main .presence__grid,
+  main .branchen-overview__intro,
+  main .industries-overview__columns,
+  main .standards-overview__columns,
+  main .duct-intro__grid,
+  main .duct-guide__grid,
+  main .airduct-intro__grid,
+  main .airduct-partner__grid,
+  main .airduct-why__grid,
+  main .airduct-health__grid,
+  main .airduct-expertise__grid,
+  main .airduct-expertise__cert-grid,
+  main .airduct-expertise__columns,
+  main .roomdis-intro__grid,
+  main .tower-overview__grid,
+  main .job-detail-split,
+  main .job-tasks-layout,
+  main .job-benefits-grid,
+  main .job-process-grid,
+  main .job-quote-grid,
+  main .jobs-overview__grid,
+  main .cooling-systems-overview__grid,
+  main .cooling-systems-section__grid,
+  main .cleanroom-overview__grid,
+  main .oproom-overview__grid,
+  main .cleanroom-filter__columns,
+  main .hygiene-overview__columns,
+  main .filtertest-standard__row,
+  main .hygiene-benefits__grid,
+  main .energy-intro__columns,
+  main .energy-section__grid,
+  main .energy-section__grid--reverse,
+  main .energy-geg__layout,
+  main .energy-dinspec__grid,
+  main .cleaning-services__top,
+  main .reference-region-overview__grid,
+  main .kitchen-detail__grid,
+  main .kitchen-detail__grid--reverse,
+  main .memmingen-overview__grid,
+  main .textile-intro__columns,
+  main .filtertest-procedure__grid,
+  main .leaktest-purpose__grid,
+  main .hygiene-overview__layout,
+  main .hygiene-services__top,
+  main .page-berlin .reference-region-overview__grid,
+  main .page-berlin .filtertest-standard__row,
+  main .karlsruhe-overview .cleanroom-overview__grid,
+  main .duct-intro-overview .cleanroom-overview__grid,
+  main .airduct-intro-overview .cleanroom-overview__grid,
+  main .airduct-guide-overview .cleanroom-overview__grid,
+  main .duct-vorteile .filtertest-standard__row,
+  main .page-duct-cleaning .duct-vorteile .filtertest-standard__row {
+    grid-template-columns: 1fr !important;
+  }
+
+  main .company-media-card,
+  main [class*="intro__media"],
+  main [class*="detail__media"],
+  main .vdi-intro__media,
+  main .quality-intro__media,
+  main .repair-detail__media,
+  main .sustainability-intro__media,
+  main .sustainability-accordion-section__media,
+  main .cleanroom-overview__media,
+  main .oproom-overview__media,
+  main .airduct-intro-overview__media,
+  main .airduct-why__media,
+  main .airduct-health__media,
+  main .airduct-expertise__media,
+  main .airduct-expertise__cert-media,
+  main .energy-section__media,
+  main .filtertest-standard__media,
+  main .hygiene-overview__media,
+  main .textile-intro__media,
+  main .feature__media,
+  main .progress__media,
+  main .presence__media,
+  main .reference-region-overview__media,
+  main .jobs-teaser__media,
+  main .industries-overview__media,
+  main .industries-overview__icon-column,
+  main .job-about__media,
+  .inspection-intro__media,
+  .quality-intro__media,
+  .sustainability-intro__media,
+  .locations-intro__media,
+  .services-intro__media,
+  .cleaning-intro__media,
+  .cleaning-detail__media,
+  .company-media-card--portrait,
+  .company-sustainability .company-media-card,
+  .page-berlin .filtertest-standard__media,
+  .page-berlin .filtertest-standard__row--reverse .filtertest-standard__media,
+  .energy-section__media,
+  .energy-section__grid--reverse .energy-section__media {
+    justify-self: center !important;
+    margin-inline: auto;
+    width: 100%;
+    max-width: min(100%, 640px);
+  }
+
+  main .company-media-card img,
+  main [class*="intro__media"] img,
+  main [class*="detail__media"] img,
+  main .vdi-intro__media img,
+  main .quality-intro__media img,
+  main .repair-detail__media img,
+  main .sustainability-intro__media img,
+  main .cleanroom-overview__media img,
+  main .energy-section__media img,
+  main .filtertest-standard__media img,
+  main .airduct-why__media img,
+  main .airduct-health__media img,
+  main .airduct-expertise__media img,
+  main .airduct-expertise__cert-media img,
+  main .airduct-intro-overview__media img,
+  main .reference-region-overview__media img,
+  main .jobs-teaser__media img,
+  main .industries-overview__media img,
+  .feature__media img,
+  .progress__media img,
+  .presence__media img,
+  .cleaning-intro__media img,
+  .cleaning-detail__media img,
+  .inspection-intro__media img,
+  .video-card__poster img {
+    object-position: center top !important;
+  }
+
+  .page-industries .industries-overview__icon-column,
+  .page-industries .industries-overview__media {
+    max-width: min(100%, 360px) !important;
+    justify-self: center !important;
+    margin-inline: auto;
+  }
+
+  .page-industries .industries-overview__icon {
+    margin-inline: auto;
+  }
+
+  main img {
+    object-position: center top;
+  }
+
+  .company-media-card--portrait img,
+  .company-sustainability .company-media-card img,
+  .company-employees .company-media-card img,
+  .jobs-teaser__media img {
+    aspect-ratio: var(--content-image-portrait-aspect-mobile) !important;
+    object-position: var(--content-image-focus-mobile) !important;
+  }
+
+  main :is(
+    [class*="__media"],
+    .company-media-card,
+    .video-card__poster
+  ) img {
+    aspect-ratio: var(--content-image-aspect-mobile);
+    object-position: var(--content-image-focus-mobile);
+  }
 }
 
 @media (max-width: 767px) {
@@ -5976,15 +6348,18 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
   .hero h1 {
     max-width: 100%;
-    font-size: clamp(26px, 7.2vw, 34px);
+    font-size: clamp(24px, 6.5vw, 32px);
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
 
   .hero .eyebrow--hero {
     margin-bottom: 8px;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.1em;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.78),
+      0 0 12px rgba(0, 0, 0, 0.4);
   }
 
   .hero {
@@ -6000,7 +6375,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
     flex: 0 0 auto;
     align-content: start;
     justify-items: center;
-    padding-top: 104px;
+    padding-top: clamp(112px, 13svh, 136px);
     padding-bottom: 16px;
     min-height: 0;
   }
@@ -6023,13 +6398,16 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px 14px;
-    width: min(100%, 340px);
-    padding: 14px 18px;
-    border-radius: 14px;
+    gap: 12px 18px;
+    width: min(100%, 360px);
+    padding: 16px 20px;
+    border-radius: 16px;
     text-align: center;
-    background: rgba(9, 40, 89, 0.82);
-    box-shadow: 0 10px 28px rgba(7, 57, 117, 0.22);
+    background: var(--hero-stats-card-bg);
+    border: 1px solid var(--hero-stats-card-border);
+    box-shadow: var(--hero-stats-card-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .hero-stat {
@@ -6039,18 +6417,22 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   }
 
   .hero-stat strong {
-    margin-bottom: 4px;
-    font-size: clamp(24px, 7vw, 30px);
-    color: var(--color-secondary);
+    margin-bottom: 5px;
+    font-size: clamp(26px, 7.2vw, 34px);
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.55),
+      0 0 14px rgba(0, 159, 227, 0.32);
   }
 
   .hero-stat span {
     font-size: 11px;
     font-weight: 700;
     line-height: 1.25;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.94);
+    color: var(--hero-eyebrow-color);
   }
 
   .hero-scroll {
@@ -6135,9 +6517,9 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   }
 
   :root {
-    --subpage-hero-height: auto;
-    --subpage-hero-min-height: clamp(240px, 38svh, 340px);
-    --hero-mobile-padding-top: 78px;
+    --subpage-hero-height: 50vh;
+    --subpage-hero-min-height: 50vh;
+    --hero-mobile-padding-top: clamp(92px, 10svh, 120px);
     --h2-font-size: clamp(26px, 6.8vw, 32px);
   }
 
@@ -6145,7 +6527,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   body[class*="page-"] .company-hero,
   body[class*="page-"] .vdi-hero,
   body[class*="page-"] .job-detail-hero {
-    height: auto;
+    height: var(--subpage-hero-height);
     min-height: var(--subpage-hero-min-height);
   }
 
@@ -6156,7 +6538,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
     align-content: start;
     place-content: start center;
     height: auto;
-    min-height: var(--subpage-hero-min-height);
+    min-height: 0;
     padding-top: var(--hero-mobile-padding-top);
     padding-bottom: 20px;
   }
@@ -6166,15 +6548,22 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
   body[class*="page-"] .vdi-hero__content .eyebrow,
   body[class*="page-"] .job-detail-hero__content .eyebrow {
     margin-bottom: 8px;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.1em;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.78),
+      0 0 12px rgba(0, 0, 0, 0.4);
   }
 
   .hero-breadcrumb {
     margin-top: 10px;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 600;
     line-height: 1.45;
     gap: 4px 6px;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.78),
+      0 0 12px rgba(0, 0, 0, 0.4);
   }
 
   .company-hero h1,
@@ -6432,23 +6821,23 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 }
 
 .page-locations .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
 }
 
 .page-locations .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-locations .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 64px;
 }
 
 .page-locations .company-hero h1 {
   max-width: none;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -6526,7 +6915,7 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .locations-intro__media.company-locations__map .de-map {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   overflow: visible;
 }
 
@@ -6615,6 +7004,11 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 .locations-grid {
   padding: 84px 0;
   background: #fff;
+}
+
+.page-locations #locations,
+.page-locations .locations-grid-card[id^="standort-"] {
+  scroll-margin-top: var(--standort-scroll-offset, 96px);
 }
 
 .locations-browser__header {
@@ -6764,6 +7158,11 @@ main > .company-hero ~ section:not(.company-cta):not(.company-customers):not(.se
 
 .location-icon--phone::before {
   content: "\2706";
+}
+
+.location-icon--fax::before {
+  content: "\213B";
+  font-size: 18px;
 }
 
 .location-icon--mail::before {
@@ -7180,26 +7579,25 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .page-services .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    var(--services-hero-image) center 44% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: var(--services-hero-image);
+  --hero-bg-position: center 44%;
 }
 
 .page-services .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-services .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 62px;
 }
 
 .page-services .company-hero h1 {
   max-width: 8.8ch;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -7286,7 +7684,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .services-overview__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .services-overview__header {
@@ -7550,7 +7948,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .page-services .service-card__media {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
   overflow: hidden;
   aspect-ratio: 4 / 3;
@@ -7608,7 +8006,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
 .page-services .service-card__body {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: grid;
   gap: 14px;
   flex: 1;
@@ -7699,7 +8097,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   }
 
   .page-services .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 108px;
     padding-bottom: 38px;
   }
@@ -7798,18 +8196,17 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .page-inspection .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--services-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--services-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 @media (min-width: 768px) {
   .page-inspection .company-hero {
-    min-height: clamp(260px, 40vh, 400px);
+    min-height: 0;
   }
 
   .page-inspection .company-hero__content {
-    min-height: clamp(260px, 40vh, 400px);
+    min-height: 0;
     padding-top: 116px;
     padding-bottom: 62px;
     justify-items: center;
@@ -7818,14 +8215,14 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 
   .page-inspection .company-hero h1 {
     max-width: min(100%, 18ch);
-    font-size: clamp(60px, 7vw, 100px);
+    font-size: clamp(52px, 6.2vw, 88px);
     line-height: 0.96;
     letter-spacing: -0.04em;
   }
 }
 
 .page-inspection .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -7974,26 +8371,25 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .page-cleaning .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    var(--services-hero-image) center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: var(--services-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-cleaning .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-cleaning .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 62px;
 }
 
 .page-cleaning .company-hero h1 {
   max-width: 11.2ch;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -8269,26 +8665,25 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .page-repair .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    var(--services-hero-image) center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: var(--services-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-repair .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-repair .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 118px;
   padding-bottom: 62px;
 }
 
 .page-repair .company-hero h1 {
   max-width: 10.6ch;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -8629,8 +9024,9 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     width: 100%;
     height: auto;
     min-height: 0;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 
   .inspection-types {
@@ -8724,8 +9120,9 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
     width: 100%;
     height: auto;
     min-height: 0;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 
   .cleaning-detail__stack {
@@ -8803,7 +9200,7 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
   }
 
   .page-repair .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 108px;
     padding-bottom: 38px;
   }
@@ -8852,10 +9249,10 @@ body.is-scrolled .nav-trigger[aria-current="page"] {
 }
 
 .page-energy .site-header{background:rgba(255,255,255,0)}
-.page-energy .company-hero{min-height:clamp(260px,40vh,400px);background:var(--hero-overlay-gradient),var(--services-hero-image) center 42%/cover no-repeat}
-.page-energy .company-hero::after{height:38%;background:var(--hero-fade-gradient)}
-.page-energy .company-hero__content{min-height:clamp(260px,40vh,400px);padding-top:116px;padding-bottom:62px}
-.page-energy .company-hero h1{max-width:min(100%,18ch);font-size:clamp(60px,7vw,100px);line-height:.96;letter-spacing:-.04em}
+.page-energy .company-hero{min-height:var(--subpage-hero-height);--hero-bg-image:var(--services-hero-image);--hero-bg-position:center 42%}
+.page-energy .company-hero::after{height: calc(42% + 3px);background:var(--hero-fade-gradient)}
+.page-energy .company-hero__content{min-height:0;padding-top:116px;padding-bottom:62px}
+.page-energy .company-hero h1{max-width:min(100%,18ch);font-size:clamp(52px,6.2vw,88px);line-height:.96;letter-spacing:-.04em}
 .energy-section,.energy-text-block,.energy-dinspec,.energy-benefits{padding:74px 0 86px}
 .energy-section--soft,.energy-benefits{background:linear-gradient(180deg,#e8f3ff 0%,#fff 100%)}
 .energy-intro__layout{display:grid;gap:32px}
@@ -8922,7 +9319,7 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width:767px){
   .page-energy .company-hero{min-height:var(--subpage-hero-height)}
-  .page-energy .company-hero__content{min-height:var(--subpage-hero-height);padding-top:108px;padding-bottom:38px}
+  .page-energy .company-hero__content{min-height:0;padding-top:108px;padding-bottom:38px}
   .page-energy .company-hero h1{max-width:min(100%,14ch);font-size:clamp(44px,13vw,72px)}
   .energy-section,.energy-geg,.energy-deadlines,.energy-text-block,.energy-dinspec,.energy-benefits{padding-top:56px;padding-bottom:58px}
   .energy-geg__layout{gap:24px}
@@ -8944,21 +9341,21 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-standards .company-hero,
 .page-vdi-detail .company-hero {
-  min-height: clamp(250px, 36vh, 360px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 44% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 44%;
 }
 
 .page-standards .company-hero::after,
 .page-vdi-detail .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-standards .company-hero__content,
 .page-vdi-detail .company-hero__content {
-  min-height: clamp(250px, 36vh, 360px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 54px;
 }
@@ -9073,12 +9470,13 @@ a.sector-card{color:inherit;text-decoration:none}
 @media (max-width: 767px) {
   .page-standards .company-hero,
   .page-vdi-detail .company-hero {
-    min-height: 32vh;
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
   }
 
   .page-standards .company-hero__content,
   .page-vdi-detail .company-hero__content {
-    min-height: 32vh;
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 34px;
   }
@@ -9105,19 +9503,19 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-equipment .company-hero {
-  min-height: clamp(250px, 36vh, 360px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 44% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 44%;
 }
 
 .page-equipment .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-equipment .company-hero__content {
-  min-height: clamp(250px, 36vh, 360px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 54px;
 }
@@ -9233,11 +9631,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-equipment .company-hero {
-    min-height: 32vh;
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
   }
 
   .page-equipment .company-hero__content {
-    min-height: 32vh;
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 34px;
   }
@@ -9266,19 +9665,19 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-duct-cleaning .company-hero {
-  min-height: clamp(300px, 46vh, 460px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-duct-cleaning .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-duct-cleaning .company-hero__content {
-  min-height: clamp(300px, 46vh, 460px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 60px;
 }
@@ -9780,7 +10179,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-duct-cleaning .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 34px;
   }
@@ -9948,8 +10347,9 @@ a.sector-card{color:inherit;text-decoration:none}
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 }
 
@@ -10168,19 +10568,19 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-air-duct-cleaning .company-hero {
-  min-height: clamp(300px, 46vh, 460px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-air-duct-cleaning .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-air-duct-cleaning .company-hero__content {
-  min-height: clamp(300px, 46vh, 460px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 60px;
 }
@@ -10786,7 +11186,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-air-duct-cleaning .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 34px;
   }
@@ -10854,19 +11254,19 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-room-disinfection .company-hero {
-  min-height: clamp(300px, 42vh, 430px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-room-disinfection .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-room-disinfection .company-hero__content {
-  min-height: clamp(300px, 42vh, 430px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 54px;
 }
@@ -11037,7 +11437,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-room-disinfection .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 34px;
   }
@@ -11076,20 +11476,19 @@ a.sector-card{color:inherit;text-decoration:none}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("./Bildmaterial_final/shared/anlage-kuehlturmreinigung4.webp");
-  background-position: center;
-  background-size: cover;
+  --hero-bg-image: url("./Bildmaterial_final/shared/anlage-kuehlturmreinigung4.webp");
+  --hero-bg-position: center center;
 }
 
 .page-cooling-tower .company-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-cooling-tower .company-hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding-top: 8.5rem;
   padding-bottom: 5rem;
 }
@@ -11515,19 +11914,18 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-splitcooling .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-splitcooling .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-splitcooling .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 118px;
   padding-bottom: 62px;
 }
@@ -11567,7 +11965,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-splitcooling .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 40px;
   }
@@ -11582,19 +11980,18 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-processair .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-processair .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-processair .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 118px;
   padding-bottom: 62px;
 }
@@ -11621,21 +12018,20 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-cold-shelves .company-hero,
 .page-datacenter .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-cold-shelves .company-hero::after,
 .page-datacenter .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-cold-shelves .company-hero__content,
 .page-datacenter .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 118px;
   padding-bottom: 62px;
 }
@@ -11675,19 +12071,18 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-cooling-systems .company-hero {
-  min-height: clamp(280px, 40vh, 390px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 44% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 44%;
 }
 
 .page-cooling-systems .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-cooling-systems .company-hero__content {
-  min-height: clamp(280px, 40vh, 390px);
+  min-height: 0;
   padding-top: 108px;
   padding-bottom: 48px;
 }
@@ -11950,7 +12345,7 @@ a.sector-card{color:inherit;text-decoration:none}
 
   .page-cold-shelves .company-hero__content,
   .page-datacenter .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 40px;
   }
@@ -12010,7 +12405,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-cooling-systems .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 40px;
   }
@@ -12045,7 +12440,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-processair .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 40px;
   }
@@ -12061,19 +12456,18 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-kitchen-exhaust .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-kitchen-exhaust .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-kitchen-exhaust .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 118px;
   padding-bottom: 62px;
 }
@@ -12147,7 +12541,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-kitchen-exhaust .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 40px;
   }
@@ -12167,19 +12561,19 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-laborabzug .company-hero {
-  min-height: clamp(300px, 46vh, 460px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/anlagen-laborabzug.webp") center 42% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
+  --hero-bg-image: url("./Bildmaterial_final/shared/anlagen-laborabzug.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-laborabzug .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-laborabzug .company-hero__content {
-  min-height: clamp(300px, 46vh, 460px);
+  min-height: 0;
   padding-top: 116px;
   padding-bottom: 60px;
 }
@@ -12324,11 +12718,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-laborabzug .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-laborabzug .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 42px;
   }
@@ -12359,19 +12753,18 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-evaporators .company-hero {
-  min-height: clamp(260px, 40vh, 400px);
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
+  min-height: 0;
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-evaporators .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-evaporators .company-hero__content {
-  min-height: clamp(260px, 40vh, 400px);
+  min-height: 0;
   padding-top: 118px;
   padding-bottom: 62px;
 }
@@ -12403,7 +12796,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-evaporators .company-hero__content {
-    min-height: var(--subpage-hero-height);
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 40px;
   }
@@ -12420,25 +12813,24 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-cleanroom .company-hero {
-  min-height: 40vh;
+  min-height: var(--subpage-hero-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/anlagen-reinraumqualifizierung1.webp") center 42% / cover no-repeat;
+  --hero-bg-image: url("./Bildmaterial_final/shared/anlagen-reinraumqualifizierung1.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-cleanroom .company-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-cleanroom .company-hero__content {
   position: relative;
-  z-index: 1;
-  min-height: 40vh;
+  z-index: 2;
+  min-height: 0;
   padding-top: 8.25rem;
   padding-bottom: 4.75rem;
 }
@@ -12805,11 +13197,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-cleanroom .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-cleanroom .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 6.7rem;
     padding-bottom: 2.8rem;
   }
@@ -12857,25 +13249,24 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-oproom .company-hero {
-  min-height: 40vh;
+  min-height: var(--subpage-hero-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("./Bildmaterial_final/shared/anlagen-op4.webp");
-  background-position: center;
-  background-size: cover;
+  --hero-bg-image: url("./Bildmaterial_final/shared/anlagen-op4.webp");
+  --hero-bg-position: center center;
 }
 
 .page-oproom .company-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-oproom .company-hero__content {
   position: relative;
-  z-index: 1;
-  min-height: 40vh;
+  z-index: 2;
+  min-height: 0;
   padding-top: 8.25rem;
   padding-bottom: 4.75rem;
 }
@@ -13162,11 +13553,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-oproom .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-oproom .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 6.7rem;
     padding-bottom: 2.8rem;
   }
@@ -13204,25 +13595,24 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-filtertest .company-hero {
-  min-height: 40vh;
+  min-height: var(--subpage-hero-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: var(--hero-overlay-gradient), url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
-  background-position: center;
-  background-size: cover;
+  --hero-bg-image: url("./Bildmaterial_final/shared/certifications-hero-bg.webp");
+  --hero-bg-position: center center;
 }
 
 .page-filtertest .company-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-filtertest .company-hero__content {
   position: relative;
-  z-index: 1;
-  min-height: 40vh;
+  z-index: 2;
+  min-height: 0;
   padding-top: 8.25rem;
   padding-bottom: 4.75rem;
 }
@@ -13235,11 +13625,8 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-memmingen .company-hero {
-  background-image:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/memmingen-hero.webp");
-  background-position: center 42%;
-  background-size: cover;
+  --hero-bg-image: url("./Bildmaterial_final/shared/memmingen-hero.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-memmingen .company-hero h1 {
@@ -13873,11 +14260,11 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 
   .page-filtertest .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-filtertest .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 42px;
   }
@@ -13931,19 +14318,20 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-textile-ducts .company-hero {
-  min-height: clamp(320px, 46vh, 480px);
+  min-height: var(--subpage-hero-height);
+  height: var(--subpage-hero-height);
   background:
     linear-gradient(180deg, rgba(5, 15, 28, 0.72) 0%, rgba(5, 15, 28, 0.38) 62%, rgba(255, 255, 255, 0.82) 100%),
     url("./Bildmaterial_final/shared/certifications-hero-bg.webp") center 42% / cover no-repeat;
 }
 
 .page-textile-ducts .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-textile-ducts .company-hero__content {
-  min-height: clamp(320px, 46vh, 480px);
+  min-height: 0;
   padding-top: 122px;
   padding-bottom: 58px;
 }
@@ -14118,11 +14506,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-textile-ducts .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-textile-ducts .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 42px;
   }
@@ -14455,7 +14843,7 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .glossary-card__title {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0 0 14px;
   font-size: clamp(24px, 2.4vw, 34px);
   font-weight: 600;
@@ -14465,7 +14853,7 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .glossary-card__excerpt {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex: 1;
 }
 
@@ -14561,25 +14949,24 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-hygiene-inspection .company-hero {
-  min-height: 40vh;
+  min-height: var(--subpage-hero-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  background:
-    var(--hero-overlay-gradient),
-    url("./Bildmaterial_final/shared/anlagen-lueftungsreinigung7.webp") center 42% / cover no-repeat;
+  --hero-bg-image: url("./Bildmaterial_final/shared/anlagen-lueftungsreinigung7.webp");
+  --hero-bg-position: center 42%;
 }
 
 .page-hygiene-inspection .company-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-hygiene-inspection .company-hero__content {
   position: relative;
-  z-index: 1;
-  min-height: 40vh;
+  z-index: 2;
+  min-height: 0;
   padding-top: 8.25rem;
   padding-bottom: 4.75rem;
 }
@@ -15120,11 +15507,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-hygiene-inspection .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-hygiene-inspection .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 42px;
   }
@@ -15172,25 +15559,24 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-channel-inspection .company-hero {
-  min-height: 40vh;
+  min-height: var(--subpage-hero-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  background:
-    var(--hero-overlay-gradient),
-    var(--services-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--services-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-channel-inspection .company-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-channel-inspection .company-hero__content {
   position: relative;
-  z-index: 1;
-  min-height: 40vh;
+  z-index: 2;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15319,11 +15705,11 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 767px) {
   .page-channel-inspection .company-hero {
-    min-height: 36vh;
+    min-height: var(--subpage-hero-height);
   }
 
   .page-channel-inspection .company-hero__content {
-    min-height: 36vh;
+    min-height: 0;
     padding-top: 106px;
     padding-bottom: 42px;
   }
@@ -15332,8 +15718,6 @@ a.sector-card{color:inherit;text-decoration:none}
     max-width: 8ch;
     font-size: clamp(40px, 11.5vw, 62px);
   }
-
-.channel-overview__header h2,
 }
 
 .page-berlin .site-header .site-header__inner,
@@ -15345,10 +15729,9 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-bernau .company-hero {
-  min-height: clamp(280px, 40vh, 320px);
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-bernau main .container,
@@ -15357,12 +15740,12 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-bernau .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-bernau .company-hero__content {
-  min-height: clamp(280px, 40vh, 320px);
+  min-height: 0;
   padding-top: 112px;
   padding-bottom: 42px;
 }
@@ -15527,11 +15910,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 640px) {
   .page-bernau .company-hero {
-    min-height: 260px;
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
   }
 
   .page-bernau .company-hero__content {
-    min-height: 260px;
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 30px;
   }
@@ -15543,10 +15927,9 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-brandenburg .company-hero {
-  min-height: clamp(280px, 40vh, 320px);
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-brandenburg main .container,
@@ -15555,12 +15938,12 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-brandenburg .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-brandenburg .company-hero__content {
-  min-height: clamp(280px, 40vh, 320px);
+  min-height: 0;
   padding-top: 112px;
   padding-bottom: 42px;
 }
@@ -15725,11 +16108,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 @media (max-width: 640px) {
   .page-brandenburg .company-hero {
-    min-height: 260px;
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
   }
 
   .page-brandenburg .company-hero__content {
-    min-height: 260px;
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 30px;
   }
@@ -15745,10 +16129,9 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 .page-job-detail .job-detail-hero {
-  min-height: clamp(330px, 40vh, 440px);
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center / cover no-repeat;
+  min-height: var(--subpage-hero-height);
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center;
 }
 
 .page-job-detail .job-intro.tower-overview {
@@ -15763,12 +16146,12 @@ a.sector-card{color:inherit;text-decoration:none}
 
 .page-job-detail .job-detail-hero::after {
   inset: auto 0 0;
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
 .page-job-detail .job-detail-hero__content {
-  min-height: clamp(330px, 40vh, 440px);
+  min-height: 0;
   align-content: center;
   padding-top: 80px;
   padding-bottom: 40px;
@@ -16244,9 +16627,13 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 @media (max-width: 980px) {
-  .page-job-detail .job-detail-hero,
+  .page-job-detail .job-detail-hero {
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
+  }
+
   .page-job-detail .job-detail-hero__content {
-    min-height: 360px;
+    min-height: 0;
   }
 
   .page-job-detail .job-detail-hero h1 {
@@ -16309,12 +16696,13 @@ a.sector-card{color:inherit;text-decoration:none}
 }
 
 @media (max-width: 640px) {
-  .page-job-detail .job-detail-hero,
-  .page-job-detail .job-detail-hero__content {
-    min-height: 340px;
+  .page-job-detail .job-detail-hero {
+    min-height: var(--subpage-hero-height);
+    height: var(--subpage-hero-height);
   }
 
   .page-job-detail .job-detail-hero__content {
+    min-height: 0;
     padding-top: 104px;
     padding-bottom: 34px;
   }
@@ -16373,7 +16761,7 @@ a.sector-card{color:inherit;text-decoration:none}
   }
 }
 
-/* Hero-Höhen: Startseite 100vh (Desktop), alle Unterseiten 40vh */
+/* Hero-Höhen: Startseite 100vh (Desktop), alle Unterseiten 50vh */
 @media (min-width: 768px) {
   .hero {
     display: flex;
@@ -16388,6 +16776,13 @@ body[class*="page-"] .vdi-hero,
 body[class*="page-"] .job-detail-hero {
   display: flex;
   flex-direction: column;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
   min-height: var(--subpage-hero-height);
   height: var(--subpage-hero-height);
 }
@@ -16397,7 +16792,9 @@ body[class*="page-"] .vdi-hero__content,
 body[class*="page-"] .job-detail-hero__content {
   display: grid;
   flex: 1 1 auto;
-  width: 100%;
+  width: min(var(--container), 100%);
+  max-width: 100%;
+  margin-inline: auto;
   min-height: 0;
   height: 100%;
   justify-items: center;
@@ -16419,7 +16816,7 @@ body[class*="page-"] .job-detail-hero__content .eyebrow {
 body[class*="page-"] .company-hero h1,
 body[class*="page-"] .vdi-hero h1,
 body[class*="page-"] .job-detail-hero h1 {
-  font-size: 66px;
+  font-size: var(--subpage-hero-h1-size);
   justify-self: center;
   width: fit-content;
   max-width: 100%;
@@ -16430,29 +16827,25 @@ body[class*="page-"] .job-detail-hero h1 {
 /* Übersichtsseiten: dunkles Overlay, Übergang zu --hero-fade-color (kein Weiß) */
 .page-company .company-hero,
 .page-locations .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center;
 }
 
 .page-customers .company-hero,
 .page-jobs .company-hero,
 .page-job-detail .job-detail-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center;
 }
 
 .page-services .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--services-hero-image) center 44% / cover no-repeat;
+  --hero-bg-image: var(--services-hero-image);
+  --hero-bg-position: center 44%;
 }
 
 .page-equipment .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--anlagen-hero-image) center 44% / cover no-repeat;
+  --hero-bg-image: var(--anlagen-hero-image);
+  --hero-bg-position: center 44%;
 }
 
 .page-company .company-hero::after,
@@ -16462,7 +16855,7 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-jobs .company-hero::after,
 .page-job-detail .job-detail-hero::after,
 .page-locations .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -16475,9 +16868,8 @@ body[class*="page-"] .job-detail-hero h1 {
 .page-reference-city .company-hero,
 .page-reference-region .company-hero,
 .page-karlsruhe-reference .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-reference-city .company-hero + section,
@@ -16723,7 +17115,7 @@ body[class*="page-"] .job-detail-hero h1 {
     height: auto;
     min-height: clamp(220px, 42vw, 360px);
     flex: none;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
   }
 
   .page-reference-region .company-hero + section .reference-region-overview__map {
@@ -16737,7 +17129,7 @@ body[class*="page-"] .job-detail-hero h1 {
   .page-air-duct-cleaning .company-hero + section[data-section="intro"] figure.company-media-card img {
     height: auto;
     min-height: 0;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
   }
 }
 
@@ -16832,7 +17224,7 @@ body[class*="page-"] .job-detail-hero h1 {
   .page-karlsruhe-reference .company-hero + section + section .filtertest-standard__media {
     height: auto;
     min-height: clamp(220px, 42vw, 360px);
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
   }
 
   .page-reference-city .company-hero + section + section .filtertest-standard__copy,
@@ -16989,7 +17381,7 @@ body[class*="page-"] .job-detail-hero h1 {
   [data-section="services"] .filtertest-standard__media {
     height: auto;
     min-height: clamp(220px, 42vw, 360px);
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
   }
 }
 
@@ -17012,9 +17404,8 @@ body[class*="page-"] .job-detail-hero h1 {
 }
 
 .page-anlagen .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--anlagen-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--anlagen-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-offer .site-header {
@@ -17022,13 +17413,12 @@ body[class*="page-"] .job-detail-hero h1 {
 }
 
 .page-offer .company-hero {
-  background:
-    var(--hero-overlay-gradient),
-    var(--company-section-hero-image) center 42% / cover no-repeat;
+  --hero-bg-image: var(--company-section-hero-image);
+  --hero-bg-position: center 42%;
 }
 
 .page-offer .company-hero::after {
-  height: 38%;
+  height: calc(42% + 3px);
   background: var(--hero-fade-gradient);
 }
 
@@ -17039,7 +17429,7 @@ body[class*="page-"] .job-detail-hero h1 {
 
 .page-offer .company-hero h1 {
   max-width: none;
-  font-size: clamp(60px, 7vw, 100px);
+  font-size: clamp(52px, 6.2vw, 88px);
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -17210,18 +17600,19 @@ body[class*="page-"] .job-detail-hero h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px 10px;
-  color: #6b7f93;
+  color: #8dc7ff;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .page-offer .offer-page__breadcrumb .text-link {
-  color: var(--color-primary);
+  color: #8dc7ff;
   text-decoration: none;
 }
 
 .page-offer .offer-page__breadcrumb .text-link:hover,
 .page-offer .offer-page__breadcrumb .text-link:focus-visible {
+  color: #8dc7ff;
   text-decoration: underline;
 }
 
@@ -17260,7 +17651,7 @@ body[class*="page-"] .job-detail-hero h1 {
   [class*="page-"] .company-hero,
   [class*="page-"] .vdi-hero,
   [class*="page-"] .job-detail-hero {
-    height: auto !important;
+    height: var(--subpage-hero-height) !important;
     min-height: var(--subpage-hero-min-height) !important;
   }
 
@@ -17270,7 +17661,7 @@ body[class*="page-"] .job-detail-hero h1 {
     align-content: start !important;
     place-content: start center !important;
     height: auto !important;
-    min-height: var(--subpage-hero-min-height) !important;
+    min-height: 0 !important;
     padding-top: var(--hero-mobile-padding-top) !important;
     padding-bottom: 20px !important;
   }
@@ -17303,8 +17694,9 @@ body[class*="page-"] .job-detail-hero h1 {
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 
   .page-air-duct-cleaning .airduct-intro-overview__grid > :is(article, figure) {
@@ -17328,10 +17720,11 @@ body[class*="page-"] .job-detail-hero h1 {
   .page-air-duct-cleaning .airduct-expertise__cert-media,
   .page-air-duct-cleaning .airduct-intro-overview__media {
     width: 100% !important;
-    max-width: none !important;
+    max-width: min(100%, 640px) !important;
     height: auto !important;
     min-height: 0 !important;
-    justify-self: stretch !important;
+    justify-self: center !important;
+    margin-inline: auto;
   }
 
   .page-air-duct-cleaning .airduct-why__media img,
@@ -17344,8 +17737,9 @@ body[class*="page-"] .job-detail-hero h1 {
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
   }
 
   .page-air-duct-cleaning .airduct-intro__copy h2,
@@ -17457,8 +17851,9 @@ body[class*="page-"] .job-detail-hero h1 {
 
   .page-job-detail .job-about__media {
     width: 100% !important;
-    max-width: none !important;
-    justify-self: stretch !important;
+    max-width: min(100%, 640px) !important;
+    justify-self: center !important;
+    margin-inline: auto;
   }
 
   .page-job-detail .job-about__media img {
@@ -17594,10 +17989,11 @@ body[class*="page-"] .job-detail-hero h1 {
   main .hygiene-overview__media,
   main .textile-intro__media {
     width: 100% !important;
-    max-width: none !important;
+    max-width: min(100%, 640px) !important;
     height: auto !important;
     min-height: 0 !important;
-    justify-self: stretch !important;
+    justify-self: center !important;
+    margin-inline: auto;
   }
 
   main .company-media-card img,
@@ -17620,8 +18016,17 @@ body[class*="page-"] .job-detail-hero h1 {
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--content-image-aspect-mobile);
     object-fit: cover;
+    object-position: center top !important;
+  }
+
+  .company-media-card--portrait img,
+  .company-sustainability .company-media-card img,
+  .company-employees .company-media-card img,
+  .jobs-teaser__media img {
+    aspect-ratio: var(--content-image-portrait-aspect-mobile) !important;
+    object-position: var(--content-image-focus-mobile) !important;
   }
 
   main .section-copy h2,
@@ -17662,6 +18067,252 @@ body[class*="page-"] .job-detail-hero h1 {
   .hero__content {
     flex: 0 0 auto !important;
     min-height: 0 !important;
-    padding-top: 104px !important;
+    padding-top: clamp(112px, 13svh, 136px) !important;
   }
+}
+
+/* Hohe, schmale Viewports (z. B. 601×1007): Headline tiefer im Hero */
+@media (max-width: 767px) and (min-height: 850px) {
+  .hero {
+    min-height: 100svh !important;
+    height: auto !important;
+  }
+
+  .hero__content {
+    flex: 1 1 auto !important;
+    align-content: center !important;
+    min-height: 0 !important;
+    padding-top: clamp(104px, 12svh, 132px) !important;
+    padding-bottom: clamp(32px, 8svh, 96px) !important;
+  }
+
+  .company-hero__content,
+  body[class*="page-"] .company-hero__content,
+  body[class*="page-"] .vdi-hero__content,
+  body[class*="page-"] .job-detail-hero__content {
+    align-content: center !important;
+    place-content: center !important;
+    padding-top: clamp(96px, 11svh, 128px) !important;
+    padding-bottom: clamp(24px, 5svh, 40px) !important;
+  }
+}
+
+/* Startseiten-Hero: kompakte Viewports (z. B. 800×600) */
+@media (max-width: 830px) and (max-height: 650px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    min-height: 100svh;
+    max-height: 100svh;
+    overflow: hidden;
+  }
+
+  .hero__fade {
+    height: min(150px, 38%);
+  }
+
+  .hero__content {
+    flex: 1 1 auto;
+    align-content: center;
+    justify-items: center;
+    min-height: 0;
+    padding-top: clamp(76px, 12svh, 86px);
+    padding-bottom: 0;
+  }
+
+  .hero .eyebrow--hero {
+    margin-bottom: 6px;
+    font-size: 11px;
+    letter-spacing: 0.11em;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.78),
+      0 0 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero h1 {
+    max-width: 13em;
+    font-size: clamp(24px, 5.6vw, 34px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+  }
+
+  .hero__bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px 10px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: calc(58px + 14px);
+  }
+
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    max-width: min(100%, 240px);
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: var(--hero-stats-card-bg);
+    border: 1px solid var(--hero-stats-card-border);
+    box-shadow: var(--hero-stats-card-shadow);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .hero-stat {
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .hero-stat strong {
+    margin-bottom: 3px;
+    font-size: clamp(22px, 5vw, 28px);
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.55),
+      0 0 10px rgba(0, 159, 227, 0.28);
+  }
+
+  .hero-stat span {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--hero-eyebrow-color);
+  }
+
+  .hero-scroll {
+    width: clamp(50px, 8.5vw, 62px);
+    height: clamp(50px, 8.5vw, 62px);
+    border-width: 2px;
+    font-size: clamp(22px, 3.6vw, 28px);
+  }
+
+  .hero__cta {
+    justify-self: end;
+    min-width: 0;
+    min-height: 38px;
+    padding: 7px 11px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Unterseiten-Heros: kompakt, Text über Overlay */
+  :root {
+    --subpage-hero-height: 50vh;
+    --subpage-hero-min-height: 50vh;
+    --subpage-hero-content-padding-top: 0;
+    --hero-mobile-padding-top: 72px;
+  }
+
+  .company-hero,
+  body[class*="page-"] .company-hero,
+  body[class*="page-"] .vdi-hero,
+  body[class*="page-"] .job-detail-hero,
+  .page-job-detail .job-detail-hero {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    left: 50% !important;
+    right: 50% !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    overflow: hidden !important;
+    height: var(--subpage-hero-height) !important;
+    min-height: var(--subpage-hero-min-height) !important;
+    max-height: none;
+  }
+
+  .company-hero__content,
+  .job-detail-hero__content,
+  .vdi-hero__content,
+  body[class*="page-"] .company-hero__content,
+  body[class*="page-"] .vdi-hero__content,
+  body[class*="page-"] .job-detail-hero__content,
+  .page-job-detail .job-detail-hero__content,
+  [class*="page-"] .company-hero__content {
+    z-index: 2 !important;
+    flex: 0 0 auto !important;
+    align-content: center !important;
+    place-content: center !important;
+    justify-content: center !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .company-hero__content .eyebrow,
+  body[class*="page-"] .company-hero__content .eyebrow,
+  body[class*="page-"] .vdi-hero__content .eyebrow,
+  body[class*="page-"] .job-detail-hero__content .eyebrow {
+    margin-bottom: 5px !important;
+    font-size: 11px !important;
+    letter-spacing: 0.1em !important;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.78),
+      0 0 12px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .company-hero h1,
+  body[class*="page-"] .company-hero h1,
+  body[class*="page-"] .vdi-hero h1,
+  body[class*="page-"] .job-detail-hero h1,
+  [class*="page-"] .company-hero h1,
+  [class*="page-"] .vdi-hero h1,
+  [class*="page-"] .job-detail-hero h1 {
+    font-size: clamp(22px, 5.4vw, 30px) !important;
+    line-height: 1.1 !important;
+    max-width: 100% !important;
+    width: auto !important;
+    letter-spacing: -0.02em !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .hero-breadcrumb {
+    margin-top: 7px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    gap: 3px 5px !important;
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.78),
+      0 0 12px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+/* Unterseiten-Hero: Overlay randlos, Bild direkt auf der Section */
+.company-hero::after,
+.job-detail-hero::after,
+.vdi-hero::after {
+  inset: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  transform: none !important;
+  z-index: 1 !important;
+  background:
+    var(--hero-fade-gradient) bottom / 100% var(--hero-fade-band-height) no-repeat,
+    var(--hero-overlay-gradient) !important;
+  box-shadow: inset 0 -8px 0 8px var(--hero-fade-color);
+  pointer-events: none;
 }

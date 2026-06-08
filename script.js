@@ -590,6 +590,12 @@ function initAnchors() {
 
       event.preventDefault();
       setMenuState(false);
+
+      if (target.classList.contains("locations-grid-card") || target.id === "locations") {
+        scrollToStandortTarget(target);
+        return;
+      }
+
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
@@ -800,6 +806,26 @@ const presenceMapBuildCard = (stateLabel, location, options = {}) => {
 `;
 };
 
+function getStandortScrollOffset() {
+  const header = document.querySelector(".site-header");
+  if (!header) {
+    return 96;
+  }
+
+  return Math.ceil(header.getBoundingClientRect().height + 16);
+}
+
+function scrollToStandortTarget(target, behavior = "smooth") {
+  if (!target) {
+    return;
+  }
+
+  const offset = getStandortScrollOffset();
+  document.documentElement.style.setProperty("--standort-scroll-offset", `${offset}px`);
+  const top = window.scrollY + target.getBoundingClientRect().top - offset;
+  window.scrollTo({ top: Math.max(0, top), behavior });
+}
+
 function presenceMapGetStandorteTitles() {
   const titles = {};
 
@@ -833,7 +859,13 @@ function presenceMapClearStandorteHighlights(mapRoot) {
   });
 }
 
-function presenceMapFocusStandorteState(mapRoot, land, location) {
+function presenceMapFocusStandorteState(
+  mapRoot,
+  land,
+  location,
+  preferredCardId = null,
+  scrollBehavior = "smooth",
+) {
   const cardIds = location.cardIds || [];
   const cards = cardIds
     .map((id) => document.getElementById(id))
@@ -846,11 +878,13 @@ function presenceMapFocusStandorteState(mapRoot, land, location) {
     card.classList.add("is-map-highlight");
   });
 
-  const scrollTarget = cards[0] || document.getElementById("locations");
-  scrollTarget?.scrollIntoView({ behavior: "smooth", block: "center" });
+  const preferredCard = preferredCardId ? document.getElementById(preferredCardId) : null;
+  const scrollTarget = preferredCard || cards[0] || document.getElementById("locations");
+  scrollToStandortTarget(scrollTarget, scrollBehavior);
 
-  if (cards[0]?.id) {
-    history.replaceState(null, "", `#${cards[0].id}`);
+  const hashTarget = preferredCard || cards[0];
+  if (hashTarget?.id) {
+    history.replaceState(null, "", `#${hashTarget.id}`);
   }
 }
 
@@ -873,7 +907,7 @@ function presenceMapInitStandorteFromHash(mapRoot) {
   }
 
   window.requestAnimationFrame(() => {
-    presenceMapFocusStandorteState(mapRoot, land, location);
+    presenceMapFocusStandorteState(mapRoot, land, location, hash, "auto");
   });
 }
 
@@ -1026,10 +1060,7 @@ function initPresenceMap() {
       const location = stateId ? presenceMapLocationStates[stateId] : null;
 
       if (card && land && location) {
-        presenceMapFocusStandorteState(mapRoot, land, location);
-        card.classList.add("is-map-highlight");
-        card.scrollIntoView({ behavior: "smooth", block: "center" });
-        history.replaceState(null, "", `#${cardId}`);
+        presenceMapFocusStandorteState(mapRoot, land, location, cardId);
       }
     });
 
