@@ -7,8 +7,8 @@ import { fileURLToPath } from "node:url";
 const themeDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const rootDir = path.resolve(themeDir, "..");
 const html = await fs.readFile(path.join(rootDir, "index.html"), "utf8");
-const header = (html.match(/<header\b[\s\S]*?<\/header>/i) || [])[0];
-const footer = (html.match(/<footer\b[\s\S]*?<\/footer>/i) || [])[0];
+let header = (html.match(/<header\b[\s\S]*?<\/header>/i) || [])[0];
+let footer = (html.match(/<footer\b[\s\S]*?<\/footer>/i) || [])[0];
 
 if (!header || !footer) {
   throw new Error("Canonical IGIENAIR header/footer could not be extracted.");
@@ -72,6 +72,10 @@ header = header.replace(
 header = header.replace(
   /<button type="button" class="mobile-link" data-inert>Extranet<\/button>/g,
   '<a class="mobile-link" href="https://kunde.igienair.de/login">Extranet</a>',
+);
+footer = footer.replace(
+  /(&copy;|©)\s*IGIENAIR\s+\d{4}/g,
+  "&copy; IGIENAIR 2026",
 );
 
 await fs.writeFile(path.join(themeDir, "partials/site-header.html"), `${header}\n`);

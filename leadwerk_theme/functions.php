@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'LEADWERK_THEME_VERSION', '2.9.0' );
+define( 'LEADWERK_THEME_VERSION', '2.9.2' );
 define( 'LEADWERK_THEME_DIR', get_template_directory() );
 define( 'LEADWERK_THEME_URI', get_template_directory_uri() );
 
@@ -206,6 +206,9 @@ function leadwerk_theme_render_chrome( $name ) {
 	$html = '';
 	foreach ( $root->childNodes as $child ) {
 		$html .= $dom->saveHTML( $child );
+	}
+	if ( 'footer' === $name ) {
+		$html = preg_replace( '/(?:&copy;|©)\s*IGIENAIR\s+\d{4}/u', '© IGIENAIR ' . wp_date( 'Y' ), $html );
 	}
 	return $html;
 }
