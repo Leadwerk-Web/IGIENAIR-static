@@ -657,7 +657,7 @@ const presenceMapLocationStates = {
     locations: [
       {
         name: "Firmensitz/ Niederlassung Baden-Württemberg",
-        street: "Am Hardtwald 6–8",
+        street: "Robert-Bosch-Str. 10",
         city: "76275 Ettlingen",
         phone: "07243 3699101",
         email: "anfrage@igienair.com",
@@ -665,9 +665,9 @@ const presenceMapLocationStates = {
       },
       {
         name: "Niederlassung Bodensee",
-        street: "Honbergstr. 23",
-        city: "78532 Tuttlingen",
-        phone: "07461 9134000",
+        street: "Frank-Ziwey-Ring 18 Unit 102",
+        city: "78333 Stockach",
+        phone: "07771 63640009",
         email: "anfrage@igienair.com",
         cardId: "standort-bodensee-tuttlingen",
       },

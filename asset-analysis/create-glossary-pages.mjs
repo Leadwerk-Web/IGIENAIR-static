@@ -117,7 +117,7 @@ function buildMain(term) {
           <div class="glossary-term__aside-card">
             <h2 class="glossary-term__aside-title">Kontaktdaten und Angebot</h2>
             <p><strong>IGIENAIR GmbH</strong><br><em>Firmensitz/<br>Niederlassung Baden-W&uuml;rttemberg</em></p>
-            <p>Am Hardtwald 6-8<br>76275 Ettlingen<br>07243 3699101<br><a class="text-link" href="mailto:anfrage@igienair.com">anfrage@igienair.com</a></p>
+            <p>Robert-Bosch-Str. 10<br>76275 Ettlingen<br>07243 3699101<br><a class="text-link" href="mailto:anfrage@igienair.com">anfrage@igienair.com</a></p>
             <a class="button button--solid" href="../../kontakt/angebot-anfordern/index.html">Jetzt ein Angebot anfordern</a>
           </div>
         </aside>
