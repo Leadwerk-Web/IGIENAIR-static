@@ -17071,6 +17071,27 @@ body[class*="page-"] .job-detail-hero h1 {
   line-height: 1.55 !important;
 }
 
+.leadwerk-wpforms-slot .wpforms-form a {
+  color: #0161bf !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-decoration-color: rgba(1, 97, 191, 0.78) !important;
+  text-decoration-thickness: 1.5px !important;
+  text-underline-offset: 0.16em;
+}
+
+.leadwerk-wpforms-slot .wpforms-form a:hover,
+.leadwerk-wpforms-slot .wpforms-form a:focus-visible {
+  color: #009fe3 !important;
+  text-decoration-color: currentColor !important;
+}
+
+.leadwerk-wpforms-slot .wpforms-form a:focus-visible {
+  border-radius: 2px;
+  outline: 3px solid rgba(0, 159, 227, 0.2);
+  outline-offset: 3px;
+}
+
 .leadwerk-wpforms-slot .wpforms-field-checkbox input[type="checkbox"] {
   width: 18px !important;
   height: 18px !important;
