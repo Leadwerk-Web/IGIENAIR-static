@@ -417,6 +417,20 @@ body.menu-open .mobile-menu-toggle__bar:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
+.header-badge-link {
+  display: inline-flex;
+  flex-shrink: 0;
+  line-height: 0;
+  border-radius: 4px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.header-badge-link:hover,
+.header-badge-link:focus-visible {
+  transform: scale(1.05);
+  opacity: 0.92;
+}
+
 .header-badge {
   width: clamp(42px, 4vw, 64px);
 }
@@ -1617,6 +1631,64 @@ body.menu-open .scroll-to-top {
   margin: 0 auto;
   aspect-ratio: 591.504 / 800.504;
   background: transparent;
+}
+
+.de-map__stage--staedte,
+[data-presence-map-mode="staedte"] .de-map__stage {
+  aspect-ratio: 472.95 / 639.41;
+}
+
+.map-card [data-presence-map-mode="staedte"] .de-map__stage--staedte {
+  width: 100%;
+}
+
+.de-map__svg-host .de-map__bg {
+  fill: #d8eaff;
+  stroke: rgba(255, 255, 255, 0.92);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__land-shape {
+  filter: url(#de-map-land-shadow);
+}
+
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__bg {
+  fill: url(#de-map-land-gradient);
+  stroke: rgba(255, 255, 255, 0.82);
+  stroke-width: 1.1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+  transition: fill 0.45s ease;
+}
+
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__city.de-map__land {
+  fill: url(#de-map-city-gradient);
+  stroke: rgba(255, 255, 255, 0.98);
+  stroke-width: 2.4;
+  cursor: pointer;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: translate(0, 0) scale(1.25);
+  filter: url(#de-map-city-glow);
+  transition:
+    fill 0.55s cubic-bezier(0.25, 1, 0.5, 1),
+    stroke 0.55s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.7s cubic-bezier(0.25, 1, 0.5, 1),
+    filter 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__city.de-map__land.is-location:hover,
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__city.de-map__land.is-location:focus-visible,
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__city.de-map__land.is-location.is-highlighted,
+[data-presence-map-mode="staedte"] .de-map__svg-host .de-map__city.de-map__land.is-location.is-selected {
+  fill: #0154a8;
+  stroke: rgba(255, 255, 255, 1);
+  transform: translate(0, 0) scale(1.45);
+  filter: drop-shadow(0 10px 20px rgba(1, 97, 191, 0.42));
 }
 
 .de-map__svg-host,
@@ -6477,6 +6549,10 @@ main > .job-detail-hero + section {
     width: min(100%, 360px);
   }
 
+  .map-card [data-presence-map-mode="staedte"] .de-map__stage--staedte {
+    width: 100%;
+  }
+
   .feature,
   .intro,
   .presence,
@@ -6886,6 +6962,12 @@ main > .job-detail-hero + section {
   justify-self: end;
 }
 
+.page-locations .locations-intro__media {
+  width: 100%;
+  max-width: none;
+  justify-self: stretch;
+}
+
 .page-locations .sustainability-intro.locations-intro,
 .page-locations .locations-intro .container {
   overflow: visible;
@@ -6893,57 +6975,9 @@ main > .job-detail-hero + section {
 
 .locations-intro__media.company-locations__map {
   position: relative;
-  isolation: isolate;
-  overflow: visible;
-  max-width: 440px;
-  padding: 28px 24px 24px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.58);
-  background: rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
-  box-shadow:
-    0 28px 56px rgba(7, 57, 117, 0.14),
-    0 10px 24px rgba(7, 57, 117, 0.07),
-    inset 0 1px 0 rgba(255, 255, 255, 0.76),
-    inset 0 -1px 0 rgba(141, 199, 255, 0.14);
-}
-
-.locations-intro__media.company-locations__map::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.1) 34%,
-    transparent 54%,
-    rgba(141, 199, 255, 0.18) 100%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
-
-.locations-intro__media.company-locations__map::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: calc(20px - 1px);
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.locations-intro__media.company-locations__map .de-map {
-  position: relative;
-  z-index: 2;
-  overflow: visible;
-}
-
-.locations-intro__media.company-locations__map .de-map__stage {
-  width: min(100%, 400px);
-  max-width: 400px;
+  width: 100%;
+  max-width: none;
+  justify-self: stretch;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -6954,26 +6988,28 @@ main > .job-detail-hero + section {
   overflow: visible;
 }
 
+.locations-intro__media.company-locations__map::before,
+.locations-intro__media.company-locations__map::after {
+  content: none;
+  display: none;
+}
+
+.locations-intro__media.company-locations__map .de-map {
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+}
+
+.locations-intro__media.company-locations__map .de-map__stage,
+.locations-intro__media.company-locations__map .de-map__stage--staedte {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  aspect-ratio: 1 / 1;
+}
+
 .locations-intro__media.company-locations__map .de-map__tooltip {
   z-index: 30;
-}
-
-.locations-intro__media.company-locations__map .de-map__svg-host .de-map__land {
-  fill: #cfe3fb;
-  stroke: rgba(255, 255, 255, 0.94);
-}
-
-.locations-intro__media.company-locations__map .de-map__svg-host .de-map__land.is-location {
-  fill: #4598e8;
-  filter: drop-shadow(0 10px 18px rgba(1, 97, 191, 0.18));
-}
-
-.locations-intro__media.company-locations__map .de-map__svg-host .de-map__land.is-location.is-selected,
-.locations-intro__media.company-locations__map .de-map__svg-host .de-map__land.is-location.is-highlighted {
-  fill: #0161bf;
-  stroke: rgba(255, 255, 255, 1);
-  transform: translate(0, -3px) scale(1.02);
-  filter: drop-shadow(0 16px 28px rgba(1, 97, 191, 0.28));
 }
 
 .de-map-card__location--link {
@@ -7463,15 +7499,15 @@ main > .job-detail-hero + section {
   }
 
   .locations-intro__media.company-locations__map {
-    max-width: none;
-    padding: 18px 14px 14px;
-    border-radius: 16px;
+    padding: 0;
+    border-radius: 0;
   }
 
-  .locations-intro__media.company-locations__map .de-map__stage {
-    width: min(100%, 320px);
-    max-width: 100%;
-    margin-inline: auto;
+  .locations-intro__media.company-locations__map .de-map__stage,
+  .locations-intro__media.company-locations__map .de-map__stage--staedte {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
   }
 
   .locations-grid {

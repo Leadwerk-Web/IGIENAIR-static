@@ -777,6 +777,105 @@ const presenceMapLocationStates = {
   },
 };
 
+const presenceMapCityLocations = {
+  Karlsruhe: {
+    stateLabel: "Baden-Württemberg",
+    href: "/kontakt/#standort-baden-wuerttemberg",
+    location: {
+      name: "Firmensitz/ Niederlassung Baden-Württemberg",
+      street: "Robert-Bosch-Str. 10",
+      city: "76275 Ettlingen",
+      phone: "07243 3699101",
+      email: "anfrage@igienair.com",
+      cardId: "standort-baden-wuerttemberg",
+    },
+  },
+  Tuttlingen: {
+    stateLabel: "Bodensee",
+    href: "/kontakt/#standort-bodensee-tuttlingen",
+    location: {
+      name: "Niederlassung Bodensee",
+      street: "Frank-Ziwey-Ring 18 Unit 102",
+      city: "78333 Stockach",
+      phone: "07771 63640009",
+      email: "anfrage@igienair.com",
+      cardId: "standort-bodensee-tuttlingen",
+    },
+  },
+  Oberasbach: {
+    stateLabel: "Bayern",
+    href: "/kontakt/#standort-nordbayern-oberasbach",
+    location: {
+      name: "Niederlassung Nordbayern",
+      street: "Schloßgasse 5c",
+      city: "90522 Oberasbach",
+      phone: "0911 96649121",
+      email: "anfrage@igienair.com",
+      cardId: "standort-nordbayern-oberasbach",
+    },
+  },
+  Eching: {
+    stateLabel: "Bayern",
+    href: "/kontakt/#standort-suedbayern-eching",
+    location: {
+      name: "Niederlassung Südbayern",
+      street: "Erfurter Str. 4",
+      city: "85386 Eching",
+      phone: "089 95459149",
+      email: "anfrage@igienair.com",
+      cardId: "standort-suedbayern-eching",
+    },
+  },
+  Niederhausen: {
+    stateLabel: "Hessen",
+    href: "/kontakt/#standort-rhein-main-niedernhausen",
+    location: {
+      name: "Niederlassung Rhein-Main",
+      street: "Feldbergstr. 14",
+      city: "65527 Niedernhausen",
+      phone: "06127 7084101",
+      email: "anfrage@igienair.com",
+      cardId: "standort-rhein-main-niedernhausen",
+    },
+  },
+  Leichlingen: {
+    stateLabel: "Nordrhein-Westfalen",
+    href: "/kontakt/#standort-nordrhein-westfalen",
+    location: {
+      name: "Niederlassung Nordrhein-Westfalen",
+      street: "Am Beckers Busch 1",
+      city: "42799 Leichlingen",
+      phone: "02173 2653810",
+      email: "anfrage@igienair.com",
+      cardId: "standort-nordrhein-westfalen",
+    },
+  },
+  Winsen: {
+    stateLabel: "Niedersachsen",
+    href: "/kontakt/#standort-nord-winsen",
+    location: {
+      name: "Niederlassung Nord",
+      street: "Opelstr. 10",
+      city: "21423 Winsen (Luhe)",
+      phone: "04171 5468650",
+      email: "anfrage@igienair.com",
+      cardId: "standort-nord-winsen",
+    },
+  },
+  Berlin: {
+    stateLabel: "Berlin",
+    href: "/kontakt/#standort-berlin",
+    location: {
+      name: "Niederlassung Berlin",
+      street: "Paradiesstraße 210–218",
+      city: "12526 Berlin",
+      phone: "030 340 410120",
+      email: "anfrage@igienair.com",
+      cardId: "standort-berlin",
+    },
+  },
+};
+
 const presenceMapEscape = (value) =>
   String(value).replace(/[&<>"']/g, (char) => ({
     "&": "&amp;",
@@ -787,9 +886,11 @@ const presenceMapEscape = (value) =>
   }[char]));
 
 const presenceMapBuildCard = (stateLabel, location, options = {}) => {
-  const tag = options.linkable && location.cardId ? "a" : "article";
-  const attrs = options.linkable && location.cardId
-    ? ` class="de-map-card__location de-map-card__location--link" href="#${location.cardId}"`
+  const isLink = Boolean(options.linkable && location.cardId);
+  const tag = isLink ? "a" : "article";
+  const href = isLink ? (options.href || `#${location.cardId}`) : null;
+  const attrs = isLink
+    ? ` class="de-map-card__location de-map-card__location--link" href="${presenceMapEscape(href)}"`
     : ' class="de-map-card__location"';
 
   return `
@@ -895,19 +996,43 @@ function presenceMapInitStandorteFromHash(mapRoot) {
   }
 
   const card = document.getElementById(hash);
-  const stateId = card?.dataset.locationState;
-  if (!stateId) {
+  if (!card) {
     return;
   }
 
-  const land = mapRoot.querySelector(`.de-map__land#${CSS.escape(stateId)}`);
-  const location = presenceMapLocationStates[stateId];
-  if (!land || !location) {
+  const stateId = card.dataset.locationState;
+  const land = stateId
+    ? mapRoot.querySelector(`.de-map__land#${CSS.escape(stateId)}`)
+    : null;
+  const location = stateId ? presenceMapLocationStates[stateId] : null;
+
+  window.requestAnimationFrame(() => {
+    if (land && location) {
+      presenceMapFocusStandorteState(mapRoot, land, location, hash, "auto");
+      return;
+    }
+
+    card.classList.add("is-map-highlight");
+    scrollToStandortTarget(card, "auto");
+  });
+}
+
+function initStandortDeepLinks() {
+  const hash = window.location.hash.replace(/^#/, "");
+  if (!hash.startsWith("standort-")) {
+    return;
+  }
+
+  const card = document.getElementById(hash);
+  if (!card) {
     return;
   }
 
   window.requestAnimationFrame(() => {
-    presenceMapFocusStandorteState(mapRoot, land, location, hash, "auto");
+    if (!card.classList.contains("is-map-highlight")) {
+      card.classList.add("is-map-highlight");
+    }
+    scrollToStandortTarget(card, "auto");
   });
 }
 
@@ -920,7 +1045,7 @@ function initPresenceMap() {
     return;
   }
 
-  const lands = mapRoot.querySelectorAll(".de-map__land");
+  const lands = mapRoot.querySelectorAll(".de-map__land, .de-map__city");
   if (!lands.length) {
     return;
   }
@@ -959,10 +1084,16 @@ function initPresenceMap() {
   };
 
   const isStandorteMode = mapRoot.dataset.presenceMapMode === "standorte";
+  const isStaedteMode = mapRoot.dataset.presenceMapMode === "staedte";
   const standorteTitles = isStandorteMode ? presenceMapGetStandorteTitles() : null;
 
-  lands.forEach((land) => {
-    const location = presenceMapLocationStates[land.id];
+  const markers = isStaedteMode
+    ? mapRoot.querySelectorAll(".de-map__city")
+    : mapRoot.querySelectorAll(".de-map__land");
+
+  markers.forEach((land) => {
+    const cityEntry = isStaedteMode ? presenceMapCityLocations[land.id] : null;
+    const location = isStaedteMode ? cityEntry : presenceMapLocationStates[land.id];
 
     if (!location) {
       land.removeAttribute("tabindex");
@@ -970,19 +1101,26 @@ function initPresenceMap() {
       return;
     }
 
-    const stateLabel = land.dataset.label
-      || land.getAttribute("aria-label")
-      || (presenceMapStateLabels[land.id] ?? land.id);
+    const stateLabel = isStaedteMode
+      ? cityEntry.stateLabel
+      : land.dataset.label
+        || land.getAttribute("aria-label")
+        || (presenceMapStateLabels[land.id] ?? land.id);
 
-    const cards = (location.locations || [])
-      .map((entry) => presenceMapBuildCard(
-        stateLabel,
-        presenceMapWithStandorteTitle(entry, standorteTitles),
-        { linkable: isStandorteMode },
-      ))
-      .join("");
+    const cardsHtml = isStaedteMode
+      ? presenceMapBuildCard(stateLabel, cityEntry.location, {
+          linkable: true,
+          href: resolveSitePath(cityEntry.href),
+        })
+      : (location.locations || [])
+        .map((entry) => presenceMapBuildCard(
+          stateLabel,
+          presenceMapWithStandorteTitle(entry, standorteTitles),
+          { linkable: isStandorteMode },
+        ))
+        .join("");
 
-    const tooltipContent = `<div class="de-map-card__list">${cards}</div>`;
+    const tooltipContent = `<div class="de-map-card__list">${cardsHtml}</div>`;
 
     land.classList.add("is-location");
     land.setAttribute("tabindex", "0");
@@ -991,12 +1129,36 @@ function initPresenceMap() {
       "aria-label",
       isStandorteMode
         ? `${stateLabel}: Standorte anzeigen`
-        : `${stateLabel}: Standort öffnen`,
+        : isStaedteMode
+          ? `${land.dataset.label || stateLabel}: Kontaktdaten auf Standortseite öffnen`
+          : `${stateLabel}: Standort öffnen`,
     );
 
     const navigate = () => {
       if (isStandorteMode) {
         presenceMapFocusStandorteState(mapRoot, land, location);
+        return;
+      }
+
+      if (isStaedteMode) {
+        const cardId = cityEntry.location.cardId;
+        const card = cardId ? document.getElementById(cardId) : null;
+
+        if (card) {
+          document.querySelectorAll(".locations-grid-card.is-map-highlight").forEach((item) => {
+            item.classList.remove("is-map-highlight");
+          });
+          mapRoot.querySelectorAll(".de-map__city.is-selected").forEach((item) => {
+            item.classList.remove("is-selected");
+          });
+          land.classList.add("is-selected");
+          card.classList.add("is-map-highlight");
+          scrollToStandortTarget(card);
+          history.replaceState(null, "", `#${cardId}`);
+          return;
+        }
+
+        window.location.href = resolveSitePath(cityEntry.href);
         return;
       }
 
@@ -1032,16 +1194,76 @@ function initPresenceMap() {
     });
 
     land.addEventListener("click", () => {
+      hideTooltip();
       navigate();
     });
 
     land.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
+        hideTooltip();
         navigate();
       }
     });
   });
+
+  if (isStaedteMode) {
+    tooltip.addEventListener("click", (event) => {
+      const link = event.target.closest("a.de-map-card__location--link");
+      if (!link) {
+        return;
+      }
+
+      event.preventDefault();
+      hideTooltip();
+
+      const href = link.getAttribute("href") || link.href;
+      const cardId = href.includes("#") ? href.split("#").pop() : null;
+      const card = cardId ? document.getElementById(cardId) : null;
+
+      if (card) {
+        const cityId = Object.entries(presenceMapCityLocations).find(
+          ([, entry]) => entry.location.cardId === cardId,
+        )?.[0];
+        const cityLand = cityId
+          ? mapRoot.querySelector(`.de-map__city#${CSS.escape(cityId)}`)
+          : null;
+
+        document.querySelectorAll(".locations-grid-card.is-map-highlight").forEach((item) => {
+          item.classList.remove("is-map-highlight");
+        });
+        mapRoot.querySelectorAll(".de-map__city.is-selected").forEach((item) => {
+          item.classList.remove("is-selected");
+        });
+        cityLand?.classList.add("is-selected");
+        card.classList.add("is-map-highlight");
+        scrollToStandortTarget(card);
+        history.replaceState(null, "", `#${cardId}`);
+        return;
+      }
+
+      window.location.href = href;
+    });
+
+    const hash = window.location.hash.replace(/^#/, "");
+    if (hash.startsWith("standort-")) {
+      const card = document.getElementById(hash);
+      const cityId = Object.entries(presenceMapCityLocations).find(
+        ([, entry]) => entry.location.cardId === hash,
+      )?.[0];
+      const cityLand = cityId
+        ? mapRoot.querySelector(`.de-map__city#${CSS.escape(cityId)}`)
+        : null;
+
+      if (card) {
+        window.requestAnimationFrame(() => {
+          cityLand?.classList.add("is-selected");
+          card.classList.add("is-map-highlight");
+          scrollToStandortTarget(card, "auto");
+        });
+      }
+    }
+  }
 
   if (isStandorteMode) {
     tooltip.addEventListener("click", (event) => {
@@ -1626,5 +1848,6 @@ initCleaningMediaHeights();
 initHygieneAirNavHeight();
 initServicesAccordion();
 initPresenceMap();
+initStandortDeepLinks();
 syncAddressFields();
 syncHeaderState();
