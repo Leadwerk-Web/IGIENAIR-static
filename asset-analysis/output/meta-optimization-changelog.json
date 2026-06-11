@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "checked": 176,
+    "unchanged": 161,
+    "titlesUpdated": 3,
+    "descsUpdated": 12,
+    "manual": 0
+  },
+  "changelog": [
+    {
+      "url": "/gastronomie/",
+      "status": "Optimiert",
+      "oldTitle": "Technische Hygiene Gastronomie | Igienair",
+      "newTitle": "Technische Hygiene Gastronomie | Igienair",
+      "titleLen": 41,
+      "oldDesc": null,
+      "newDesc": "Küchenabluftreinigung, Lüftungshygene und Brandschutz für Gastronomiebetriebe. Igienair schützt Gäste, Mitarbeiter und Ihren Betrieb.",
+      "descLen": 133
+    },
+    {
+      "url": "/gemeinden/",
+      "status": "Optimiert",
+      "oldTitle": "Lüftungshygene öffentliche Einrichtungen | Igienair",
+      "newTitle": "Lüftungshygene öffentliche Einrichtungen | Igienair",
+      "titleLen": 51,
+      "oldDesc": null,
+      "newDesc": "Hygienische Betreuung von Lüftungsanlagen in kommunalen Gebäuden. Igienair erfüllt Inspektionspflichten und sorgt für gesunde Raumluft.",
+      "descLen": 135
+    },
+    {
+      "url": "/gesundheitswesen/",
+      "status": "Optimiert",
+      "oldTitle": "Technische Hygiene Gesundheitswesen | Igienair",
+      "newTitle": "Technische Hygiene Gesundheitswesen | Igienair",
+      "titleLen": 46,
+      "oldDesc": null,
+      "newDesc": "RLT-Hygiene für Krankenhäuser und medizinische Einrichtungen: Inspektion, Reinigung und Gutachten nach anerkannten Hygienestandards.",
+      "descLen": 132
+    },
+    {
+      "url": "/instandsetzung-sanierung/",
+      "status": "Optimiert",
+      "oldTitle": "RLT-Instandsetzung & Sanierung | Igienair",
+      "newTitle": "RLT-Instandsetzung & Sanierung | Igienair",
+      "titleLen": 41,
+      "oldDesc": null,
+      "newDesc": "Sanierung und Instandsetzung von Lüftungs- und RLT-Anlagen für hygienischen, sicheren Anlagenbetrieb. Igienair – technische Hygiene aus einer Hand.",
+      "descLen": 147
+    },
+    {
+      "url": "/lebensmittel/",
+      "status": "Optimiert",
+      "oldTitle": "Lüftungshygene Lebensmittelindustrie | Igienair",
+      "newTitle": "Lüftungshygene Lebensmittelindustrie | Igienair",
+      "titleLen": 47,
+      "oldDesc": null,
+      "newDesc": "Reinigung und Inspektion von RLT-Anlagen in Lebensmittelbetrieben. Igienair unterstützt HACCP-konforme Produktionsprozesse.",
+      "descLen": 123
+    },
+    {
+      "url": "/pharma/",
+      "status": "Optimiert",
+      "oldTitle": "Technische Hygiene Pharma | Igienair",
+      "newTitle": "Technische Hygiene Pharma | Igienair",
+      "titleLen": 36,
+      "oldDesc": null,
+      "newDesc": "GMP-konforme Reinigung und Qualifizierung von RLT-Anlagen und Reinräumen in der Pharmaindustrie. Igienair – validiert und dokumentiert.",
+      "descLen": 135
+    },
+    {
+      "url": "/glossar/energetische-inspektion/",
+      "status": "Optimiert",
+      "oldTitle": "Energetische Inspektion von Klimaanlagen - Igienair GmbH",
+      "newTitle": "Energetische Inspektion von Klimaanlagen - Igienair GmbH",
+      "titleLen": 56,
+      "oldDesc": "Energetische Inspektion von Klimaanlagen: Was ist das und warum ist sie so wichtig? Klimaanlagen sorgen für angenehme Temperaturen und ein gutes Raumklima – in Büros, öffentlichen Gebäuden und immer häufiger auch in Wohnhäusern. Doch Klimaanlagen verbrauchen viel Energie. Damit sie effizient, kostengünstig und umweltfreundlich arbeiten, ist die energetische Inspektion ein zentrales Instrument. Was genau verbirgt...",
+      "newDesc": "Energetische Inspektion von Klimaanlagen: Pflicht, Ablauf und Bedeutung nach GEG 2020 für Betreiber raumlufttechnischer Anlagen.",
+      "descLen": 128
+    },
+    {
+      "url": "/glossar/hygieneinspektion-nach-vdi-6022/",
+      "status": "Optimiert",
+      "oldTitle": "Was ist eine Hygieneinspektion nach VDI 6022? IGIENAIR GmbH",
+      "newTitle": "Was ist eine Hygieneinspektion nach VDI 6022? IGIENAIR GmbH",
+      "titleLen": 59,
+      "oldDesc": "Was ist eine Hygieneinspektion nach VDI 6022? IGIENAIR GmbH: Definition, Bedeutung und praxisrelevante Hinweise zur Raumlufthygiene – kompakt erklärt im Igienair-Glossar.",
+      "newDesc": "Hygieneinspektion nach VDI 6022: Pflicht, Intervall und Inhalt der Prüfung für hygienischen Betrieb von RLT-Anlagen.",
+      "descLen": 116
+    },
+    {
+      "url": "/glossar/kuehlregale/",
+      "status": "Optimiert",
+      "oldTitle": "Kühlregale und technische Hygiene: Erklärung und Durchführung",
+      "newTitle": "Kühlregale und technische Hygiene: Erklärung und Durchführung",
+      "titleLen": 61,
+      "oldDesc": "Kühlregale und technische Hygiene: Erklärung und Durchführung: Definition, Bedeutung und praxisrelevante Hinweise zur Raumlufthygiene – kompakt erklärt im Igienair-Glossar.",
+      "newDesc": "Kühlregale in der Lebensmittelbranche: Hygieneanforderungen, Reinigungsbedarf und typische Risiken durch Ablagerungen.",
+      "descLen": 118
+    },
+    {
+      "url": "/glossar/reinraum/",
+      "status": "Optimiert",
+      "oldTitle": "Reinraum | Glossar Igienair",
+      "newTitle": "Reinraum: Definition & Anforderungen | Glossar",
+      "titleLen": 46,
+      "oldDesc": "Reinraum: In der modernen Industrie und Forschung wird oft ein kontrollierter und kontaminationsfreier Arbeitsbereich benötigt.",
+      "newDesc": "Reinraum: In der modernen Industrie und Forschung wird oft ein kontrollierter und kontaminationsfreier Arbeitsbereich benötigt.",
+      "descLen": 127
+    },
+    {
+      "url": "/glossar/umluftkuehlgeraet/",
+      "status": "Optimiert",
+      "oldTitle": "Was ist ein Umluftkühlgerät? - Die Hygieneexperten von Igienair",
+      "newTitle": "Was ist ein Umluftkühlgerät? - Die Hygieneexperten von Igienair",
+      "titleLen": 63,
+      "oldDesc": "Was ist ein Umluftkühlgerät? - Die Hygieneexperten von Igienair: Definition, Bedeutung und praxisrelevante Hinweise zur Raumlufthygiene – kompakt erklärt im Igienair-Glossar.",
+      "newDesc": "Umluftkühlgeräte: Funktion, Hygieneanforderungen und Reinigungsintervalle für sicheren Einsatz in Innenräumen.",
+      "descLen": 110
+    },
+    {
+      "url": "/glossar/vdi-2047-2/",
+      "status": "Optimiert",
+      "oldTitle": "VDI 2047-2 | Glossar Igienair",
+      "newTitle": "VDI 2047-2 Richtlinie erklärt | Glossar Igienair",
+      "titleLen": 48,
+      "oldDesc": "VDI 2047-2: Risiken in Kühltürmen angemessen bewerten: Risikoanalyse und Gefährdungsbeurteilung",
+      "newDesc": "VDI 2047-2: Risiken in Kühltürmen angemessen bewerten: Risikoanalyse und Gefährdungsbeurteilung",
+      "descLen": 95
+    },
+    {
+      "url": "/glossar/verdampfer-und-kondensatoren/",
+      "status": "Optimiert",
+      "oldTitle": "Verdampfer und Kondensatoren in Kälteanlagen - Igienair GmbH",
+      "newTitle": "Verdampfer und Kondensatoren in Kälteanlagen - Igienair GmbH",
+      "titleLen": 60,
+      "oldDesc": "Verdampfer und Kondensatoren in Kälteanlagen: Funktion, Bedeutung der Sauberkeit und Hygienevorschriften Kälteanlagen sind aus vielen Bereichen des täglichen Lebens nicht mehr wegzudenken – von der Kühlung in Supermärkten über Klimaanlagen bis hin zu industriellen Prozessen. Zwei zentrale Bauteile jeder Kälteanlage sind der Verdampfer und der Kondensator. Doch was genau verbirgt sich dahinter, und warum ist...",
+      "newDesc": "Verdampfer und Kondensatoren in Kälteanlagen: Reinigungsbedarf, Biofilme und Effizienzverluste durch Verschmutzung.",
+      "descLen": 115
+    },
+    {
+      "url": "/impressum/",
+      "status": "Optimiert",
+      "oldTitle": "Impressum | Igienair GmbH",
+      "newTitle": "Impressum & Anbieterkennzeichnung | Igienair",
+      "titleLen": 44,
+      "oldDesc": "Impressum der Igienair GmbH: Ansprechpartner, Kontaktdaten, Registerangaben und verantwortliche Stelle gemäß TMG.",
+      "newDesc": "Impressum der Igienair GmbH: Ansprechpartner, Kontaktdaten, Registerangaben und verantwortliche Stelle gemäß TMG.",
+      "descLen": 113
+    },
+    {
+      "url": "/kunden/referenzen/berlin/brandenburg-havel/",
+      "status": "Optimiert",
+      "oldTitle": "Kühlturm Wartung und RLT-Anlagen Reinigung Brandenburg / Havel",
+      "newTitle": "Kühlturm Wartung und RLT-Anlagen Reinigung Brandenburg / Havel",
+      "titleLen": 62,
+      "oldDesc": "Hygieneinspektion, Reinigung und Gutachten für RLT-Anlagen in Brandenburg an der Havel und Berlin und Brandenburg. Igienair – normkonform, dokumentiert. Jetzt anfragen.",
+      "newDesc": "Hygieneinspektion und Reinigung für RLT-Anlagen in Brandenburg an der Havel. Igienair in Berlin und Brandenburg – normkonform und dokumentiert. Jetzt anfragen.",
+      "descLen": 159
+    }
+  ]
+}
